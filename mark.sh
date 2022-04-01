@@ -32,7 +32,7 @@ perl -C0 -pe \
 )"\
 's/^([-+*]{2,5}) /"\t" x (length($1) - 1) . substr($1, 0, 1) . $"/e;'\
 's/^((\d+\.){1,2})(\d+\. )/"\t" x ($1 =~ tr!.!!) . $3/e;' | \
-pandoc -f markdown+mmd_title_block+ascii_identifiers-intraword_underscores -t html5 \
+pandoc -f markdown+ascii_identifiers -t html5 \
 -S $([[ -n "$standalone" ]] && echo -s ) "$@" \
 $([[ -n "$math" && -n "$standalone" ]] && echo --mathjax=\"https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_HTMLorMML.js\" ) | \
 perl -C0 -pe \
