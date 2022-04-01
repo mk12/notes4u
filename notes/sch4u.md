@@ -6,10 +6,13 @@ In this unit, you'll learn about how energy is transferred during chemical react
 
 chemistry
 :	the study of matter and its transformations
+
 thermochemistry
 :	the study of energy changes that accompany physical or chemical transformations
+
 thermal energy
 :	a form of kinetic energy that results from the motion of the molecules possessed by an object
+
 chemical system
 :	a set of reactants and products under study, usually represented by a chemical equation
 
@@ -53,10 +56,13 @@ Heat, mass, specific heat capacity, and temperature are related by
 
 heat (`q`)
 :	the amount of thermal energy that has been transferred between a system and its surroundings, measured in joules (J)
+
 mass (`m`)
 :	the mass of the object, measured in grams (g)
+
 specific heat capacity (`c`)
 :	the heat required to raise the temperature of 1 g of a substance by 1 ºC, measured in joules per gram per degree Celsius (J/gºC); see pages 301 and 799 of the textbook for `c` values of common substances
+
 temperature (`T`)
 :	a measure of the average kinetic energy of the particles in an object, measured in degrees Celsius (ºC)
 
@@ -84,8 +90,10 @@ We don't use enthalpy in our calculations, but we do use enthalpy _change_:
 
 enthalpy change (`∆H`)
 :	the energy absorbed from or released to the surroundings when a system's reactants react to form products, measured in kilojoules (kJ)
+
 moles (`n`)
 :	the molar amount of the substance in question (the system)
+
 molar enthalpy (`∆H_x`)
 :	the enthalpy change associated with one mole of the substance, measured in kilojoules per mole (kJ/mol); the subscript is a letter or combination of letters that indicate the type of change that is occurring (ex: `∆H_"sol"`, `∆H_"vap"`, `∆H_"fr"`); see pages 307 and 799--800 of the textbook for molar enthalpy values of various substances
 
@@ -140,22 +148,26 @@ Since the temperature decreased in the surroundings, this was an _endothermic_ r
 A thermochemical equation is an equation that includes enthalpy change. There are four different ways of writing them:
 
 energy term
-::	Include `∆H` as a term in the equation on the left side for endothermic reactions and on the right side for exothermic reactions.
+
+:	Include `∆H` as a term in the equation on the left side for endothermic reactions and on the right side for exothermic reactions.
 
 	C~6~H~12~O~6(g)~ + 6 O~2(g)~ → 6 CO~2(g)~ + 6 H~2~O~(g)~ + 2820 kJ
 
 enthalpy change value
-::	Add the value of `∆H` to the end of the equation (negative if exothermic, positive if endothermic).
+
+:	Add the value of `∆H` to the end of the equation (negative if exothermic, positive if endothermic).
 
 	C~6~H~12~O~6(g)~ + 6 O~2(g)~ → 6 CO~2(g)~ + 6 H~2~O~(g)~, `∆H = -2820\ "kJ"`
 
 molar enthalpy of reaction
-::	Write only the value of `∆H_x` (no equation), including the chemical formula of the substance with the unit.
+
+:	Write only the value of `∆H_x` (no equation), including the chemical formula of the substance with the unit.
 
 	`∆H_"comb" = -2820\ "kJ/mol"` C~6~H~12~O~6~
 
 potential energy diagram
-::	A potential energy diagram is a graphical representation of energy transfer, with `E_p` on the vertical axis and "Reaction Progress" on the horizontal axis, reactants on one line and products on another, and an arrow joining the two labelled with the enthalpy change. See page 318 of the textbook for examples.
+
+:	A potential energy diagram is a graphical representation of energy transfer, with `E_p` on the vertical axis and "Reaction Progress" on the horizontal axis, reactants on one line and products on another, and an arrow joining the two labelled with the enthalpy change. See page 318 of the textbook for examples.
 
 ## Hess's law type 1
 
@@ -188,12 +200,14 @@ When we add these, nitrogen dioxide and one mole of oxygen cancel out, leaving u
 The second way to apply Hess's law uses standard enthalpies of formation.
 
 formation reaction
-::	a reaction in which a compound is formed from its elements
+
+:	a reaction in which a compound is formed from its elements
 
 	C~(s)~ + O~2(g)~ → CO~2(g)~, `∆H=-393.5\ "kJ"`
 
 standard enthalpy of formation (`∆H_"f"`)
-::	the molar enthalpy for a formation reaction (expressed per mole of product produced) where the elements are in their standard states and the reaction occurs at SATP (25 ºC and 101.3 kPa)
+
+:	the molar enthalpy for a formation reaction (expressed per mole of product produced) where the elements are in their standard states and the reaction occurs at SATP (25 ºC and 101.3 kPa)
 
 	`∆H_"f" = -393.5\ "kJ/mol"` CO~2(g)~
 
@@ -221,8 +235,10 @@ The reaction rate is the rate at which a reactant is consumed or a product is pr
 
 reaction rate (`r`)
 :	the rate at which the reaction progresses, measured in moles per litre-second (mol/L·s); it is negative when the substance is being consumed and positive when the substance is being produced
+
 concentration change (`∆c`)
 :	the change in the concentration of the substance in question, measured in moles per litre (mol/L)
+
 time interval (`∆t`)
 :	the time that passes during the concentration change, measured in seconds (s)
 
@@ -274,17 +290,20 @@ This is the largest unit. It covers equilibrium calculations, Le Châtelier's pr
 When a chemical system is in dynamic equilibrium, there is a balance between forward and reverse processes. They are occurring at the same rate so that no overall change is taking place. There are several types:
 
 solubility equilibrium
-::	Dissolved and undissolved solute are in equilibrium; the forward process (dissolving) is occurring at the same rate as the reverse process (precipitating).
+
+:	Dissolved and undissolved solute are in equilibrium; the forward process (dissolving) is occurring at the same rate as the reverse process (precipitating).
 
 	CO~2(g)~ ⇌ CO~2(aq)~ (carbon dioxide in a pop can)
 
 phase equilibrium
-::	Pure substances in different physical states are in equilibrium; opposite state changes are occurring at the same rate.
+
+:	Pure substances in different physical states are in equilibrium; opposite state changes are occurring at the same rate.
 
 	H~2~O~(s)~ ⇌ H~2~O~(l)~ (ice/water slush at 0 ºC)
 
 chemical reaction equilibrium
-::	Reactants and products are in equilibrium; the forward reaction and the reverse reaction are occurring at the same rate.
+
+:	Reactants and products are in equilibrium; the forward reaction and the reverse reaction are occurring at the same rate.
 
 	CaCO~3(s)~ ⇌ CaO~(s)~ + CO~2(g)~
 
@@ -345,8 +364,10 @@ The equilibrium constant depends on temperature. Its value indicates the relativ
 
 `K ~~ 1 => "[products]" ~~ "[reactants]"`
 :	significant amounts of products and reactants
+
 `K > 10^4 => "[products]" ≫ "[reactants]"`
 :	very high yield; equilibrium favours products
+
 `K < 10^-4 => "[products]" ≪ "[reactants]"`
 :	very low yield; equilibrium favours reactants
 
@@ -426,8 +447,10 @@ Here are a few examples of applying LCP to predict how a system will respond whe
 
 concentration
 :	When the concentration of a reactant is increased, the system will shift right to consume some of it; when it is decreased, the system will shift left to replace some of it. The same thing happens with products, but in the opposite direction.
+
 temperature
 :	When temperature is increased and the reaction is endothermic, the system will shift right to consume some of the energy; when it is decreased, the system will shift left to replace some of the energy. The same thing happens with exothermic reactions, but in the opposite direction.
+
 gas volume
 :	When volume is increased (or pressure is decreased), the system will shift to the side that has a greater amount of gaseous entities to restore some pressure. When volume is decreased (or pressure is increased), the system will shift to the side that has a lesser amount of gaseous entities to relieve some pressure. The number of gaseous entities is the total number of moles of gas. If both sides have the same number, the system _does not shift_ after changes in volume or pressure.
 
@@ -455,7 +478,6 @@ The last one needs more explaining. If an inert gas is added to the system while
 | add Ne~(g)~ at constant pressure | Right |
 | add Ne~(g)~ at constant volume   | ---   |
 | add catalyst      | ---   |
-
 
 ## Haber process
 
@@ -778,8 +800,10 @@ A salt is an ionic compound (cation and anion). Salts are very soluble in water.
 
 neutral (does not affect pH)
 :	Cation of a strong base (e.g., Na^+^ from NaOH) or anion of a strong acid (e.g., Cl^−^ from HCl). Most of these ions are from group 1, 2, or 7, but don't forget polyatomic ions like SO~4~^2−^ from H~2~SO~4~.
+
 acidic (decreases pH)
 :	Conjugate acid of a weak base (e.g., NH~4~^+^, the conjugate acid of NH~3~) or metal cation with high charge density (Al^3+^ and Fe^3+^ are the main ones).
+
 basic (increases pH)
 :	Conjugate base of a weak acid (e.g., CH~3~COO^−^, the conjugate base of CH~3~COOH).
 
@@ -905,8 +929,10 @@ Organic compounds that contain only carbon atoms and hydrogen atoms are called h
 
 aliphatic hydrocarbons
 :	chains and rings (includes alkanes, alkenes, and alkynes)
+
 aromatic hydrocarbons
 :	rings with alternating single and double bonds (benzene)
+
 hydrocarbon derivatives
 :	hydrocarbons with atoms other than carbon and hydrogen
 
@@ -916,8 +942,10 @@ There are three types of aliphatic hydrocarbons:
 
 alkane (C~_n_~H~2*n*+2~)
 :	only has single bonds (e.g., methane, CH~4~)
+
 alkene (C~_n_~H~2*n*~)
 :	has one or more carbon--carbon double bonds (e.g., ethene, C~2~H~4~)
+
 alkyne (C~_n_~H~2*n*−2~)
 :	has one or more triple bonds (e.g., ethyne, C~2~H~2~)
 
@@ -945,12 +973,16 @@ We don't usually use molecular formulas to refer to organic compounds because th
 
 expanded molecular formula
 :	a large molecular formula where each individual carbon is shown and is bonded to its adjacent symbols; brackets indicate side branches; for example, the EMF of 2,2-dimethylbutane is CH~3~C(CH~3~)~2~CH~2~CH~3~
+
 structural model
 :	a three-dimensional model, either the _ball and stick_ model or the _space-filling_ model; see page 11 of the textbook for examples
+
 complete structural diagram
 :	a two-dimensional representation of the compound that shows every atom and the bond lines between them
+
 condensed structural diagram
 :	like complete diagrams, but hydrogen atoms don't have to be shown individually: write CH~3~ instead of C with —H three times
+
 line structural diagram
 :	the most compact representation; there is an implied carbon atom at any point where the line ends or bends (vertices and termini), and hydrogen atoms are inferred
 
@@ -971,15 +1003,18 @@ As long as you can do each step individually, putting it all together isn't that
 
 alkane
 :	[_prefix_]ane, where _prefix_ represents the number of carbon atoms in the main chain (see the table below)
+
 alkene
 :	\#-[_prefix_]ene, #,#-[_prefix_]**di**ene, #,#,#-[_prefix_]**tri**ene, etc., where each # represents the location of a double bond and the part in bold indicates the number of double bonds
+
 alkyne
 :	like alkenes, but ending in _yne_ instead of _ene_
+
 alicyclic
 :	like alkanes/alkenes/alkynes, but add _cyclo_ before the prefix
+
 aromatic
 :	always _benzene_
-
 
 | Prefix | atoms |
 |:------:|:--:|
@@ -1170,24 +1205,34 @@ This unit will take everything you _thought_ you knew about atomic theory and tu
 
 emission spectrum
 :	a series of bright lines of light produced or emitted by a gas that has been excited by, for example, heat or electricity
+
 absorption spectrum
 :	a series of dark lines on a continuous spectrum produced by placing a gas between the continuous spectrum source and the observer
+
 quantum
 :	a small, discrete, indivisible quantity
+
 photon
 :	a quantum of light energy
+
 ground state
 :	the lowest possible energy state of an atom
+
 excited
 :	describes an atom in which an electron has moved to a higher energy level by absorbing a photon
+
 polar bond
 :	a bond in which there is unequal sharing of electrons
+
 nonpolar bond
 :	a bond in which there is equal sharing of electrons
+
 ionic bond
 :	extremely polar bond where electrons are transferred
+
 polar molecule
 :	a molecule containing asymmetrical polar bonds that do not cancel out
+
 nonpolar molecule
 :	a molecule containing symmetrical polar bonds that cancel out
 
@@ -1197,14 +1242,19 @@ Our understanding of the atom has evolved through the centuries thanks to contri
 
 Democritus
 :	Democritus proposed that matter could be divided until an indivisible particle was reached: the atom.
+
 John Dalton
 :	Dalton devised with an atomic theory with six postulates: matter is composed of indestructible, indivisible atoms that are the same for one element but different from other elements.
+
 J.J. Thompson
 :	Thompson discovered subatomic particles -- the atom is a positively charged sphere with negatively charged particles embedded within it. This is called the raisin-bun model.
+
 Sir Ernest Rutherford
 :	Rutherford concluded that the atom is a nucleus consisting of positively charged protons, surrounded mostly by empty space, some of which is occupied by negatively charged electrons (solar-system model).
+
 Sir James Chadwick
 :	Chadwick suggested the existence of neutrons within the nucleus.
+
 Niels Bohr
 :	Bohr experimented with hydrogen gas and its emission and absorption spectra. He concluded that the atom has specific allowable energy levels, called stationery states. Electrons only emit energy when they transfer from one energy level to another. He used Max Planck's quantum theory to support his own.
 
@@ -1216,10 +1266,13 @@ There are four _quantum numbers_ that we use designate an electron. Each electro
 
 principal (`n`)
 :	a positive integer representing the electron's energy level
+
 azimuthal (`l`)
 :	a nonnegative integer from zero to `n - 1` describing shape of the orbital and identifying the sublevel within the energy level; commonly denoted by letters _s_, _p_, _d_, and _f_\  for the values 0, 1, 2, and 3, respectively
+
 magnetic (`m_l`)
 :	an integer from `-l` to `+l` representing the orientation of the orbital
+
 spin (`m_s`)
 :	either −½ or +½, representing the direction of the electron's spin
 
@@ -1229,8 +1282,10 @@ There are three rules about filling up electron orbitals:
 
 Aufbau principle
 :	fill lower energy levels (`n`) before moving on to the next energy level
+
 Pauli's exclusion principle
 :	no two electrons have the same four quantum numbers
+
 Hund's rule
 :	put one electron by itself in each orbital of a sublevel before making pairs
 
@@ -1272,8 +1327,10 @@ An intermolecular force is a force of attraction or repulsion between molecules 
 
 dipole--dipole
 :	a force of attraction between polar molecules due to the simultaneous attraction between a dipole and surrounding dipoles; its strength is dependent on the polarity of the molecule
+
 London
 :	the simultaneous attraction of an electron by nuclei within a molecule and by nuclei in adjacent molecules; its strength is directly related to the number of electrons in the molecule
+
 Hydrogen bonding
 :	the attraction of hydrogen atoms bonded to N, O, or F atoms to a lone pair of electrons of N, O, or F atoms in adjacent molecules; stronger than the dipole--dipole force and the London force
 
@@ -1283,9 +1340,12 @@ There are four types of solids. They all form crystals that have definite shape 
 
 ionic
 :	Ionic crystals are formed from a combination of a metal cation and a nonmetal anion, for example NaCl~(s)~. They form a three-dimensional crystal lattice: a regular, repeating pattern in the arrangement of the ions. The positive and negative ions are held together by _strong, directional ionic bonds_. Ionic crystals are hard, brittle, conductive as liquids and in solution (not as solids), and have high melting points.
+
 metallic
 :	Metallic crystals are formed from metal elements. The metal elements become cations in a three-dimensional arrangement, and they are held together by _strong, nondirectional bonds_ created by the "sea" of mobile electrons. They are shiny, conductive, vary from soft to hard, have varying melting points, and they are malleable, ductile, and flexible. A Rice Krispies square is a good analogy for a metallic crystal: the grains of rice are metal cations, and the marshmallow represents the electron sea.
+
 molecular
 :	Molecular crystals are formed by nonmetal elements or molecular compounds packed closely together. This three-dimensional arrangement of neutral molecules is held together by _relatively weak intermolecular forces_. Molecular crystals are not very hard, are not conductors, have low melting points, and are packed together as closely as size and shape allows.
+
 covalent network
 :	Covalent network crystals are formed from metalloids or carbon. These atoms are all connected in a network of covalent bonds, as if the entire solid was a single molecule. Specifically, the atoms are arranged in a three-dimensional network and are held together by _strong, directional covalent bonds_. These crystals are very hard, insoluble nonconductors, and they have very high melting points. Diamond, one form of C~(s)~, is an example of a covalent network crystal.

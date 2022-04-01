@@ -108,22 +108,31 @@ Include the following sections in all formal lab reports. Also, make sure to wri
 
 lab info
 :	Include the title, lab partners, and date performed at the top of the first page (don't use a separate title page).
+
 purpose
 :	State the purpose in a sentence beginning with the word _to_.
+
 sketch
 :	Draw a sketch of the lab setup.
+
 procedure
 :	Don't copy out the procedure, but indicate where it can be found. If it is a handout, attach it to the end of the lab.
+
 observations
 :	Use tables and point-form writing.
+
 calculations
 :	Provide a sample calculation for each type of calculation that you did.
+
 graphs
 :	Make your graphs by hand with pencil. Each graph needs a title, labelled axes, a sensible scale (you're safe with 1, 2, 5, or 10), and circled data points. Include a legend if applicable.
+
 analysis
 :	Answer the assigned discussion questions.
+
 sources of error
 :	List reasonable, significant sources of experimental error and their likely effects on the results.
+
 conclusion
 :	Write a brief conclusion that summarizes the results.
 
@@ -240,8 +249,10 @@ First, we need to familiarize ourselves with airplane terminology:
 
 heading (`vec v_"PA"`)
 :	velocity of the plane with respect to the air
+
 wind (`vec v_"AE"`)
 :	velocity of the air with respect to the Earth
+
 course/groundspeed (`vec v_"PE"`)
 :	velocity of the plane with respect to the Earth
 
@@ -450,10 +461,13 @@ Friction is a contact force that _opposes motion_. It acts whenever two surfaces
 
 surface roughness
 :	Rougher surfaces experience more friction. With very smooth surfaces, there is still friction because of van der Waals forces.
+
 contact
 :	More surface area of contact results in more friction. For example, sled runners reduce surface area of contact and thus reduce friction.
+
 materials
 :	There is a coefficient of friction (denoted by `mu`) for every combination of two materials. The friction associated with steel & wood is different from the friction associated with steel & ice, for example.
+
 normal force
 :	A greater normal force results in more friction. This means that heavier objects will experience more friction, and it also means that pressing down on an object from above will increase friction.
 
@@ -588,18 +602,25 @@ Throughout history, people have tried to explain the cosmos and the motion of ce
 
 ancient Greeks
 :	The Earth is stationary at the centre of the universe (geocentric model). The stars move on the inside of a huge crystal sphere. The Sun, Moon, and stars have different motion, so they move on different spheres. There retrograde motion of Mars is baffling.
+
 Pythagoras
 :	There are eight crystal spheres, each on its own axis.
+
 Aristotle
 :	Actually, there has to be 54 spheres.
+
 Ptolemy
 :	The earth isn't at the _exact_ centre of the universe. It's sightly off.
+
 Copernicus
 :	The Sun is at the centre of the universe (heliocentric model), and the Earth and other planets revolve around it. The motion of the Earth explains the apparent motion of the stars.
+
 Galileo
 :	Galileo confirmed the heliocentric model using the telescope. He observed the moons of Jupiter and the phases of Venus. He still predicted circular orbits.
+
 Brahe
 :	Brahe measured astronomical positions with great precision. He observed a comet that followed an elliptical path, not a circular one.
+
 Kepler
 :	Kepler analyzed Brahe's data. He made three conclusions, known as Kepler's laws of planetary motion:
 
@@ -1064,8 +1085,10 @@ The universal wave equation is
 
 propagation speed (`v`)
 :	the speed of the wave, measured in metres per second (m/s)
+
 frequency (`f`)
 :	the number of cycles completed in one second, measured in hertz (Hz)
+
 wavelength (`lambda`)
 :	the length of one cycle in the wave, measured in metres (m)
 
@@ -1075,8 +1098,10 @@ We also have a few other equations for dealing with period:
 
 number of cycles (`N`)
 :	the number of cycles completed during a time interval (unitless)
+
 time interval (`∆t`)
 :	a specific duration of time, measured in seconds (s)
+
 period (`T`)
 :	the time it takes for one cycle to be completed, measured in seconds (s); wavelength is the spatial length, period is the temporal length
 
@@ -1138,14 +1163,19 @@ There are six main properties of light that should be explained by a theory of l
 
 linear propagation
 :	Light propagates in straight lines. It does not fall and hit the floor.<br>_Particle_: light is composed of very small, fast-moving particles.<br>_Wave_: no good explanation.
+
 diffraction
 :	Light diffracts when it passes through a slit.<br>_Particle_: particles collide with the sides of the slit and scatter.<br>_Wave_: water analogy.
+
 reflection
 :	Light reflects off many surfaces.<br>_Particle_: pool table analogy.<br>_Wave_: water analogy.
+
 refraction
 :	Light refracts when it enters a different medium.<br>_Particle_: the particles move at different speeds in different media.<br>_Wave_: water analogy.
+
 partial reflection & refraction
 :	Window panes reflect part of the incoming light and transmit the rest, depending on the viewing angle.<br>_Particle_: no good explanation.<br>_Wave_: water analogy.
+
 dispersion of white light
 :	White light disperses into the colours of the rainbow when it passes through a prism.<br>_Particle_: different colours of light are made of particles of slightly different mass (red is heavy, violet is less heavy).<br>_Wave_: each colour is a wave with a different wavelength (red is long, violet is short).
 

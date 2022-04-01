@@ -27,13 +27,12 @@ done
 shift $(( $OPTIND -1 ))
 
 perl -C0 -pe \
-'s/^::\t(.+)$/:\t<p>$1<\/p>/;'\
 "$([[ -n "$math" ]] && echo \
 's/^(> )?\t([^\t].*)/$1\<p\ style=\"text-align:center\"\>$2\<\/p\>/;'\
 )"\
 's/^([-+*]{2,5}) /"\t" x (length($1) - 1) . substr($1, 0, 1) . $"/e;'\
 's/^((\d+\.){1,2})(\d+\. )/"\t" x ($1 =~ tr!.!!) . $3/e;' | \
-pandoc -f markdown+mmd_title_block+ascii_identifiers-intraword_underscores+compact_definition_lists -t html5 \
+pandoc -f markdown+mmd_title_block+ascii_identifiers-intraword_underscores -t html5 \
 -S $([[ -n "$standalone" ]] && echo -s ) "$@" \
 $([[ -n "$math" && -n "$standalone" ]] && echo --mathjax=\"https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_HTMLorMML.js\" ) | \
 perl -C0 -pe \

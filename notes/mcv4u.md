@@ -878,8 +878,10 @@ These lines may or may not intersect. In `RR^2`, their are three cases:
 
 collinear (`infty`)
 :	The two lines are equal. Formally, `AA t\ EE p` such that `vec r = vec s`. This implies that `vec m = kvec n`, meaning the direction vectors are scalar multiples of each other. The initial points need not be equal, but each must lie on the other line: there must exist values of _t_ and _s_ such that `vec s_0 = vec r` and `vec r_0 = vec s`. There are `infty` points of intersection.
+
 parallel (0)
 :	The two lines are parallel, so `vec m = kvec n`, but they are not collinear. For all combinations of values of _t_ and _p_, `vec r != vec s`. The lines never intersect.
+
 nonparallel (1)
 :	All other systems fall into this category. The lines are nonparallel, so `vec m != kvec n`. There is exactly one point of intersection.
 
@@ -979,8 +981,10 @@ They may or may not intersect. In `RR^3`, there are three cases:
 
 coplanar (`oo`)
 :	The line lies on the plane. Formally, `AA t\ EE r EE s` such that `vec r_"L" = vec r_Pi`. This implies that `vec m`, `vec u`, and `vec v` are coplanar, therefore `vec m * vec u xx vec v = 0`, _and_ that the position `vec a` lies on the plane. There are `oo` points of intersection.
+
 parallel (0)
 :	The line and the plane are parallel, so the three direction vectors are coplanar as before, but the position vector `vec a` does _not_ lie on the plane. For all combinations of values of _t_, _r_, and _s_, we have `vec r_"L" != vec r_Pi`. There are zero points of intersection.
+
 nonparallel (1)
 :	All other systems fall into this category. The line and the plane are not parallel, so the three direction vectors are not coplanar. There is exactly one point of intersection.
 
@@ -1024,8 +1028,10 @@ They may or may not intersect. In `RR^3`, there are three cases:
 
 coplanar (`oo`)
 :	The two planes are equal. This implies that `vec n_A = kvec n_B`, meaning the normal vectors are scalar multiples of each other. It also implies that `vec n * (vec r_(0,A) - vec r_(0,B)) = 0`, where `vec n` is either of the normal vectors (a vector joining the two initial points is parallel to the plane) . There are `oo` points of intersection.
+
 parallel (0)
 :	The two planes are parallel, so `vec n_A = kvec n_B`, but they are not coplanar. Unlike before, `vec n * (vec r_(0,A) - vec r_(0,B)) != 0`. The planes never intersect.
+
 nonparallel (`oo`)
 :	All other systems fall into this category. The planes are nonparallel, so `vec n_A != kvec n_B`. There is a _line_ of intersection -- not just a point.
 
