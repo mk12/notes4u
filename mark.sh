@@ -30,8 +30,6 @@ perl -C0 -pe \
 "$([[ -n "$math" ]] && echo \
 's/^(> )?\t([^\t].*)/$1\<p\ style=\"text-align:center\"\>$2\<\/p\>/;'\
 )"\
-'s/^([-+*]{2,5}) /"\t" x (length($1) - 1) . substr($1, 0, 1) . $"/e;'\
-'s/^((\d+\.){1,2})(\d+\. )/"\t" x ($1 =~ tr!.!!) . $3/e;' | \
 pandoc -f markdown+ascii_identifiers -t html5 \
 -S $([[ -n "$standalone" ]] && echo -s ) "$@" \
 $([[ -n "$math" && -n "$standalone" ]] && echo --mathjax=\"https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_HTMLorMML.js\" ) | \
@@ -45,9 +43,3 @@ perl -C0 -pe \
 's/\<\/?code\>/\`/g;'\
 )"\
 's/^([^`]*)ºC/$1\<span class=\"degree\"\>º\<\/span\>C/g;'
-
-# 's/\b-(?![\s-])(.+?)(?<![\s-\\])-\b/\~\~$1\~\~/g;'\
-# 's/\<pre\>\<code\>/\<pre\>/g;'\
-# 's/\<\/code\>\<\/pre\>/\<\/pre\>/g;'\
-# 's/\<pre\>/\<p\ style=\"text-align:center\"\>/g;'\
-# 's/\<\/pre\>/\<\/p\>/g;'\
