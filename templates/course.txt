@@ -1,0 +1,12 @@
+title=Mitchell Kember | <!-- ###course-code### -->
+header:course-nav-snippet.html
+footer:course-nav-snippet.html
+
+header=\
+<h1 id="course-heading">
+	<span class="course-title"><!-- ###course### --></span>
+	<span class="double-slash">//</span>
+	<span class="course-code"><!-- ###course-code### --></span>
+</h1>
+
+bottom-nav=<nav id="toc"><!-- ###course-toc### --></nav>
