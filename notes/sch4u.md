@@ -5,16 +5,16 @@ This course is made up of five units. _Equilibrium_ is the most difficult; _orga
 In this unit, you'll learn about how energy is transferred during chemical reactions (thermochemistry) and how fast that happens (reaction rate). Here are a few terms that you should be familiar with:
 
 chemistry
-:	the study of matter and its transformations
+:   the study of matter and its transformations
 
 thermochemistry
-:	the study of energy changes that accompany physical or chemical transformations
+:   the study of energy changes that accompany physical or chemical transformations
 
 thermal energy
-:	a form of kinetic energy that results from the motion of the molecules possessed by an object
+:   a form of kinetic energy that results from the motion of the molecules possessed by an object
 
 chemical system
-:	a set of reactants and products under study, usually represented by a chemical equation
+:   a set of reactants and products under study, usually represented by a chemical equation
 
 ## Energy changes
 
@@ -52,19 +52,19 @@ Going the other way is exothermic:
 
 Heat, mass, specific heat capacity, and temperature are related by
 
-	`q = mc∆T`.
+    `q = mc∆T`.
 
 heat (`q`)
-:	the amount of thermal energy that has been transferred between a system and its surroundings, measured in joules (J)
+:   the amount of thermal energy that has been transferred between a system and its surroundings, measured in joules (J)
 
 mass (`m`)
-:	the mass of the object, measured in grams (g)
+:   the mass of the object, measured in grams (g)
 
 specific heat capacity (`c`)
-:	the heat required to raise the temperature of 1 g of a substance by 1 ºC, measured in joules per gram per degree Celsius (J/gºC); see pages 301 and 799 of the textbook for `c` values of common substances
+:   the heat required to raise the temperature of 1 g of a substance by 1 ºC, measured in joules per gram per degree Celsius (J/gºC); see pages 301 and 799 of the textbook for `c` values of common substances
 
 temperature (`T`)
-:	a measure of the average kinetic energy of the particles in an object, measured in degrees Celsius (ºC)
+:   a measure of the average kinetic energy of the particles in an object, measured in degrees Celsius (ºC)
 
 > The `∆T` term should be calculated by subtracting the lower temperature from the higher temperature to ensure that `q` is always positive.
 
@@ -74,11 +74,11 @@ If 25.6 g of aluminum absorbs 0.5571 kJ of heat and its temperature rises to 42.
 
 We can rewrite `q=mc∆T` as `q=mc(T_2-T_1)`. Rearranging this gives us
 
-	`T_1 = T_2 - q/(mc)`,
+    `T_1 = T_2 - q/(mc)`,
 
 and, making sure to convert heat from kilojoules to joules so that it matches the specific heat unit, we can substitute our givens:
 
-	`T_1 = 42.6\ "ºC" - (0.5571\ "kJ")/((25.6\ "g")(0.900\ "J/gºC")) = 18.4\ "ºC"`.
+    `T_1 = 42.6\ "ºC" - (0.5571\ "kJ")/((25.6\ "g")(0.900\ "J/gºC")) = 18.4\ "ºC"`.
 
 ## Enthalpy
 
@@ -86,16 +86,16 @@ The enthalpy (`H`) of a system is an important quantity studied by chemists. It 
 
 We don't use enthalpy in our calculations, but we do use enthalpy _change_:
 
-	`∆H = n∆H_x`.
+    `∆H = n∆H_x`.
 
 enthalpy change (`∆H`)
-:	the energy absorbed from or released to the surroundings when a system's reactants react to form products, measured in kilojoules (kJ)
+:   the energy absorbed from or released to the surroundings when a system's reactants react to form products, measured in kilojoules (kJ)
 
 moles (`n`)
-:	the molar amount of the substance in question (the system)
+:   the molar amount of the substance in question (the system)
 
 molar enthalpy (`∆H_x`)
-:	the enthalpy change associated with one mole of the substance, measured in kilojoules per mole (kJ/mol); the subscript is a letter or combination of letters that indicate the type of change that is occurring (ex: `∆H_"sol"`, `∆H_"vap"`, `∆H_"fr"`); see pages 307 and 799--800 of the textbook for molar enthalpy values of various substances
+:   the enthalpy change associated with one mole of the substance, measured in kilojoules per mole (kJ/mol); the subscript is a letter or combination of letters that indicate the type of change that is occurring (ex: `∆H_"sol"`, `∆H_"vap"`, `∆H_"fr"`); see pages 307 and 799--800 of the textbook for molar enthalpy values of various substances
 
 > `∆H` and `∆H_x` are usually measured in kilojoules (or sometimes megajoules), but when they are placed in an equation with `q`, which is measured in joules, they all must be converted to the same unit.
 
@@ -107,7 +107,7 @@ What amount of ethylene glycol (in moles) would vaporize while absorbing 200.0 k
 
 We can rearrange `∆H = n∆H_"vap"` and substitute:
 
-	`n = (∆H)/(∆H_"vap") = (200.0\ "kJ")/(58.8\ "kJ/mol") = 3.40\ "mol"`.
+    `n = (∆H)/(∆H_"vap") = (200.0\ "kJ")/(58.8\ "kJ/mol") = 3.40\ "mol"`.
 
 ## Calorimetry
 
@@ -119,11 +119,11 @@ Enthalpy change cannot be measured directly. Instead, the heat added to or lost 
 
 The magnitude of the system's enthalpy change is equal to the heat transferred to or from the surroundings:
 
-	`|∆H_"system"| = q_"surroundings"`.
+    `|∆H_"system"| = q_"surroundings"`.
 
 Keeping in mind that the left side refers to the system and the right side refers to the surroundings, we can rewrite this as
 
-	`n|∆H_x| = mc∆T`.
+    `n|∆H_x| = mc∆T`.
 
 ### Example
 
@@ -131,15 +131,15 @@ Keeping in mind that the left side refers to the system and the right side refer
 
 First, we can find the amount of urea in terms of moles by divided by the molar mass of NH~2~CONH~2(s)~:
 
-	`n = m/M = (10.0\ "g")/(60.07\ "g/mol") = 0.16647\ "mol"`.
+    `n = m/M = (10.0\ "g")/(60.07\ "g/mol") = 0.16647\ "mol"`.
 
 Now we can rearrange `n|∆H_"sol"|=mc∆T` to
 
-	`|∆H_"sol"| = (mc∆T)/n`,
+    `|∆H_"sol"| = (mc∆T)/n`,
 
 and substitute the known variables, giving us
 
-	`|∆H_"sol"| = ((150\ "g")(4.18\ "J/gºC")(20.4\ "ºC" - 16.7\ "ºC"))/(0.16647\ "mol") = 13.9\ "kJ/mol"`.
+    `|∆H_"sol"| = ((150\ "g")(4.18\ "J/gºC")(20.4\ "ºC" - 16.7\ "ºC"))/(0.16647\ "mol") = 13.9\ "kJ/mol"`.
 
 Since the temperature decreased in the surroundings, this was an _endothermic_ reaction, and the molar enthalpy of solution for urea has the positive value of 13.9 kJ/mol.
 
@@ -149,25 +149,25 @@ A thermochemical equation is an equation that includes enthalpy change. There ar
 
 energy term
 
-:	Include `∆H` as a term in the equation on the left side for endothermic reactions and on the right side for exothermic reactions.
+:   Include `∆H` as a term in the equation on the left side for endothermic reactions and on the right side for exothermic reactions.
 
-	C~6~H~12~O~6(g)~ + 6 O~2(g)~ → 6 CO~2(g)~ + 6 H~2~O~(g)~ + 2820 kJ
+        C~6~H~12~O~6(g)~ + 6 O~2(g)~ → 6 CO~2(g)~ + 6 H~2~O~(g)~ + 2820 kJ
 
 enthalpy change value
 
-:	Add the value of `∆H` to the end of the equation (negative if exothermic, positive if endothermic).
+:   Add the value of `∆H` to the end of the equation (negative if exothermic, positive if endothermic).
 
-	C~6~H~12~O~6(g)~ + 6 O~2(g)~ → 6 CO~2(g)~ + 6 H~2~O~(g)~, `∆H = -2820\ "kJ"`
+        C~6~H~12~O~6(g)~ + 6 O~2(g)~ → 6 CO~2(g)~ + 6 H~2~O~(g)~, `∆H = -2820\ "kJ"`
 
 molar enthalpy of reaction
 
-:	Write only the value of `∆H_x` (no equation), including the chemical formula of the substance with the unit.
+:   Write only the value of `∆H_x` (no equation), including the chemical formula of the substance with the unit.
 
-	`∆H_"comb" = -2820\ "kJ/mol"` C~6~H~12~O~6~
+        `∆H_"comb" = -2820\ "kJ/mol"` C~6~H~12~O~6~
 
 potential energy diagram
 
-:	A potential energy diagram is a graphical representation of energy transfer, with `E_p` on the vertical axis and "Reaction Progress" on the horizontal axis, reactants on one line and products on another, and an arrow joining the two labelled with the enthalpy change. See page 318 of the textbook for examples.
+:   A potential energy diagram is a graphical representation of energy transfer, with `E_p` on the vertical axis and "Reaction Progress" on the horizontal axis, reactants on one line and products on another, and an arrow joining the two labelled with the enthalpy change. See page 318 of the textbook for examples.
 
 ## Hess's law type 1
 
@@ -175,7 +175,7 @@ Some reactions' enthalpy changes are difficult to measure, usually because they 
 
 The net changes in the properties of a system are independent of the way the system changes from the initial state to the final state. We can apply this like so: if a set of component reactions add up to equal a target reaction, then the components' enthalpy changes must add up to equal the target's enthalpy change:
 
-	`∆H_"target" = sum ∆H_"known"`.
+    `∆H_"target" = sum ∆H_"known"`.
 
 > The enthalpy change symbols in this equation have subscripts, but they don't represent molar enthalpies; they are measured in kJ, not kJ/mol.
 
@@ -183,17 +183,17 @@ The net changes in the properties of a system are independent of the way the sys
 
 What is the enthalpy change for the formation of two moles of nitrogen monoxide given the following reference equations?
 
-	½ N~2(g)~ + O~2(g)~ → NO~2(g)~, `∆H_1 = 34\ "kJ"`
-	½ O~2(g)~ + NO~(g)~ → NO~2(g)~, `∆H_2 = -56\ "kJ"`
+    ½ N~2(g)~ + O~2(g)~ → NO~2(g)~, `∆H_1 = 34\ "kJ"`
+    ½ O~2(g)~ + NO~(g)~ → NO~2(g)~, `∆H_2 = -56\ "kJ"`
 
 First, we should identify our target equation: N~2(g)~ + O~2(g)~ → 2 NO~(g)~. We need one mole of N~2~ on the left side, so we need to multiply the first reference equation by 2. We need two moles of NO on the right side, so we must multiply the second equation by −2 (multiplying by a negative flips the equation). Remember to multiply the `∆H` values as well.
 
-	N~2(g)~ + ~~2~~ O~2(g)~ → ~~2 NO~2(g)~~~, `∆H_1 = 68\ "kJ"`
-	~~2 NO~2(g)~~~ → ~~O~2(g)~~~ + 2 NO~(g)~, `∆H_2 = 112\ "kJ"`
+    N~2(g)~ + ~~2~~ O~2(g)~ → ~~2 NO~2(g)~~~, `∆H_1 = 68\ "kJ"`
+    ~~2 NO~2(g)~~~ → ~~O~2(g)~~~ + 2 NO~(g)~, `∆H_2 = 112\ "kJ"`
 
 When we add these, nitrogen dioxide and one mole of oxygen cancel out, leaving us with our target equation with the correct enthalpy change:
 
-	N~2(g)~ + O~2(g)~ → 2 NO~(g)~, `∆H = 180\ "kJ"`.
+    N~2(g)~ + O~2(g)~ → 2 NO~(g)~, `∆H = 180\ "kJ"`.
 
 ## Hess's law type 2
 
@@ -201,21 +201,21 @@ The second way to apply Hess's law uses standard enthalpies of formation.
 
 formation reaction
 
-:	a reaction in which a compound is formed from its elements
+:   a reaction in which a compound is formed from its elements
 
-	C~(s)~ + O~2(g)~ → CO~2(g)~, `∆H=-393.5\ "kJ"`
+        C~(s)~ + O~2(g)~ → CO~2(g)~, `∆H=-393.5\ "kJ"`
 
 standard enthalpy of formation (`∆H_"f"`)
 
-:	the molar enthalpy for a formation reaction (expressed per mole of product produced) where the elements are in their standard states and the reaction occurs at SATP (25 ºC and 101.3 kPa)
+:   the molar enthalpy for a formation reaction (expressed per mole of product produced) where the elements are in their standard states and the reaction occurs at SATP (25 ºC and 101.3 kPa)
 
-	`∆H_"f" = -393.5\ "kJ/mol"` CO~2(g)~
+    `∆H_"f" = -393.5\ "kJ/mol"` CO~2(g)~
 
 > The standard enthalpy of formation for elements already in their standard states is zero.
 
 We can calculate the enthalpy change of a reaction using the individual `∆H_"f"` values of the products and reactants:
 
-	`∆H = sum n∆H_"f(products)" - sum n∆H_"f(reactants)"`.
+    `∆H = sum n∆H_"f(products)" - sum n∆H_"f(reactants)"`.
 
 ### Example
 
@@ -223,7 +223,7 @@ What is the enthalpy change for CH~4(g)~ + 2 O~2(g)~ → CO~2(g)~ + 2 H~2~O~(l)~
 
 Begin with the formula given above. Substitute moles and standard enthalpies of formation for each product and reactant:
 
-	`∆H = [(1\ "mol")(-393.5\ "kJ/mol") + (2\ "mol")(-285.8\ "kJ/mol")]`<br>`- [(1\ "mol")(-74.4\ "kJ/mol") + 0]`.
+    `∆H = [(1\ "mol")(-393.5\ "kJ/mol") + (2\ "mol")(-285.8\ "kJ/mol")]`<br>`- [(1\ "mol")(-74.4\ "kJ/mol") + 0]`.
 
 This evaluates to −890.7 kJ. Notice that the answer is in kJ, not kJ/mol.
 
@@ -231,16 +231,16 @@ This evaluates to −890.7 kJ. Notice that the answer is in kJ, not kJ/mol.
 
 The reaction rate is the rate at which a reactant is consumed or a product is produced. We can determine it by measuring changes in colour, conductivity, pressure, volume, pH, mass, density, or concentration of a reactant or product over a series of time intervals. We usually use concentration:
 
-	`r = (∆c)/(∆t)`.
+    `r = (∆c)/(∆t)`.
 
 reaction rate (`r`)
-:	the rate at which the reaction progresses, measured in moles per litre-second (mol/L·s); it is negative when the substance is being consumed and positive when the substance is being produced
+:   the rate at which the reaction progresses, measured in moles per litre-second (mol/L·s); it is negative when the substance is being consumed and positive when the substance is being produced
 
 concentration change (`∆c`)
-:	the change in the concentration of the substance in question, measured in moles per litre (mol/L)
+:   the change in the concentration of the substance in question, measured in moles per litre (mol/L)
 
 time interval (`∆t`)
-:	the time that passes during the concentration change, measured in seconds (s)
+:   the time that passes during the concentration change, measured in seconds (s)
 
 Given the rate for one reactant or product in an equation, we can use stoichiometry to determine the rates for the other reactants and products.
 
@@ -291,21 +291,21 @@ When a chemical system is in dynamic equilibrium, there is a balance between for
 
 solubility equilibrium
 
-:	Dissolved and undissolved solute are in equilibrium; the forward process (dissolving) is occurring at the same rate as the reverse process (precipitating).
+:   Dissolved and undissolved solute are in equilibrium; the forward process (dissolving) is occurring at the same rate as the reverse process (precipitating).
 
-	CO~2(g)~ ⇌ CO~2(aq)~ (carbon dioxide in a pop can)
+        CO~2(g)~ ⇌ CO~2(aq)~ (carbon dioxide in a pop can)
 
 phase equilibrium
 
-:	Pure substances in different physical states are in equilibrium; opposite state changes are occurring at the same rate.
+:   Pure substances in different physical states are in equilibrium; opposite state changes are occurring at the same rate.
 
-	H~2~O~(s)~ ⇌ H~2~O~(l)~ (ice/water slush at 0 ºC)
+        H~2~O~(s)~ ⇌ H~2~O~(l)~ (ice/water slush at 0 ºC)
 
 chemical reaction equilibrium
 
-:	Reactants and products are in equilibrium; the forward reaction and the reverse reaction are occurring at the same rate.
+:   Reactants and products are in equilibrium; the forward reaction and the reverse reaction are occurring at the same rate.
 
-	CaCO~3(s)~ ⇌ CaO~(s)~ + CO~2(g)~
+        CaCO~3(s)~ ⇌ CaO~(s)~ + CO~2(g)~
 
 There are three conditions that must be met in order to achieve dynamic equilibrium in a chemical system:
 
@@ -331,7 +331,7 @@ In the reaction H~2(g)~ + I~2(g)~ ⇌ 2 HI~(g)~, 2.00 mol of H~2(g)~ and 3.00 mo
 
 Here is the **I** calculation for H~2(g)~ (you don't need to show all of them):
 
-	`c = n/V = (2.00\ "mol")/(1.00\ "L") = 2.00\ "mol/L"`.
+    `c = n/V = (2.00\ "mol")/(1.00\ "L") = 2.00\ "mol/L"`.
 
 Let `x` represent the absolute value of the change in concentration of H~2(g)~. This can also be written more concisely like this: let `x = |∆["H"_2]|`.
 
@@ -345,8 +345,8 @@ Let `x` represent the absolute value of the change in concentration of H~2(g)~. 
 
 The **E** value for I~2(g)~ is known to be 1.30 mol/L, but our table tells us that it is also `x` subtracted from 3.00 mol/L, therefore we can set them equal:
 
-	`1.30\ "mol/L" = 3.00\ "mol/L" - x`,
-	`x = 1.70\ "mol/L"`.
+    `1.30\ "mol/L" = 3.00\ "mol/L" - x`,
+    `x = 1.70\ "mol/L"`.
 
 By substituting 1.70 mol/L for `x` into the **E** expressions for H~2(g)~ and HI~(g)~, we can easily find their concentrations at equilibrium as well (0.30 mol/L and 3.40 mol/L respectively).
 
@@ -354,7 +354,7 @@ By substituting 1.70 mol/L for `x` into the **E** expressions for H~2(g)~ and HI
 
 In the reaction `a` A + `b` B ⇌ `c` C + `d` D where lowercase letters are coefficients and uppercase letters are chemical formulas, the equilibrium constant (`K`) can be calculated using the equilibrium law expression:
 
-	`K = ("[C]"^c"[D]"^d)/("[A]"^a"[B]"^b)`.
+    `K = ("[C]"^c"[D]"^d)/("[A]"^a"[B]"^b)`.
 
 In words, the equilibrium constant is calculated by multiplying the **E** values of the products together, each with its coefficient as an exponent, doing the same thing with the reactants, and dividing. The products and reactions _must be gaseous or aqueous_ -- if they are solid or liquid, do not include them in the expression (make sure to leave a 1 in the numerator if there are no products left). The concentrations are all in mol/L, but `K` is unitless.
 
@@ -363,17 +363,17 @@ It is easy to calculate `K` given all the equilibrium concentrations, but you ma
 The equilibrium constant depends on temperature. Its value indicates the relative amounts of reactants and products at equilibrium:
 
 `K ~~ 1 => "[products]" ~~ "[reactants]"`
-:	significant amounts of products and reactants
+:   significant amounts of products and reactants
 
 `K > 10^4 => "[products]" ≫ "[reactants]"`
-:	very high yield; equilibrium favours products
+:   very high yield; equilibrium favours products
 
 `K < 10^-4 => "[products]" ≪ "[reactants]"`
-:	very low yield; equilibrium favours reactants
+:   very low yield; equilibrium favours reactants
 
 The equilibrium constant for the reverse reaction is the reciprocal because the reactants and products swap places in the fraction:
 
-	`K_"reverse" = 1/K_"forward"`.
+    `K_"reverse" = 1/K_"forward"`.
 
 ### Example
 
@@ -381,7 +381,7 @@ At 2000 ºC, the equilibrium constant for 2 CO~2(g)~ ⇌ 2 CO~(g)~ + O~2(g)~ is 
 
 First we can calculate **I** for CO~2(g)~:
 
-	`c = n/V = (1.50\ "mol")/(3.0\ "L") = 0.50\ "mol/L"`.
+    `c = n/V = (1.50\ "mol")/(3.0\ "L") = 0.50\ "mol/L"`.
 
 Let `x` represent the absolute value of the change in concentration of O~2(g)~.
 
@@ -393,27 +393,27 @@ Let `x` represent the absolute value of the change in concentration of O~2(g)~.
 
 Now we set up the equilibrium law expression:
 
-	`K = (["CO"]^2["O"_2])/(["CO"_2]^2) = ((2x)^2(x))/((0.50 - 2x)^2)`.
+    `K = (["CO"]^2["O"_2])/(["CO"_2]^2) = ((2x)^2(x))/((0.50 - 2x)^2)`.
 
 Before going any further, we can check to see if `K` is small enough for us to use a time-saving approximation. This is called the **hundred rule**: if the smallest initial concentration divided by `K` is greater than 100, you can drop out `x` where it is added or subtracted. Using CO~2(g)~ this gives us
 
-	`["CO"_2]_"initial"/K = 0.50/(6.4xx10^-7) = 781250`,
+    `["CO"_2]_"initial"/K = 0.50/(6.4xx10^-7) = 781250`,
 
 and `781250 > 100`, therefore `K` is very small and `0.50 - 2x ~~ 0.50`. Now we can continue solving for `x` (notice that we got rid of the `x` in the denominator, but we have to keep the exponent):
 
-	`K = ((2x)^2(x))/((0.50 - 2x)^2) ~~ ((2x)^2(x))/(0.50^2) = (4x^3)/0.25 = 16x^3`.
+    `K = ((2x)^2(x))/((0.50 - 2x)^2) ~~ ((2x)^2(x))/(0.50^2) = (4x^3)/0.25 = 16x^3`.
 
 Since `K = 16x^3`,
 
-	`x = root3(K/16) = root3((6.4xx10^-7)/16) = 0.00342`.
+    `x = root3(K/16) = root3((6.4xx10^-7)/16) = 0.00342`.
 
 Now that we know the value of `x`, we can finally find the equilibrium concentration of carbon monoxide (two significant digits):
 
-	`["CO"] = 2x\ "mol/L" = 0.0068\ "mol/L"`.
+    `["CO"] = 2x\ "mol/L" = 0.0068\ "mol/L"`.
 
 > In problems where you can't use the approximation and the fraction doesn't work out to a perfect square, you must use the quadratic formula to solve for x (there are two solutions, so cross out the one that will result in negative concentrations):
 >
-> 	`x = (-b +- sqrt(b^2 - 4ac))/(2a)`.
+>     `x = (-b +- sqrt(b^2 - 4ac))/(2a)`.
 
 ## Reaction quotient
 
@@ -435,7 +435,7 @@ In the reaction N~2(g)~ + 3 H~2(g)~ ⇌ 2 NH~3(g)~, the equilibrium constant is 
 
 Calculate the reaction quotient using the equilibrium law expression:
 
-	`Q = (["NH"_3]^2)/(["N"_2] ["H"_2]^3) = ((0.20\ "mol/L")^2)/((0.10\ "mol/L")(0.30\ "mol/L")^3) = 15`.
+    `Q = (["NH"_3]^2)/(["N"_2] ["H"_2]^3) = ((0.20\ "mol/L")^2)/((0.10\ "mol/L")(0.30\ "mol/L")^3) = 15`.
 
 Since `Q > K`, the system is not at equilibrium. There is too much NH~3(g)~ and not enough N~2(g)~ and H~2(g)~, so the system must shift left to reach equilibrium.
 
@@ -446,13 +446,13 @@ When a chemical system at equilibrium is disturbed by a change in a property, th
 Here are a few examples of applying LCP to predict how a system will respond when certain properties are changed:
 
 concentration
-:	When the concentration of a reactant is increased, the system will shift right to consume some of it; when it is decreased, the system will shift left to replace some of it. The same thing happens with products, but in the opposite direction.
+:   When the concentration of a reactant is increased, the system will shift right to consume some of it; when it is decreased, the system will shift left to replace some of it. The same thing happens with products, but in the opposite direction.
 
 temperature
-:	When temperature is increased and the reaction is endothermic, the system will shift right to consume some of the energy; when it is decreased, the system will shift left to replace some of the energy. The same thing happens with exothermic reactions, but in the opposite direction.
+:   When temperature is increased and the reaction is endothermic, the system will shift right to consume some of the energy; when it is decreased, the system will shift left to replace some of the energy. The same thing happens with exothermic reactions, but in the opposite direction.
 
 gas volume
-:	When volume is increased (or pressure is decreased), the system will shift to the side that has a greater amount of gaseous entities to restore some pressure. When volume is decreased (or pressure is increased), the system will shift to the side that has a lesser amount of gaseous entities to relieve some pressure. The number of gaseous entities is the total number of moles of gas. If both sides have the same number, the system _does not shift_ after changes in volume or pressure.
+:   When volume is increased (or pressure is decreased), the system will shift to the side that has a greater amount of gaseous entities to restore some pressure. When volume is decreased (or pressure is increased), the system will shift to the side that has a lesser amount of gaseous entities to relieve some pressure. The number of gaseous entities is the total number of moles of gas. If both sides have the same number, the system _does not shift_ after changes in volume or pressure.
 
 The following properties affect the reaction rate, but since they affect forward and reverse rates equally, they do _not_ disturb equilibrium and LCP does not apply:
 
@@ -464,7 +464,7 @@ The last one needs more explaining. If an inert gas is added to the system while
 
 ### Example
 
-	N~2~O~4(g)~ + 57.2 kJ ⇌ 2 NO~2(g)~
+    N~2~O~4(g)~ + 57.2 kJ ⇌ 2 NO~2(g)~
 
 | Change            | Shift |
 |:------------------|:-----:|
@@ -483,7 +483,7 @@ The last one needs more explaining. If an inert gas is added to the system while
 
 The Haber process, discovered by Fritz Haber in the early 1900s,  is the industrialized production of ammonia gas via
 
-	N~2(g)~ + 3 H~2(g)~ ⇌ 2 NH~3(g)~ + 92 kJ.
+    N~2(g)~ + 3 H~2(g)~ ⇌ 2 NH~3(g)~ + 92 kJ.
 
 This reaction is extremely slow at room temperature; in order to increase the rate, we must raise the temperature. The catalyst Fe~2~O~3(s)~ is also used to speed it up, but this itself requires a high temperature to be efficient. The problem here is that LCP tells us that an increase in temperature will cause the system to shift left, lowering the yield.
 
@@ -499,11 +499,11 @@ A solution that has the maximum amount of solute dissolved in it is saturated. I
 
 The solubility product constant (`K_"sp"`) is a special case of the equilibrium constant. It applies only to saturated solutions of solutes that have very low solubilities. Here is an example of one such solubility equilibrium:
 
-	BaSO~4(s)~ ⇌ Ba^2+^~(aq)~ + SO~4~^2−^~(aq)~.
+    BaSO~4(s)~ ⇌ Ba^2+^~(aq)~ + SO~4~^2−^~(aq)~.
 
 The fact that this system is at equilibrium means that barium sulfate is dissolving at the same rate that its ions are precipitating. These processes cancel each other out, so there is no overall change in the  concentrations of the ions. Since we don't include solids or liquids in the equilibrium law expression, the solubility product constant for this system is
 
-	`K_"sp" = ["Ba"^(2+)]\["SO"_4^(2-)]`.
+    `K_"sp" = ["Ba"^(2+)]\["SO"_4^(2-)]`.
 
 The name solubility _product_ constant should help you remember to only include the products (the ions). Smaller values of `K_"sp"` indicate lower solubilities because the position of the equilibrium is further left. Greater values indicate higher solubilities.
 
@@ -517,19 +517,19 @@ What is the solubility of silver carbonate in g/100 mL if the solubility product
 
 First, write the solubility equilibrium equation:
 
-	Ag~2~CO~3(s)~ ⇌ 2 Ag^+^~(aq)~ + CO~3~^2−^~(aq)~.
+    Ag~2~CO~3(s)~ ⇌ 2 Ag^+^~(aq)~ + CO~3~^2−^~(aq)~.
 
 Now we can write the equilibrium law expression:
 
-	`K_"sp" = ["Ag"^+]^2["CO"_3^(2-)]`.
+    `K_"sp" = ["Ag"^+]^2["CO"_3^(2-)]`.
 
 Let `x` represent the equilibrium concentration of Ag~2~CO~3(aq)~. Note that Ag~2~CO~3(aq)~ is not in the equilibrium equation above, but it represents the entire right side, which is just the dissociated version of the aqueous compound. You can use the coefficients in the equation to write the concentration of each ion in terms of `x`.
 
-	`8.8xx10^-12 = (2x)^2(x) = 4x^3`.
+    `8.8xx10^-12 = (2x)^2(x) = 4x^3`.
 
 Now we can solve for `x`, which represents the molar solubility of silver carbonate:
 
-	`x = root3((8.8xx10^-12)/4) = 1.3xx10^-4\ "mol/L"`.
+    `x = root3((8.8xx10^-12)/4) = 1.3xx10^-4\ "mol/L"`.
 
 ## Predicting precipitation
 
@@ -545,17 +545,17 @@ If 25.0 mL of 0.010 mol/L silver nitrate is mixed with 25.0 mL of 0.0050 mol/L p
 
 First, write the balanced double displacement reaction, consulting the solubility guidelines to figure out which products are aqueous:
 
-	AgNO~3(aq)~ + KCl~(aq)~ ⇌ KNO~3(aq)~ + AgCl~(s)~.
+    AgNO~3(aq)~ + KCl~(aq)~ ⇌ KNO~3(aq)~ + AgCl~(s)~.
 
 We can calculate the concentrations of the silver ion and chloride ion using `V_1c_1 = V_2c_2`. The concentration of silver ions is equivalent to the concentration of AgNO~3(aq)~ once it is diluted to 50.0 mL, which we calculate to be 0.0050 mol/L. Using the same method, the concentration of chloride ions is 0.0025 mol/L.
 
 Now we can write the solubility equilibrium equation:
 
-	AgCl~(s)~ ⇌ Ag^+^~(aq)~ + Cl^−^~(aq)~.
+    AgCl~(s)~ ⇌ Ag^+^~(aq)~ + Cl^−^~(aq)~.
 
 And calculate the trial ion product:
 
-	`Q = ["Ag"^+]\["Cl"^-] = (0.0050\ "mol/L")(0.0025\ "mol/L") = 1.3xx10^-5`.
+    `Q = ["Ag"^+]\["Cl"^-] = (0.0050\ "mol/L")(0.0025\ "mol/L") = 1.3xx10^-5`.
 
 Since `Q > K_"sp"`, the answer is yes -- a precipitate _will_ form.
 
@@ -571,7 +571,7 @@ What is the molar solubility of lead(II) chromate in a 0.10 mol/L solution of so
 
 First, write the solubility equilibrium equation of the compound whose concentration is _not_ given:
 
-	PbCrO~4(s)~ ⇌ Pb^2+^~(aq)~ + CrO~4~^2−^~(aq)~.
+    PbCrO~4(s)~ ⇌ Pb^2+^~(aq)~ + CrO~4~^2−^~(aq)~.
 
 Let `x` represent `|∆["CrO"_4^(2-)]|`. Now we can make our ICE table:
 
@@ -585,15 +585,15 @@ Notice that we ignore lead chromate because it's a solid, not an aqueous solutio
 
 Now we can write the solubility product constant expression:
 
-	`K_"sp" = ["Pb"^(2+)]\["CrO"_4^(2-)] = (x)(x + 0.10)`.
+    `K_"sp" = ["Pb"^(2+)]\["CrO"_4^(2-)] = (x)(x + 0.10)`.
 
 Since `0.10/K_"sp" > 100`, we can drop `x` where it is added or subtracted:
 
-	`K_"sp" = (x)(x + 0.10) ~~ x(0.10)`.
+    `K_"sp" = (x)(x + 0.10) ~~ x(0.10)`.
 
 Now we can solve for `x`, which represents the molar solubility of lead(II) chromate in a 0.10 mol/L solution of sodium chromate:
 
-	`x = K_"sp"/0.10 = (2.3xx10^-13)/0.10 = 2.3xx10^-12\ "mol/L"`.
+    `x = K_"sp"/0.10 = (2.3xx10^-13)/0.10 = 2.3xx10^-12\ "mol/L"`.
 
 ## Entropy & spontaneity
 
@@ -603,7 +603,7 @@ Entropy (`S`) is a measure of randomness or disorder. One analogy for this is a 
 
 We can determine the entropy change associated with a reaction using **standard entropy**, which is defined as the entropy of one mole of a substance at SATP, measured in joules per mole kelvin (J/mol·K). The equation is very similar to Hess's law type 2:
 
-	`∆S = sum n S_"products" - sum n S_"reactants"`.
+    `∆S = sum n S_"products" - sum n S_"reactants"`.
 
 > Unlike standard enthalpies of formation, the standard entropy for elements already in their standard states is not zero.
 
@@ -629,7 +629,7 @@ Enthalpy change and entropy change together determine whether a reaction is spon
 
 Gibbs free energy (`G`) is energy that is available to do useful work. It can be thought of as a balance between enthalpy and entropy that accurately represents their roles in determining the spontaneity of a reaction. The change in free energy is defined by
 
-	`∆G = ∆H - T∆S`.
+    `∆G = ∆H - T∆S`.
 
 The sign of `∆G` tells us whether the reaction is spontaneous:
 
@@ -656,7 +656,7 @@ Some substances, such are water, are amphoteric (or amphiprotic). This means the
 
 In the following reaction, HCl~(aq)~ is the acid and H~2~O~(l)~ is the base because the former gives its proton to the latter:
 
-	HCl~(aq)~ + H~2~O~(l)~ → Cl^−^~(aq)~ + H~3~O^+^~(aq)~.
+    HCl~(aq)~ + H~2~O~(l)~ → Cl^−^~(aq)~ + H~3~O^+^~(aq)~.
 
 In the reverse reaction, Cl^−^~(aq)~ would be the base, so it is called the _conjugate base_. Similarly, H~3~O^+^~(aq)~ would be the acid in the reverse reaction, so it is the _conjugate acid_. A conjugate acid--base pair is a pair of substances whose formulas differ by a single proton. In the above reaction, the conjugate acid--base pairs are HCl/Cl^−^ and H~2~O/H~3~O^+^.
 
@@ -664,15 +664,15 @@ In the reverse reaction, Cl^−^~(aq)~ would be the base, so it is called the _c
 
 Water is never just a collection of H~2~O molecules. This reaction occurs:
 
-	H~2~O~(l)~ + H~2~O~(l)~ ⇌ H~3~O^+^~(aq)~ + OH^−^~(aq)~.
+    H~2~O~(l)~ + H~2~O~(l)~ ⇌ H~3~O^+^~(aq)~ + OH^−^~(aq)~.
 
 Only a couple molecules per billion react in this way (equilibrium favours reactants), but it is still significant. It can also be written more succinctly:
 
-	H~2~O~(l)~ ⇌ H^+^~(aq)~ + OH^−^~(aq)~.
+    H~2~O~(l)~ ⇌ H^+^~(aq)~ + OH^−^~(aq)~.
 
 The `K` value for this reaction is called the _ion product constant_ for water:
 
-	`K_"w" = ["H"^+]\["OH"^-]`.
+    `K_"w" = ["H"^+]\["OH"^-]`.
 
 For pure water at SATP, the value of `K_"w"` is 1.0 × 10^−14^, and the concentration of both ions is 1.0 × 10^−7^ mol/L. This self-ionization occurs in all aqueous solutions. Given the hydrogen concentration, you can always find the hydroxide concentration using this formula (and vice versa).
 
@@ -688,15 +688,15 @@ What are the hydrogen and hydroxide ion concentrations in a 0.16 mol/L barium hy
 
 First, we can write the dissociation equation (with a normal arrow because barium hydroxide is a strong base -- more on that in the next section):
 
-	Ba(OH)~2(aq)~ → Ba^2+^~(aq)~ + 2 OH^−^~(aq)~.
+    Ba(OH)~2(aq)~ → Ba^2+^~(aq)~ + 2 OH^−^~(aq)~.
 
 We can find the hydroxide ion concentration using stoichiometry:
 
-	`["OH"^-] = 2["Ba(OH)"_2] = 2(0.16\ "mol/L") = 0.32\ "mol/L"`.
+    `["OH"^-] = 2["Ba(OH)"_2] = 2(0.16\ "mol/L") = 0.32\ "mol/L"`.
 
 Now, since `K_"w" = ["H"^+]\["OH"^-]`,
 
-	`["H"^+] = K_"w"/(["OH"^-]) = (1.0xx10^-14)/(0.32\ "mol/L") = 3.1xx10^-14\ "mol/L"`.
+    `["H"^+] = K_"w"/(["OH"^-]) = (1.0xx10^-14)/(0.32\ "mol/L") = 3.1xx10^-14\ "mol/L"`.
 
 ## Strong acids & bases
 
@@ -710,7 +710,7 @@ When we are working with strong acids and bases, it is easy to find the concentr
 
 pH is a unitless number used to convey the acidity of a substance without having to deal with numbers in scientific notation. You must use an _extra significant digit_ when calculating it (and drop a digit when you are going from pH to concentration). You can go between pH and concentration with these equivalent formulae:
 
-	`"pH" = - log["H"^+] qquad <=> qquad ["H"^+] = 10^(-"pH")`.
+    `"pH" = - log["H"^+] qquad <=> qquad ["H"^+] = 10^(-"pH")`.
 
 The pH value tells us about the acidity of a solution:
 
@@ -720,11 +720,11 @@ The pH value tells us about the acidity of a solution:
 
 pOH is just like pH, except it uses the hydroxide ion concentration:
 
-	`"pOH" = - log["OH"^-] qquad <=> qquad ["OH"^-] = 10^(-"pOH")`.
+    `"pOH" = - log["OH"^-] qquad <=> qquad ["OH"^-] = 10^(-"pOH")`.
 
 If you have one of pH and pOH, you can easily find the other (at SATP):
 
-	`"pH" + "pOH" = 14`.
+    `"pH" + "pOH" = 14`.
 
 ### Example
 
@@ -732,19 +732,19 @@ Calculate the concentrations of H^+^~(aq)~ and OH^−^~(aq)~ and the values of p
 
 H~2~SO~4(aq)~ is a strong acid, so finding the H^+^~(aq)~ concentration is trivial:
 
-	`["H"^+] = 2["H"_2"SO"_4] = 2(0.042\ "mol/L") = 0.084\ "mol/L"`.
+    `["H"^+] = 2["H"_2"SO"_4] = 2(0.042\ "mol/L") = 0.084\ "mol/L"`.
 
 Now we can use this to calculate pH. Remembering to keep an extra significant digit, we have
 
-	`"pH" = - log["H"^+] = - log(0.084\ "mol/L") = 1.08`,
+    `"pH" = - log["H"^+] = - log(0.084\ "mol/L") = 1.08`,
 
 and then we can calculate pOH with
 
-	`"pOH" = 14 - "pH" = 14 - 1.08 = 12.9`.
+    `"pOH" = 14 - "pH" = 14 - 1.08 = 12.9`.
 
 From that we can get the hydroxide ion concentration, remembering to drop the extra significant digit:
 
-	`["OH"^-] = 10^(-"pOH") = 10^(-12.9) = 1.2xx10^-13\ "mol/L"`.
+    `["OH"^-] = 10^(-"pOH") = 10^(-12.9) = 1.2xx10^-13\ "mol/L"`.
 
 > We could have also used the ion product constant for water to get from H^+^ concentration to OH^−^ concentration, but this way is faster.
 
@@ -752,23 +752,23 @@ From that we can get the hydroxide ion concentration, remembering to drop the ex
 
 Strong acids ionize quantitatively, so we use a normal, one-directional arrow. Weak acids do not, so we have to use an equilibrium arrow. Acetic acid is an example of a weak acid:
 
-	CH~3~COOH~(aq)~ ⇌ H^+^~(aq)~ + CH~3~COO^−^~(aq)~.
+    CH~3~COOH~(aq)~ ⇌ H^+^~(aq)~ + CH~3~COO^−^~(aq)~.
 
 Since the equilibrium position is not the same for all weak acids, we have to care about the equilibrium constant, which in this case we call the _acid ionization constant_. For the general reaction HA~(aq)~ ⇌ H^+^~(aq)~ + A^−^~(aq)~, the acid ionization constant is
 
-	`K_"a" = (["H"^+]\["A"^-])/(["HA"])`.
+    `K_"a" = (["H"^+]\["A"^-])/(["HA"])`.
 
 Similarly, weak bases have B~(aq)~ + H~2~O~(l)~ ⇌ HB^+^~(aq)~ + OH^−^~(aq)~ as their general reaction. The _base ionization constant_ is
 
-	`K_"b" = (["HB"^+]\["OH"^-])/(["B"])`.
+    `K_"b" = (["HB"^+]\["OH"^-])/(["B"])`.
 
 Another way of representing the position of the equilibrium for weak acids is _percent ionization_:
 
-	`p = (["H"^+])/(["HA"]) xx 100% qquad <=> qquad ["H"^+] = ["HA"]\(p/(100%))`.
+    `p = (["H"^+])/(["HA"]) xx 100% qquad <=> qquad ["H"^+] = ["HA"]\(p/(100%))`.
 
 The following equation is true for all conjugate acid--base pairs:
 
-	`K_"a"K_"b" = K_"w"`.
+    `K_"a"K_"b" = K_"w"`.
 
 ### Example
 
@@ -776,11 +776,11 @@ Given a solution of 0.082 mol/L phosphoric acid (a weak acid) whose pH is 1.68 u
 
 Finding the hydrogen ion concentration is easy enough:
 
-	`["H"^+] = 10^(-"pH")\ "mol/L" = 10^-1.68\ "mol/L" = 0.021\ "mol/L"`.
+    `["H"^+] = 10^(-"pH")\ "mol/L" = 10^-1.68\ "mol/L" = 0.021\ "mol/L"`.
 
 We can use this to find the percent ionization:
 
-	`p = (["H"^+])/(["HA"]) xx 100% = (0.02089\ "mol/L")/(0.082\ "mol/L") xx 100% = 26%`.
+    `p = (["H"^+])/(["HA"]) xx 100% = (0.02089\ "mol/L")/(0.082\ "mol/L") xx 100% = 26%`.
 
 Our dissociation reaction is H~3~PO~4(aq)~ ⇌ H~2~PO~4~^−^~(aq)~ + H^+^~(aq)~. We need to use an ICE table to find the equilibrium concentrations.
 
@@ -792,20 +792,20 @@ Our dissociation reaction is H~3~PO~4(aq)~ ⇌ H~2~PO~4~^−^~(aq)~ + H^+^~(aq)~
 
 Now we can calculate the acid ionization constant:
 
-	`K_"a" = (["H"^+]\["A"^-])/(["HA"]) = ((0.02089\ "mol/L")(0.02089\ "mol/L"))/(0.06111\ "mol/L") = 7.1xx10^-3`.
+    `K_"a" = (["H"^+]\["A"^-])/(["HA"]) = ((0.02089\ "mol/L")(0.02089\ "mol/L"))/(0.06111\ "mol/L") = 7.1xx10^-3`.
 
 ## Salt hydrolosis
 
 A salt is an ionic compound (cation and anion). Salts are very soluble in water. When they dissolve, the ions sometimes react with water and affect the pH of the solution; we call this _hydrolosis_. To determine how a salt affects pH, you must look at each of its ions individually:
 
 neutral (does not affect pH)
-:	Cation of a strong base (e.g., Na^+^ from NaOH) or anion of a strong acid (e.g., Cl^−^ from HCl). Most of these ions are from group 1, 2, or 7, but don't forget polyatomic ions like SO~4~^2−^ from H~2~SO~4~.
+:   Cation of a strong base (e.g., Na^+^ from NaOH) or anion of a strong acid (e.g., Cl^−^ from HCl). Most of these ions are from group 1, 2, or 7, but don't forget polyatomic ions like SO~4~^2−^ from H~2~SO~4~.
 
 acidic (decreases pH)
-:	Conjugate acid of a weak base (e.g., NH~4~^+^, the conjugate acid of NH~3~) or metal cation with high charge density (Al^3+^ and Fe^3+^ are the main ones).
+:   Conjugate acid of a weak base (e.g., NH~4~^+^, the conjugate acid of NH~3~) or metal cation with high charge density (Al^3+^ and Fe^3+^ are the main ones).
 
 basic (increases pH)
-:	Conjugate base of a weak acid (e.g., CH~3~COO^−^, the conjugate base of CH~3~COOH).
+:   Conjugate base of a weak acid (e.g., CH~3~COO^−^, the conjugate base of CH~3~COOH).
 
 When a salt contains both a cation that decreases pH and an anion that increases pH, we must compare their ionization constants to see which one overwhelms the other:
 
@@ -817,13 +817,13 @@ When a salt contains an amphoteric ion (it can donate a proton _or_ accept one, 
 
 There is one more special case: oxides. A _metal oxide_ always reacts with water to form a basic solution because one of the products is the hydroxide ion. Don't write a dissociation equation -- just react the compound with water directly. For example:
 
-	CaO~(s)~ + H~2~O~(l)~ → Ca^2+^~(aq)~ + 2 OH^−^~(aq)~.
+    CaO~(s)~ + H~2~O~(l)~ → Ca^2+^~(aq)~ + 2 OH^−^~(aq)~.
 
 A _nonmetal oxide_ always reacts with water to form an acidic solution because one of the products is the hydronium ion. For example:
 
-	CO~2(g)~ + H~2~O~(l)~ → H~2~CO~3(aq)~
+    CO~2(g)~ + H~2~O~(l)~ → H~2~CO~3(aq)~
 
-	H~2~CO~3(aq)~ + H~2~O~(l)~ → HCO~3~^−^~(aq)~ + H~3~O^+^~(aq)~.
+    H~2~CO~3(aq)~ + H~2~O~(l)~ → HCO~3~^−^~(aq)~ + H~3~O^+^~(aq)~.
 
 ### Example
 
@@ -831,19 +831,19 @@ Will (NH~4~)~2~SO~4(s)~ produce a neutral, acidic, or basic solution when dissol
 
 First, we write the dissociation reaction, indicating that the salt dissolves completely with a one-directional arrow:
 
-	(NH~4~)~2~SO~4(s)~ → 2 NH~4~^+^~(aq)~ + SO~4~^2−^~(aq)~.
+    (NH~4~)~2~SO~4(s)~ → 2 NH~4~^+^~(aq)~ + SO~4~^2−^~(aq)~.
 
 Since NH~4~^+^ is the conjugate acid of a weak base, we know that it will cause the solution to become acidic:
 
-	NH~4~^+^~(aq)~ + H~2~O~(l)~ ⇌ NH~3(aq)~ + H~3~O^+^~(aq)~, `K_"a" = 5.8xx10^-10`.
+    NH~4~^+^~(aq)~ + H~2~O~(l)~ ⇌ NH~3(aq)~ + H~3~O^+^~(aq)~, `K_"a" = 5.8xx10^-10`.
 
 However, SO~4~^2−^~(aq)~ will also affect the pH: it is the conjugate base of a weak acid, so it will cause the solution to become basic:
 
-	SO~4~^2−^~(aq)~ + H~2~O~(l)~ ⇌ HSO~4~^−^~(aq)~ + OH^−^~(aq)~.
+    SO~4~^2−^~(aq)~ + H~2~O~(l)~ ⇌ HSO~4~^−^~(aq)~ + OH^−^~(aq)~.
 
 We can't just look up the ionization constant like we did for NH~4~^+^~(aq)~ because it isn't on the list, at least not directly. What _is_ on the list is `K_"a2"` for H~2~SO~4(aq)~, which is the same as `K_"a"` for HSO~4(aq)~. We can use this to find the ionization constant for the conjugate base of HSO~4~^−^~(aq)~, which is SO~4~^2−^~(aq)~. Since `K_"a"K_"b" = K_"w"`,
 
-	`K_"b" = K_"w"/K_"a2" = (1.0xx10^-14)/(1.0xx10^-2) = 1.0xx10^-12`.
+    `K_"b" = K_"w"/K_"a2" = (1.0xx10^-14)/(1.0xx10^-2) = 1.0xx10^-12`.
 
 Now we have our `K_"a"` and `K_"b"` values for NH~4~^+^~(aq)~ and SO~4~^2−^~(aq)~. They are 5.8 × 10^−10^ and 1.0 × 10^−12^ respectively. Since `K_"a" > K_"b"`, dissolving this salt in water will result in an _acidic_ solution.
 
@@ -865,7 +865,7 @@ The pH of the equivalence point depends on the type of titration:
 
 After completing a titration, we can calculate the missing piece of information using
 
-	`V_"a"c_"a" = V_"b"c_"b"`,
+    `V_"a"c_"a" = V_"b"c_"b"`,
 
 where the known quantities are the concentration of titrant, the volume of titrant added, and the original volume of sample. The unknown variable is usually the concentration of the sample.
 
@@ -878,23 +878,23 @@ In a titration, 10.00 mL of 0.200 mol/L HCl~(aq)~ is titrated with standardized 
 
 In the beginning, the amount of HCl~(aq)~ is given by
 
-	`n = Vc = (0.0100\ "L")(0.200\ "mol/L") = 2.00\ "mmol"`,
+    `n = Vc = (0.0100\ "L")(0.200\ "mol/L") = 2.00\ "mmol"`,
 
 and we can calculate pH with
 
-	`"pH" = -log["H"^+] = -log(0.200\ "mol/L") = 0.6990`.
+    `"pH" = -log["H"^+] = -log(0.200\ "mol/L") = 0.6990`.
 
 When 2.00 mL of NaOH~(aq)~ has been added, there is
 
-	`n = Vc = (0.00200\ "L")(0.250\ "mol/L") = 0.500\ "mmol"`
+    `n = Vc = (0.00200\ "L")(0.250\ "mol/L") = 0.500\ "mmol"`
 
 of NaOH~(aq)~, and since each hydroxide ion reacts with each hydrogen ion, the amount of H^+^~(aq)~ that remains is
 
-	`2.00\ "mmol" - 0.500\ "mmol" = 1.50\ "mmol"`,
+    `2.00\ "mmol" - 0.500\ "mmol" = 1.50\ "mmol"`,
 
 and the pH of the solution at this point is
 
-	`"pH" = -log["H"^+] = -log((1.50\ "mmol")/(10.00\ "mL" + 2.00\ "mL")) = 0.9031`.
+    `"pH" = -log["H"^+] = -log((1.50\ "mmol")/(10.00\ "mL" + 2.00\ "mL")) = 0.9031`.
 
 ## Buffer solutions
 
@@ -904,7 +904,7 @@ This solution can be prepared directly, but it also occurs during a titration of
 
 For example, a buffer solution containing H~2~CO~3(aq)~ and HCO~3~^−^~(aq)~ can be represented by the following equilibrium equation:
 
-	H~2~CO~3(aq)~ ⇌ H^+^~(aq)~ + HCO~3~^−^~(aq)~.
+    H~2~CO~3(aq)~ ⇌ H^+^~(aq)~ + HCO~3~^−^~(aq)~.
 
 Suppose we add HCl~(aq)~ to this solution. Normally, this would decrease the pH of the solution significantly. With a buffer, though, it will not change very much because the added hydrogen ions cause the equilibrium to shift left according to LCP.
 
@@ -928,26 +928,26 @@ An _organic_ compound is a molecular compound with a backbone consisting of carb
 Organic compounds that contain only carbon atoms and hydrogen atoms are called hydrocarbons. There are three types:
 
 aliphatic hydrocarbons
-:	chains and rings (includes alkanes, alkenes, and alkynes)
+:   chains and rings (includes alkanes, alkenes, and alkynes)
 
 aromatic hydrocarbons
-:	rings with alternating single and double bonds (benzene)
+:   rings with alternating single and double bonds (benzene)
 
 hydrocarbon derivatives
-:	hydrocarbons with atoms other than carbon and hydrogen
+:   hydrocarbons with atoms other than carbon and hydrogen
 
 ## Aliphatics & aromatics
 
 There are three types of aliphatic hydrocarbons:
 
 alkane (C~_n_~H~2*n*+2~)
-:	only has single bonds (e.g., methane, CH~4~)
+:   only has single bonds (e.g., methane, CH~4~)
 
 alkene (C~_n_~H~2*n*~)
-:	has one or more carbon--carbon double bonds (e.g., ethene, C~2~H~4~)
+:   has one or more carbon--carbon double bonds (e.g., ethene, C~2~H~4~)
 
 alkyne (C~_n_~H~2*n*−2~)
-:	has one or more triple bonds (e.g., ethyne, C~2~H~2~)
+:   has one or more triple bonds (e.g., ethyne, C~2~H~2~)
 
 Alkanes are _saturated_ because their carbon atoms have the maximum number of bonds (four each). Alkenes and alkynes are _unsaturated_, and so they are more reactive. All aliphatics are generally nonpolar molecules, and the larger ones (longer chains) have higher boiling points than the smaller ones.
 
@@ -972,19 +972,19 @@ Gemoetric isomers, also called _cis--trans_ isomers, apply only to alkenes with 
 We don't usually use molecular formulas to refer to organic compounds because they give so little information. Instead, we use one of the following representations:
 
 expanded molecular formula
-:	a large molecular formula where each individual carbon is shown and is bonded to its adjacent symbols; brackets indicate side branches; for example, the EMF of 2,2-dimethylbutane is CH~3~C(CH~3~)~2~CH~2~CH~3~
+:   a large molecular formula where each individual carbon is shown and is bonded to its adjacent symbols; brackets indicate side branches; for example, the EMF of 2,2-dimethylbutane is CH~3~C(CH~3~)~2~CH~2~CH~3~
 
 structural model
-:	a three-dimensional model, either the _ball and stick_ model or the _space-filling_ model; see page 11 of the textbook for examples
+:   a three-dimensional model, either the _ball and stick_ model or the _space-filling_ model; see page 11 of the textbook for examples
 
 complete structural diagram
-:	a two-dimensional representation of the compound that shows every atom and the bond lines between them
+:   a two-dimensional representation of the compound that shows every atom and the bond lines between them
 
 condensed structural diagram
-:	like complete diagrams, but hydrogen atoms don't have to be shown individually: write CH~3~ instead of C with —H three times
+:   like complete diagrams, but hydrogen atoms don't have to be shown individually: write CH~3~ instead of C with —H three times
 
 line structural diagram
-:	the most compact representation; there is an implied carbon atom at any point where the line ends or bends (vertices and termini), and hydrogen atoms are inferred
+:   the most compact representation; there is an implied carbon atom at any point where the line ends or bends (vertices and termini), and hydrogen atoms are inferred
 
 ![Complete, condensed, and line structural diagrams for methylbutane](images/structural-diagrams.svg)
 
@@ -1002,19 +1002,19 @@ As long as you can do each step individually, putting it all together isn't that
 ### Main chain
 
 alkane
-:	[_prefix_]ane, where _prefix_ represents the number of carbon atoms in the main chain (see the table below)
+:   [_prefix_]ane, where _prefix_ represents the number of carbon atoms in the main chain (see the table below)
 
 alkene
-:	\#-[_prefix_]ene, #,#-[_prefix_]**di**ene, #,#,#-[_prefix_]**tri**ene, etc., where each # represents the location of a double bond and the part in bold indicates the number of double bonds
+:   \#-[_prefix_]ene, #,#-[_prefix_]**di**ene, #,#,#-[_prefix_]**tri**ene, etc., where each # represents the location of a double bond and the part in bold indicates the number of double bonds
 
 alkyne
-:	like alkenes, but ending in _yne_ instead of _ene_
+:   like alkenes, but ending in _yne_ instead of _ene_
 
 alicyclic
-:	like alkanes/alkenes/alkynes, but add _cyclo_ before the prefix
+:   like alkanes/alkenes/alkynes, but add _cyclo_ before the prefix
 
 aromatic
-:	always _benzene_
+:   always _benzene_
 
 | Prefix | atoms |
 |:------:|:--:|
@@ -1073,7 +1073,7 @@ An _oxidation_ reaction results in the loss of electrons and an increase in oxid
 
 The reaction between solid zinc and aqueous copper(II) nitrate is a single displacement reaction:
 
-	Zn~(s)~ + Cu(NO~3~)~2(aq)~ → Cu~(s)~ + Zn(NO~3~)~2(aq)~.
+    Zn~(s)~ + Cu(NO~3~)~2(aq)~ → Cu~(s)~ + Zn(NO~3~)~2(aq)~.
 
 There are two half-reactions within this, and when we add them together, we get the redox reaction:
 
@@ -1107,7 +1107,7 @@ What is the oxidation state of nitrogen in hydrazine?
 
 Hydrazine is N~2~H~4~, and we know that hydrogen in a molecule has an oxidation number of +1. This is a neutral compound, so the oxidation numbers must add up to zero. Mathematically, this means that
 
-	`2x + 4(+1) = 0 qquad => qquad 2x = -4  qquad => qquad x = -2`.
+    `2x + 4(+1) = 0 qquad => qquad 2x = -4  qquad => qquad x = -2`.
 
 The oxidation number of nitrogen in hydrazine is therefore −2.
 
@@ -1151,7 +1151,7 @@ A galvanic cell is an electrochemical cell that derives electrical energy from a
 
 A galvanic cell can be represented succinctly with _standard cell notation_:
 
-	cathode\ **|**\ electrolyte\ **||**\ electrolyte\ **|**\ anode.
+    cathode\ **|**\ electrolyte\ **||**\ electrolyte\ **|**\ anode.
 
 ![Galvanic cell diagram](images/galvanic-cell.jpg)
 
@@ -1166,11 +1166,11 @@ The key thing to remember with all of this is the associations:
 
 Some redox equations are spontaneous; they will proceed without outside assistance. The others are spontaneous in the backward direction; they require an electrical current to be applied to force the reaction forward. The electric potential difference, or voltage, of a redox reaction is
 
-	`∆E^0 = E_"r(cathode)"^0 - E_"r(anode)"^0`.
+    `∆E^0 = E_"r(cathode)"^0 - E_"r(anode)"^0`.
 
 The `E_"r"^0` values come from the redox table titled "Relative Strengths of Oxidizing and Reducing Agents" on page 805 of the textbook. All `E_"r"^0` values are to the standard hydrogen electrode:
 
-	2 H^+^~(aq)~ + 2 e^−^ → H~2(g)~, `E_"r"^0 = 0.00\ "V"`.
+    2 H^+^~(aq)~ + 2 e^−^ → H~2(g)~, `E_"r"^0 = 0.00\ "V"`.
 
 The value of `∆E^0` tells us about spontaneity:
 
@@ -1183,7 +1183,7 @@ You can tell that a galvanic cell is spontaneous right away by checking if the s
 
 Corrosion is a redox reaction in which a pure metal reacts with substances in the environment, returning to an ore-like state. Aluminum, for example, rapidly oxidizes in air:
 
-	4 Al~(s)~ + 3 O~2(g)~ → 2 Al~2~O~3(s)~.
+    4 Al~(s)~ + 3 O~2(g)~ → 2 Al~2~O~3(s)~.
 
 This the surface of the Al~(s)~ in a thin layer of Al~2~O~3(s)~, preventing any further corrosion on the inside -- oxygen cannot get past the aluminum oxide to corrode the pure aluminum.
 
@@ -1204,59 +1204,59 @@ There are two methods for preventing corrosion. _Protective coating_ is just wha
 This unit will take everything you _thought_ you knew about atomic theory and turn it on its head. You'll learn about the modern model of the atom and the history that preceded it, as well as the structure and interactions of molecules. Here are some terms you should know:
 
 emission spectrum
-:	a series of bright lines of light produced or emitted by a gas that has been excited by, for example, heat or electricity
+:   a series of bright lines of light produced or emitted by a gas that has been excited by, for example, heat or electricity
 
 absorption spectrum
-:	a series of dark lines on a continuous spectrum produced by placing a gas between the continuous spectrum source and the observer
+:   a series of dark lines on a continuous spectrum produced by placing a gas between the continuous spectrum source and the observer
 
 quantum
-:	a small, discrete, indivisible quantity
+:   a small, discrete, indivisible quantity
 
 photon
-:	a quantum of light energy
+:   a quantum of light energy
 
 ground state
-:	the lowest possible energy state of an atom
+:   the lowest possible energy state of an atom
 
 excited
-:	describes an atom in which an electron has moved to a higher energy level by absorbing a photon
+:   describes an atom in which an electron has moved to a higher energy level by absorbing a photon
 
 polar bond
-:	a bond in which there is unequal sharing of electrons
+:   a bond in which there is unequal sharing of electrons
 
 nonpolar bond
-:	a bond in which there is equal sharing of electrons
+:   a bond in which there is equal sharing of electrons
 
 ionic bond
-:	extremely polar bond where electrons are transferred
+:   extremely polar bond where electrons are transferred
 
 polar molecule
-:	a molecule containing asymmetrical polar bonds that do not cancel out
+:   a molecule containing asymmetrical polar bonds that do not cancel out
 
 nonpolar molecule
-:	a molecule containing symmetrical polar bonds that cancel out
+:   a molecule containing symmetrical polar bonds that cancel out
 
 ## Early history
 
 Our understanding of the atom has evolved through the centuries thanks to contributions made by many different people. Here are some of the most important contributors:
 
 Democritus
-:	Democritus proposed that matter could be divided until an indivisible particle was reached: the atom.
+:   Democritus proposed that matter could be divided until an indivisible particle was reached: the atom.
 
 John Dalton
-:	Dalton devised with an atomic theory with six postulates: matter is composed of indestructible, indivisible atoms that are the same for one element but different from other elements.
+:   Dalton devised with an atomic theory with six postulates: matter is composed of indestructible, indivisible atoms that are the same for one element but different from other elements.
 
 J.J. Thompson
-:	Thompson discovered subatomic particles -- the atom is a positively charged sphere with negatively charged particles embedded within it. This is called the raisin-bun model.
+:   Thompson discovered subatomic particles -- the atom is a positively charged sphere with negatively charged particles embedded within it. This is called the raisin-bun model.
 
 Sir Ernest Rutherford
-:	Rutherford concluded that the atom is a nucleus consisting of positively charged protons, surrounded mostly by empty space, some of which is occupied by negatively charged electrons (solar-system model).
+:   Rutherford concluded that the atom is a nucleus consisting of positively charged protons, surrounded mostly by empty space, some of which is occupied by negatively charged electrons (solar-system model).
 
 Sir James Chadwick
-:	Chadwick suggested the existence of neutrons within the nucleus.
+:   Chadwick suggested the existence of neutrons within the nucleus.
 
 Niels Bohr
-:	Bohr experimented with hydrogen gas and its emission and absorption spectra. He concluded that the atom has specific allowable energy levels, called stationery states. Electrons only emit energy when they transfer from one energy level to another. He used Max Planck's quantum theory to support his own.
+:   Bohr experimented with hydrogen gas and its emission and absorption spectra. He concluded that the atom has specific allowable energy levels, called stationery states. Electrons only emit energy when they transfer from one energy level to another. He used Max Planck's quantum theory to support his own.
 
 ## Quantum numbers
 
@@ -1265,29 +1265,29 @@ We don't know for sure where an electron is at any given point in time. Electron
 There are four _quantum numbers_ that we use designate an electron. Each electron in an atom is uniquely described by four values for these numbers:
 
 principal (`n`)
-:	a positive integer representing the electron's energy level
+:   a positive integer representing the electron's energy level
 
 azimuthal (`l`)
-:	a nonnegative integer from zero to `n - 1` describing shape of the orbital and identifying the sublevel within the energy level; commonly denoted by letters _s_, _p_, _d_, and _f_\  for the values 0, 1, 2, and 3, respectively
+:   a nonnegative integer from zero to `n - 1` describing shape of the orbital and identifying the sublevel within the energy level; commonly denoted by letters _s_, _p_, _d_, and _f_\  for the values 0, 1, 2, and 3, respectively
 
 magnetic (`m_l`)
-:	an integer from `-l` to `+l` representing the orientation of the orbital
+:   an integer from `-l` to `+l` representing the orientation of the orbital
 
 spin (`m_s`)
-:	either −½ or +½, representing the direction of the electron's spin
+:   either −½ or +½, representing the direction of the electron's spin
 
 All four numbers identify one electron. The first three identify an orbital, which contains up to 2 electrons. The first two identify the energy level and sublevel, which contains up to `2l + 1` orbitals each containing up to 2 electrons. The principal quantum number alone identifies the main energy level, which contains up to `2n^2` electrons in total.
 
 There are three rules about filling up electron orbitals:
 
 Aufbau principle
-:	fill lower energy levels (`n`) before moving on to the next energy level
+:   fill lower energy levels (`n`) before moving on to the next energy level
 
 Pauli's exclusion principle
-:	no two electrons have the same four quantum numbers
+:   no two electrons have the same four quantum numbers
 
 Hund's rule
-:	put one electron by itself in each orbital of a sublevel before making pairs
+:   put one electron by itself in each orbital of a sublevel before making pairs
 
 See pages 186--191 of the textbook to learn how to draw energy level diagrams. See pages 192--193 to learn about electron configuration.
 
@@ -1326,26 +1326,26 @@ To draw the molecule, use straight lines for single bonds, double and triple lin
 An intermolecular force is a force of attraction or repulsion between molecules (as opposed to intramolecular forces within a single molecule, such as ionic bonds or covalent bonds). There are three main intermolecular forces, and they are referred to collectively as _van der Waals_ forces. They are all much weaker than intramolecular bonds. They affect melting points and boiling points, surface tension, the shape of the meniscus, capillary action, volatility, and the solubility of substances. There are three main van der Waals forces:
 
 dipole--dipole
-:	a force of attraction between polar molecules due to the simultaneous attraction between a dipole and surrounding dipoles; its strength is dependent on the polarity of the molecule
+:   a force of attraction between polar molecules due to the simultaneous attraction between a dipole and surrounding dipoles; its strength is dependent on the polarity of the molecule
 
 London
-:	the simultaneous attraction of an electron by nuclei within a molecule and by nuclei in adjacent molecules; its strength is directly related to the number of electrons in the molecule
+:   the simultaneous attraction of an electron by nuclei within a molecule and by nuclei in adjacent molecules; its strength is directly related to the number of electrons in the molecule
 
 Hydrogen bonding
-:	the attraction of hydrogen atoms bonded to N, O, or F atoms to a lone pair of electrons of N, O, or F atoms in adjacent molecules; stronger than the dipole--dipole force and the London force
+:   the attraction of hydrogen atoms bonded to N, O, or F atoms to a lone pair of electrons of N, O, or F atoms in adjacent molecules; stronger than the dipole--dipole force and the London force
 
 ## Structure and properties of solids
 
 There are four types of solids. They all form crystals that have definite shape and volume, are virtually incompressible, and do not flow readily. However, properties such as hardness, melting point, mechanical characteristics, and conductivity vary.
 
 ionic
-:	Ionic crystals are formed from a combination of a metal cation and a nonmetal anion, for example NaCl~(s)~. They form a three-dimensional crystal lattice: a regular, repeating pattern in the arrangement of the ions. The positive and negative ions are held together by _strong, directional ionic bonds_. Ionic crystals are hard, brittle, conductive as liquids and in solution (not as solids), and have high melting points.
+:   Ionic crystals are formed from a combination of a metal cation and a nonmetal anion, for example NaCl~(s)~. They form a three-dimensional crystal lattice: a regular, repeating pattern in the arrangement of the ions. The positive and negative ions are held together by _strong, directional ionic bonds_. Ionic crystals are hard, brittle, conductive as liquids and in solution (not as solids), and have high melting points.
 
 metallic
-:	Metallic crystals are formed from metal elements. The metal elements become cations in a three-dimensional arrangement, and they are held together by _strong, nondirectional bonds_ created by the "sea" of mobile electrons. They are shiny, conductive, vary from soft to hard, have varying melting points, and they are malleable, ductile, and flexible. A Rice Krispies square is a good analogy for a metallic crystal: the grains of rice are metal cations, and the marshmallow represents the electron sea.
+:   Metallic crystals are formed from metal elements. The metal elements become cations in a three-dimensional arrangement, and they are held together by _strong, nondirectional bonds_ created by the "sea" of mobile electrons. They are shiny, conductive, vary from soft to hard, have varying melting points, and they are malleable, ductile, and flexible. A Rice Krispies square is a good analogy for a metallic crystal: the grains of rice are metal cations, and the marshmallow represents the electron sea.
 
 molecular
-:	Molecular crystals are formed by nonmetal elements or molecular compounds packed closely together. This three-dimensional arrangement of neutral molecules is held together by _relatively weak intermolecular forces_. Molecular crystals are not very hard, are not conductors, have low melting points, and are packed together as closely as size and shape allows.
+:   Molecular crystals are formed by nonmetal elements or molecular compounds packed closely together. This three-dimensional arrangement of neutral molecules is held together by _relatively weak intermolecular forces_. Molecular crystals are not very hard, are not conductors, have low melting points, and are packed together as closely as size and shape allows.
 
 covalent network
-:	Covalent network crystals are formed from metalloids or carbon. These atoms are all connected in a network of covalent bonds, as if the entire solid was a single molecule. Specifically, the atoms are arranged in a three-dimensional network and are held together by _strong, directional covalent bonds_. These crystals are very hard, insoluble nonconductors, and they have very high melting points. Diamond, one form of C~(s)~, is an example of a covalent network crystal.
+:   Covalent network crystals are formed from metalloids or carbon. These atoms are all connected in a network of covalent bonds, as if the entire solid was a single molecule. Specifically, the atoms are arranged in a three-dimensional network and are held together by _strong, directional covalent bonds_. These crystals are very hard, insoluble nonconductors, and they have very high melting points. Diamond, one form of C~(s)~, is an example of a covalent network crystal.

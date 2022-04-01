@@ -53,7 +53,7 @@ Accuracy is the closeness of a measurement to the actual value. Precision is the
 
 Uncertainty is the amount that a particular measurement could be off by. It can be expressed as _absolute_ uncertainty, like (20.4 ± 0.3) kg, or as _relative_ uncertainty, like 20.4 kg ± 1.5%. Relative uncertainty can be calculated from absolute uncertainty with
 
-	`"RU" = ("experimental uncertainty")/("measured value") xx 100%`.
+    `"RU" = ("experimental uncertainty")/("measured value") xx 100%`.
 
 When adding or subtracting measurements, add up the _absolute_ uncertainties. When doing anything else (multiplication, division, square root, etc.), add up the _relative_ uncertainties.
 
@@ -90,7 +90,7 @@ Now we can make our table. We calculate the components of each vector, and then 
 
 Now we can use the Pythagorean theorem to calculate the magnitude of our resultant vector, rounding off to two significant digits (because 65 and 99 have two):
 
-	`|vec a + vec b| = sqrt(12.32^2 + 128.65^2) = 1.3xx10^2\ "m"`.
+    `|vec a + vec b| = sqrt(12.32^2 + 128.65^2) = 1.3xx10^2\ "m"`.
 
 We can draw another sketch to help with finding the angle. If you draw the largest component first, then you will always get an angle below 45º. If you always do it this way, then you'll know that you've made a mistake if your angle is above 45º.
 
@@ -98,7 +98,7 @@ We can draw another sketch to help with finding the angle. If you draw the large
 
 Now we can use inverse tangent to find theta (opposite over adjacent):
 
-	`theta = tan^-1(12.32/128.65) = 5.5º`.
+    `theta = tan^-1(12.32/128.65) = 5.5º`.
 
 Therefore, the resultant vector `vec a + vec b` is 1.3 × 10^2^ m [N 5.5º E].
 
@@ -107,34 +107,34 @@ Therefore, the resultant vector `vec a + vec b` is 1.3 × 10^2^ m [N 5.5º E].
 Include the following sections in all formal lab reports. Also, make sure to write in past tense and to avoid personal pronouns.
 
 lab info
-:	Include the title, lab partners, and date performed at the top of the first page (don't use a separate title page).
+:   Include the title, lab partners, and date performed at the top of the first page (don't use a separate title page).
 
 purpose
-:	State the purpose in a sentence beginning with the word _to_.
+:   State the purpose in a sentence beginning with the word _to_.
 
 sketch
-:	Draw a sketch of the lab setup.
+:   Draw a sketch of the lab setup.
 
 procedure
-:	Don't copy out the procedure, but indicate where it can be found. If it is a handout, attach it to the end of the lab.
+:   Don't copy out the procedure, but indicate where it can be found. If it is a handout, attach it to the end of the lab.
 
 observations
-:	Use tables and point-form writing.
+:   Use tables and point-form writing.
 
 calculations
-:	Provide a sample calculation for each type of calculation that you did.
+:   Provide a sample calculation for each type of calculation that you did.
 
 graphs
-:	Make your graphs by hand with pencil. Each graph needs a title, labelled axes, a sensible scale (you're safe with 1, 2, 5, or 10), and circled data points. Include a legend if applicable.
+:   Make your graphs by hand with pencil. Each graph needs a title, labelled axes, a sensible scale (you're safe with 1, 2, 5, or 10), and circled data points. Include a legend if applicable.
 
 analysis
-:	Answer the assigned discussion questions.
+:   Answer the assigned discussion questions.
 
 sources of error
-:	List reasonable, significant sources of experimental error and their likely effects on the results.
+:   List reasonable, significant sources of experimental error and their likely effects on the results.
 
 conclusion
-:	Write a brief conclusion that summarizes the results.
+:   Write a brief conclusion that summarizes the results.
 
 # Motion & Dynamics
 
@@ -156,15 +156,15 @@ Acceleration (`vec a`) is the rate of change of velocity per unit of time, usual
 
 There are two important equations that are represented in these two sets of graphs. When we are calculating slopes, we use
 
-	`vec v_"av" = (∆vec d)/(∆t) qquad and qquad vec a_"av" = (∆vec v)/(∆t)`,
+    `vec v_"av" = (∆vec d)/(∆t) qquad and qquad vec a_"av" = (∆vec v)/(∆t)`,
 
 and when we are going the other way by calculating areas, we use the equivalent equations
 
-	`∆vec d = vec v_"av"∆t qquad and qquad ∆vec v = vec a_"av"∆t`.
+    `∆vec d = vec v_"av"∆t qquad and qquad ∆vec v = vec a_"av"∆t`.
 
 We need to identify a couple identities to help us use these two equations. For any variable `x`, we assume that
 
-	`∆x = x_2 - x_1 qquad and qquad x_"av" = (x_1 + x_2)/2`.
+    `∆x = x_2 - x_1 qquad and qquad x_"av" = (x_1 + x_2)/2`.
 
 We now have all we need to solve any motion problem. However, some calculations are so common that it is worth committing them to memory. In the next section, we'll derive a few other, time-saving equations.
 
@@ -172,39 +172,39 @@ We now have all we need to solve any motion problem. However, some calculations 
 
 The first two equations of motion are
 
-	`vec v_"av" = (∆vec d)/(∆t)quad`**(1)**`qquad and qquad vec a_"av" = (∆vec v)/(∆t)quad`**(2)**.
+    `vec v_"av" = (∆vec d)/(∆t)quad`**(1)**`qquad and qquad vec a_"av" = (∆vec v)/(∆t)quad`**(2)**.
 
 If we substitute `∆x = x_2 - x_1` for `∆vec d` and `∆vec v`, we get
 
-	`vec d_2 = vec d_1 + vec v_"av"∆tquad`**(3)**`qquad and qquad vec v_2 = vec v_1 + vec a_"av"∆tquad`**(4)**.
+    `vec d_2 = vec d_1 + vec v_"av"∆tquad`**(3)**`qquad and qquad vec v_2 = vec v_1 + vec a_"av"∆tquad`**(4)**.
 
 If we take `∆vec d = vec v_"av"∆t` and substitute the average of two velocities (initial and final) for `vec v_"av"`, we get
 
-	`∆vec d = (vec v_1 + vec v_2)/2∆tquad`**(5)**.
+    `∆vec d = (vec v_1 + vec v_2)/2∆tquad`**(5)**.
 
 We can substitute equation (4) into this, yielding
 
-	`∆vec d = (vec v_1 + (vec v_1 + vec a_"av"∆t))/2∆t = (2vec v_1 + vec a_"av"∆t)/2∆t`,
+    `∆vec d = (vec v_1 + (vec v_1 + vec a_"av"∆t))/2∆t = (2vec v_1 + vec a_"av"∆t)/2∆t`,
 
 which simplifies to
 
-	`∆vec d = vec v_1∆t + 1/2vec a_"av"(∆t)^2quad`**(6)**.
+    `∆vec d = vec v_1∆t + 1/2vec a_"av"(∆t)^2quad`**(6)**.
 
 If we rearrange equation (4) to isolate `vec v_1` and then substitute _that_ into equation (5), we get
 
-	`∆vec d = vec v_2∆t - 1/2vec a_"av"(∆t)^2quad`**(7)**.
+    `∆vec d = vec v_2∆t - 1/2vec a_"av"(∆t)^2quad`**(7)**.
 
 We can derive one final equation, this time eliminating the one variable that has been present in all the others: time. We begin by rearranging equation (4) to isolate `∆t`, and then we substitute that into equation (5), giving us
 
-	`∆vec d = ((vec v_1 + vec v_2)/2)((vec v_2 - vec v_1)/vec a_"av")`.
+    `∆vec d = ((vec v_1 + vec v_2)/2)((vec v_2 - vec v_1)/vec a_"av")`.
 
 By multiplying the denominators to the other side and recognizing the difference of squares, we get
 
-	`2vec a_"av"∆vec d = vec v_2^2 - vec v_1^2`,
+    `2vec a_"av"∆vec d = vec v_2^2 - vec v_1^2`,
 
 which we can rearrange to get our final equation,
 
-	`vec v_2^2 = vec v_1^2 + 2vec a_"av"∆vec dquad`**(8)**.
+    `vec v_2^2 = vec v_1^2 + 2vec a_"av"∆vec dquad`**(8)**.
 
 There might be a few more equations that we could have derived, but these eight (and rearranged versions of them) should take you a long way.
 
@@ -237,7 +237,7 @@ A frame of reference in which objects obey the law of inertia (velocity does not
 
 If `vec v_"XY"` represents the velocity of X with respect to Y, then
 
-	`vec v_"AB" + vec v_"BC" = vec v_"AC"`.
+    `vec v_"AB" + vec v_"BC" = vec v_"AC"`.
 
 In other words, we can eliminate the B and go straight from A to C, provided we know the velocity of B relative to C. Sometimes you will have to rearrange this equation to solve for a different velocity -- that's about as complicated as these problems get.
 
@@ -248,19 +248,19 @@ An airplane has a heading of 245 km/h [N 17º E], and the wind is coming from [S
 First, we need to familiarize ourselves with airplane terminology:
 
 heading (`vec v_"PA"`)
-:	velocity of the plane with respect to the air
+:   velocity of the plane with respect to the air
 
 wind (`vec v_"AE"`)
-:	velocity of the air with respect to the Earth
+:   velocity of the air with respect to the Earth
 
 course/groundspeed (`vec v_"PE"`)
-:	velocity of the plane with respect to the Earth
+:   velocity of the plane with respect to the Earth
 
 The velocity of the wind is a vector pointing in the direction in which it is going. Since the wind is coming _from_ [S 35º W], it is going _to_ [N 35º E].
 
 Since `vec v_"PE" = vec v_"PA" + vec v_"AE"`, the course is
 
-	`vec v_"PE" = 245\ "km/h [N 17º E]" + 89.0\ "km/h [N 35º E]"`<br>`= 331\ "km/h [N 22º E]"`.
+    `vec v_"PE" = 245\ "km/h [N 17º E]" + 89.0\ "km/h [N 35º E]"`<br>`= 331\ "km/h [N 22º E]"`.
 
 > I didn't show my steps here. You need to draw a sketch and make a table. Refer to the [vectors section](vectors.html) if you don't know how to add vectors.
 
@@ -276,25 +276,25 @@ In our projectile problems, we assume that
 
 All projectile problems can be solved by splitting up original velocity (`vec v_0`) into its horizontal and vertical components with
 
-	`vec v_"h" = |vec v_0|cos theta qquad and qquad vec v_"1,v" = |vec v_0|sin theta`,
+    `vec v_"h" = |vec v_0|cos theta qquad and qquad vec v_"1,v" = |vec v_0|sin theta`,
 
 where `theta` is the direction of the original velocity expressed as an angle above horizontal. These can be used with the equations
 
-	`∆vec d_"h" = vec v_"h"∆t qquad and qquad ∆vec d_"v" = vec v_"1,v"∆t + 1/2vec a(∆t)^2`.
+    `∆vec d_"h" = vec v_"h"∆t qquad and qquad ∆vec d_"v" = vec v_"1,v"∆t + 1/2vec a(∆t)^2`.
 
 The duration of the projectile's flight (`∆t`) is associated with the vertical part. The _range_ (distance to the landing point) is associated with the horizontal part.
 
 Since we physics students don't like doing any more work than absolutely necessary, we often use more specific, time-saving equations. The first equation tells us how long it takes (`∆t`) for the projectile to return to its original altitude (`∆vec d_"v" = 0`). If we let `g = |vec a_"g"|`, then
 
-	`∆t = (2|vec v_0|sin theta)/g`,
+    `∆t = (2|vec v_0|sin theta)/g`,
 
 and the range of this projectile is given by
 
-	`∆vec d_"h" = (|vec v_0|^2sin 2theta)/g`.
+    `∆vec d_"h" = (|vec v_0|^2sin 2theta)/g`.
 
 The next equation doesn't require the projectile to land at its original altitude. It treats the projectile's altitude as a function of its horizontal position. This allows us to find the projectile's vertical position at any particular horizontal position and, using the quadratic formula, go the other way as well. Assuming the projectile starts at the origin and passes through a point (`x`, `y`), then
 
-	`y = (tantheta)x - g/(2|vec v_0|^2cos^2theta)x^2`.
+    `y = (tantheta)x - g/(2|vec v_0|^2cos^2theta)x^2`.
 
 The derivation of these three equations is left as an exercise to the reader.
 
@@ -304,7 +304,7 @@ A soccer ball is kicked at 14.5 m/s [29º a.h.]. Will it make it over a 1.5 m fe
 
 When the ball has gone 5 m forward horizontally, `x = 5` and
 
-	`y = (tan29º)(5\ "m") - (9.80\ "m/s"^2)/(2(14.5\ "m/s")^2cos^2(29º))(5\ "m")^2 = 2.01\ "m"`.
+    `y = (tan29º)(5\ "m") - (9.80\ "m/s"^2)/(2(14.5\ "m/s")^2cos^2(29º))(5\ "m")^2 = 2.01\ "m"`.
 
 Since `2.01\ "m" > 1.5\ "m"`, the answer is yes -- it _will_ clear the fence.
 
@@ -318,7 +318,7 @@ As you can see, the velocity of the object is always a tangent to the circle. Th
 
 We can relate the magnitude of centripetal acceleration to the object's speed, the circle's radius, and the period (time to complete one revolution) or frequency (revolutions per second) with a few equations:
 
-	`a_"c" = v^2/r = (4pi^2r)/T^2 = 4pi^2rf^2`.
+    `a_"c" = v^2/r = (4pi^2r)/T^2 = 4pi^2rf^2`.
 
 ### Example
 
@@ -326,7 +326,7 @@ A machine can withstand a maximum centripetal acceleration of 235 m/s^2^. If the
 
 We can rearrange the first equation to get
 
-	`v = sqrt(a_"c"r) = sqrt((235\ "m/s"^2)(0.136\ "m")) = 5.6533\ "m/s"`,
+    `v = sqrt(a_"c"r) = sqrt((235\ "m/s"^2)(0.136\ "m")) = 5.6533\ "m/s"`,
 
 therefore the maximum speed is 5.65 m/s.
 
@@ -354,15 +354,15 @@ This diagram isn't completely accurate -- the railcar does not leave the tracks.
 
 We can now use Newton's second law of motion to find acceleration:
 
-	`vec F_"net" = |vec F_"a"|cos theta + vec F_"f" = mvec a`.
+    `vec F_"net" = |vec F_"a"|cos theta + vec F_"f" = mvec a`.
 
 Rearranging to solve for acceleration gives us
 
-	`vec a = (|vec F_"a"|cos theta + vec F_"f")/m`,
+    `vec a = (|vec F_"a"|cos theta + vec F_"f")/m`,
 
 and if we let [fwd] be positive, then we can substitute and get
 
-	`vec a = ((2.75xx10^4\ "N")cos23º + (-1.0xx10^2\ "N"))/(1.4xx10^4\ "kg") = 1.8009\ "m/s"^2`,
+    `vec a = ((2.75xx10^4\ "N")cos23º + (-1.0xx10^2\ "N"))/(1.4xx10^4\ "kg") = 1.8009\ "m/s"^2`,
 
 therefore the railcar's acceleration is 1.8 m/s^2^ [fwd].
 
@@ -370,7 +370,7 @@ therefore the railcar's acceleration is 1.8 m/s^2^ [fwd].
 
 We can use Newton's second law to analyze systems involving multiple bodies in much the same way that we use it for single bodies. We will usually consider bodies that are connected together with massless strings that do not stretch. This allows us to assume that each body has the _same acceleration_. The equation we use for multiple-body systems is
 
-	`vec F_"net" = m_"tot"vec a_"sys"`,
+    `vec F_"net" = m_"tot"vec a_"sys"`,
 
 where `vec F_"net"` is the vector sum of all forces acting on the system (_not_ internal tension forces), `m_"tot"` is sum of the masses of all bodies, and `vec a_"sys"` is the acceleration of the system.
 
@@ -394,23 +394,23 @@ There are three forces acting on the system:
 
 Adding the first two gives us the parallel component of `vec F_"g,A"`:
 
-	`vec F_"g,A" + vec F_"N,A" = vec F_"g,ramp" = |vec F_"g,A"|cos(90º-theta) = |vec F_"g,A"|sintheta`.
+    `vec F_"g,A" + vec F_"N,A" = vec F_"g,ramp" = |vec F_"g,A"|cos(90º-theta) = |vec F_"g,A"|sintheta`.
 
 Now we can use Newton's second law to find acceleration.
 
-	`vec F_"net" = |vec F_"g,A"|sintheta + vec F_"g,B" = m_"tot"vec a_"sys"`.
+    `vec F_"net" = |vec F_"g,A"|sintheta + vec F_"g,B" = m_"tot"vec a_"sys"`.
 
 If we let [fwd] be positive, then `vec F_"g,ramp"` will be negative. Since `vec F_"g" = mg`,
 
-	`vec F_"net" = -m_"A"gsintheta + m_"B"g = m_"tot"vec a_"sys"`.
+    `vec F_"net" = -m_"A"gsintheta + m_"B"g = m_"tot"vec a_"sys"`.
 
 Rearranging to solve for acceleration gives us
 
-	`vec a_"sys" = (-m_"A"gsintheta + m_"B"g)/m_"tot"`,
+    `vec a_"sys" = (-m_"A"gsintheta + m_"B"g)/m_"tot"`,
 
 and after substituting we have
 
-	`vec a_"sys" = (-(21\ "kg")(9.80\ "m/s"^2)sin18º + (12\ "kg")(9.80\ "m/s"^2))/(21\ "kg" + 12\ "kg") = 1.64\ "m/s"^2`,
+    `vec a_"sys" = (-(21\ "kg")(9.80\ "m/s"^2)sin18º + (12\ "kg")(9.80\ "m/s"^2))/(21\ "kg" + 12\ "kg") = 1.64\ "m/s"^2`,
 
 therefore the acceleration of the system is 1.6 m/s^2^ [fwd].
 
@@ -421,15 +421,15 @@ Now we can use the acceleration to find the tension in the string. We can do thi
 
 We can write our net force equation again:
 
-	`vec F_"net" = vec F_"g,B" + vec F_"T" = m_"B"g + vec F_"T" = m_"B"vec a`.
+    `vec F_"net" = vec F_"g,B" + vec F_"T" = m_"B"g + vec F_"T" = m_"B"vec a`.
 
 Solving for the force of tension, we have
 
-	`vec F_"T" = m_"B"vec a - m_"B"g = m_"B"(vec a - g)`,
+    `vec F_"T" = m_"B"vec a - m_"B"g = m_"B"(vec a - g)`,
 
 which gives us the solution
 
-	`vec F_"T" = (12\ "kg")(1.64\ "m/s"^2 - 9.80\ "m/s"^2) = -97.92\ "N"`,
+    `vec F_"T" = (12\ "kg")(1.64\ "m/s"^2 - 9.80\ "m/s"^2) = -97.92\ "N"`,
 
 therefore the magnitude of the force of tension is 98 N.
 
@@ -443,15 +443,15 @@ What is the apparent weight of a 72 kg person in an elevator that is acceleratin
 
 There are two forces acting on the person. We will call the second one the elevator force just to be clear. Our net force equation is
 
-	`vec F_"net" = vec F_"elev" + vec F_"g" = mvec a`,
+    `vec F_"net" = vec F_"elev" + vec F_"g" = mvec a`,
 
 and rearranging this gives us
 
-	`vec F_"elev" = mvec a - vec F_"g" = mveca - mvec(g) = m(vec a - vec g)`.
+    `vec F_"elev" = mvec a - vec F_"g" = mveca - mvec(g) = m(vec a - vec g)`.
 
 Now we can substitute the values, giving us
 
-	`vec F_"elev" = (72\ "kg")(1.3\ "m/s"^2 - (-9.80\ "m/s"^2)) = 799.2\ "N"`,
+    `vec F_"elev" = (72\ "kg")(1.3\ "m/s"^2 - (-9.80\ "m/s"^2)) = 799.2\ "N"`,
 
 therefore the apparent weight is 8.0 × 10^2^ N.
 
@@ -460,24 +460,24 @@ therefore the apparent weight is 8.0 × 10^2^ N.
 Friction is a contact force that _opposes motion_. It acts whenever two surfaces move over one another. The amount of friction depends on four things:
 
 surface roughness
-:	Rougher surfaces experience more friction. With very smooth surfaces, there is still friction because of van der Waals forces.
+:   Rougher surfaces experience more friction. With very smooth surfaces, there is still friction because of van der Waals forces.
 
 contact
-:	More surface area of contact results in more friction. For example, sled runners reduce surface area of contact and thus reduce friction.
+:   More surface area of contact results in more friction. For example, sled runners reduce surface area of contact and thus reduce friction.
 
 materials
-:	There is a coefficient of friction (denoted by `mu`) for every combination of two materials. The friction associated with steel & wood is different from the friction associated with steel & ice, for example.
+:   There is a coefficient of friction (denoted by `mu`) for every combination of two materials. The friction associated with steel & wood is different from the friction associated with steel & ice, for example.
 
 normal force
-:	A greater normal force results in more friction. This means that heavier objects will experience more friction, and it also means that pressing down on an object from above will increase friction.
+:   A greater normal force results in more friction. This means that heavier objects will experience more friction, and it also means that pressing down on an object from above will increase friction.
 
 We calculate friction using
 
-	`|vec F_"f"| = mu|vec F_"N"|`.
+    `|vec F_"f"| = mu|vec F_"N"|`.
 
 If the only forces are gravity and the normal force, this can be rewritten as
 
-	`|vec F_"f"| = mum|vec g|`.
+    `|vec F_"f"| = mum|vec g|`.
 
 There are two types of friction. _Static_ friction must be overcome to move an object that is initially at rest with respect to the other surface. _Kinetic_ friction acts when an object is in motion. There are separate coefficients for these two cases: `mu_"s"` for static and `mu_"k"` for kinetic, where `mu_"s" > mu_"k"`. The values of both are determined experimentally for every pair of materials.
 
@@ -493,31 +493,31 @@ First, we draw a sketch:
 
 Now we can write our net force equation:
 
-	`vec F_"net" = vec F_"g" + vec F_"N" + vec F_"f" + vec F_"T" = mvec a`.
+    `vec F_"net" = vec F_"g" + vec F_"N" + vec F_"f" + vec F_"T" = mvec a`.
 
 The gravitation force and the normal force combine, giving us
 
-	`vec F_"net" = F_"g,ramp" + vec F_"f" + vec F_"T" = mvec a`.
+    `vec F_"net" = F_"g,ramp" + vec F_"f" + vec F_"T" = mvec a`.
 
 Since we are solving for the case where the mass does _not_ slide down the roof, acceleration is zero:
 
-	`F_"g,ramp" + vec F_"f" + vec F_"T" = 0`.
+    `F_"g,ramp" + vec F_"f" + vec F_"T" = 0`.
 
 Now we can solve for the tension force, giving us
 
-	`vec F_"T" = -vec F_"f" - vec F_"g,ramp"`,
+    `vec F_"T" = -vec F_"f" - vec F_"g,ramp"`,
 
 and, keeping in mind that [fwd] as indicated in the sketch will be positive, we can substitute to get
 
-	`vec F_"T" = -(-mu_"s"|vec F_"N"|) - m|vec g|sin theta = mu_"s"m|vec g|cos theta - m|vec g|sin theta`.
+    `vec F_"T" = -(-mu_"s"|vec F_"N"|) - m|vec g|sin theta = mu_"s"m|vec g|cos theta - m|vec g|sin theta`.
 
 This simplifies to
 
-	`vec F_"T" = m|vec g|(mu_"s"cos theta - sin theta)`,
+    `vec F_"T" = m|vec g|(mu_"s"cos theta - sin theta)`,
 
 and now we can finally substitute our known values:
 
-	`vec F_"T" = (68.5\ "kg")(9.80\ "N/kg")(0.21cos31º - sin31º) = -224.9\ "N"`.
+    `vec F_"T" = (68.5\ "kg")(9.80\ "N/kg")(0.21cos31º - sin31º) = -224.9\ "N"`.
 
 Therefore, the cable must provide a tension force of 225 N [bwd], otherwise it will snap and you will slide off the roof.
 
@@ -532,7 +532,7 @@ So far we have been ignoring air resistance, but it has a significant effect on 
 
 In addition, air resistance is related to the moving object's speed by
 
-	`|vec F_"air"|	 prop v^2`.
+    `|vec F_"air"| prop v^2`.
 
 Because of air resistance, a falling object's acceleration is actually less than 9.80 m/s^2^, and it only gets smaller. Since air resistance increases in proportion to the square of speed, there reaches a point where the air resistance is equal and opposite to the gravitational force. Acceleration is now zero, so the object doesn't gain any more speed. The velocity at this point is known as _terminal velocity_.
 
@@ -544,7 +544,7 @@ Because of air resistance, objects of different mass actually _can_ hit the grou
 
 Centripetal force follows directly from our equations for centripetal acceleration that we saw in [uniform circular motion](uniform-circular-motion.html):
 
-	`F_"c" = ma_"c" = (mv^2)/r = (4pi^2mr)/T^2 = 4pi^2mrf^2`.
+    `F_"c" = ma_"c" = (mv^2)/r = (4pi^2mr)/T^2 = 4pi^2mrf^2`.
 
 Centripetal force causes an object to follow a circular path. That being said, it is not another _type_ of force that you can add in the net force equation. Some specific force like `vec F_"T"` or `vec F_"f"` will _be_ the centripetal force.
 
@@ -558,15 +558,15 @@ A 1105 kg car is entering a level turn with a radius of 20.0 m at 21.5 m/s. If t
 
 There is only one force acting on the car, the force of friction, and it needs to provide a centripetal force for the car to be safe:
 
-	`vec F_"net" = vec F_"f" = mvec a_"c"	`.
+    `vec F_"net" = vec F_"f" = mvec a_"c"`.
 
 We can substitute for friction and centripetal acceleration:
 
-	`mumg = mv^2/r`.
+    `mumg = mv^2/r`.
 
 Now we can solve for speed:
 
-	`v = sqrt(rmug) = sqrt((20.0\ "m")(0.450)(9.80\ "m/s"^2)) = 9.391\ "m/s"`.
+    `v = sqrt(rmug) = sqrt((20.0\ "m")(0.450)(9.80\ "m/s"^2)) = 9.391\ "m/s"`.
 
 Therefore, the maximum safe speed is 9.39 m/s.
 
@@ -578,51 +578,51 @@ Instead of relying on friction, we can incline the road towards the centre of th
 
 The normal force can be split into vertical and horizontal components:
 
-	`F_"N,v" = |vec F_"N"|cos theta qquad and qquad F_"N,h" = |vec F_"N"|sin theta`.
+    `F_"N,v" = |vec F_"N"|cos theta qquad and qquad F_"N,h" = |vec F_"N"|sin theta`.
 
 The horizontal component must supply the centripetal force, so we can set them equal:
 
-	`|vec F_"N"|sin theta = (mv^2)/r`.
+    `|vec F_"N"|sin theta = (mv^2)/r`.
 
 Since the vehicle doesn't move vertically, the vertical component has to balance gravity with `|vec F_"N"|cos theta = mg`. We can solve this for the normal force and substitute it into our first equation to get
 
-	`(mg)/(cos theta)sin theta = (mv^2)/r`,
+    `(mg)/(cos theta)sin theta = (mv^2)/r`,
 
 and solving for speed gives us the maximum safe speed on a frictionless banked curve,
 
-	`v = sqrt(rg tan theta)`.
+    `v = sqrt(rg tan theta)`.
 
 We can also find the minimum safe radius at a given speed:
 
-	`r = v^2/(g tan theta)`.
+    `r = v^2/(g tan theta)`.
 
 ## Planetary motion
 
 Throughout history, people have tried to explain the cosmos and the motion of celestial bodies, with varying degrees of success.
 
 ancient Greeks
-:	The Earth is stationary at the centre of the universe (geocentric model). The stars move on the inside of a huge crystal sphere. The Sun, Moon, and stars have different motion, so they move on different spheres. There retrograde motion of Mars is baffling.
+:   The Earth is stationary at the centre of the universe (geocentric model). The stars move on the inside of a huge crystal sphere. The Sun, Moon, and stars have different motion, so they move on different spheres. There retrograde motion of Mars is baffling.
 
 Pythagoras
-:	There are eight crystal spheres, each on its own axis.
+:   There are eight crystal spheres, each on its own axis.
 
 Aristotle
-:	Actually, there has to be 54 spheres.
+:   Actually, there has to be 54 spheres.
 
 Ptolemy
-:	The earth isn't at the _exact_ centre of the universe. It's sightly off.
+:   The earth isn't at the _exact_ centre of the universe. It's sightly off.
 
 Copernicus
-:	The Sun is at the centre of the universe (heliocentric model), and the Earth and other planets revolve around it. The motion of the Earth explains the apparent motion of the stars.
+:   The Sun is at the centre of the universe (heliocentric model), and the Earth and other planets revolve around it. The motion of the Earth explains the apparent motion of the stars.
 
 Galileo
-:	Galileo confirmed the heliocentric model using the telescope. He observed the moons of Jupiter and the phases of Venus. He still predicted circular orbits.
+:   Galileo confirmed the heliocentric model using the telescope. He observed the moons of Jupiter and the phases of Venus. He still predicted circular orbits.
 
 Brahe
-:	Brahe measured astronomical positions with great precision. He observed a comet that followed an elliptical path, not a circular one.
+:   Brahe measured astronomical positions with great precision. He observed a comet that followed an elliptical path, not a circular one.
 
 Kepler
-:	Kepler analyzed Brahe's data. He made three conclusions, known as Kepler's laws of planetary motion:
+:   Kepler analyzed Brahe's data. He made three conclusions, known as Kepler's laws of planetary motion:
 
     1. The orbit of a planet is an ellipse with the Sun at one focus.
     2. The line segment joining a planet and the Sun sweeps out equal areas during equal intervals of time.
@@ -630,17 +630,17 @@ Kepler
 
 Finally, we come to Newton. Sir Isaac Newton discovered the universal law of gravitation,
 
-	`|vec F_"g"| = G(m_1m_2)/r^2`,
+    `|vec F_"g"| = G(m_1m_2)/r^2`,
 
 where `G` is a constant equal to 6.67 × 10^−11^ N·m^2^/kg^2^.
 
 Sometimes, we will want to look at how gravitation force changes in terms of ratios. To do that, we can use the following equation:
 
-	`F_"g,2"/F_"g,1" = (m_2/m_1)(r_1/r_2)^2`.
+    `F_"g,2"/F_"g,1" = (m_2/m_1)(r_1/r_2)^2`.
 
 Another type of problem involves whether or not an orbit is _stable_. For our purposes, an orbit is stable if and only if
 
-	`vec F_"net" = vec F_"g" = mvec a_"c"`.
+    `vec F_"net" = vec F_"g" = mvec a_"c"`.
 
 Similar to a turning car, `F_"g" < F_"c"` means that the object with fly off into space. On the other hand, `F_"g" > F_"c"` means that the object will spiral inwards into the Sun (or whatever it's orbiting), whereas excess friction with a car is no problem.
 
@@ -650,11 +650,11 @@ Similar to a turning car, `F_"g" < F_"c"` means that the object with fly off int
 
 Momentum is a quantity of motion defined by
 
-	`vec p = m vec v`,
+    `vec p = m vec v`,
 
 measured in kilogram-metres per second (kg·m/s). A change in momentum is called impulse, and it is defined by
 
-	`∆vec p = m∆vec v = vec F∆t`.
+    `∆vec p = m∆vec v = vec F∆t`.
 
 A lightweight, fast-moving object can have the same momentum as a heavy, slow-moving object because mass and velocity are multiplied. Similarly, a large force applied over a short time interval can deliver the same impulse as a small force applied over a long time interval.
 
@@ -666,7 +666,7 @@ What average force is needed to stop a 34 kg ball in 2.5 s if the initial speed 
 
 Since `vec F∆t = m∆vec v`,
 
-	`vec F = (m∆vec v)/(∆t) = (vec v_2 - vec v_1)/(∆t) = ((34\ "kg")(0 - 19\ "m/s"))/(2.5\ "s") = -258.4\ "N"`,
+    `vec F = (m∆vec v)/(∆t) = (vec v_2 - vec v_1)/(∆t) = ((34\ "kg")(0 - 19\ "m/s"))/(2.5\ "s") = -258.4\ "N"`,
 
 therefore an average force of 260 N [bwd] is required.
 
@@ -674,7 +674,7 @@ therefore an average force of 260 N [bwd] is required.
 
 In all isolated systems, total momentum is conserved:
 
-	`vec p_"tot" = vec p'_"tot"`.
+    `vec p_"tot" = vec p'_"tot"`.
 
 ### Example
 
@@ -682,23 +682,23 @@ Car A (2.5 kg) begins at 1.5 m/s [fwd], while Car B (1.5 kg) beings at rest. Car
 
 We begin with the conservation of momentum,
 
-	`vec p_"tot" = vec p'_"tot"`,
+    `vec p_"tot" = vec p'_"tot"`,
 
 into which we substitute the individual momenta:
 
-	`vec p_"A" + vec p_"B" = vec p'_"AB"`.
+    `vec p_"A" + vec p_"B" = vec p'_"AB"`.
 
 Now we can substitute the masses and velocities with
 
-	`m_"A"vec v_"A" + m_"B"vec v_"B" = m_"AB"vec v'_"AB"`,
+    `m_"A"vec v_"A" + m_"B"vec v_"B" = m_"AB"vec v'_"AB"`,
 
 and solve for the final velocity:
 
-	`vec v'_"AB" = (m_"A"vec v_"A" + m_"B"vec v_"B")/m_"AB"`.
+    `vec v'_"AB" = (m_"A"vec v_"A" + m_"B"vec v_"B")/m_"AB"`.
 
 Substituting the known values where [fwd] is positive, we have
 
-	`vec v'_"AB" = ((2.5\ "kg")(1.5\ "m/s") - 0)/(2.5\ "kg" + 1.5\ "kg") = 0.9375\ "m/s"`,
+    `vec v'_"AB" = ((2.5\ "kg")(1.5\ "m/s") - 0)/(2.5\ "kg" + 1.5\ "kg") = 0.9375\ "m/s"`,
 
 therefore the final velocity is 0.94 m/s [fwd].
 
@@ -708,21 +708,21 @@ therefore the final velocity is 0.94 m/s [fwd].
 
 A force is said to do work when it acts on a body and results in a displacement in the direction of the force. It is a scalar quantity defined by
 
-	`W = vec F * ∆vec d = F∆dcos theta`,
+    `W = vec F * ∆vec d = F∆dcos theta`,
 
 and it is measured in joules (J). Work can be zero in three situations: when force is zero, when displacement is zero, or when force and displacement are perpendicular. When the angle between force and distance exceeds 90º, work becomes negative. On a force-position graph, the area under the curve represents work.
 
 Kinetic energy is energy due to motion. For an object moving at speed `v`, kinetic energy is defined as the amount of work needed to accelerate the object from rest to `v`. The formula for kinetic energy is
 
-	`E_"k" = 1/2mv^2`.
+    `E_"k" = 1/2mv^2`.
 
 A change in kinetic energy represents work being done:
 
-	`W = ∆E_"k" = 1/2m∆v^2`.
+    `W = ∆E_"k" = 1/2m∆v^2`.
 
 We can also relate kinetic energy to momentum with
 
-	`E_"k" = p^2/(2m) qquad and qquad p = sqrt(2mE_"k")`.
+    `E_"k" = p^2/(2m) qquad and qquad p = sqrt(2mE_"k")`.
 
 ## Gravitational potential energy
 
@@ -732,7 +732,7 @@ For example, the water behind a dam is just a stationary body of water, but it h
 
 We usually talk about _changes_ in potential energy, not potential energy itself. When does `E_"g" = 0`? On the surface of the Earth? At the centre of the Earth? You don't need to worry about it with this formula:
 
-	`W = ∆E_"g" = mg∆h`.
+    `W = ∆E_"g" = mg∆h`.
 
 If the height of a 2.5 kg object increases by 15 m, then its potential energy increases by `(2.5\ "kg")(9.80\ "N/kg")(15\ "m") = 367.5\ "J"`. It's as simple as that.
 
@@ -743,25 +743,25 @@ Elastic potential energy (`E_"e"`) is the energy stored in an object when work i
 
 _Hooke's Law_ tells us that the deformation of the spring is proportional to the force that is applied to it. That is,
 
-	`F = kx`,
+    `F = kx`,
 
 where `k` is a constant representing the stiffness of the spring, measured in newtons per metre (N/m). According to Newton's third law, we also have a reaction force of `-kx` that is "trying" to restore the spring to equilibrium.
 
 A change in elastic potential energy represents work being done. We can derive an equation for change in elastic energy using our definition of work. We begin with
 
-	`W = F∆d`.
+    `W = F∆d`.
 
 If the spring deformation changes from `x_1` to `x_2`, we have our displacement. The force is a bit more complicated -- it won't be constant since `x` is changing, so we want to use the _average_ force:
 
-	`W = (F_1 + F_2)/2(x_2 - x_1)`.
+    `W = (F_1 + F_2)/2(x_2 - x_1)`.
 
 Now we can substitute the forces according to Hooke's law:
 
-	`W = (kx_1 + kx_2)/2(x_2-x_1) = 1/2k(x_2 + x_1)(x_2 - x_1)`.
+    `W = (kx_1 + kx_2)/2(x_2-x_1) = 1/2k(x_2 + x_1)(x_2 - x_1)`.
 
 Recognizing a difference of squares here, we can make a little simplification. Now we have another formula to go along with our equations for changes in kinetic and gravitational energy:
 
-	`W = ∆E_"e" = 1/2k∆x^2`.
+    `W = ∆E_"e" = 1/2k∆x^2`.
 
 ## Conservation of energy
 
@@ -769,11 +769,11 @@ The law of conservation of energy states that the total energy in an isolated sy
 
 When a ball is thrown upwards, it is gaining potential energy and losing kinetic energy joule for joule. When it starts falling back down, the trade occurs in reverse. Mathematically,
 
-	`∆E_"k" + ∆E_"g" = 0`.
+    `∆E_"k" + ∆E_"g" = 0`.
 
 When we substitute those energy changes, we can rearrange to get
 
-	`v_2^2 - v_1^2 = -2g∆h`.
+    `v_2^2 - v_1^2 = -2g∆h`.
 
 This looks very similar to the eighth and final equation that we derived in the section on the [equations of motion](equations-of-motion.html) of the first unit.
 
@@ -785,11 +785,11 @@ A 2.5 kg block is dropped from 7.5 m above the floor. What is its speed as it hi
 
 We can used the equation that I just mentioned:
 
-	`v_2^2 - v_1^2 = -2g∆h`.
+    `v_2^2 - v_1^2 = -2g∆h`.
 
 Solving for `v_2`, we have
 
-	`v_2 = sqrt(v_1^2-2g∆h) = sqrt(0-2(9.80\ "N/kg")(- 7.5\ "m")) ~~ 12.124`,
+    `v_2 = sqrt(v_1^2-2g∆h) = sqrt(0-2(9.80\ "N/kg")(- 7.5\ "m")) ~~ 12.124`,
 
 therefore the final speed is 12 m/s.
 
@@ -801,15 +801,15 @@ In an elastic collision, the objects compress on the point of contact (which we 
 
 For a collision between two objects to be perfectly elastic, we must have
 
-	`1/2m_"A"v_"A" + 1/2m_"B"v_"B" = 1/2m_"A"v'_"A" + 1/2m_"B"v'_"B"`.
+    `1/2m_"A"v_"A" + 1/2m_"B"v_"B" = 1/2m_"A"v'_"A" + 1/2m_"B"v'_"B"`.
 
 In a _perfectly elastic one-dimensional_ collision where mass A is moving towards a stationary mass B, we can use
 
-	`vec v_"A" + vec v'_"A" = vec v'_"B"`,
+    `vec v_"A" + vec v'_"A" = vec v'_"B"`,
 
 as we can find both final speeds from just the initial speed of A and the masses of both objects using
 
-	`v'_"A" = v_"A"((m_"A"-m_"B")/(m_"A"+m_"B")) qquad and qquad v'_"B" = v_"A"((2m_"A")/(m_"A"+m_"B"))`.
+    `v'_"A" = v_"A"((m_"A"-m_"B")/(m_"A"+m_"B")) qquad and qquad v'_"B" = v_"A"((2m_"A")/(m_"A"+m_"B"))`.
 
 We will have to consider some special conditions:
 
@@ -831,7 +831,7 @@ When radius decreases, the object cannot do as much work during its descent, so 
 
 The general equation for gravitation potential energy is
 
-	`E_"g" = -G(m_1m_2)/r`.
+    `E_"g" = -G(m_1m_2)/r`.
 
 > Always remember that gravitational potential energy is divided by `r`, not by `r^2` like gravitational force is. It's easy to confuse the two equations.
 
@@ -841,11 +841,11 @@ How much work is needed to lift a 101 kg object to an altitude of 456 km?
 
 Since `W = ∆E_"g"`, we want to find the change in gravitational potential. The changing quantity is radius:
 
-	`r_1 = r_"E" qquad and qquad r_2 = r_"E" + "altitude"`.
+    `r_1 = r_"E" qquad and qquad r_2 = r_"E" + "altitude"`.
 
 Now, we substitute our new equation into `∆E_"g" = E_"g,2" - E_"g,1"`, giving us
 
-	`∆E_"g" = Gm_"E"m_"obj"(1/r_1 - 1/r_2)`.
+    `∆E_"g" = Gm_"E"m_"obj"(1/r_1 - 1/r_2)`.
 
 After plugging in the values and evaluating, we find that the amount of work required is 4.21 × 10^8^ J.
 
@@ -853,11 +853,11 @@ After plugging in the values and evaluating, we find that the amount of work req
 
 In the example of the previous section, we found how much work it took to raise an object to a certain altitude. To put a satellite in _orbit_, we can't follow that same method because the satellite would just fall down. For a satellite to remain in (circular) orbit, we need to have `F_"g" = F_"c"`. The satellite will have a certain amount of total energy at all times:
 
-	`E_"tot" = E_"g" + E_"k"`.
+    `E_"tot" = E_"g" + E_"k"`.
 
 For a stable orbit, we must have
 
-	`E_"tot" = -1/2G(m_1m_2)/r`.
+    `E_"tot" = -1/2G(m_1m_2)/r`.
 
 ### Example
 
@@ -865,11 +865,11 @@ What amount of work does it take to put a 745 kg satellite into orbit 1108 km ab
 
 The satellite begins on Earth, so `r_1 = r_"E"`. When it reaches the altitude of 1108 km, it will be at a radius of
 
-	`r_2 = r_"E" + 1108\ "km" = 7.488xx10^6\ "m"`.
+    `r_2 = r_"E" + 1108\ "km" = 7.488xx10^6\ "m"`.
 
 Now since `W = ∆E_"tot"`, we should find the change in energy. For the initial value we simply use `E_"g"` because the satellite begins at rest, but for the final value we use the special formula for stable orbit energy:
 
-	`∆E_"tot" = ∆E_"tot,2" - ∆E_"tot,1" = (-1/2G(m_1m_2)/r_2) - (-G(m_1m_2)/r_1)`.
+    `∆E_"tot" = ∆E_"tot,2" - ∆E_"tot,1" = (-1/2G(m_1m_2)/r_2) - (-G(m_1m_2)/r_1)`.
 
 Substituting all the known quantities and evaluating gives us the answer: it would take 2.68 × 10^10^ J of work to put the satellite in orbit.
 
@@ -879,11 +879,11 @@ As we have seen, an object that is hanging in space near the Earth will have neg
 
 When we say we want an object to "escape" the Earth's gravitational pull, we mean that it will go to `r=oo` and never come back. To accomplish this, we must have `E_"tot" = 0`. This occurs when
 
-	`E_"k" > G(m_1m_2)/r`,
+    `E_"k" > G(m_1m_2)/r`,
 
 and if we solve for speed, we find that the escape velocity is given by
 
-	`v_"esc" = sqrt((2Gm_"planet")/r)`.
+    `v_"esc" = sqrt((2Gm_"planet")/r)`.
 
 > We use the term "escape velocity" for some reason, but it isn't accurate. We are talking about a speed -- a scalar quantity -- so really it should be called "escape speed."
 
@@ -891,13 +891,13 @@ and if we solve for speed, we find that the escape velocity is given by
 
 Just as there is a gravitational force between any two masses, there is an _electric force_ between any two charged objects. Unlike gravity, this force can repel as well as attract. The charge on an object is either positive or negative -- opposites charges attract, and similar charges repel. The magnitude of the force is given by Coulomb's law:
 
-	`|vec F_"el"| = k(q_1q_2)/r^2`.
+    `|vec F_"el"| = k(q_1q_2)/r^2`.
 
 The `q` values are the charges on the objects, measured in coulombs (C). Their product is divided by radius squared (from centre to centre, measured in metres), and then multiplied by Coulomb's constant (`k`), which has a value of 9.00 × 10^9^ N·m^2^/C^2^.
 
 Like with gravity, we will sometimes want to look at how the force changes in terms of ratios. To do that, we can use the following equation:
 
-	`F_"el,2"/F_"el,1" = (q_"A,2"/q_"A,1")(q_"B,2"/q_"B,1")(r_1/r_2)^2`.
+    `F_"el,2"/F_"el,1" = (q_"A,2"/q_"A,1")(q_"B,2"/q_"B,1")(r_1/r_2)^2`.
 
 In some electric force questions, you will be given a diagram of several charged objects and you must find the net force on one particular object. To do this, you must find the values of `F_"el"` between that object and each other one, determine the direction for each force, and add them up. This also works in two dimensions.
 
@@ -907,7 +907,7 @@ A positively charged object of 1.95 × 10^−6^ C is beside a negatively charged
 
 All we have to do is plug in the values into Coloumb's law:
 
-	`|vec F_"el"| = (9.00xx10^9\ "Nm"^2/"C"^2)((1.95xx10^-6\ "C")(2.75xx10^-6\ "C"))/(0.124\ "m")^2`.
+    `|vec F_"el"| = (9.00xx10^9\ "Nm"^2/"C"^2)((1.95xx10^-6\ "C")(2.75xx10^-6\ "C"))/(0.124\ "m")^2`.
 
 Evaluating this gives us 3.14 N, and this force attracts the two objects together because they have opposite charges.
 
@@ -921,47 +921,47 @@ To describe an electric field, we imagine that we are probing it with a _unit te
 
 Just as we use `vec g` in N/kg to describe the strength of a gravitational field, we use `vec epsilon` in N/C to describe the strength of an electric field:
 
-	`vec epsilon = vec F_"el"/q_2 = kq_1/r^2`.
+    `vec epsilon = vec F_"el"/q_2 = kq_1/r^2`.
 
 With `vec g`, the Earth is embedded in the number and the other mass is not (we multiply it to get the force). With `vec epsilon`, it's the same deal, except we are talking about charges instead of masses.
 
 When there are multiple charges with overlapping fields, we can calculate the net field strength by adding them all up:
 
-	`vec epsilon_"net" = vec epsilon_1 + vec epsilon_2 + cdots + vec epsilon_n`.
+    `vec epsilon_"net" = vec epsilon_1 + vec epsilon_2 + cdots + vec epsilon_n`.
 
 ## Electric potential (energy)
 
 Electric potential energy is similar to gravitational potential energy, except it can be positive _or_ negative since the electric force can repel as well as attract. Electric potential energy is given by the formula
 
-	`E_"el" = k(q_1q_2)/r`.
+    `E_"el" = k(q_1q_2)/r`.
 
 From this we can derive a formula for a change in electric potential energy:
 
-	`∆E_"el" = kq_1q_2(1/r_2 - 1/r_1)`.
+    `∆E_"el" = kq_1q_2(1/r_2 - 1/r_1)`.
 
 _Electric pontential_ is, confusingly, not the same as electric potential energy. While the latter is measured in joules, electric potential is measured in joules per coulomb. It represents the `E_"el"` that a unitary point charge would have at a particular point. It is denoted with `V` and calculated with
 
-	`V = E_"el"/q_2 = (kq_1)/r`.
+    `V = E_"el"/q_2 = (kq_1)/r`.
 
 `V` is to `E_"el"` as `vec epsilon` is to `F_"el"`. They differ only by an `r` in the denominator:
 
-	`|vec epsilon| = V/r`.
+    `|vec epsilon| = V/r`.
 
 Most of the time, we talk not about electric potential but about electric potential _difference_, also known as _voltage_:
 
-	`∆V = kq(1/r_2 - 1/r_1)`.
+    `∆V = kq(1/r_2 - 1/r_1)`.
 
 In general, we can relate work to voltage with
 
-	`W = ∆E_"el" = q_2∆V`.
+    `W = ∆E_"el" = q_2∆V`.
 
 For parallel plates, we have a more specific equation. The work done by the electric force to move a charge `q_2` from one plate to the other is given by
 
-	`W = ∆E_"el" = q_2|vec epsilon|d`,
+    `W = ∆E_"el" = q_2|vec epsilon|d`,
 
 where `d` is the distance between the plates in metres (m). Why were we able to replace `∆V` by `|vec epsilon|d`? Because, for parallel plates,
 
-	`|vec epsilon| = (∆V)/d`.
+    `|vec epsilon| = (∆V)/d`.
 
 This is _not_ true for point charges. It looks similar to the general equation `|vec epsilon| = V//r` mentioned above, but that `∆` makes a big difference. With point charges, the amount of work done is strictly related to the values of `r_1` and `r_2`. Not so with parallel plates -- since the electric field is uniform, it doesn't matter where the particle is between the plates.
 
@@ -969,7 +969,7 @@ This is _not_ true for point charges. It looks similar to the general equation `
 
 Now that we know about electric potential energy, we can revisit our old friend, the law of conservation of energy. It's basically the same as before: start out with
 
-	`∆E_"k" = -∆E_"el"`,
+    `∆E_"k" = -∆E_"el"`,
 
 then rearrange for the unknown quantity and substitute everything else.
 
@@ -979,15 +979,15 @@ An alpha particle with a charge of 3.2 × 10^−19^ C moving at 1.0 × 10^6^ m/s
 
 We by substituting the energy formulae into the equation given above:
 
-	`1/2m(v_2^2-v_1^2) = -kq_1q_2(1/r_2-1/r_1)`.
+    `1/2m(v_2^2-v_1^2) = -kq_1q_2(1/r_2-1/r_1)`.
 
 The particle will stop moving when it gets to the closest point, so we make `v_2` zero. It starts at infinity, and one over infinity, for our purposes, is zero, so that gets rid of another term. We are left with
 
-	`1/2mv_1^2 = (kq_1q_2)/r_2`.
+    `1/2mv_1^2 = (kq_1q_2)/r_2`.
 
 Solving for final radius, we have
 
-	`r_2 = (2kq_1q_2)/(mv_1^2)`,
+    `r_2 = (2kq_1q_2)/(mv_1^2)`,
 
 and working that out gives us the answer, 1.1 × 10^−11^ m.
 
@@ -999,11 +999,11 @@ Millikan reasoned that all possible charges must be multiples of the elementary 
 
 In short, the experiment worked and Millikan determined the elementary charge (which turns out to be the charge on one electron) to within ±0.6% of the currently accepted value:
 
-	`e = 1.602xx10^-19\ "C"`.
+    `e = 1.602xx10^-19\ "C"`.
 
 All other charges are multiples of the elementary charge:
 
-	`q = Ne`.
+    `q = Ne`.
 
 ## Magnetism & magnetic fields
 
@@ -1039,7 +1039,7 @@ A magnetic field can cause charges (e^−^, p^+^, or ions) to _move_ due to a ma
 
 For point charges, the magnitude of the magnetic force is
 
-	`|vec F_"M"| = qv|vec B|sintheta`,
+    `|vec F_"M"| = qv|vec B|sintheta`,
 
 where `q` is the charge in coulombs (C), `v` is the speed of the particle in metres per second (m/s), `vec B` is the magnetic field in teslas (T), and `theta` is the angle between the conventional current and the magnetic field.
 
@@ -1047,7 +1047,7 @@ To get the direction, we once again use the right-hand rule. Your fingers (flat,
 
 It works a bit differently for conductors. We get the magnitude of the magnetic force for straight conductors with
 
-	`|vec F_"M"| = |vec B|ILsintheta`,
+    `|vec F_"M"| = |vec B|ILsintheta`,
 
 where `vec B` and `theta` are the same as before, and where `I` is the current in amperes (A) and `L` is the length of the conductor inside the magnetic field in metres (m). The right-hand rule works the same way that it does for point charges.
 
@@ -1055,13 +1055,13 @@ where `vec B` and `theta` are the same as before, and where `I` is the current i
 
 We know that a straight conductor creates a circular magnetic field. The direction of the magnetic field, `vec B`, at a given point is simply the tangent to that circle. The _magnitude_ is given by Ampere's law:
 
-	`|vec B| = mu_0I/(2pir)`,
+    `|vec B| = mu_0I/(2pir)`,
 
 where `vec B` is the magnetic field in teslas (T), `mu_0` is the permeability of free space (it has a constant value of 4π × 10^−7^ T·m/A), and `r` is the distance from the conductor in metres (m).
 
 For a coiled conductor (a solenoid), we use the equation
 
-	`|vec B| = mu_0(NI)/(L)`,
+    `|vec B| = mu_0(NI)/(L)`,
 
 where `vec B`, `mu_0`, and `I` are the same as before, and where `N` is the number of loops (unitless; always an integer;  counted number, therefore `oo` significant digits; if you are solving for it, _round up_, never down) and `L` is the length of the solenoid in metres (m).
 
@@ -1071,7 +1071,7 @@ Find the magnitude of the magnetic field 3.2 cm from a straight conductor with 0
 
 All we have to do is plug everything into the equation:
 
-	`|vec B| = (4pixx10^-7\ "T·m/A")(0.75\ "A")/(2pi(0.032\ "m")) ~~ 4.6875xx10^-6\ "T"`.
+    `|vec B| = (4pixx10^-7\ "T·m/A")(0.75\ "A")/(2pi(0.032\ "m")) ~~ 4.6875xx10^-6\ "T"`.
 
 Therefore, the magnitude of the magnetic field is 4.7 × 10^−6^ T.
 
@@ -1081,29 +1081,29 @@ Therefore, the magnitude of the magnetic field is 4.7 × 10^−6^ T.
 
 The universal wave equation is
 
-	`v = f lambda`.
+    `v = f lambda`.
 
 propagation speed (`v`)
-:	the speed of the wave, measured in metres per second (m/s)
+:   the speed of the wave, measured in metres per second (m/s)
 
 frequency (`f`)
-:	the number of cycles completed in one second, measured in hertz (Hz)
+:   the number of cycles completed in one second, measured in hertz (Hz)
 
 wavelength (`lambda`)
-:	the length of one cycle in the wave, measured in metres (m)
+:   the length of one cycle in the wave, measured in metres (m)
 
 We also have a few other equations for dealing with period:
 
-	`f = N/(∆t) qquad and qquad T = (∆t)/N qquad and qquad f = 1/T`.
+    `f = N/(∆t) qquad and qquad T = (∆t)/N qquad and qquad f = 1/T`.
 
 number of cycles (`N`)
-:	the number of cycles completed during a time interval (unitless)
+:   the number of cycles completed during a time interval (unitless)
 
 time interval (`∆t`)
-:	a specific duration of time, measured in seconds (s)
+:   a specific duration of time, measured in seconds (s)
 
 period (`T`)
-:	the time it takes for one cycle to be completed, measured in seconds (s); wavelength is the spatial length, period is the temporal length
+:   the time it takes for one cycle to be completed, measured in seconds (s); wavelength is the spatial length, period is the temporal length
 
 ## Wave properties
 
@@ -1125,7 +1125,7 @@ When straight waves pass through an opening, they can be bent. This phenomenon i
 
 The sine of the angle of diffraction is proportional to the wavelength and inversely proportional to the width of the opening:
 
-	`sin theta propto lambda/w`.
+    `sin theta propto lambda/w`.
 
 For example, sound is easily diffracted because its wavelength is fairly long. Light, on the other hand, requires a much narrower slit because its wavelength is shorter. In general, the wave experiences significant diffraction when `w < lambda`.
 
@@ -1145,39 +1145,39 @@ When waves are produced in phase from two point sources, they create and interfe
 
 On any point on a nodal line, there is an extra distance that the wave from one source must travel compared to the wave from the other source. This extra distance, called the _path length difference_, is given by
 
-	`"p.d." = (n - 1/2)lambda`,
+    `"p.d." = (n - 1/2)lambda`,
 
 where `n` represents the ordinal nodal line (first, second, third, etc., from the central antinode).
 
 The angle `theta_n` represents the angle between the central antinode and the nth nodal line. If we make some assumptions (incorrect assumptions, but the error they contribute is insignificant), we have
 
-	`sin theta_n = "p.d."/d = (n - 1/2)lambda/d`.
+    `sin theta_n = "p.d."/d = (n - 1/2)lambda/d`.
 
 By considering similar triangles in this setup, we get a third equation:
 
-	`lambda = (x_nd)/(L(n-1/2))`.
+    `lambda = (x_nd)/(L(n-1/2))`.
 
 ## Wave & particle models of light
 
 There are six main properties of light that should be explained by a theory of light. The wave model and the particle model explain them with varying degrees of success.
 
 linear propagation
-:	Light propagates in straight lines. It does not fall and hit the floor.<br>_Particle_: light is composed of very small, fast-moving particles.<br>_Wave_: no good explanation.
+:   Light propagates in straight lines. It does not fall and hit the floor.<br>_Particle_: light is composed of very small, fast-moving particles.<br>_Wave_: no good explanation.
 
 diffraction
-:	Light diffracts when it passes through a slit.<br>_Particle_: particles collide with the sides of the slit and scatter.<br>_Wave_: water analogy.
+:   Light diffracts when it passes through a slit.<br>_Particle_: particles collide with the sides of the slit and scatter.<br>_Wave_: water analogy.
 
 reflection
-:	Light reflects off many surfaces.<br>_Particle_: pool table analogy.<br>_Wave_: water analogy.
+:   Light reflects off many surfaces.<br>_Particle_: pool table analogy.<br>_Wave_: water analogy.
 
 refraction
-:	Light refracts when it enters a different medium.<br>_Particle_: the particles move at different speeds in different media.<br>_Wave_: water analogy.
+:   Light refracts when it enters a different medium.<br>_Particle_: the particles move at different speeds in different media.<br>_Wave_: water analogy.
 
 partial reflection & refraction
-:	Window panes reflect part of the incoming light and transmit the rest, depending on the viewing angle.<br>_Particle_: no good explanation.<br>_Wave_: water analogy.
+:   Window panes reflect part of the incoming light and transmit the rest, depending on the viewing angle.<br>_Particle_: no good explanation.<br>_Wave_: water analogy.
 
 dispersion of white light
-:	White light disperses into the colours of the rainbow when it passes through a prism.<br>_Particle_: different colours of light are made of particles of slightly different mass (red is heavy, violet is less heavy).<br>_Wave_: each colour is a wave with a different wavelength (red is long, violet is short).
+:   White light disperses into the colours of the rainbow when it passes through a prism.<br>_Particle_: different colours of light are made of particles of slightly different mass (red is heavy, violet is less heavy).<br>_Wave_: each colour is a wave with a different wavelength (red is long, violet is short).
 
 The wave model seems to do a better job of explaining most of these properties, but in reality the answer is more complicated than that.
 
@@ -1189,7 +1189,7 @@ The double-slit experiment demonstrates that two point sources of light can crea
 
 The interference pattern is a series of nodal lines and antinodes. The nodal lines are evenly spaced by `∆x` on a screen separated from the slits by a distance of `L`. If `d` is the distance between the slits and `lambda` is the wavelength of the light, then
 
-	`Llambda = d∆x`,
+    `Llambda = d∆x`,
 
 where all the variables are measured in metres (m). One consequence of this is that, all other things being equal, a shorter wavelength will result in a smaller value of `∆x`.
 
@@ -1274,7 +1274,7 @@ This is where _Max Planck_ comes in. He hypothesized that electrons can only vib
 
 Similar to the [elementary charge](oil-drop-experiment.html) for electricity, the energy conveyed by radiation can only be a multiple of an elementary amount. We can calculate the energy carried by a single photon with
 
-	`E = hf`,
+    `E = hf`,
 
 where `h` is Planck's constant, equal to 6.63 × 10^−34^ J·s, and `f` is the frequency, measured in hertz (Hz). When Planck's hypothesis is taken into account, the black-body frequency distribution results agree with the theory. The continuous graph of intensity versus frequency can instead be thought of as a vertical bar graph where the vertical axis represents the number of photons that have the particular energy value on the horizontal.
 
@@ -1309,13 +1309,13 @@ Frequency controls `E_"k"` and therefore speed and `V_0`; intensity controls cur
 
 Some electrons are right on the surface and move away from it; others are a bit farther in and have to give up some `E_"k"` to fight their way through; others still head inward first, then rebound and go the other way, losing `E_"k"` in the process. The `E_"k"` of the photoelectron ranges from zero to some maximum value, `E_"k,max"`. The fastest electrons are the ones that require a voltage of `V_0` to be fully repelled. With this information, Einstein developed the formula
 
-	`E_"k,max" = hf - W`,
+    `E_"k,max" = hf - W`,
 
 where `W` is the work function, representing the energy needed for an electron to escape the electrode. The work function depends on the metal in the target electrode, and it can be measured in joules (J) or in electron-volts (eV). One electron-volt is equal to 1.60 × 10^−19^ J.
 
 Since `f_0` is the frequency that allows an electron to break free but gives no extra energy to move, it will result in `E_"k,max" = 0`. This gives us another equation, which we can use as a definition for `W` as well as a way to find `f_0`:
 
-	`W = hf_0`.
+    `W = hf_0`.
 
 > Make sure you don't confuse photons with protons. A photon is not a particle, has no charge, and has no rest mass. A proton, on the other hand, is a particle, has a positive charge, and has a rest mass.
 
@@ -1325,7 +1325,7 @@ By 1923, the photoelectric effect and Einstein's explanation were accepted. Comp
 
 Still, he didn't get the results he was expecting. Instead of a fast electron shooting out straight ahead, he found that a lower energy X-ray and a photoelectron both exited the other side of the foil at an angle to the original X-ray. He suggested that the X-ray photons could have _momentum_. Using `E = mc^2`, `E = hf`, and `p = mv`, he derived an equation for the momentum of a photon:
 
-	`p = (hf)/c = h/lambda`.
+    `p = (hf)/c = h/lambda`.
 
 As it turns out, there are five possible photon--matter interactions. From lowest energy to highest energy, they are the following:
 
@@ -1350,11 +1350,11 @@ Consider a train moving at half the speed of light. In _frame A_, we have an obs
 
 According to equivalence, observer A neither knows nor cares whether the train is moving. He switches on the flashlight and observes a ray of light travelling `2∆d_"A"` in some amount of time that we'll call `t_0`. Since the speed of light is constant in all inertial frames, we are confident that
 
-	`v = (∆d)/(∆t) qquad implies qquad c = (2∆d_"A")/t_0`.
+    `v = (∆d)/(∆t) qquad implies qquad c = (2∆d_"A")/t_0`.
 
 So far so good. But what about observer B? She notices that the ray of light is actually moving horizontally as well as vertically. She records the distance `2∆d_"B"` and she uses a stopwatch to measure the time it takes for the ray to travel that distance, which we'll call `t'`. Now she tries calculating the speed of light using the same method as observer A:
 
-	`c = (2∆d_"B")/(t')`.
+    `c = (2∆d_"B")/(t')`.
 
 Wait a minute. It's obvious that `t_0 = t'`, so observer B must get a different answer than observer A! That's impossible, because the second postulate of special relativity tells us that the speed of light is constant with respect to _all_ frames of reference. If we were talking about a ball, this would all be fine, but we aren't -- this is light, so the observed speed must be _c_ for both of them. If _c_ remains constant, and `2∆d_"A" != 2∆d_"B"`, then how can those equations give the same answer?
 
@@ -1364,21 +1364,21 @@ One consequence of special relativity is _time dilation_. A clock running on a s
 
 If an observer B travels at a speed _v_ for the proper time `t_0` and returns to observer A, who has been at rest all along, then observer A will have experienced a longer amount of time, the relativistic time `t'`, given by
 
-	`t' = t_0/sqrt(1-(v/c)^2)`.
+    `t' = t_0/sqrt(1-(v/c)^2)`.
 
 Notice that the denominator rounds to 1.0 unless the speed is very large. This is why we don't notice special relativity in our everyday lives.
 
 Another consequence of special relativity is _length contraction_. As an object approaches the speed of light, it will seem to get shorter. We can get the relativistic length `L'` from the proper length `L_0` with
 
-	`L' = L_0sqrt(1-(v/c)^2)`.
+    `L' = L_0sqrt(1-(v/c)^2)`.
 
 Yet another bizarre consequence of special relativity: faster objects act as if they have more mass. The space shuttle might have a _rest mass_ of two million kilograms, but its actual mast approaches infinity as the space shuttle approaches the speed of light. We can calculate this mass with
 
-	`m' = m_0/sqrt(1-(v/c)^2)`.
+    `m' = m_0/sqrt(1-(v/c)^2)`.
 
 Einstein also applied his theory of relativity to _matter_. In chemical reactions, mass is conserved because the atoms are just being shuffled around. In nuclear reactions, mass changes because elements change into different elements. This is accounted for by a change in energy according to the mass--energy equivalence equation,
 
-	`E = mc^2`.
+    `E = mc^2`.
 
 ## General relativity
 
@@ -1393,7 +1393,7 @@ According to the Heisenberg uncertainty principle, it is impossible to know the 
 
 The product of the absolute uncertainties of position and speed satisfies
 
-	`∆x∆v >= h/(2pim)`,
+    `∆x∆v >= h/(2pim)`,
 
 where `∆x` and `∆v` are the [absolute uncertainties](measurements.html) of the position, measured in metres (m), and  of the speed, measured in metres per second (m/s), respectively, and where _h_ is Planck's constant and _m_ represents the mass of the particle, measured in kilograms (kg).
 
@@ -1403,10 +1403,10 @@ If we know the speed of an electron to within 1.0 m/s, how precisely can we know
 
 Solving the inequality for the uncertainty of position, we have
 
-	`∆x >= h/(2pim∆v) = (6.63xx10^-34\ "J/s")/(2(3.14)(9.11xx10^-31\ "kg")(1.0\ "m/s")`,
+    `∆x >= h/(2pim∆v) = (6.63xx10^-34\ "J/s")/(2(3.14)(9.11xx10^-31\ "kg")(1.0\ "m/s")`,
 
 which evaluates to
 
-	`∆x >= 1.2xx10^-4\ "m"`.
+    `∆x >= 1.2xx10^-4\ "m"`.
 
 We are therefore off by at least 1.2 × 10^−4^ m for the position, which is quite a lot considering that this number is about 100 billion times larger than the radius of the electron -- it's sort of like saying that you know the position of your friend: "he's somewhere in the solar system."
