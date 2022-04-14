@@ -336,7 +336,7 @@ therefore the maximum speed is 5.65 m/s.
 
 2. The vector sum of all forces acting on an object is related to the object's mass and acceleration by `vec F_"net" = m vec a`.
 
-3. For every _action_ force there is an equal and opposite _reaction_ force. That is, if A applies a force on B, then `vec F_"A–B" = -vec F_"B–A"`.
+3. For every _action_ force there is an equal and opposite _reaction_ force. That is, if A applies a force on B, then `vec F_("A"-"B") = -vec F_("B"-"A")`.
 
 ### Example
 
@@ -632,7 +632,7 @@ Finally, we come to Newton. Sir Isaac Newton discovered the universal law of gra
 
     `|vec F_"g"| = G(m_1m_2)/r^2`,
 
-where `G` is a constant equal to 6.67 × 10^−11^ N·m^2^/kg^2^.
+where `G` is a constant equal to 6.67 × 10^−11^ N⋅m^2^/kg^2^.
 
 Sometimes, we will want to look at how gravitation force changes in terms of ratios. To do that, we can use the following equation:
 
@@ -652,7 +652,7 @@ Momentum is a quantity of motion defined by
 
     `vec p = m vec v`,
 
-measured in kilogram-metres per second (kg·m/s). A change in momentum is called impulse, and it is defined by
+measured in kilogram-metres per second (kg⋅m/s). A change in momentum is called impulse, and it is defined by
 
     `∆vec p = m∆vec v = vec F∆t`.
 
@@ -893,7 +893,7 @@ Just as there is a gravitational force between any two masses, there is an _elec
 
     `|vec F_"el"| = k(q_1q_2)/r^2`.
 
-The `q` values are the charges on the objects, measured in coulombs (C). Their product is divided by radius squared (from centre to centre, measured in metres), and then multiplied by Coulomb's constant (`k`), which has a value of 9.00 × 10^9^ N·m^2^/C^2^.
+The `q` values are the charges on the objects, measured in coulombs (C). Their product is divided by radius squared (from centre to centre, measured in metres), and then multiplied by Coulomb's constant (`k`), which has a value of 9.00 × 10^9^ N⋅m^2^/C^2^.
 
 Like with gravity, we will sometimes want to look at how the force changes in terms of ratios. To do that, we can use the following equation:
 
@@ -1057,7 +1057,7 @@ We know that a straight conductor creates a circular magnetic field. The directi
 
     `|vec B| = mu_0I/(2pir)`,
 
-where `vec B` is the magnetic field in teslas (T), `mu_0` is the permeability of free space (it has a constant value of 4π × 10^−7^ T·m/A), and `r` is the distance from the conductor in metres (m).
+where `vec B` is the magnetic field in teslas (T), `mu_0` is the permeability of free space (it has a constant value of 4π × 10^−7^ T⋅m/A), and `r` is the distance from the conductor in metres (m).
 
 For a coiled conductor (a solenoid), we use the equation
 
@@ -1071,7 +1071,7 @@ Find the magnitude of the magnetic field 3.2 cm from a straight conductor with 0
 
 All we have to do is plug everything into the equation:
 
-    `|vec B| = (4pixx10^-7\ "T·m/A")(0.75\ "A")/(2pi(0.032\ "m")) ~~ 4.6875xx10^-6\ "T"`.
+    `|vec B| = (4pixx10^-7\ "T⋅m/A")(0.75\ "A")/(2pi(0.032\ "m")) ~~ 4.6875xx10^-6\ "T"`.
 
 Therefore, the magnitude of the magnetic field is 4.7 × 10^−6^ T.
 
@@ -1276,7 +1276,7 @@ Similar to the [elementary charge](oil-drop-experiment.html) for electricity, th
 
     `E = hf`,
 
-where `h` is Planck's constant, equal to 6.63 × 10^−34^ J·s, and `f` is the frequency, measured in hertz (Hz). When Planck's hypothesis is taken into account, the black-body frequency distribution results agree with the theory. The continuous graph of intensity versus frequency can instead be thought of as a vertical bar graph where the vertical axis represents the number of photons that have the particular energy value on the horizontal.
+where `h` is Planck's constant, equal to 6.63 × 10^−34^ J⋅s, and `f` is the frequency, measured in hertz (Hz). When Planck's hypothesis is taken into account, the black-body frequency distribution results agree with the theory. The continuous graph of intensity versus frequency can instead be thought of as a vertical bar graph where the vertical axis represents the number of photons that have the particular energy value on the horizontal.
 
 Planck's idea of "allowed" values shows up in the Bohr model of the atom. In the old Rutherford model, the electrons orbit the nucleus. There were many problems with this model. For one thing, it couldn't explain the emission spectra of elements. Bohr's explanation was that only some electron orbitals are allowed, and each one has a specific energy. Electrons can absorb energy and jump to a higher level. When they fall to a lower level, they emit energy in the form of a photon. The energy, or frequency, of the photon depends on the difference in energy between the two levels.
 

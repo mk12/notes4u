@@ -234,7 +234,7 @@ The reaction rate is the rate at which a reactant is consumed or a product is pr
     `r = (∆c)/(∆t)`.
 
 reaction rate (`r`)
-:   the rate at which the reaction progresses, measured in moles per litre-second (mol/L·s); it is negative when the substance is being consumed and positive when the substance is being produced
+:   the rate at which the reaction progresses, measured in moles per litre-second (mol/L⋅s); it is negative when the substance is being consumed and positive when the substance is being produced
 
 concentration change (`∆c`)
 :   the change in the concentration of the substance in question, measured in moles per litre (mol/L)
@@ -601,7 +601,7 @@ A spontaneous reaction is a reaction that, given the necessary activation energy
 
 Entropy (`S`) is a measure of randomness or disorder. One analogy for this is a deck of cards: when they are stacked in a pile, there is only a certain number of ways they can be arranged. When the cards are thrown into the air, entropy increases greatly because there is nearly infinitely more ways that they can be arranged when they land. You can see this visually because they appear much more chaotic and disorganized when they land compared to when they were stacked neatly.
 
-We can determine the entropy change associated with a reaction using **standard entropy**, which is defined as the entropy of one mole of a substance at SATP, measured in joules per mole kelvin (J/mol·K). The equation is very similar to Hess's law type 2:
+We can determine the entropy change associated with a reaction using **standard entropy**, which is defined as the entropy of one mole of a substance at SATP, measured in joules per mole kelvin (J/mol⋅K). The equation is very similar to Hess's law type 2:
 
     `∆S = sum n S_"products" - sum n S_"reactants"`.
 
@@ -981,7 +981,7 @@ complete structural diagram
 :   a two-dimensional representation of the compound that shows every atom and the bond lines between them
 
 condensed structural diagram
-:   like complete diagrams, but hydrogen atoms don't have to be shown individually: write CH~3~ instead of C with —H three times
+:   like complete diagrams, but hydrogen atoms don't have to be shown individually: write CH~3~ instead of C with &mdash;H three times
 
 line structural diagram
 :   the most compact representation; there is an implied carbon atom at any point where the line ends or bends (vertices and termini), and hydrogen atoms are inferred
@@ -1192,8 +1192,8 @@ When iron corrodes, the rust flakes off and exposes new iron. This requires the 
 1. Fe~(s)~ → Fe^2+^~(aq)~ + 2 e^−^
 2. ½ O~2(g)~ + H~2~O~(l)~ + 2 e^−^ → 2 OH^−^~(aq)~
 3. Fe(OH)~2(s)~ is further oxidized and becomes yellow-brown Fe(OH)~3(s)~.
-4. Some Fe(OH)~3(s)~ becomes Fe~2~O~3~ · 3 H~2~O~(l)~.
-5. The final red-brown rust is referred to as Fe~2~O~3~ · `x` H~2~O~(l)~.
+4. Some Fe(OH)~3(s)~ becomes Fe~2~O~3~ ⋅ 3 H~2~O~(l)~.
+5. The final red-brown rust is referred to as Fe~2~O~3~ ⋅ `x` H~2~O~(l)~.
 
 The iron oxidation occurs at one location (anode) and the oxygen reduction occurs at another (cathode). The rust piles up between them. Eliminating either water or oxygen makes this rusting process impossible.
 
