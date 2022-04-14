@@ -1,0 +1,3 @@
+from: reader.lua
+to: html5
+filters: [filter.lua]

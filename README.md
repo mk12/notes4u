@@ -10,9 +10,16 @@ You can find more information on the OCDSB course listings for [math] and [scien
 
 TODO: hosted at mitchellkember.com
 
-## Usage
+## Build
 
 TODO
+
+## Dependencies
+
+- pandoc
+- deno
+- vnu
+- shellcheck
 
 ## License
 
