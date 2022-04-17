@@ -12,7 +12,10 @@ import katex from "https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.mjs";
 const AsciiMath = new AsciiMathParser();
 
 for await (const line of readLines(Deno.stdin)) {
-  const tex = "\\displaystyle{}" + AsciiMath.parse(line);
+  const tex = line.startsWith("displaystyle")
+    ? "\\displaystyle{}" +
+      AsciiMath.parse(line.slice("displaystyle".length).trim())
+    : AsciiMath.parse(line.trim());
   let html;
   try {
     html = katex.renderToString(tex, {

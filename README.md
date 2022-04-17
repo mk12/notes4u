@@ -16,7 +16,7 @@ TODO
 
 ## Dependencies
 
-- pandoc
+- pandoc 2.18+
 - deno
 - vnu
 - shellcheck

@@ -1,3 +1,4 @@
 from: reader.lua
-to: html5
+to: writer.lua
 filters: [filter.lua]
+template: template.html
