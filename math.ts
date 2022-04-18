@@ -11,28 +11,35 @@ import katex from "https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.mjs";
 
 // Ignore certain warnings from KaTeX.
 const oldConsoleWarn = console.warn;
-console.warn = function(message: string) {
+console.warn = function (message: string) {
   if (message.startsWith("No character metrics for")) {
     return;
   }
   oldConsoleWarn(message);
-}
+};
 
 const AsciiMath = new AsciiMathParser();
 
 for await (const line of readLines(Deno.stdin)) {
-  let tex = line.startsWith("displaystyle")
-    ? "\\displaystyle{}" +
-      AsciiMath.parse(line.slice("displaystyle".length).trim())
-    : AsciiMath.parse(line.trim());
-  tex = tex
-    // AsciiMath doens't understand double prime.
-    .replaceAll("{'} '", "{''}")
-    // AsciiMath puts too much space between primes and the opening paren.
-    .replaceAll(/'} \\left\s*\((.*?)\\right\s*\)/g, "'} ($1)")
-    // I prefer to type "∆" because it's easy on macOS (Option+J), but KaTeX
-    // doesn't handle these Unicode characters correctly.
-    .replaceAll("∆", "\\Delta{}");
+  // Undo changes made by reader.lua.
+  const asciimath = line
+    .trim()
+    .replaceAll("&nbsp;", "")
+    .replaceAll('<span class="degree">º</span>', "º");
+  const tex =
+    "\\displaystyle{}" +
+    AsciiMath.parse(asciimath)
+      // AsciiMath doens't understand double prime.
+      .replaceAll("{'} '", "{''}")
+      // AsciiMath puts too much space between primes and the opening paren.
+      .replaceAll(/'} \\left\s*\((.*?)\\right\s*\)/g, "'} ($1)")
+      // AsciiMath collides the vector arrow with the prime mark.
+      .replaceAll(/\\vec{(.)} '_{/g, "\\vec{$1}^{\\,\\prime}_{")
+      // Use \overrightarrow for two letter vectors.
+      .replaceAll(/\\vec{(. .)}/g, "\\overrightarrow{$1}")
+      // I prefer to type "∆" because it's easy on macOS (Option+J), but KaTeX
+      // doesn't handle these Unicode characters correctly.
+      .replaceAll("∆", "\\Delta{}");
   let html;
   try {
     html = katex.renderToString(tex, {

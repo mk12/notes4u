@@ -35,7 +35,9 @@ precommit: fmt lint all validate
 
 $(courses): %: notes/%.md $(pandoc_aux)
 	mkdir -p $(DESTDIR)/$@
-	pandoc -d config.yml -M destdir=$(DESTDIR)/$@ $<
+	pandoc -d config.yml $< \
+	-M dest_dir=$(DESTDIR)/$@ \
+	-M svg_dir=svg/$@
 
 fmt:
 	find . -type f -name "*.ts" | xargs deno fmt

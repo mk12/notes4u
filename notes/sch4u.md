@@ -1,3 +1,8 @@
+---
+course_code: SCH4U
+course_title: Chemistry
+---
+
 This course is made up of five units. _Equilibrium_ is the most difficult; _organic chemistry_ is all about memorization. The last unit is short and it is evaluated only on the exam. There is a lot of homework during the entire course, and I suggest you do all of it. There are seven labs in the first half of the course, a week-long lab exam in the middle, and one more regular lab near the end. Around the same time as the lab exam is the independent portion of the organic unit -- _do not leave it to the last minute_. Start it at least week in advance (better yet, two weeks).
 
 # Energy & Reaction Rates
@@ -263,7 +268,7 @@ For a reaction to occur, reactant particles must collide. For a successful colli
 
 Recall that temperature is a measure of the _average_ kinetic energy of the particles in a substance.
 
-![Maxwell-Boltzmann distribution at two temperatures](images/maxwell-boltzmann.svg)
+![Maxwell-Boltzmann distribution at two temperatures](maxwell-boltzmann.svg)
 
 In this graph, two temperatures `T_1` and `T_2` are shown. For each one, there are particles with all different kinetic energies, but there are more particles at some kinetic energies then there are at others. The area below each curve is the same (they have the same total number of particles), but with `T_2`, the shape is shifted to the right, so there are more particles with high kinetic energies, meaning the temperature of the object is greater.
 
@@ -271,7 +276,7 @@ For a chemical reaction to occur, a minimum energy barrier must be surpassed. Th
 
 If a collision is successful, then a higher energy, unstable, transitory particle if formed: the **activated complex**. This is a middle step (neither reactant nor product) that forms, has partial bonds, is highly reactive, exists for a very short duration, and then either breaks down to form products or re-forms the reactants. It exists between the time when reactant bonds break (exothermic) and product bonds form (endothermic), which is why it has so much energy.
 
-![Endothermic potential energy diagram with activated complex](images/endo-ped.svg)
+![Endothermic potential energy diagram with activated complex](endo-ped.svg)
 
 ## Reaction mechanisms
 
@@ -279,7 +284,7 @@ Most chemical reactions occur as a sequence of elementary steps. The sequence as
 
 In the potential energy diagram, each peak represents a separate activated complex, and the valleys between them represent the reaction intermediates. The RDS always has the greatest activation energy.
 
-![Exothermic potential energy diagram with reaction intermediates](images/mech-ped.svg)
+![Exothermic potential energy diagram with reaction intermediates](mech-ped.svg)
 
 # Equilibrium
 
@@ -337,6 +342,7 @@ Let `x` represent the absolute value of the change in concentration of H~2(g)~. 
 
 > When writing the let statement for `x`, always choose a reactant or product that has a coefficient of 1. This way, you can simply fill in all the **C** values with `-ax` for reactants and `+ax` for products, where `a` is the coefficient for that reactant or product.
 
+|       |            |            |           |
 |:-----:|:----------:|:----------:|:---------:|
 |       | H~2(g)~    | I~2(g)~    | 2 HI~(g)~ |
 | **I** | `2.00`     | `3.00`     | `0`       |
@@ -385,6 +391,7 @@ First we can calculate **I** for CO~2(g)~:
 
 Let `x` represent the absolute value of the change in concentration of O~2(g)~.
 
+|       |             |            |           |
 |:-----:|:-----------:|:----------:|:---------:|
 |       | 2 CO~2(g)~  | 2 CO~(g)~  | O~2(g)~   |
 | **I** | `0.50`      | `0`        | `0`       |
@@ -575,6 +582,7 @@ First, write the solubility equilibrium equation of the compound whose concentra
 
 Let `x` represent `|∆["CrO"_4^(2-)]|`. Now we can make our ICE table:
 
+|       |             |              |                  |
 |:-----:|:-----------:|:------------:|:----------------:|
 |       | PbCrO~4(s)~ | Pb^2+^~(aq)~ | CrO~4~^2−^~(aq)~ |
 | **I** | ---         | `0`          | `0.10`           |
@@ -784,6 +792,7 @@ We can use this to find the percent ionization:
 
 Our dissociation reaction is H~3~PO~4(aq)~ ⇌ H~2~PO~4~^−^~(aq)~ + H^+^~(aq)~. We need to use an ICE table to find the equilibrium concentrations.
 
+|       |               |                    |            |
 |:-----:|:-------------:|:------------------:|:----------:|
 |       | H~3~PO~4(aq)~ | H~2~PO~4~^−^~(aq)~ | H^+^~(aq)~ |
 | **I** | 0.082         | 0                  | 0          |
@@ -792,7 +801,9 @@ Our dissociation reaction is H~3~PO~4(aq)~ ⇌ H~2~PO~4~^−^~(aq)~ + H^+^~(aq)~
 
 Now we can calculate the acid ionization constant:
 
-    `K_"a" = (["H"^+]\["A"^-])/(["HA"]) = ((0.02089\ "mol/L")(0.02089\ "mol/L"))/(0.06111\ "mol/L") = 7.1xx10^-3`.
+    `K_"a" = (["H"^+]\["A"^-])/(["HA"]) = ((0.02089\ "mol/L")(0.02089\ "mol/L"))/(0.06111\ "mol/L")`,
+
+which evaluates to 7.1 × 10^−3^.
 
 ## Salt hydrolosis
 
@@ -855,7 +866,7 @@ The addition of the titrant continues until the **equivalence point** is reached
 
 The equivalence point occurs at the middle of the sharp increase or decrease in pH on the titration curve. The best indicator for any given titration is the one whose colour change pH range is centred around the pH of the equivalence point. In the graph below, an indicator that changes colour at around 7 would be ideal, but we can usually get away with phenolphthalein (it changes colour on the pH interval 8--10).
 
-![Titration curve of a strong acid using a strong base](images/titration-graph.svg)
+![Titration curve of a strong acid using a strong base](titration-graph.svg)
 
 The pH of the equivalence point depends on the type of titration:
 
@@ -910,7 +921,7 @@ Suppose we add HCl~(aq)~ to this solution. Normally, this would decrease the pH 
 
 If we add NaOH~(aq)~, the pH only increases slightly because the hydroxide ions combine with the hydrogen ions, causing the equilibrium to shift right to compensate for the decrease in hydrogen ions.
 
-![Effect of adding hydrogen ions to a normal solution versus to a buffer solution](images/buffer-solution.svg)
+![Effect of adding hydrogen ions to a normal solution versus to a buffer solution](buffer-solution.svg)
 
 # Organic Chemistry
 
@@ -955,17 +966,17 @@ Alicyclics, or cyclic aliphatic hydrocarbons, occur when the two ends of an alip
 
 Aromatic hydrocarbons are based on a ring of alternating single bonds and double bonds. This ring by itself is called _benzene_, and other hydrocarbons based on it (such as toluene) are collectively called aromatics.
 
-![Benzene is usually represented with a circle inscribed within a hexagon](images/benzene.svg)
+![Benzene is usually represented with a circle inscribed within a hexagon](benzene.svg)
 
 ## Stuctural & geometric isomers
 
 Structural isomers are molecules with the same molecular formula but different structural arrangements.
 
-![Structural isomers of the alkane C~6~H~14~](images/structural-isomers.svg)
+![Structural isomers of the alkane C~6~H~14~](structural-isomers.svg)
 
 Gemoetric isomers, also called _cis--trans_ isomers, apply only to alkenes with one double bond. The double bond is fixed between two carbon atoms -- it can't rotate like single bonds can. The _cis_ isomer has the larger groups on the same side; the _trans_ isomer has the larger groups on opposite sides.
 
-![Geometric isomers of 2-butene: cis-2-butene and trans-2-butene](images/geometric-isomers.svg)
+![Geometric isomers of 2-butene: cis-2-butene and trans-2-butene](geometric-isomers.svg)
 
 ## Representations
 
@@ -986,7 +997,7 @@ condensed structural diagram
 line structural diagram
 :   the most compact representation; there is an implied carbon atom at any point where the line ends or bends (vertices and termini), and hydrogen atoms are inferred
 
-![Complete, condensed, and line structural diagrams for methylbutane](images/structural-diagrams.svg)
+![Complete, condensed, and line structural diagrams for methylbutane](structural-diagrams.svg)
 
 ## Nomenclature
 
@@ -1035,7 +1046,7 @@ Side branches (_alkyl_ groups) are named like #-[_prefix_]yl, #,#-**di**[_prefix
 
 Propyl and butyl groups have non-systematic names for their isomers:
 
-![Structural isomers of propyl and butyl](images/propyl-butyl.svg)
+![Structural isomers of propyl and butyl](propyl-butyl.svg)
 
 If there are two side branches coming off an aromatic, a classical method can be used instead of numbers: ortho or _o-_ means 1,2; meta or _m-_ means 1,3; and para or _p-_ means 1,4. For example, 1,4-diethylbenzene is the same as _p_-diethylbenzene.
 
@@ -1153,7 +1164,7 @@ A galvanic cell can be represented succinctly with _standard cell notation_:
 
     cathode\ **|**\ electrolyte\ **||**\ electrolyte\ **|**\ anode.
 
-![Galvanic cell diagram](images/galvanic-cell.jpg)
+![Galvanic cell diagram](galvanic-cell.jpg)
 
 Sometimes, an _inert electrode_ will be required because one of the half-reactions has no solids in it (the electrode has to be a solid). For example, a hydrogen--cobalt cell would be Pt~(s)~\ **|**\ H^+^~(aq)~, H~2(g)~\ **||**\ Co^2+^~(aq)~\ **|**\ Co~(s)~. At the anode, solid cobalt is flaking off and giving up electrons to become cobalt ions. In the other beaker, hydrogen ions are gaining electrons and becoming hydrogen gas. The electrons go through the wire and into the platinum electrode, which, unlike the cobalt electrode, does not participate in the reaction -- it is inert. It's sort of like sticking the wire into the solution, except that it doesn't exactly work that way; it has to be an electrode made of platinum or carbon.
 

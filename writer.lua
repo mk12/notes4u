@@ -58,21 +58,21 @@ function Writer(doc, options)
  
     local write, write_course, write_unit, write_section
 
-    write = function(kind, blocks, location, toc)
+    write = function(kind, blocks, location, up, toc)
         blocks, math = process_math(blocks)
         local meta = {
-            title = "MCV4U Notes",
+            title = "TODO",
             math = math,
             prev = location.prev,
-            up = kind ~= "course" and root,
+            up = up,
             next = location.next,
             toc = toc,
-            course_title = "Calculus & Vectors",
-            course_code = "MCV4U",
+            course_title = doc.meta.course_title,
+            course_code = doc.meta.course_code,
         }
         meta[kind] = true
         local subdoc = pandoc.Pandoc(blocks, meta)
-        local path = doc.meta.destdir .. "/" .. location.this.file
+        local path = doc.meta.dest_dir .. "/" .. location.this.file
         local file = assert(io.open(path, "w"))
         local html = pandoc.write(subdoc, "html", options)
         assert(file:write(html))
@@ -84,31 +84,31 @@ function Writer(doc, options)
         local toc = {}
         local page
         while level == 1 do
-            page, level = write_unit()
+            page, level = write_unit(location.this)
             table.insert(toc, page)
         end
-        write("course", blocks, location, toc)
+        write("course", blocks, location, nil, toc)
     end
 
-    write_unit = function()
+    write_unit = function(up)
         local blocks, location, level = scan()
         table.insert(blocks[1].classes, "unit-heading")
         local toc = {}
         local page
         while level == 2 do
-            page, level = write_section()
+            page, level = write_section(location.this)
             table.insert(toc, page)
         end
-        write("unit", blocks, location, toc)
+        write("unit", blocks, location, up, toc)
         local page = location.this
         page.toc = toc
         return page, level
     end
 
-    write_section = function()
+    write_section = function(up)
         local blocks, location, level = scan()
         table.insert(blocks[1].classes, "section-heading")
-        write("section", blocks, location, nil)
+        write("section", blocks, location, up, nil)
         return location.this, level
     end
 

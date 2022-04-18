@@ -7,23 +7,9 @@ local function render_code_as_math(doc)
     local tmp_name = os.tmpname()
     local math = assert(io.popen("deno run math.ts > " .. tmp_name, "w"))
     doc:walk({
-        traverse = "topdown",
-        Div = function(el)
-            return nil, false
-        end,
         Code = function(el)
-            el.attr = { inline_math = true }
-        end,
-    })
-    doc:walk({
-        Code = function(el)
-            local input = el.text
-            if not el.inline_math then
-                -- This is not part of AsciiMath but math.ts handles it.
-                input = "displaystyle " .. input
-            end
-            assert(not input:find("\n"))
-            assert(math:write(input .. "\n"))
+            assert(not el.text:find("\n"))
+            assert(math:write(el.text .. "\n"))
         end
     })
     math:close()
@@ -56,6 +42,29 @@ function Pandoc(doc)
     })
     -- Interpret Code as math, and render with math.ts.
     doc = render_code_as_math(doc)
+    -- Embed SVGs. Must come last since we use pandoc.write on inlines.
+    doc = doc:walk({
+        Image = function(el)
+            ext = ".svg"
+            if el.src:sub(-#ext) ~= ext then
+                return
+            end
+            local caption_doc = pandoc.Pandoc({el.caption})
+            local caption_html = pandoc.write(caption_doc, "html")
+            local path = doc.meta.svg_dir .. "/" .. el.src
+            local file = assert(io.open(path, "r"))
+            local content = (
+                "<figure>"
+                .. assert(file:read("a"))
+                .. "<figcaption>"
+                .. caption_html
+                .. "</figcaption>"
+                .. "</figure>"
+            )
+            file:close()
+            return pandoc.RawInline("html", content)
+        end,
+    })
 
     return doc
 end

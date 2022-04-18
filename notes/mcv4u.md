@@ -1,3 +1,8 @@
+---
+course_code: MCV4U
+course_title: Calculus & Vectors
+---
+
 This course builds on Advanced Functions to prepare you for university math. The two halves, (differential) calculus and vectors, are very different. Calculus is more algebraic and abstract, while vectors is more visual and geometric.
 
 # Rates of Change
@@ -20,7 +25,7 @@ When we say claim that a limit exists, we are implying that the function approac
 
 In some cases it is easy to determine a limit just by looking at a graph. Consider the limit as `x` approaches 5 for the following function:
 
-![A strange-looking, discontinuous function](images/strange-function.svg)
+![A strange-looking, discontinuous function](strange-function.svg)
 
 Notice that `f(5) = 2`. Remember, though, the actual value of the function when `x` is _equal to_ 5 is irrelevant to the limit as `x` _approaches_ 5. From the graph, you should be able to see that
 
@@ -100,7 +105,7 @@ Some limits cannot be evaluated because they do not exist. To prove this, we hav
 
 We get an indeterminate answer if we try direct substitution. As you might have guessed, we need to evaluate the limit from both sides. Graphing the function turns out to be very helpful:
 
-![The graph of the function (notice the jump at `x = 4`)](images/one-sided-limit.svg)
+![The graph of the function (notice the jump at `x = 4`)](one-sided-limit.svg)
 
 This graph makes it obvious that
 
@@ -116,7 +121,7 @@ A continuous function is one that can be drawn without lifting your pencil. A di
 - jump discontinuity (jump)
 - infinite discontinuity (asymptote)
 
-![A very discontinuous function](images/discontinuities.svg)
+![A very discontinuous function](discontinuities.svg)
 
 We can also talk about whether a function is continuous at a particular point. For example, the function graphed above is continuous at 3.
 
@@ -140,7 +145,7 @@ and the second condition is met. If this doesn't make sense, try graphing the fu
 
 A _secant line_ is a straight line that connects two points on a curve. A _tangent line_ is a straight line that "just touches" the curve at a single point.
 
-![A graph with a secant line on [2, 4] and a tangent line at 7](images/secant-tangent.svg)
+![A graph with a secant line on [2, 4] and a tangent line at 7](secant-tangent.svg)
 
 The slope of the secant line gives us the _average_ rate of change of the function on the interval between the two points. The slope of the tangent line gives us the _instantaneous_ rate of change.
 
@@ -160,7 +165,7 @@ The key thing to realize here is that the secant line and the tangent line are r
 
 This is the first principle of calculus. As with most other things, graphing will help us understand it:
 
-![A graph with a secant line on [`a`, `a+h`] and a tangent line at `a`](images/first-principle.svg)
+![A graph with a secant line on [`a`, `a+h`] and a tangent line at `a`](first-principle.svg)
 
 As we move the second point closer to the first point, thereby making `h` approach zero, the slope of the secant line will converge on the slope of the tangent line at `a`.
 
@@ -192,7 +197,7 @@ The mathematical definition of the derivative should look very familiar:
 
 Since the derivative is a function, we can and should graph it. Consider the simplest linear and quadratic functions -- look at the slope of the original function and convince yourself that the derivative is correct:
 
-![Graphs of `f(x)=x` and `g(x)=x^2` with their derivatives in red](images/derivatives.svg)
+![Graphs of `f(x)=x` and `g(x)=x^2` with their derivatives in red](derivatives.svg)
 
 One real-world example of a derivative is _velocity_, the derivative of position with respect to time. What do we mean when we say that a car is moving 20 m/s north? Maybe we observed the car taking 5 seconds to travel 100 metres. In any case, the only way we can measure velocity is by dividing a change in position by a change in time (the smaller, the better). If the derivative seems like an alien concept, just think of how ordinary it is to talk about the rate of change in position.
 
@@ -396,7 +401,7 @@ Now we can rewrite the function that we want to maximize:
 
 Taking the derivative gives us
 
-    `f'(a) = sqrt(9-a) - a/(2sqrt(9-a)`,
+    `f'(a) = sqrt(9-a) - a/(2sqrt(9-a))`,
 
 and now we can set it equal to zero to find the turning point:
 
@@ -418,17 +423,17 @@ This unit will teach you to accurately sketch all manner of functions by using t
 
 When sketching the graph of a function, the obvious first step is to plot a few points. Specifically, the zeros, the turning points, and the inflection points (and, for good measure, the y-intercept). But how does one connect the dots? The answer lies within three quantities: function value, slope, and concavity. In fact, it's just their _signs_ that matter.
 
-The values of `f(x)`, `f'(x)`, and `fʺ(x)` represent function value, slope, and concavity, respectively. This table summarizes the meaning of their signs:
+The values of `f(x)`, `f'(x)`, and `f''(x)` represent function value, slope, and concavity, respectively. This table summarizes the meaning of their signs:
 
 | Value | `= 0` | `> 0` | `< 0` |
 |:-----:|:-------:|:-------:|:-------:|
-| `f(x)`  | zero | positive | negative |
-| `f'(x)` | turning point | increasing | decreasing |
-| `fʺ(x)` | inflection point | concave up | concave down |
+| `f(x)`   | zero | positive | negative |
+| `f'(x)`  | turning point | increasing | decreasing |
+| `f''(x)` | inflection point | concave up | concave down |
 
 Here is an example of the information that these three quantities, given by the function and its first two derivatives, provides you with:
 
-![A quintic function with zeros, turning points, and inflection points indicated; below is a breakdown of positive/negative, increasing/decreasing, and concave up/down](images/critical-key-points.svg)
+![A quintic function with zeros, turning points, and inflection points indicated; below is a breakdown of positive/negative, increasing/decreasing, and concave up/down](critical-key-points.svg)
 
 ## Critical points & key points
 
@@ -440,9 +445,9 @@ If the value of `f'(x)` changes from positive to negative or vice versa across t
 
 The key points of a function are at the values of `x` where
 
-    `fʺ(x) = 0 qquad or qquad fʺ(x)` does not exist.
+    `f''(x) = 0 qquad or qquad f''(x)` does not exist.
 
-If the value of `fʺ(x)` changes from positive to negative or vice versa across the key point, then it represents an inflection point.
+If the value of `f''(x)` changes from positive to negative or vice versa across the key point, then it represents an inflection point.
 
 Critical points can be turning points, and key points can be inflection points, but they aren't always -- just as zeros can indicate that the curve is crossing the x-axis, but not always. All these points are important because they represent _transitions_: from positive to negative, from increasing to decreasing, from concave up to concave down. If you know _when_ the three quantities change, you can determine their signs at all points in the domain of the function. You are then well on your way to sketching the curve.
 
@@ -483,7 +488,7 @@ We represent scalars using ordinary variable notation like `a`, `x`, `v`, or `t`
 
 We use absolute value notation when we want to get the magnitude of a vector. For example, if `vec v` is 5 km/h [N25ºE], then `|vec v|` is 5 km/h.
 
-Two vectors are equal if and only if they have the same magnitude and the same direction. In other words, they must be parallel and have the same length. Opposite vectors have the same magnitude but opposite directions. For example, `vec(AB)` and `vec(BA)` are opposite because of the identity `vec(AB)=-vec(BA)`.
+Two vectors are equal if and only if they have the same magnitude and the same direction. In other words, they must be parallel and have the same length. Opposite vectors have the same magnitude but opposite directions. For example, `vec(AB)` and `vec(BA)` are opposite due to the identity `vec(AB)=-vec(BA)`.
 
 ## Addition & subtraction
 
@@ -491,7 +496,7 @@ The sum of two or more vectors is called the _resultant_ vector. We can add and 
 
 To find the sum of `vec u` and `vec v`, we can use the _parallelogram law_. Start by drawing both vectors with their tails beginning at the same point. Then complete the parallelogram using a copy of each vector. The resultant vector is the diagonal of the parallelogram from tails to heads.
 
-![The parallelogram law of vector addition](images/parallelogram.svg)
+![The parallelogram law of vector addition](parallelogram.svg)
 
 Once you have your diagram, you can find the magnitude and direction of the resultant vector using cosine law and sine law. To _subtract_ vectors, you can use the same method -- notice that `vec u - vec v = vec u + (-vec v)`. In other words, flip the subtrahend and then add.
 
@@ -521,7 +526,7 @@ we say that `vec u` and `vec v` are _scalar multiples_ of each other. They will 
 
 Here are a few examples of scalar multiplication:
 
-![A few scalar multiples of vector `vec u`: 1, 2, −1, 0.5, and −1.5](images/scalar-multiples.svg)
+![A few scalar multiples of vector `vec u`: 1, 2, −1, 0.5, and −1.5](scalar-multiples.svg)
 
 Scalar multiplication is distributive, meaning
 
@@ -565,7 +570,7 @@ To get the magnitude of `vec v = [x,y]`, you can use the Pythagorean theorem:
 
     `|vec v| = sqrt(x^2 + y^2)`.
 
-You can find the direction of `vec v` by drawing a triangle and using the inverse tangent function. Then, you can state the vector with the usual magnitude-direction representation -- for example, `[4\ "m",3\ "m"]` becomes 5 m [E 30º N]. Going the other way (from magnitude-direction to _x_ and _y_ components) is called _resolving_ the vector, and you can do it by sketching a right triangle and using sine and cosine.
+You can find the direction of `vec v` by drawing a triangle and using the inverse tangent function. Then, you can state the vector with the usual magnitude-direction representation -- for example, [4m, 3m] becomes 5 m [E 30º N]. Going the other way (from magnitude-direction to _x_ and _y_ components) is called _resolving_ the vector, and you can do it by sketching a right triangle and using sine and cosine.
 
 All of this is straightforward in `RR^3` as well. You just use one more component. Addition, subtraction, and scalar multiplication work the same. To get the magnitude, just include `z^2` in the sum.
 
@@ -579,7 +584,7 @@ That's it. You can distribute the coefficient if you want, but there is really n
 
 There is another way of thinking about Euclidean vectors. It might just seem like an alternative notation, but it's a bit more than that. It works like this: there are only three vectors (or two in two-space) that you need to describe any other vector. These are called the standard basis vectors:
 
-    `hat i = [1,0,0] qquad and qquad hat j = [0,1,0] qquad and qquad hat k = [0,0,1]`.
+    `hat i = [1,0,0], quad hat j = [0,1,0], quad hat k = [0,0,1]`.
 
 Say we have the vector `vec v = [4,-2,7]`, which is in component form. How would we express it in standard basis? Like this:
 
@@ -603,7 +608,7 @@ There are also spanning sets in `RR^3`. A triplet of three-component vectors for
 
 ### Example
 
-Express the vector `[6,7]` in terms of the spanning set `\{[10,5],``[-2,1]}`.
+Express the vector `[6,7]` in terms of the spanning set `{[10,5],""[-2,1]}`.
 
 Referring to the definition of a linear combination, we can write an equation with unknown coefficients `a` and `b`:
 
@@ -646,7 +651,7 @@ First, we write the linear combination equation:
 
 That gives us the three equations
 
-    `-14=-a+4b quad and quad``-1=2a+b quad and quad 16=3a-2b`.
+    `-14=-a+4b, quad -1=2a+b, quad and quad 16=3a-2b`.
 
 Solving the system defined by the first two equations tells us that
 
@@ -654,7 +659,7 @@ Solving the system defined by the first two equations tells us that
 
 If we substitute those values into the third equation, we get
 
-    `"LS" = 16 qquad and "RS" = 88/9`.
+    `"LS" = 16 qquad and qquad "RS" = 88/9`.
 
 Since `"LS"!="RS"`, the system is inconsistent and therefore the vectors `[-1,2,3]`, `[4,1,-2]`, and `[-14,-1,16]` are non-coplanar.
 
@@ -702,7 +707,7 @@ Finally, any dot product with the zero vector produces the _scalar_ zero:
 
 The cross product is an operation that takes two nonzero vectors and produces a _vector_ (not a scalar) perpendicular to both of them. Geometrically, we define the magnitude of the cross product with
 
-    `|vec u xx vec v| = |vec u||vec v|sin theta`,
+    `|vec u xx vec v| = |:vec u:||:vec v:|sin theta`,
 
 where `theta` is the angle between the vectors in standard position. To find the direction of the vector, we use the _right-hand rule_: point in the direction of `vec u` with your fingers, and then curl them (naturally, not backwards) towards the direction of `vec v`. Your thumb will then point in the direction of `vec u xx vec v`.
 
@@ -748,11 +753,11 @@ It does not matter which vectors are placed where in that equation. As long as c
 
 Resolving a vector into its _x_ and _y_ components is easy, especially if the vector is already written in `RR^2` component form. However, sometimes we want to _project_ the vector onto a different axis -- we can use another vector to describe this axis. When I talk about the _scalar projection_ and the _vector projection_ of `vec a` on `vec b`, I mean this:
 
-![Geometric interpretation of scalar projection (left) and vector projection (right)](images/projection.svg)
+![Geometric interpretation of scalar projection (left) and vector projection (right)](projection.svg)
 
 Notice the subscript notation: the value of `vec a_b` is the vector projection of `vec a` on `vec b`, and its magnitude is the scalar projection. To calculate the scalar projection, we can use one of our new friends, the dot product:
 
-    `|vec a_b| = vec a * hat b = |vec a|cos theta`.
+    `|vec a_b| = vec a * hat b = |:vec a:|cos theta`.
 
 If we know `theta`, then this is easy. However, sometimes we either don't know it or we would rather avoid rounding off trig ratios. In those cases, we should use the middle part of the equation above. And if we don't know `hat b`, we  can get it by normalizing `vec b`:
 
@@ -760,7 +765,7 @@ If we know `theta`, then this is easy. However, sometimes we either don't know i
 
 What about the vector projection? That's easy -- we just get the scalar projection and point it in the direction of `hat b`:
 
-    `vec a_b = |vec a_b| hat b = (vec a * hat b) hat b = (|vec a|cos theta)hat b`.
+    `vec a_b = |vec a_b| hat b = (vec a * hat b) hat b = (|:vec a:|cos theta)hat b`.
 
 Once again, we can normalize `vec b` at the same time if we want:
 
@@ -794,7 +799,7 @@ Often, we want to determine the angle that a certain vector makes with the coord
 
 Let's start with the _x_-axis. If we have a vector `vec u` in component form, then
 
-    `cos theta = (vec u * hat i)/(|vec u||hat i|) = ([u_1,u_2,u_3] * [1,0,0])/(|vec u|(1)) = u_1/|vec u|`.
+    `cos theta = (vec u * hat i)/(|:vec u:||:hat i:|) = ([u_1,u_2,u_3] * [1,0,0])/(|:vec u:|(1)) = u_1/|vec u|`.
 
 When we dot `vec u` with one of the standard basis vectors, we are effectively _choosing_ one of its components. Simplifying the equation for the other two axes is just as easy. To avoid confusion, we use three different Greek letters to represent the three angles:
 
@@ -842,7 +847,7 @@ Those three equations have something in common: they relate _x_ to _y_. If you s
 
 We are going to explore another triplet of line equations, starting with the _vector equation_ of the line. To describe a line with vectors, we need an initial point that falls on the line -- we'll call it point A. From point A, we need a vector that tells us which way the line goes -- we'll call this `vec m`. Here's what this might look like:
 
-![A line defined by an initial point and a direction vector](images/vector-line.svg)
+![A line defined by an initial point and a direction vector](vector-line.svg)
 
 To get from point A to some point P elsewhere on the line, all we have to do is add a scalar multiple of the direction vector:
 
@@ -885,7 +890,7 @@ parallel (0)
 nonparallel (1)
 :   All other systems fall into this category. The lines are nonparallel, so `vec m != kvec n`. There is exactly one point of intersection.
 
-![Collinear, parallel, and nonparallel pairs of lines in two-space](images/line-intersection.svg)
+![Collinear, parallel, and nonparallel pairs of lines in two-space](line-intersection.svg)
 
 In `RR^3`, there is one more possibility: _skew lines_. These are lines that are nonparallel but do not intersect. To see how this is possible, simply point your arms in different directions. Unless you deliberately put them on the same plane, they will not intersect even when extended to infinity.
 
@@ -915,7 +920,7 @@ That's the vector equation of a plane. As long as `vec u` and `vec v` are non-co
 
 We are trying to generalize ideas about sets of points in different dimensions. It is easier to see the natural progression of adding degrees of freedom with a drawing -- but don't forget that these are really two-dimensional representations:
 
-![Geometric figures that can be represented in zero, one, two, and three dimensions](images/dimensions.svg)
+![Geometric figures that can be represented in zero, one, two, and three dimensions](dimensions.svg)
 
 The arrows on the line indicates that it extends to infinity in both directions. You may be tempted to think of the plane as a quadrilateral, but it is most definitely not. The plane doesn't really have edges -- it's just hard to draw it without them. The same thing goes for the solid: it's not a cube. It extends to infinity, so there is only one solid in three-space: the _xyz_ solid.
 
@@ -967,7 +972,7 @@ You'll notice that the value of _d_ and the normal vector are independent. Since
 
 The normal vector is useful for another reason: we can use it to find the angle between two planes. If we have planes with normal vectors `vec n_1` and `vec n_2`, the acute angle separating them is given by
 
-    `theta_"acute" = cos^-1((|vec n_1 * vec n_2|)/(|vec n_1||vec n_2|))`.
+    `theta_"acute" = cos^-1((|vec n_1 * vec n_2|)/(|:vec n_1:||:vec n_2:|))`.
 
 > The vertical bars in the numerator of this equation mean absolute value. In the bottom, they mean vector magnitude. Don't get confused and think that the dot product should produce a vector instead of a scalar. (For this reason, it is more common to use the notation `||vec v||` for the norm and reserve `|a|` for the absolute value.)
 
@@ -1016,7 +1021,7 @@ If this equation gives you a value for _t_, there is one point of intersection. 
 
 Sometimes, in addition to the point of intersection, we want to find the _angle_ of intersection. As with the angle between two planes, we only care about the acute angle. Let `phi` represent the angle between `vec m` and `vec n`, and let `theta` represent the angle of intersection. They are complementary: `phi + theta = 90º`. Since `cos phi = cos(90º-theta) = sin theta`, we can find the angle with
 
-    `theta_"acute" = sin^-1((|vec m * vec n|)/(|vec m||vec n|))`.
+    `theta_"acute" = sin^-1((|vec m * vec n|)/(|:vec m:||:vec n:|))`.
 
 ## Plane--plane intersection
 
@@ -1051,7 +1056,7 @@ Given a point A and a line `vec r = vec r_0 + tvec m`, we can find the shortest 
 
 Given two parallel planes with a normal vector `vec n` (it doesn't matter which plane you take it from) and containing points A and B, we can find the shortest distance between them using the [scalar projection](scalar-vector-projection.html):
 
-    `d = |vec(AB)_n| = |vec(AB) * hat n| = (|vec(AB) * vec n|)/(|vec n|)`.
+    `d = |:vec(AB)_n:| = |vec(AB) * hat n| = (|vec(AB) * vec n|)/(|vec n|)`.
 
 (Note that nonparallel planes intersect, so the shortest distance is zero.) We can also use this equation for skew lines, where one line contains A and the other has B. We calculate `vec n` by crossing their direction vectors:
 
@@ -1061,7 +1066,7 @@ Given two parallel planes with a normal vector `vec n` (it doesn't matter which 
 
 A _matrix_ (plural matrices) is a rectangular array of numbers arranged in rows and columns. They have a variety of uses, but for us they are just a convenient way of staying organized while solving linear systems. Solving a system of two linear equations by elimination is easy, but it becomes much harder once you have four or five equations. Consider this linear system:
 
-    `x + 3y = 4 qquad and qquad ``-2x + 3y = 10`.
+    `x + 3y = 4 qquad and qquad -2x + 3y = 10`.
 
 The first step is to move the constant term to the right-hand side. In this case, it's already done. Now, we take the coefficients and we put them into an _augmented matrix_:
 

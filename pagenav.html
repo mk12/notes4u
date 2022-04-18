@@ -3,7 +3,7 @@ $if(prev)$
   «&nbsp;Prev
 </a>
 $else$
-<span class="pagenav__item pagenav__item--left" role="link" aria-disabled="true" aria-label="previous page">
+<span class="pagenav__item pagenav__item--left pagenav__item--disabled" role="link" aria-disabled="true" aria-label="previous page">
   «&nbsp;Prev
 </span>
 $endif$
@@ -11,13 +11,17 @@ $if(up)$
 <a class="pagenav__item pagenav__item--center pagenav__item--link"  href="$up.file$" aria-label="parent page">
   Up
 </a>
+$else$
+<span class="pagenav__item pagenav__item--center pagenav__item--disabled" role="link" aria-disabled="true" aria-label="parent page">
+  Up
+</span>
 $endif$
 $if(next)$
 <a class="pagenav__item pagenav__item--right pagenav__item--link" href="$next.file$" aria-label="next page">
   Next&nbsp;»
 </a>
 $else$
-<span class="pagenav__item pagenav__item--right" role="link" aria-disabled="true" aria-label="next page">
+<span class="pagenav__item pagenav__item--right pagenav__item--disabled" role="link" aria-disabled="true" aria-label="next page">
   Next&nbsp;»
 </span>
 $endif$

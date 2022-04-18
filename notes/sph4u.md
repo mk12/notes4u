@@ -1,3 +1,8 @@
+---
+course_code: SPH4U
+course_title: Physics
+---
+
 This is supposedly the most difficult course in all of high school. It mostly covers the same topics as in grade eleven physics, but in more depth. There is no getting around the fact that you have to spend time doing all the practice problems if you want good marks on the tests. The first unit is the longest, but it is mostly just different ways of using the same few equations. The third unit has the most content, and the fourth involves the most memorization and _'splain_ problems.
 
 # Basic Skills
@@ -47,7 +52,7 @@ Measurements are never _exact_. There is always some uncertainty, usually due to
 
 Accuracy is the closeness of a measurement to the actual value. Precision is the closeness of multiple measurements to each other. For example, a ruler that has more divisions will give you a more precise answer, but not necessarily a more accurate one.
 
-![Accuracy and precision are independent of each other](images/accuracy-precision.svg)
+![Accuracy and precision are independent of each other](accuracy-precision.svg)
 
 ### Uncertainty
 
@@ -76,7 +81,7 @@ If `vec a = 65\ "m [E 36º N]"` and `vec b = 99\ "m [N 24º W]"`, calculate `vec
 
 First we should always draw a sketch. I've labelled the _x_ and _y_ components for each vector with a sign (north and east are positive, south and west are negative) and a trig function (cosine for adjacent, sine for opposite).
 
-![Sketch of `vec a` and `vec b` on compass axes](images/vector-sketch.svg)
+![Sketch of `vec a` and `vec b` on compass axes](vector-sketch.svg)
 
 Now we can make our table. We calculate the components of each vector, and then we add them up in the last row.
 
@@ -94,7 +99,7 @@ Now we can use the Pythagorean theorem to calculate the magnitude of our resulta
 
 We can draw another sketch to help with finding the angle. If you draw the largest component first, then you will always get an angle below 45º. If you always do it this way, then you'll know that you've made a mistake if your angle is above 45º.
 
-![Sketch of `vec a + vec b` with unknown angle](images/resultant-vector.svg)
+![Sketch of `vec a + vec b` with unknown angle](resultant-vector.svg)
 
 Now we can use inverse tangent to find theta (opposite over adjacent):
 
@@ -138,21 +143,19 @@ conclusion
 
 # Motion & Dynamics
 
-<!-- TODO: write here -->
-
 ## Position, velocity, & acceleration
 
 Position (`vec d`) is a vector quantity representing a location relative to an origin, usually measured in metres (m). A change in position is called _displacement_ (`∆vec d`). The rate of change in position per unit of time is called velocity (`vec v`), usually measured in metres per second (m/s).
 
 If we graph position versus time (or d--t for short), the slope of the tangent line gives us the instantaneous velocity at that moment. The slope of the secant line gives us the average velocity on the interval [`t_1`, `t_2`]. We can also go the other way: on a v--t graph, the area under the curve between `t_1` and `t_2` gives us the displacement on that interval.
 
-![Graphs of position vs. time and velocity vs. time](images/dt-vt-graph.svg)
+![Graphs of position vs. time and velocity vs. time](dt-vt-graph.svg)
 
 > Vectors can be represented in two ways. In handwriting, we always use an arrow, like `vec v`. In other situations, boldface can be used as an alternative to the arrow, like **v**.
 
 Acceleration (`vec a`) is the rate of change of velocity per unit of time, usually measured in metre per seconds squared (m/s^2^). It relates to velocity in exactly the same way that velocity relates to position. In this course, we always assume that acceleration is constant.
 
-![Graphs of velocity vs. time and acceleration vs. time](images/vt-at-graph.svg)
+![Graphs of velocity vs. time and acceleration vs. time](vt-at-graph.svg)
 
 There are two important equations that are represented in these two sets of graphs. When we are calculating slopes, we use
 
@@ -286,15 +289,15 @@ The duration of the projectile's flight (`∆t`) is associated with the vertical
 
 Since we physics students don't like doing any more work than absolutely necessary, we often use more specific, time-saving equations. The first equation tells us how long it takes (`∆t`) for the projectile to return to its original altitude (`∆vec d_"v" = 0`). If we let `g = |vec a_"g"|`, then
 
-    `∆t = (2|vec v_0|sin theta)/g`,
+    `∆t = (2|:vec v_0:|sin theta)/g`,
 
 and the range of this projectile is given by
 
-    `∆vec d_"h" = (|vec v_0|^2sin 2theta)/g`.
+    `∆vec d_"h" = (|:vec v_0:|^2sin 2theta)/g`.
 
 The next equation doesn't require the projectile to land at its original altitude. It treats the projectile's altitude as a function of its horizontal position. This allows us to find the projectile's vertical position at any particular horizontal position and, using the quadratic formula, go the other way as well. Assuming the projectile starts at the origin and passes through a point (`x`, `y`), then
 
-    `y = (tantheta)x - g/(2|vec v_0|^2cos^2theta)x^2`.
+    `y = (tantheta)x - g/(2|:vec v_0:|^2cos^2theta)x^2`.
 
 The derivation of these three equations is left as an exercise to the reader.
 
@@ -312,7 +315,7 @@ Since `2.01\ "m" > 1.5\ "m"`, the answer is yes -- it _will_ clear the fence.
 
 Uniform circular motion is the motion of an object moving at constant speed along the circumference of a circle. Although speed does not change, direction is constantly changing, so there must be acceleration.
 
-![A few instantaneous velocities of an object moving in a circle](images/circular-motion.svg)
+![A few instantaneous velocities of an object moving in a circle](circular-motion.svg)
 
 As you can see, the velocity of the object is always a tangent to the circle. The object never flies away because it is always _accelerating towards the centre_ of the circle. This acceleration is caused by a **centripetal force**.
 
@@ -344,11 +347,11 @@ A tractor pulls a railcar with mass 1.4 × 10^4^ kg at a 23º angle to the track
 
 Let's draw a sketch of the situation:
 
-![Railcar being pulled at a 23º angle](images/railcar-sketch.svg)
+![Railcar being pulled at a 23º angle](railcar-sketch.svg)
 
 Next, we need to draw a _free body diagram_. This is a simple diagram that represents all the forces acting on a body, and you should get into the habit of using them for all dynamics problems. If we weren't looking at this problem from above, we would also include the gravitational force and the normal force, even though they cancel each other out.
 
-![Free body diagram of the railcar](images/railcar-fbd.svg)
+![Free body diagram of the railcar](railcar-fbd.svg)
 
 This diagram isn't completely accurate -- the railcar does not leave the tracks. There is another force, exerted by the tracks themselves, that cancels out the perpendicular component of `vec F_"a"`. The sum of this force and `vec F_"a"` is simply the parallel component of `vec F_"a"`, which is its scalar projection onto the tracks, given by `|vec F_"a"|cos theta`.
 
@@ -358,7 +361,7 @@ We can now use Newton's second law of motion to find acceleration:
 
 Rearranging to solve for acceleration gives us
 
-    `vec a = (|vec F_"a"|cos theta + vec F_"f")/m`,
+    `vec a = (|:vec F_"a":|cos theta + vec F_"f")/m`,
 
 and if we let [fwd] be positive, then we can substitute and get
 
@@ -384,7 +387,7 @@ In a pulley system where mass A (21 kg) is on a 18º frictionless ramp and mass 
 
 As always, we start with a sketch:
 
-![A pulley system of two bodies](images/ramp-sketch.svg)
+![A pulley system of two bodies](ramp-sketch.svg)
 
 There are three forces acting on the system:
 
@@ -473,11 +476,11 @@ normal force
 
 We calculate friction using
 
-    `|vec F_"f"| = mu|vec F_"N"|`.
+    `|:vec F_"f":| = mu|:vec F_"N":|`.
 
 If the only forces are gravity and the normal force, this can be rewritten as
 
-    `|vec F_"f"| = mum|vec g|`.
+    `|:vec F_"f":| = mu m|:vec g:|`.
 
 There are two types of friction. _Static_ friction must be overcome to move an object that is initially at rest with respect to the other surface. _Kinetic_ friction acts when an object is in motion. There are separate coefficients for these two cases: `mu_"s"` for static and `mu_"k"` for kinetic, where `mu_"s" > mu_"k"`. The values of both are determined experimentally for every pair of materials.
 
@@ -489,7 +492,7 @@ You are standing on a roof inclined at an angle of 31º with the coefficient of 
 
 First, we draw a sketch:
 
-![A sketch and the free body diagram of a mass on a roof](images/roof-friction.svg)
+![A sketch and the free body diagram of a mass on a roof](roof-friction.svg)
 
 Now we can write our net force equation:
 
@@ -509,11 +512,11 @@ Now we can solve for the tension force, giving us
 
 and, keeping in mind that [fwd] as indicated in the sketch will be positive, we can substitute to get
 
-    `vec F_"T" = -(-mu_"s"|vec F_"N"|) - m|vec g|sin theta = mu_"s"m|vec g|cos theta - m|vec g|sin theta`.
+    `vec F_"T" = -(-mu_"s"|:vec F_"N":|) - m|:vec g:|sin theta = mu_"s"m|:vec g:|cos theta - m|:vec g:|sin theta`.
 
 This simplifies to
 
-    `vec F_"T" = m|vec g|(mu_"s"cos theta - sin theta)`,
+    `vec F_"T" = m|:vec g:|(mu_"s"cos theta - sin theta)`,
 
 and now we can finally substitute our known values:
 
@@ -578,11 +581,11 @@ Instead of relying on friction, we can incline the road towards the centre of th
 
 The normal force can be split into vertical and horizontal components:
 
-    `F_"N,v" = |vec F_"N"|cos theta qquad and qquad F_"N,h" = |vec F_"N"|sin theta`.
+    `F_"N,v" = |:vec F_"N":|cos theta qquad and qquad F_"N,h" = |:vec F_"N":|sin theta`.
 
 The horizontal component must supply the centripetal force, so we can set them equal:
 
-    `|vec F_"N"|sin theta = (mv^2)/r`.
+    `|:vec F_"N":|sin theta = (mv^2)/r`.
 
 Since the vehicle doesn't move vertically, the vertical component has to balance gravity with `|vec F_"N"|cos theta = mg`. We can solve this for the normal force and substitute it into our first equation to get
 
@@ -734,8 +737,7 @@ We usually talk about _changes_ in potential energy, not potential energy itself
 
     `W = ∆E_"g" = mg∆h`.
 
-If the height of a 2.5 kg object increases by 15 m, then its potential energy increases by `(2.5\ "kg")(9.80\ "N/kg")(15\ "m") = 367.5\ "J"`. It's as simple as that.
-
+If the height of a 2.5 kg object increases by 15 m, then its potential energy increases by `(2.5\ "kg")(9.80\ "N/kg")(15\ "m") = 367.5\ "J"`. Simple as that.
 
 ## Elastic potential energy
 
@@ -917,7 +919,7 @@ An electric field is a region around a charged object where a second object (neu
 
 To describe an electric field, we imagine that we are probing it with a _unit test charge_, a very small positive charge that you can think of as a proton on a stick. To represent all this in one drawing, we draw _field lines_ around the charges to indicate the electric force of the unit test charge at all points. The field lines always leave (or enter) the circles perpendicular to the surface and go from positive to negative.
 
-![Electric field surrounding a positive charge and a negative charge (Wikimedia Commons)](images/electric-field.svg)
+![Electric field surrounding a positive charge and a negative charge (Wikimedia Commons)](electric-field.svg)
 
 Just as we use `vec g` in N/kg to describe the strength of a gravitational field, we use `vec epsilon` in N/C to describe the strength of an electric field:
 
@@ -1009,11 +1011,11 @@ All other charges are multiples of the elementary charge:
 
 Magnetism is similar to electricity (not surprisingly, since they are closely related, as we will see later). Instead of positives and negatives, we have north poles and south poles. There is no such thing as a magnet with a single pole -- there is always a north pole and a south pole.
 
-![A bar magnet and a horseshoe magnet with labelled poles](images/magnets.svg)
+![A bar magnet and a horseshoe magnet with labelled poles](magnets.svg)
 
 We explain the behaviour of magnets using _domain theory_. Magnetic materials are composed of many domains, which are clusters of atoms with a magnetic dipole. There are only a few ferromagnetic materials, the most common ones being iron, nickel and cobalt. Most iron on the Earth isn't magnetized, but it still has domains. The domains are all pointing in random directions, so they cancel each other out. In a magnet, the domains are all aligned -- they point in the same direction:
 
-![Scrambled domains (regular iron) compared to aligned domains (magnetized iron)](images/domains.svg)
+![Scrambled domains (regular iron) compared to aligned domains (magnetized iron)](domains.svg)
 
 When iron comes in contact with a magnet, it becomes a temporary magnet. To make a permanent magnet, you have to melt the iron (actually, steel is more commonly used) and then let it cool in the presence of a strong magnetic field. When a magnet is _saturated_, it is at its maximum strength -- no more domains can be aligned.
 
@@ -1023,13 +1025,13 @@ The diagrams for magnetic fields are very similar to those for electric fields. 
 
 Oersted discovered a connection between electric and magnetic fields. It turns out that a moving electric current produces a magnetic field, and a moving magnetic field produces an electric field. When electric current goes through a straight conductor, a circular magnetic field is produced:
 
-![Straight conductor coming out of the page (left) and going into the page (right)](images/straight-conductor.svg)
+![Straight conductor coming out of the page (left) and going into the page (right)](straight-conductor.svg)
 
 You can remember this with the _right-hand rule_: your thumb is the electric current (using conventional current -- positive to negative) and your fingers curl to indicate the direction of the magnetic field.
 
 For a solenoid (coil of wire), the opposite happens. The conductor is circular and the magnetic field is linear:
 
-![Magnetic field in and around a solenoid (Wikimedia Commons)](images/solenoid.svg)
+![Magnetic field in and around a solenoid (Wikimedia Commons)](solenoid.svg)
 
 You can use the right-hand rule for this as well. Your fingers curl in the direction of the conventional current, and your thumb points toward the north. Inside the solenoid, it might look like the field lines are going from south to north, but really they are going from north to south like usual if you look at the way they curve around the outside.
 
@@ -1039,7 +1041,7 @@ A magnetic field can cause charges (e^−^, p^+^, or ions) to _move_ due to a ma
 
 For point charges, the magnitude of the magnetic force is
 
-    `|vec F_"M"| = qv|vec B|sintheta`,
+    `|:vec F_"M":| = qv|:vec B:|sintheta`,
 
 where `q` is the charge in coulombs (C), `v` is the speed of the particle in metres per second (m/s), `vec B` is the magnetic field in teslas (T), and `theta` is the angle between the conventional current and the magnetic field.
 
@@ -1047,7 +1049,7 @@ To get the direction, we once again use the right-hand rule. Your fingers (flat,
 
 It works a bit differently for conductors. We get the magnitude of the magnetic force for straight conductors with
 
-    `|vec F_"M"| = |vec B|ILsintheta`,
+    `|:vec F_"M":| = |:vec B:|ILsintheta`,
 
 where `vec B` and `theta` are the same as before, and where `I` is the current in amperes (A) and `L` is the length of the conductor inside the magnetic field in metres (m). The right-hand rule works the same way that it does for point charges.
 
@@ -1094,7 +1096,7 @@ wavelength (`lambda`)
 
 We also have a few other equations for dealing with period:
 
-    `f = N/(∆t) qquad and qquad T = (∆t)/N qquad and qquad f = 1/T`.
+    `f = N/(∆t), qquad T = (∆t)/N, qquad f = 1/T`.
 
 number of cycles (`N`)
 :   the number of cycles completed during a time interval (unitless)
@@ -1109,19 +1111,19 @@ period (`T`)
 
 A wave _front_ is the leading edge of a wave. It represents a continuous crest or trough. A wave _ray_ is an arrow perpendicular to the wave front that shows the direction of motion at a particular point.
 
-![Wave front and wave rays on a wave emanating from a point source](images/wave-front-ray.svg)
+![Wave front and wave rays on a wave emanating from a point source](wave-front-ray.svg)
 
 When an incident wave ray hits a reflective surface, it makes an angle with the normal (a line perpendicular to the surface) called the angle of incidence. The angle of the reflected ray is called the angle of reflection. According to the law of _reflection_, these two angles are equal:
 
-![Incident ray and reflected ray illustrating the law of reflection](images/wave-reflection.svg)
+![Incident ray and reflected ray illustrating the law of reflection](wave-reflection.svg)
 
 When waves enter a new medium, _refraction_ occurs. The speed of the wave either increases or decreases, and the wavelength changes with it. The relationship is `v_1lambda_2 = v_2lambda_1` when frequency is held constant.
 
-![Straight wave enters a slower medium](images/wave-refraction.svg)
+![Straight wave enters a slower medium](wave-refraction.svg)
 
 When straight waves pass through an opening, they can be bent. This phenomenon is known as _diffraction_:
 
-![Diffraction of a wave through a wide slit (left) and a narrow slit (right)](images/wave-diffraction.svg)
+![Diffraction of a wave through a wide slit (left) and a narrow slit (right)](wave-diffraction.svg)
 
 The sine of the angle of diffraction is proportional to the wavelength and inversely proportional to the width of the opening:
 
@@ -1131,13 +1133,13 @@ For example, sound is easily diffracted because its wavelength is fairly long. L
 
 Whenever there are two waves, we usually talk about their _phase delay_. Two waves are in phase if their crests and troughs line up. They are completely out of phase if crests line up with troughs and troughs line up with crests. Anywhere between and they are partially out of phase.
 
-![Two waves in phase, partially out of phase, and completely out of phase](images/phase-delay.svg)
+![Two waves in phase, partially out of phase, and completely out of phase](phase-delay.svg)
 
 When the waves are in phase, the phase delay is 0º. When they are completely out of phase, it is 180º. Often it is more useful to express it in terms of the wavelength -- the range from 0º to 360º is equivalent to the range from zero to `lambda`.
 
 Waves don't really collide -- they just pass right through each other. While they are occupying the same space, though, they interfere with each other. That interference can either be _constructive_, when amplitude becomes larger because two crests or two troughs overlap, or _destructive_, when amplitude becomes smaller because a crest and a trough overlap.
 
-![Constructive and destructive interference with square waves](images/wave-interference.svg)
+![Constructive and destructive interference with square waves](wave-interference.svg)
 
 ## Two point source interference
 
@@ -1185,7 +1187,7 @@ The wave model seems to do a better job of explaining most of these properties, 
 
 The double-slit experiment demonstrates that two point sources of light can create an interference pattern. A single light source is passed through two narrow slits instead of actually using two lamps -- this method ensures that the two waves diffracting out of the slits are _in phase_. The waves create an interference pattern on the screen like this:
 
-![Light intensity vs. position on screen in double-slit experiment](images/double-slit-intensity.svg)
+![Light intensity vs. position on screen in double-slit experiment](double-slit-intensity.svg)
 
 The interference pattern is a series of nodal lines and antinodes. The nodal lines are evenly spaced by `∆x` on a screen separated from the slits by a distance of `L`. If `d` is the distance between the slits and `lambda` is the wavelength of the light, then
 
@@ -1199,7 +1201,7 @@ Unless you use a colour filter, all the colours of the rainbow present in white 
 
 When light passes through a single slit, we still have an interference pattern. We can think of the slit as a set of many point sources. We get a bright antinode in the centre, and it has a width of `2∆y`. All the other antinodes are `∆y` wide, and the brightness decreases rapidly as you move away from the centre:
 
-![Light intensity vs. position on screen in single-slit diffraction](images/single-slit-intensity.svg)
+![Light intensity vs. position on screen in single-slit diffraction](single-slit-intensity.svg)
 
 The nodal lines in single-split diffraction occur when the path difference from the top and bottom points on the slit are `lambda`, `2lambda`, `3lambda`, etc. The antinodes occur at `0`, `3//2lambda`, `5//2lambda`, etc. This is counterintuitive, because a full wavelength of delay means that the waves arrive in phase and have constructive interference (which would be an antinode). However, when the path difference is `lambda`, there is only one pair of points in the slit that result in this constructive interference. The others are all closer together, and there are many pairs of points separated by a half wavelength, which is destructive. The antinodes have a mix of constructive and destructive interference; this mix becomes increasingly destructive as you move away form the centre, which is why the brightness goes down.
 
@@ -1209,7 +1211,7 @@ Thin-film interference occur when light waves reflect on the upper and lower bou
 
 When the light strikes the thin film, it is both reflected and refracted. The refracted ray reflects off the bottom and refracts through the top to come out parallel with the original reflected ray:
 
-![Light wave reflecting and refracting at the interface of a fast medium and a thin slow medium](images/thin-film.svg)
+![Light wave reflecting and refracting at the interface of a fast medium and a thin slow medium](thin-film.svg)
 
 When a wave reflects is in a fast medium and reflects on the interface to a slower medium, it inverts. This means the first wave inverts when it reflects, but the second wave does not. All other things being equal, they should be out of phase. Of course, other things _aren't_ equal because the second wave travels an extra distance. For small angles of incidence, this extra distance is about `2t` where `t` is the thickness of the film.
 
@@ -1229,7 +1231,7 @@ The resolution of an optical device such as a camera, microscope, or telescope c
 
 Another interference effect is _polarization_, discovered by Edwin Land in the early 1920s. It works by blocking certain orientations of transverse waves using a series of long, parallel crystals:
 
-![Transverse waves being polarized completed by two filters](images/polarization.svg)
+![Transverse waves being polarized completed by two filters](polarization.svg)
 
 Polarized sunglasses use vertical filters to block part of the incoming light. They are vertical because glare is usually parallel to the surface of reflection, which is horizontal for the ground. This is useful when the snow is painfully bright on a sunny day, or when you are out on the water.
 
@@ -1270,7 +1272,7 @@ Scientists performed this test with many materials, and the results were consist
 
 This is where _Max Planck_ comes in. He hypothesized that electrons can only vibrate with certain allowed frequencies. That is to say, electromagnetic radiation is discrete rather than continuous:
 
-![A continuous hill and discrete staircase as an analogy for Planck's hypothesis](images/cont-disc.svg)
+![A continuous hill and discrete staircase as an analogy for Planck's hypothesis](cont-disc.svg)
 
 Similar to the [elementary charge](oil-drop-experiment.html) for electricity, the energy conveyed by radiation can only be a multiple of an elementary amount. We can calculate the energy carried by a single photon with
 
@@ -1291,19 +1293,19 @@ The photoelectric effect was well known by the 1900s, but there wasn't yet an ex
 
 The plates lost their charge because the ultraviolet rays caused electrons to electrons to fly away from the plate. These electrons are called _photoelectrons_. An interesting experiment with the photoelectric effect was to use UV to propel electrons across a vacuum from one electrode to another, thus completing a circuit and causing _photocurrent_ to flow:
 
-![Photoelectric effect causing photoelectrons to complete a circuit through a vacuum](images/photoelectric.svg)
+![Photoelectric effect causing photoelectrons to complete a circuit through a vacuum](photoelectric.svg)
 
 The variables in this experiment were the type of metal (of the target electrode), the frequency of the UV source, and the intensity or brightness of the ultraviolet light. In the diagram above, their is a variable power supply. Even _without_ applying any voltage, the UV rays cause photoelectrons to shoot off the target plate and bounce around in the tube. When a voltage _is_ applied, the target becomes negatively charged and the collector becomes positively charged, and the flying electrons are drawn towards the collector by electric forces.
 
 We can stop the photoelectrons by applying a voltage with opposite polarity (this voltage is called the _retarding potential_). The collector plate is now positive, and it repels the flying electrons. But by how much? As it turns out, the current decreases steadily as we apply more voltage -- until we reach the _cut-off potential_, where current drops abruptly:
 
-![Photocurrent versus retarding potential, indicating the cut-off potential](images/cut-off-potential.svg)
+![Photocurrent versus retarding potential, indicating the cut-off potential](cut-off-potential.svg)
 
 Once we reach `V_0`, even the fastest electrons are prevented from reaching the collector electrode. This was helpful for determining the maximum kinetic energy (and from that, speed) of the electrons.
 
 Let's return to those other variables. For each metal, there was a different threshold below which no current flowed at all, denoted by `f_0`. After the frequency passes `f_0`, higher frequencies cause the photoelectrons to move faster, which in turn increases value of `V_0` because they are harder to stop. As the intensity of the ultraviolet rays increases, more photoelectrons get released -- but they do not move any faster or slower. In all cases, the electrons are released _instantaneously_. Varying frequency and intensity changes the above graph like this:
 
-![Changes to the current versus voltage graph when frequency and intensity are increased](images/frequency-intensity.svg)
+![Changes to the current versus voltage graph when frequency and intensity are increased](frequency-intensity.svg)
 
 Frequency controls `E_"k"` and therefore speed and `V_0`; intensity controls current. This is the opposite of the wave model's predictions, and no one could explain it -- until Einstein did in 1905. He used Planck's idea of photon energy, `E = hf`. The energy of a photon can only be absorbed by a single electron; there is no sharing. This electron _may_ then have enough energy to break free from the metal. When `f > f_0`, there is enough energy to break free and some excess. This extra energy is converted to kinetic energy, shooting the photoelectron into the vacuum. As the intensity of the ultraviolet light increases, there are more photons hitting the target every second, therefore more electrons are flowing and the current increases.
 
@@ -1313,7 +1315,7 @@ Some electrons are right on the surface and move away from it; others are a bit 
 
 where `W` is the work function, representing the energy needed for an electron to escape the electrode. The work function depends on the metal in the target electrode, and it can be measured in joules (J) or in electron-volts (eV). One electron-volt is equal to 1.60 × 10^−19^ J.
 
-Since `f_0` is the frequency that allows an electron to break free but gives no extra energy to move, it will result in `E_"k,max" = 0`. This gives us another equation, which we can use as a definition for `W` as well as a way to find `f_0`:
+Since `f_0` is the frequency that allows an electron to break free but gives no extra energy to move, it will result in `E_"k,max" = 0`. This gives us another equation, which we can use to define `W` as well as a way to find `f_0`:
 
     `W = hf_0`.
 
@@ -1346,7 +1348,7 @@ Suppose you are sitting on a chair in a room that has no windows. Which way is t
 
 Consider a train moving at half the speed of light. In _frame A_, we have an observer inside the train. In _frame B_, we have an observer outside the train, watching it zoom by. Observer A switches on a flashlight:
 
-![Distance travelled by a ray of light according to observers in different frames](images/special-relativity.svg)
+![Distance travelled by a ray of light according to observers in different frames](special-relativity.svg)
 
 According to equivalence, observer A neither knows nor cares whether the train is moving. He switches on the flashlight and observes a ray of light travelling `2∆d_"A"` in some amount of time that we'll call `t_0`. Since the speed of light is constant in all inertial frames, we are confident that
 

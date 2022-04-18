@@ -12,16 +12,5 @@ function Reader(input, options)
         -- Wrap degree signs in styled spans.
         :gsub("º", '<span class="degree">º</span>')
     )
-    local doc = pandoc.read(markdown, "markdown+ascii_identifiers", options)
-    -- Undo some changes in code (math).
-    return doc:walk({
-        Code = function(el)
-            el.text = (
-                el.text
-                :gsub("&nbsp;", " ")
-                :gsub('<span class="degree">º</span>', "º")
-            )
-            return el
-        end,
-    })
+    return pandoc.read(markdown, "markdown+ascii_identifiers", options)
 end
