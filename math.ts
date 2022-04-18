@@ -9,13 +9,30 @@ import { readLines } from "https://deno.land/std@0.134.0/io/mod.ts";
 import AsciiMathParser from "https://raw.githubusercontent.com/christianp/asciimath2tex/24287117ca5f44ccb13915586254f470d548645c/asciimath2tex.js";
 import katex from "https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.mjs";
 
+// Ignore certain warnings from KaTeX.
+const oldConsoleWarn = console.warn;
+console.warn = function(message: string) {
+  if (message.startsWith("No character metrics for")) {
+    return;
+  }
+  oldConsoleWarn(message);
+}
+
 const AsciiMath = new AsciiMathParser();
 
 for await (const line of readLines(Deno.stdin)) {
-  const tex = line.startsWith("displaystyle")
+  let tex = line.startsWith("displaystyle")
     ? "\\displaystyle{}" +
       AsciiMath.parse(line.slice("displaystyle".length).trim())
     : AsciiMath.parse(line.trim());
+  tex = tex
+    // AsciiMath doens't understand double prime.
+    .replaceAll("{'} '", "{''}")
+    // AsciiMath puts too much space between primes and the opening paren.
+    .replaceAll(/'} \\left\s*\((.*?)\\right\s*\)/g, "'} ($1)")
+    // I prefer to type "∆" because it's easy on macOS (Option+J), but KaTeX
+    // doesn't handle these Unicode characters correctly.
+    .replaceAll("∆", "\\Delta{}");
   let html;
   try {
     html = katex.renderToString(tex, {
@@ -38,5 +55,8 @@ for await (const line of readLines(Deno.stdin)) {
     '<math xmlns="http://www.w3.org/1998/Math/MathML">',
     "<math>"
   );
-  console.log(html);
+  if (line == "displaystyle |vec u xx vec v| = |vec u||vec v|sin theta") {
+    console.warn(`Line: ${line}\n\nTeX: ${tex}\n\n Html: ${html}\n`);
+  }
+  console.log(html.replaceAll("\n", " "));
 }

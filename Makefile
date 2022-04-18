@@ -4,9 +4,11 @@ ifeq (,$(DESTDIR))
 $(error DESTDIR cannot be empty)
 endif
 
+# TODO: need to copy css, svgs, and have webfonts linked without storing them in
+# the GitHub repository. Possible also have a homepage.
+
 courses := mcv4u sch4u sph4u
 html_dirs := $(addprefix $(DESTDIR)/,$(courses))
-css_path := $(DESTDIR)/style.css
 pandoc_aux := config.yml filter.lua $(wildcard *.html)
 validate_exceptions := '.*not allowed as child of element “mo”.*'
 
@@ -23,7 +25,7 @@ endef
 
 .PHONY: all help precommit $(courses) fmt lint validate clean
 
-all: $(courses) $(DESTDIR)/style.css
+all: $(courses)
 
 help:
 	$(info $(usage))
@@ -32,11 +34,8 @@ help:
 precommit: fmt lint all validate
 
 $(courses): %: notes/%.md $(pandoc_aux)
-	mkdir -p $(DESTDIR)
-	pandoc -d config.yml -M destdir=$(DESTDIR)/$@ test.md
-
-$(css_path): style.css
-	cp $^ $@
+	mkdir -p $(DESTDIR)/$@
+	pandoc -d config.yml -M destdir=$(DESTDIR)/$@ $<
 
 fmt:
 	find . -type f -name "*.ts" | xargs deno fmt
@@ -50,4 +49,4 @@ validate:
 	| xargs vnu --filterpattern $(validate_exceptions)
 
 clean:
-	rm -rf $(html_dirs) $(css_path)
+	rm -rf $(html_dirs)

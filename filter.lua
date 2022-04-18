@@ -18,13 +18,11 @@ local function render_code_as_math(doc)
     doc:walk({
         Code = function(el)
             local input = el.text
-            -- I prefer to type "∆" because it's easy on macOS (Option+J), but
-            -- AsciiMath doesn't handle these Unicode characters correctly.
-            input = input:gsub("∆", "Delta")
             if not el.inline_math then
                 -- This is not part of AsciiMath but math.ts handles it.
                 input = "displaystyle " .. input
             end
+            assert(not input:find("\n"))
             assert(math:write(input .. "\n"))
         end
     })
@@ -32,7 +30,9 @@ local function render_code_as_math(doc)
     local tmp = assert(io.open(tmp_name, "r"))
     doc = doc:walk({
         Code = function(el)
-            return pandoc.RawInline("html", tmp:read())
+            local raw = pandoc.RawInline("html", tmp:read())
+            -- We remove this span in writer.lua.
+            return pandoc.Span(raw, { kind = "math" })
         end
     })
     tmp:close()

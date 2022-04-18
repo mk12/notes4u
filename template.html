@@ -10,11 +10,47 @@ $endif$
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-<a class="skip-link" href="#main">Skip to main content</a>
-$pagenav()$
-<main id="main">
+<nav class="pagenav pagenav--top" aria-label="page">
+  $pagenav()$
+</nav>
+<main>
+$if(course)$
+<h1 class="course-heading">
+	<span class="course-title">$course_title$</span>
+	<span class="double-slash">//</span>
+	<span class="course-code">$course_code$</span>
+</h1>
 $body$
+<nav class="course-toc" aria-label="contents">
+  <ol>
+  $for(toc)$
+    <li>
+      <a href="$it.file$">$it.name$</a>
+      <ol>
+      $for(it.toc)$
+        <li><a href="$it.file$">$it.name$</a></li>
+      $endfor$
+      </ol>
+    </li>
+  $endfor$
+  </ol>
+</nav>
+$elseif(unit)$
+$body$
+<h2>Contents</h2>
+<nav class="unit-toc" aria-label="contents">
+  <ol>
+  $for(toc)$
+    <li><a href="$it.file$">$it.name$</a></li>
+  $endfor$
+  </ol>
+</nav>
+$elseif(section)$
+$body$
+$endif$
 </main>
-$pagenav()$
+<nav class="pagenav pagenav--bottom" aria-label="page">
+  $pagenav()$
+</nav>
 </body>
 </html>
