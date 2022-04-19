@@ -1072,7 +1072,7 @@ The first step is to move the constant term to the right-hand side. In this case
 
     `[(1,3,|,4),(-2,3,|,10)]`.
 
-The first two columns represent the _x_ and _y_ coefficients resepctively; the last column, separated by a bar, represents the right-hand sides of the equations. To solve the system, we will use _Gauss-Jordan elimination_, which is a method of transforming the matrix to _reduced row-echelon form_. We want the columns left of the bar to have a diagonal of ones and zeros everywhere else. For example, if we were solving a linear system of four equations, the end result would look like this:
+The first two columns represent the _x_ and _y_ coefficients respectively; the last column, separated by a bar, represents the right-hand sides of the equations. To solve the system, we will use _Gauss-Jordan elimination_, which is a method of transforming the matrix to _reduced row-echelon form_. We want the columns left of the bar to have a diagonal of ones and zeros everywhere else. For example, if we were solving a linear system of four equations, the end result would look like this:
 
     `[(1,0,0,0,|,x),(0,1,0,0,|,y),(0,0,1,0,|,z),(0,0,0,1,|,w)]`.
 

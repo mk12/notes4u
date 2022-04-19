@@ -77,7 +77,7 @@ temperature (`T`)
 
 If 25.6 g of aluminum absorbs 0.5571 kJ of heat and its temperature rises to 42.6 ºC, what was its original temperature? (The specific heat of aluminum is 0.900 J/gºC.)
 
-We can rewrite `q=mc∆T` as `q=mc(T_2-T_1)`. Rearranging this gives us
+We can rewrite `q=mc∆T` as `q=mc(T_2-T_1)`. Rearranging yields
 
     `T_1 = T_2 - q/(mc)`,
 
@@ -475,14 +475,14 @@ The last one needs more explaining. If an inert gas is added to the system while
 
 | Change            | Shift |
 |:------------------|:-----:|
-| add N~2~O~4(g)~   | Right |
-| add NO~2(g)~      | Left  |
-| remove NO~2(g)~   | Right |
-| raise temperature | Right |
-| lower temperature | Left  |
-| increase pressure | Left  |
-| decrease pressure | Right |
-| add Ne~(g)~ at constant pressure | Right |
+| add N~2~O~4(g)~   | right |
+| add NO~2(g)~      | left  |
+| remove NO~2(g)~   | right |
+| raise temperature | right |
+| lower temperature | left  |
+| increase pressure | left  |
+| decrease pressure | right |
+| add Ne~(g)~ at constant pressure | right |
 | add Ne~(g)~ at constant volume   | ---   |
 | add catalyst      | ---   |
 

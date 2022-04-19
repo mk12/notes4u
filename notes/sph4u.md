@@ -603,7 +603,7 @@ We can also find the minimum safe radius at a given speed:
 
 Throughout history, people have tried to explain the cosmos and the motion of celestial bodies, with varying degrees of success.
 
-ancient Greeks
+Ancient Greeks
 :   The Earth is stationary at the centre of the universe (geocentric model). The stars move on the inside of a huge crystal sphere. The Sun, Moon, and stars have different motion, so they move on different spheres. There retrograde motion of Mars is baffling.
 
 Pythagoras
