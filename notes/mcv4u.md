@@ -269,18 +269,18 @@ or, using Leibniz’s notation,
 
 When we differentiate trigonometric functions, the result is another trig function. The first few derivatives in the list below are worth memorizing. Don't forget that chain rule & friends apply for all functions, not just polynomials. Given the first two rows below, you should be able to derive the rest using just the power rule and the chain rule.
 
-| Function | Derivative |
-|:--------:|:----------:|
-| `sinx`   | `cosx`     |
-| `cosx`   | `-sinx`    |
-| `sin2x`  | `2cos2x`   |
-| `cos2x`  | `-2sin2x`  |
-| `sin^2x` | `sin2x`    |
-| `cos^2x` | `-sin2x`   |
-| `cscx`   | `-cscxcotx`|
-| `secx`   | `secxtanx` |
-| `tanx`   | `sec^2x`   |
-| `cotx`   | `-csc^2x`  |
+| Function | Derivative  |
+| :------: | :---------: |
+|  `sinx`  |   `cosx`    |
+|  `cosx`  |   `-sinx`   |
+| `sin2x`  |  `2cos2x`   |
+| `cos2x`  |  `-2sin2x`  |
+| `sin^2x` |   `sin2x`   |
+| `cos^2x` |  `-sin2x`   |
+|  `cscx`  | `-cscxcotx` |
+|  `secx`  | `secxtanx`  |
+|  `tanx`  |  `sec^2x`   |
+|  `cotx`  |  `-csc^2x`  |
 
 ### Example
 
@@ -425,10 +425,10 @@ When sketching the graph of a function, the obvious first step is to plot a few 
 
 The values of `f(x)`, `f'(x)`, and `f''(x)` represent function value, slope, and concavity, respectively. This table summarizes the meaning of their signs:
 
-| Value | `= 0` | `> 0` | `< 0` |
-|:-----:|:-------:|:-------:|:-------:|
-| `f(x)`   | zero | positive | negative |
-| `f'(x)`  | turning point | increasing | decreasing |
+|  Value   |      `= 0`       |   `> 0`    |    `< 0`     |
+| :------: | :--------------: | :--------: | :----------: |
+|  `f(x)`  |       zero       |  positive  |   negative   |
+| `f'(x)`  |  turning point   | increasing |  decreasing  |
 | `f''(x)` | inflection point | concave up | concave down |
 
 Here is an example of the information that these three quantities, given by the function and its first two derivatives, provides you with:
@@ -473,15 +473,15 @@ A scalar is a quantity with magnitude only; a vector is a quantity with both mag
 
 Here are some examples of scalar and vector quantities:
 
-| Value | Type |
-|:-----:|:----:|
-| distance | scalar |
-| position | vector |
-| speed | scalar |
-| velocity | vector |
-| force | vector
-| time | scalar |
-| mass | scalar |
+|    Value    |  Type  |
+| :---------: | :----: |
+|  distance   | scalar |
+|  position   | vector |
+|    speed    | scalar |
+|  velocity   | vector |
+|    force    | vector |
+|    time     | scalar |
+|    mass     | scalar |
 | temperature | scalar |
 
 We represent scalars using ordinary variable notation like `a`, `x`, `v`, or `t`. Vectors use a different notation: either boldface, like `bbv`, or arrows, like `vec v`. The arrow notation is always used in handwriting. If you want to designate a vector from point A to point B, use `vec(AB)`.
@@ -671,11 +671,11 @@ The dot product, also known as the _scalar product_ or _inner product_, is an op
 
 where `theta` is the angle between the vectors in standard position. The dot product has a few useful properties that arise from the cosine term:
 
-| If | Then | Therefore |
-|:--:|:----:|:---------:|
-|`vec u * vec v > 0`|`0º < theta < 90º`|acute|
-|`vec u * vec v < 0`|`90º < theta < 180º`|obtuse|
-|`vec u * vec v = 0`|`theta = 90º`|perpendicular|
+|         If          |         Then         |   Therefore   |
+| :-----------------: | :------------------: | :-----------: |
+| `vec u * vec v > 0` |  `0º < theta < 90º`  |     acute     |
+| `vec u * vec v < 0` | `90º < theta < 180º` |    obtuse     |
+| `vec u * vec v = 0` |    `theta = 90º`     | perpendicular |
 
 Algebraically, we define the dot product in `RR^3` with
 
@@ -717,11 +717,11 @@ Algebraically, we define the cross product in `RR^3` with
 
 where the components are given by
 
-| Component | Value | Remember |
-|:---------:|:-----:|:--------:|
-| `w_1` | `u_2v_3 - u_3v_2` | 2, 3 |
-| `w_2` | `u_3v_1 - u_1v_3` | 3, 1 |
-| `w_3` | `u_1v_2 - u_2v_1` | 1, 2 |
+| Component |       Value       | Remember |
+| :-------: | :---------------: | :------: |
+|   `w_1`   | `u_2v_3 - u_3v_2` |   2, 3   |
+|   `w_2`   | `u_3v_1 - u_1v_3` |   3, 1   |
+|   `w_3`   | `u_1v_2 - u_2v_1` |   1, 2   |
 
 The pattern shouldn't be too hard to see. Each part has a product of two terms, and then you just subtract the same two terms with the subscripts swapped. You essentially need to remember the sequence 233112, and even that has some repetition. You do not need to remember anything for `RR^2`, since the cross product exists only in `RR^3` and in `RR^7`.
 
@@ -803,11 +803,11 @@ Let's start with the _x_-axis. If we have a vector `vec u` in component form, th
 
 When we dot `vec u` with one of the standard basis vectors, we are effectively _choosing_ one of its components. Simplifying the equation for the other two axes is just as easy. To avoid confusion, we use three different Greek letters to represent the three angles:
 
-| Axis | Basis   | Cosine      | Value          |
-|:----:|:-------:|:-----------:|:--------------:|
-| _x_  | `hat i` | `cos alpha` | `u_1//|vec u|` |
-| _y_  | `hat j` | `cos beta`  | `u_2//|vec u|` |
-| _z_  | `hat k` | `cos gamma` | `u_3//|vec u|` |
+| Axis  |  Basis  |   Cosine    |     Value      |
+| :---: | :-----: | :---------: | :------------: |
+|  _x_  | `hat i` | `cos alpha` | `u_1//|vec u|` |
+|  _y_  | `hat j` | `cos beta`  | `u_2//|vec u|` |
+|  _z_  | `hat k` | `cos gamma` | `u_3//|vec u|` |
 
 ## Geometric applications
 
@@ -926,13 +926,13 @@ The arrows on the line indicates that it extends to infinity in both directions.
 
 As I mentioned before, there is a single plane in `RR^2` but many planes in `RR^3`. We can generalize this idea to all the geometrical figures (sets of points) that we've seen so far:
 
-| Dimensions | Space | Many | One |
-|:----------:|:-----:|:--------:|:---:|
-| 0 | `RR^0` | --- | point |
-| 1 | `RR^1` | point | line |
-| 2 | `RR^2` | line | plane |
-| 3 | `RR^3` | plane | solid |
-| 4 | `RR^4` | solid | hypersolid |
+| Dimensions | Space  | Many  |    One     |
+| :--------: | :----: | :---: | :--------: |
+|     0      | `RR^0` |  ---  |   point    |
+|     1      | `RR^1` | point |    line    |
+|     2      | `RR^2` | line  |   plane    |
+|     3      | `RR^3` | plane |   solid    |
+|     4      | `RR^4` | solid | hypersolid |
 
 Let's look at the equation of the plane again:
 
@@ -1106,13 +1106,13 @@ The values `x=-2` and `y=2` are indeed the solution to this system.
 
 There are five ways that three distinct planes can relate to one another:
 
-| type | intersection | condition |
-|:----:|:------------:|:---------:|
-| I | none | all normals collinear |
-| II | 2 lines | two normals collinear |
-| III | 3 lines | all normals coplanar |
-| IV | 1 line | all normals coplanar |
-| V | 1 point | normals not coplanar |
+| type  | intersection |       condition       |
+| :---: | :----------: | :-------------------: |
+|   I   |     none     | all normals collinear |
+|  II   |   2 lines    | two normals collinear |
+|  III  |   3 lines    | all normals coplanar  |
+|  IV   |    1 line    | all normals coplanar  |
+|   V   |   1 point    | normals not coplanar  |
 
 Strictly speaking, systems of type II and III really have no intersection because the _three planes_ do not share any points at all. It might seem inconsistent to talk about these lines of intersection between two of the three planes, since we ignore them in type V (which has many such lines in addition to the point), but it is just for the purpose of identifying the type.
 

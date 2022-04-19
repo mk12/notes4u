@@ -30,10 +30,10 @@ When studying transfers of energy, it is important to distinguish between the sy
 There are three types of systems: _open_, _closed_, and _isolated_. The name tells us whether matter and energy can move in and out of the system.
 
 |          | Matter | Energy |
-|:--------:|:------:|:------:|
-| open     | Yes    | Yes    |
-| closed   | No     | Yes    |
-| isolated | No     | No     |
+| :------: | :----: | :----: |
+|   open   |  yes   |  yes   |
+|  closed  |   no   |  yes   |
+| isolated |   no   |   no   |
 
 Isolated systems don't exist in nature. We usually work with closed systems. A stoppered flask, for example, is a closed system because matter is trapped inside and no outside matter is let in, but energy can move in and out freely (otherwise, placing the flask over a flame would have no effect on its contents).
 
@@ -343,11 +343,11 @@ Let `x` represent the absolute value of the change in concentration of H~2(g)~. 
 > When writing the let statement for `x`, always choose a reactant or product that has a coefficient of 1. This way, you can simply fill in all the **C** values with `-ax` for reactants and `+ax` for products, where `a` is the coefficient for that reactant or product.
 
 |       |            |            |           |
-|:-----:|:----------:|:----------:|:---------:|
-|       | H~2(g)~    | I~2(g)~    | 2 HI~(g)~ |
-| **I** | `2.00`     | `3.00`     | `0`       |
-| **C** | `-x`       | `-x`       | `+2x`     |
-| **E** | `2.00 − x` | `3.00 − x` | `2x`      |
+| :---: | :--------: | :--------: | :-------: |
+|       |  H~2(g)~   |  I~2(g)~   | 2 HI~(g)~ |
+| **I** |   `2.00`   |   `3.00`   |    `0`    |
+| **C** |    `-x`    |    `-x`    |   `+2x`   |
+| **E** | `2.00 − x` | `3.00 − x` |   `2x`    |
 
 The **E** value for I~2(g)~ is known to be 1.30 mol/L, but our table tells us that it is also `x` subtracted from 3.00 mol/L, therefore we can set them equal:
 
@@ -391,12 +391,12 @@ First we can calculate **I** for CO~2(g)~:
 
 Let `x` represent the absolute value of the change in concentration of O~2(g)~.
 
-|       |             |            |           |
-|:-----:|:-----------:|:----------:|:---------:|
-|       | 2 CO~2(g)~  | 2 CO~(g)~  | O~2(g)~   |
-| **I** | `0.50`      | `0`        | `0`       |
-| **C** | `-2x`       | `+2x`      | `+x`      |
-| **E** | `0.50 − 2x` | `2x`       | `x`       |
+|       |             |           |         |
+| :---: | :---------: | :-------: | :-----: |
+|       | 2 CO~2(g)~  | 2 CO~(g)~ | O~2(g)~ |
+| **I** |   `0.50`    |    `0`    |   `0`   |
+| **C** |    `-2x`    |   `+2x`   |  `+x`   |
+| **E** | `0.50 − 2x` |   `2x`    |   `x`   |
 
 Now we set up the equilibrium law expression:
 
@@ -473,18 +473,18 @@ The last one needs more explaining. If an inert gas is added to the system while
 
     N~2~O~4(g)~ + 57.2 kJ ⇌ 2 NO~2(g)~
 
-| Change            | Shift |
-|:------------------|:-----:|
-| add N~2~O~4(g)~   | right |
-| add NO~2(g)~      | left  |
-| remove NO~2(g)~   | right |
-| raise temperature | right |
-| lower temperature | left  |
-| increase pressure | left  |
-| decrease pressure | right |
+| Change                           | Shift |
+| :------------------------------- | :---: |
+| add N~2~O~4(g)~                  | right |
+| add NO~2(g)~                     | left  |
+| remove NO~2(g)~                  | right |
+| raise temperature                | right |
+| lower temperature                | left  |
+| increase pressure                | left  |
+| decrease pressure                | right |
 | add Ne~(g)~ at constant pressure | right |
-| add Ne~(g)~ at constant volume   | ---   |
-| add catalyst      | ---   |
+| add Ne~(g)~ at constant volume   |  ---  |
+| add catalyst                     |  ---  |
 
 ## Haber process
 
@@ -583,11 +583,11 @@ First, write the solubility equilibrium equation of the compound whose concentra
 Let `x` represent `|∆["CrO"_4^(2-)]|`. Now we can make our ICE table:
 
 |       |             |              |                  |
-|:-----:|:-----------:|:------------:|:----------------:|
+| :---: | :---------: | :----------: | :--------------: |
 |       | PbCrO~4(s)~ | Pb^2+^~(aq)~ | CrO~4~^2−^~(aq)~ |
-| **I** | ---         | `0`          | `0.10`           |
-| **C** | ---         | `+x`         | `+x`             |
-| **E** | ---         | `x`          | `x + 0.10`       |
+| **I** |     ---     |     `0`      |      `0.10`      |
+| **C** |     ---     |     `+x`     |       `+x`       |
+| **E** |     ---     |     `x`      |    `x + 0.10`    |
 
 Notice that we ignore lead chromate because it's a solid, not an aqueous solution or gas. Unlike in a regular solubility problem, one of our ions has an initial concentration. The 0.10 mol/L of chromate ions comes the compound in the question whose concentration _is_ given, sodium chromate.
 
@@ -793,11 +793,11 @@ We can use this to find the percent ionization:
 Our dissociation reaction is H~3~PO~4(aq)~ ⇌ H~2~PO~4~^−^~(aq)~ + H^+^~(aq)~. We need to use an ICE table to find the equilibrium concentrations.
 
 |       |               |                    |            |
-|:-----:|:-------------:|:------------------:|:----------:|
+| :---: | :-----------: | :----------------: | :--------: |
 |       | H~3~PO~4(aq)~ | H~2~PO~4~^−^~(aq)~ | H^+^~(aq)~ |
-| **I** | 0.082         | 0                  | 0          |
-| **C** | −0.021        | +0.021             | +0.021     |
-| **E** | 0.061         | 0.021              | 0.021      |
+| **I** |     0.082     |         0          |     0      |
+| **C** |    −0.021     |       +0.021       |   +0.021   |
+| **E** |     0.061     |       0.021        |   0.021    |
 
 Now we can calculate the acid ionization constant:
 
@@ -1028,17 +1028,17 @@ aromatic
 :   always _benzene_
 
 | Prefix | atoms |
-|:------:|:--:|
-| meth   | 1  |
-| eth    | 2  |
-| prop   | 3  |
-| but    | 4  |
-| pent   | 5  |
-| hex    | 6  |
-| hept   | 7  |
-| oct    | 8  |
-| non    | 9  |
-| dec    | 10 |
+| :----: | :---: |
+|  meth  |   1   |
+|  eth   |   2   |
+|  prop  |   3   |
+|  but   |   4   |
+|  pent  |   5   |
+|  hex   |   6   |
+|  hept  |   7   |
+|  oct   |   8   |
+|  non   |   9   |
+|  dec   |  10   |
 
 ### Side branches
 
@@ -1052,16 +1052,16 @@ If there are two side branches coming off an aromatic, a classical method can be
 
 There are special names for branches that aren't alkyl groups:
 
-| Branch  | Name    |
-|:-------:|:-------:|
+| Branch  |  Name   |
+| :-----: | :-----: |
 | benzene | phenyl  |
-| F       | fluoro  |
-| Cl      | chloro  |
-| Br      | bromo   |
-| I       | iodo    |
-| NO~2~   | nitro   |
-| NH~2~   | amino   |
-| OH      | hydroxy |
+|    F    | fluoro  |
+|   Cl    | chloro  |
+|   Br    |  bromo  |
+|    I    |  iodo   |
+|  NO~2~  |  nitro  |
+|  NH~2~  |  amino  |
+|   OH    | hydroxy |
 
 ### Guidelines
 
@@ -1100,15 +1100,15 @@ The oxidation number is a positive or negative number assigned to an atom. For a
 
 The oxidation number of an uncombined element like O~2(g)~ or Ca~(s)~ is always _zero_. For atoms that are part of compounds, refer to this table:
 
-| Atom | Oxidation No. |
-|:----:|:-----------:|
-| oxygen | −2 |
-| peroxide | −1 |
-| hydrogen | +1 |
-| hydride | −1 |
-| group 1A | +1 |
-| group 2A | +2 |
-| group 7A | −1 |
+|   Atom   | Oxidation No. |
+| :------: | :-----------: |
+|  oxygen  |      −2       |
+| peroxide |      −1       |
+| hydrogen |      +1       |
+| hydride  |      −1       |
+| group 1A |      +1       |
+| group 2A |      +2       |
+| group 7A |      −1       |
 
 This helps, but it leaves out a lot of atoms. To determine their oxidation number, we need to use a bit of algebra. For a neutral compound, the subscripts multiplied by the oxidation numbers sum to zero. For polyatomic ions, the sum is the charge.
 

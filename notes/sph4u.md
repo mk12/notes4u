@@ -31,18 +31,18 @@ We use scientific notation for small numbers and big numbers. It is also useful 
 Make sure you remember all the metric prefixes. Also, remember that you can multiply by 3.6 to convert a speed from m/s to km/h (and divide to go the other way).
 
 | Prefix | Factor |
-|:------:|:------:|
-| G      | 10^9^  |
-| M      | 10^6^  |
-| k      | 10^3^  |
-| h      | 10^2^  |
-| da     | 10^1^  |
-| ---    | 10^0^  |
-| d      | 10^−1^ |
-| c      | 10^−2^ |
-| m      | 10^−3^ |
-| μ      | 10^−6^ |
-| n      | 10^−9^ |
+| :----: | :----: |
+|   G    | 10^9^  |
+|   M    | 10^6^  |
+|   k    | 10^3^  |
+|   h    | 10^2^  |
+|   da   | 10^1^  |
+|  ---   | 10^0^  |
+|   d    | 10^−1^ |
+|   c    | 10^−2^ |
+|   m    | 10^−3^ |
+|   μ    | 10^−6^ |
+|   n    | 10^−9^ |
 
 ## Measurements
 
@@ -85,11 +85,11 @@ First we should always draw a sketch. I've labelled the _x_ and _y_ components f
 
 Now we can make our table. We calculate the components of each vector, and then we add them up in the last row.
 
-| | x | y |
-|:-------:|---------------------:|-------------------:|
-| `vec a` | `65cos36º = 52.59`   | `65sin36º = 38.21` |
-| `vec b` | `-99sin24º = -40.27` | `99cos24º = 90.44` |
-| `vec a + vec b` | `12.32`      | `128.65`           |
+|                 |                    x |                  y |
+| :-------------: | -------------------: | -----------------: |
+|     `vec a`     |   `65cos36º = 52.59` | `65sin36º = 38.21` |
+|     `vec b`     | `-99sin24º = -40.27` | `99cos24º = 90.44` |
+| `vec a + vec b` |              `12.32` |           `128.65` |
 
 > When adding or subtracting vectors, always round off the values in the table to two decimal places.
 
@@ -1217,11 +1217,11 @@ When a wave reflects is in a fast medium and reflects on the interface to a slow
 
 There are three interesting cases for the thickness of the film. When `t ≪ lambda`, the extra distance is so small that the interference is destructive for all colours. When `t=1//4lambda`, the two waves are in phase. Why? If we don't consider the extra distance, the waves are out of phase, meaning a phase delay of `1//2lambda`; when we do consider it, we have `1//2lambda + 2t = lambda`. Since they are in phase, they interfere constructively -- all other colours (with different values of `lambda`) are blocked because the interference is destructive. When `t=1//2lambda`, the waves are out of phase and therefore destructive. This means that only that colour is blocked -- the others are not.
 
-| | phase delay | type of interference | The `lambda` colour | other colours |
-|:--|:-:|:-:|:-:|:-:|
-| `t ≪ lambda` | small | destructive | blocked | blocked |
-| `t = 1/4lambda` | `lambda` | constructive | reflected | blocked |
-| `t = 1/2lambda` | `3/2lambda` | destructive | blocked | reflected |
+|                 | phase delay | type of interference | the `lambda` colour | other colours |
+| :-------------- | :---------: | :------------------: | :-----------------: | :-----------: |
+| `t ≪ lambda`    |    small    |     destructive      |       blocked       |    blocked    |
+| `t = 1/4lambda` |  `lambda`   |     constructive     |      reflected      |    blocked    |
+| `t = 1/2lambda` | `3/2lambda` |     destructive      |       blocked       |   reflected   |
 
 ## Interference effects
 
@@ -1253,16 +1253,16 @@ In 1887, Hertz observed all the predicated wave properties for Maxwell's equatio
 
 We now know quite a bit about the electromagnetic spectrum. Here are its different regions in increasing order of frequency (decreasing order of wavelength):
 
-| Band | From (Hz) | To (Hz) |
-|:----:|----------:|--------:|
-| radio | 10^4^ | 10^10^ |
-| microwave | 10^9^ | 10^12^ |
-| infrared | 10^11^ | 10^14^ |
-| visible | 4 × 10^14^ | 8 × 10^14^ |
-| ultraviolet | 8 × 10^14^ | 10^17^ |
-| X-ray | 10^15^ | 10^20^ |
-| gamma | 10^19^ | 10^24^ |
-| cosmic | 10^24^ | |
+|    Band     |  From (Hz) |    To (Hz) |
+| :---------: | ---------: | ---------: |
+|    radio    |      10^4^ |     10^10^ |
+|  microwave  |      10^9^ |     10^12^ |
+|  infrared   |     10^11^ |     10^14^ |
+|   visible   | 4 × 10^14^ | 8 × 10^14^ |
+| ultraviolet | 8 × 10^14^ |     10^17^ |
+|    X-ray    |     10^15^ |     10^20^ |
+|    gamma    |     10^19^ |     10^24^ |
+|   cosmic    |     10^24^ |            |
 
 ##  Black-body radiation & Planck
 
