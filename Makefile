@@ -4,13 +4,15 @@ ifeq (,$(DESTDIR))
 $(error DESTDIR cannot be empty)
 endif
 
-# TODO: need to copy css, svgs, and have webfonts linked without storing them in
-# the GitHub repository. Possible also have a homepage.
-
 courses := mcv4u sch4u sph4u
 html_dirs := $(addprefix $(DESTDIR)/,$(courses))
-pandoc_aux := config.yml filter.lua $(wildcard *.html)
-validate_exceptions := '.*not allowed as child of element “mo”.*'
+pandoc_aux := config.yml filter.lua $(wildcard templates/*.html)
+
+validate_exceptions := \
+	'.*($\
+	not allowed as child of element “mo”$\
+	|Text run starts with a composing character$\
+	).*'
 
 define usage
 Targets:

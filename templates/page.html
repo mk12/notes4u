@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$title$</title>
+$if(math)$
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.15.3/katex.min.css">
+$endif$
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav class="pagenav pagenav--top" aria-label="page">
+  $partial_pagenav.html()$
+</nav>
+<main>
+$if(course)$
+$partial_course.html()$
+$elseif(unit)$
+$partial_unit.html()$
+$elseif(section)$
+$body$
+$endif$
+</main>
+<nav class="pagenav pagenav--bottom" aria-label="page">
+  $partial_pagenav.html()$
+</nav>
+</body>
+</html>

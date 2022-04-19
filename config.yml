@@ -1,7 +1,7 @@
 from: reader.lua
 to: writer.lua
 filters: [filter.lua]
-template: template.html
+template: templates/page.html
 # Use a high value to prevent full-width tables:
 # https://pandoc.org/MANUAL.html#extension-pipe_tables
 columns: 1000

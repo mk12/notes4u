@@ -1,0 +1,20 @@
+<h1 class="course-heading">
+	<span class="course-title">$course_title$</span>
+	<span class="double-slash">//</span>
+	<span class="course-code">$course_code$</span>
+</h1>
+$body$
+<nav class="course-toc" aria-label="contents">
+  <ol>
+  $for(toc)$
+    <li>
+      <a href="$it.file$">$it.name$</a>
+      <ol>
+      $for(it.toc)$
+        <li><a href="$it.file$">$it.name$</a></li>
+      $endfor$
+      </ol>
+    </li>
+  $endfor$
+  </ol>
+</nav>
