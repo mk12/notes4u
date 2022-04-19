@@ -21,14 +21,8 @@ console.warn = function (message: string) {
 const AsciiMath = new AsciiMathParser();
 
 for await (const line of readLines(Deno.stdin)) {
-  // Undo changes made by reader.lua.
-  const asciimath = line
-    .trim()
-    .replaceAll("&nbsp;", "")
-    .replaceAll('<span class="degree">º</span>', "º");
-  const tex =
-    "\\displaystyle{}" +
-    AsciiMath.parse(asciimath)
+  const tex = "\\displaystyle " +
+    AsciiMath.parse(line)
       // AsciiMath doens't understand double prime.
       .replaceAll("{'} '", "{''}")
       // AsciiMath puts too much space between primes and the opening paren.
@@ -60,7 +54,7 @@ for await (const line of readLines(Deno.stdin)) {
   // https://www.w3.org/TR/MathML3/chapter6.html#interf.html
   html = html.replace(
     '<math xmlns="http://www.w3.org/1998/Math/MathML">',
-    "<math>"
+    "<math>",
   );
   if (line == "displaystyle |vec u xx vec v| = |vec u||vec v|sin theta") {
     console.warn(`Line: ${line}\n\nTeX: ${tex}\n\n Html: ${html}\n`);

@@ -12,6 +12,7 @@ validate_exceptions := \
 	'.*($\
 	not allowed as child of element “mo”$\
 	|Text run starts with a composing character$\
+	|Document uses the Unicode Private Use Area\(s\)$\
 	).*'
 
 define usage
@@ -25,15 +26,19 @@ Targets:
 	clean      Remove HTML files
 endef
 
-.PHONY: all help precommit $(courses) fmt lint validate clean
+.PHONY: all help precommit index $(courses) fmt lint validate clean
 
-all: $(courses)
+all: index $(courses)
 
 help:
 	$(info $(usage))
 	@:
 
 precommit: fmt lint all validate
+
+index: notes/index.md $(pandoc_aux)
+	mkdir -p $(DESTDIR)
+	pandoc -d config.yml $< -M home=true -M dest_dir=$(DESTDIR)
 
 $(courses): %: notes/%.md $(pandoc_aux)
 	mkdir -p $(DESTDIR)/$@
@@ -45,7 +50,6 @@ fmt:
 	find . -type f -name "*.ts" | xargs deno fmt
 
 lint:
-	find . -type f -name "*.sh" | xargs shellcheck
 	find . -type f -name "*.ts" | xargs deno lint --unstable
 
 validate:

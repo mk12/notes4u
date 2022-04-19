@@ -1,6 +1,5 @@
-from: reader.lua
+from: markdown+ascii_identifiers
 to: writer.lua
-filters: [filter.lua]
 template: templates/page.html
 # Use a high value to prevent full-width tables:
 # https://pandoc.org/MANUAL.html#extension-pipe_tables
