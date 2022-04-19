@@ -1,6 +1,0 @@
-toc-link=true
-title=Mitchell Kember | <!-- ###course-code### -->
-header:nav-snippet.html
-header=<h2 id="section-heading"><!-- ###section### --></h2>
-footer:nav-snippet.html
-bottom-nav=
