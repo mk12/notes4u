@@ -1,0 +1,411 @@
+/* Reset */
+
+html, body, div, span, p,
+h1, h2, h3, h4, h5, h6,
+a, del, em, img, strike, strong, sub, sup,
+dl, dt, dd, ol, ul, li,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, figure, figcaption, footer, header, hgroup, section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* Colors */
+
+:root {
+    color-scheme: light dark;
+    --bg: #fff;
+    --block: #f6f6f6;
+    --border: #ccc;
+    --fg: #000;
+    --subdued: #999;
+    --active: #b00;
+    --svg-gray: #ccc;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #202020;
+        --block: #2e2e2e;
+        --border: #666;
+        --fg: #ccc;
+        --subdued: #888;
+        --active: #61afef;
+        --svg-gray: #666;
+    }
+}
+
+/* Fonts */
+
+@font-face {
+	font-family: 'Concourse T3';
+	src: local('Concourse T3'),
+		url('../fonts/concourse_t3_regular-webfont.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Concourse T3';
+	src: local('Concourse T3 Bold'),
+		url('../fonts/concourse_t3_bold-webfont.woff2') format('woff2');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Equity Text B';
+	src: local('Equity Text B'),
+		url('../fonts/equity_text_b_regular-webfont.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Equity Text B';
+	src: local('Equity Text B Italic'),
+		url('../fonts/equity_text_b_italic-webfont.woff2') format('woff2');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Equity Text B';
+	src: local('Equity Text B Bold'),
+		url('../fonts/equity_text_b_bold-webfont.woff2') format('woff2');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Equity Caps B';
+	src: local('Equity Caps B'),
+		url('../fonts/equity_caps_b_regular-webfont.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Equity Caps B';
+	src: local('Equity Cabs B Bold'),
+		url('../fonts/equity_caps_b_bold-webfont.woff2') format('woff2');
+	font-weight: bold;
+	font-style: normal;
+}
+
+/* General */
+
+body {
+	font: 24px/1.4 'Equity Text B', Georgia, serif;
+    color: var(--fg);
+    background: var(--bg);
+	padding: 0 10px;
+	max-width: 720px;
+	margin: 0 auto;
+	text-rendering: optimizeLegibility;
+}
+
+a {
+	text-decoration: none;
+    color: var(--fg);
+	border-bottom: 1px dotted var(--subdued);
+}
+
+a:hover {
+	color: var(--active);
+	border-bottom: 1px solid var(--active);
+}
+
+p {
+    margin-bottom: 1.2em;
+}
+
+strong {
+    font-weight: bold
+}
+
+em {
+    font-style: italic;
+}
+
+aside {
+	font-family: 'Concourse T3';
+	background-color: var(--block);
+	margin-bottom: 1.2em;
+	padding: 0.75em 1em;
+}
+
+aside > p:last-child {
+	margin-bottom: 0;
+}
+
+aside em {
+	font-style: normal;
+	font-weight: bold;
+}
+
+figure {
+	margin: 2.0em 0;
+}
+
+figure > img, figure > svg {
+	width: 100%;
+	height: auto;
+	max-width: 100%;
+	max-height: 600px;
+	display: block;
+	margin: 0 auto;
+}
+
+figcaption {
+	text-align: center;
+	font: 20px 'Concourse T3', Helvetica, Arial, sans-serif;
+	margin-top: 1em;
+}
+
+sup {
+	font-size: 75%;
+	position: relative;
+	bottom: 0.5em;
+}
+
+sub {
+	font-size: 75%;
+	position: relative;
+	top: 0.25em;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+ul, ol, dl {
+    margin-bottom: 1.2em;
+}
+
+ul > li {
+	list-style-type: disc;
+}
+
+ol > li {
+	list-style-type: decimal;
+}
+
+dd > ul > li {
+	list-style-type: square;
+}
+
+dt {
+	font-style: italic;
+	display: list-item;
+	list-style-type: disc;
+}
+
+dd {
+	margin-left: 1em;
+}
+
+dd > p {
+    margin-top: 0.4em;
+}
+
+dd + dd {
+	display: list-item;
+	list-style-type: circle;
+}
+
+table {
+	margin: 0 auto 1.8em;
+	border-collapse: collapse;
+}
+
+tr {
+	border-bottom: 1px solid var(--border);
+}
+
+td, th {
+	padding: 5px 20px;
+}
+
+th {
+	font-family: 'Equity Caps B';
+	text-align: center;
+	text-transform: lowercase;
+}
+
+.center {
+    text-align: center;
+}
+
+/* Math */
+
+.katex {
+    /* KaTeX CSS uses 1.21em, which is too big beside 1em Equity Text. */
+    font-size: 1.08em;
+}
+
+.katex .text {
+    font-family: "Equity Text B";
+    font-size: calc(1em/1.08);
+}
+
+td .katex {
+    white-space: nowrap;
+}
+
+/* SVG */
+
+figure > svg text {
+    fill: currentColor;
+}
+
+.svg-fill-bg {
+    fill: var(--bg);
+}
+
+.svg-fill-gray {
+    fill: var(--svg-gray);
+}
+
+.svg-stroke-gray {
+    stroke: var(--svg-gray);
+}
+
+/* Page navigation */
+
+.pagenav {
+	display: flex;
+	justify-content: space-between;
+	font-family: 'Equity Caps B', Georgia, serif;
+	text-transform: lowercase;
+}
+
+.pagenav--top {
+	border-bottom: 1px solid var(--border);
+	margin-bottom: 60px;
+	margin-top: 0px;
+}
+
+.pagenav--bottom {
+	border-top: 1px solid var(--border);
+	margin-top: 50px;
+}
+
+.pagenav__item {
+	padding: 10px 20px 0;
+	height: 50px;
+    color: var(--subdued);
+}
+
+.pagenav__item--disabled {
+    visibility: hidden;
+}
+
+.pagenav__item--link {
+	border-bottom: none;
+}
+
+.pagenav__item--link:hover {
+	border-bottom: none;
+	background: var(--block);
+	color: inherit;
+}
+
+.pagenav__item--left {
+    padding-left: 10px;
+}
+
+.pagenav__item--right {
+    padding-right: 10px;
+}
+
+.pagenav__item--center {
+	border-left: 1px solid var(--border);
+	border-right: 1px solid var(--border);
+}
+
+@media only screen and (max-width: 465px) {
+	.pagenav__item--left, .pagenav__item--right  {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+/* Headings */
+
+h1 {
+	margin-bottom: 50px;
+}
+
+.course-heading {
+	font: 36px 'Equity Text B', Georgia, serif;
+}
+
+.course-heading__name {
+	font-style: italic;
+}
+
+.course-heading__slash {
+	letter-spacing: -5px;
+	padding-right: 4px;
+}
+
+.course-heading__code {
+	font-family: 'Concourse T3', Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+}
+
+.section-heading {
+	font: bold 36px 'Concourse T3', Helvetica, Arial, sans-serif;
+}
+
+.unit-heading {
+	font: bold 36px 'Equity Caps B', Georgia, serif;
+}
+
+h2 {
+	font: italic 36px 'Equity Text B', Georgia, serif;
+	margin: 1.5em 0 1em;
+}
+
+/* Table of contents */
+
+.course-toc > ol > li > ol, .unit-toc > ol {
+	columns: 2;
+}
+
+.course-toc > ol > li {
+	font-family: 'Equity Caps B', Georgia, serif;
+	font-weight: bold;
+	text-transform: lowercase;
+	list-style-type: none;
+}
+
+.course-toc > ol > li > ol > li, .unit-toc > ol > li {
+	font-family: 'Equity Text B', Georgia, serif;
+	font-weight: normal;
+	text-transform: none;
+	list-style-type: none;
+}
+
+@media only screen and (max-width: 600px) {
+	.course-toc > ol > li > ol, .unit-toc > ol {
+		columns: 1;
+	}
+}
+
+/* Typographic hacks */
+
+.degree {
+	position: relative;
+	bottom: 0.07em;
+}
+
+.parens {
+	font-style: normal;
+}
