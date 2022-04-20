@@ -1,6 +1,11 @@
 -- Copyright 2022 Mitchell Kember. Subject to the MIT License.
 
 function Writer(doc, options)
+    if doc.meta.analytics_file then
+        local file = assert(io.open(doc.meta.analytics_file, "r"))
+        doc.meta.analytics = pandoc.RawBlock("html", assert(file:read("a")))
+        file:close()
+    end
     doc = transform(doc)
     if doc.meta.home then
         write_home(doc, options)
@@ -81,9 +86,10 @@ function write_notes(doc, options)
             up = up,
             next = nav.next,
             toc = toc,
+            notes4u = "../notes4u/",
             course_name = doc.meta.course_name,
             course_code = doc.meta.course_code,
-            notes4u = "../notes4u/",
+            analytics = doc.meta.analytics,
         }
         meta[kind] = true
         if kind ~= "course" then
