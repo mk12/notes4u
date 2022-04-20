@@ -1,6 +1,6 @@
 ---
 course_code: SCH4U
-course_title: Chemistry
+course_name: Chemistry
 ---
 
 This course is made up of five units. _Equilibrium_ is the most difficult; _organic chemistry_ is all about memorization. The last unit is short and it is evaluated only on the exam. There is a lot of homework during the entire course, and I suggest you do all of it. There are seven labs in the first half of the course, a week-long lab exam in the middle, and one more regular lab near the end. Around the same time as the lab exam is the independent portion of the organic unit -- _do not leave it to the last minute_. Start it at least week in advance (better yet, two weeks).
@@ -1068,7 +1068,7 @@ There are special names for branches that aren't alkyl groups:
 - Always pick the longest main chain possible.
 - If there are any double or triple bonds, the main chain must contain all of them, even if this results in a shorter main chain.
 - Number the main chain to prefer small numbers, prioritizing the double or triple bonds, then the side branches, and then everything in total (2,2,4 is better than 2,4,4).
-- Name the side branches in alphabetical order (tri**e**thyl comes before di**m**ethyl).
+- Name side branches in alphabetical order (tri**e**thyl comes before di**m**ethyl).
 - Numbers separated by commas should be listed in ascending order.
 - Put commas between numbers, and hyphens at number--word boundaries.
 

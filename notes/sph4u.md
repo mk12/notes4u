@@ -1,6 +1,6 @@
 ---
 course_code: SPH4U
-course_title: Physics
+course_name: Physics
 ---
 
 This is supposedly the most difficult course in all of high school. It mostly covers the same topics as in grade eleven physics, but in more depth. There is no getting around the fact that you have to spend time doing all the practice problems if you want good marks on the tests. The first unit is the longest, but it is mostly just different ways of using the same few equations. The third unit has the most content, and the fourth involves the most memorization and _'splain_ problems.
@@ -145,7 +145,7 @@ conclusion
 
 ## Position, velocity, & acceleration
 
-Position (`vec d`) is a vector quantity representing a location relative to an origin, usually measured in metres (m). A change in position is called _displacement_ (`∆vec d`). The rate of change in position per unit of time is called velocity (`vec v`), usually measured in metres per second (m/s).
+Position (`vec d`&thinsp;) is a vector quantity representing a location relative to an origin, usually measured in metres (m). A change in position is called _displacement_ (`∆vec d`&thinsp;). The rate of change in position per unit of time is called velocity (`vec v`), usually measured in metres per second (m/s).
 
 If we graph position versus time (or d--t for short), the slope of the tangent line gives us the instantaneous velocity at that moment. The slope of the secant line gives us the average velocity on the interval [`t_1`, `t_2`]. We can also go the other way: on a v--t graph, the area under the curve between `t_1` and `t_2` gives us the displacement on that interval.
 
@@ -263,7 +263,7 @@ The velocity of the wind is a vector pointing in the direction in which it is go
 
 Since `vec v_"PE" = vec v_"PA" + vec v_"AE"`, the course is
 
-    `vec v_"PE" = 245\ "km/h [N 17º E]" + 89.0\ "km/h [N 35º E]"`<br>`= 331\ "km/h [N 22º E]"`.
+    `vec v_"PE" = 245\ "km/h [N 17º E]" + 89.0\ "km/h [N 35º E]" newline = 331\ "km/h [N 22º E]"`.
 
 > I didn't show my steps here. You need to draw a sketch and make a table. Refer to the [vectors section](vectors.html) if you don't know how to add vectors.
 
@@ -819,7 +819,7 @@ We will have to consider some special conditions:
 - `m_"A" ≫ m_"B" => vec v'_"A" ~~ vec v_"A"`
 - `m_"A" < m_"B"\  => vec v'_"A" < 0`
 - `m_"A" ≪ m_"B" => vec v'_"A" ~~ -vec v_"A" and vec v'_"B" ~~ 0`
-- `m_"A" = m_"B" => vec v'_"A" = 0 and vec v'_"B" = vec v_"A"`
+- `m_"A" = m_"B"\  => vec v'_"A" = 0 and vec v'_"B" = vec v_"A"`
 
 If both objects are in motion, we can still use these equations as long as we put ourselves in B's [frame of reference](relative-motion.html). To do this, subtract `v_"B"` from both initial velocities, making `v_"B"` zero. Proceed as usual, but don't forget to return to Earth's frame of reference at the end by undoing the subtraction: add the original `v_"B"` to `v'_"A"` and `v'_"B"`.
 

@@ -1,6 +1,6 @@
 ---
 course_code: MCV4U
-course_title: Calculus & Vectors
+course_name: Calculus & Vectors
 ---
 
 This course builds on Advanced Functions to prepare you for university math. The two halves, (differential) calculus and vectors, are very different. Calculus is more algebraic and abstract, while vectors is more visual and geometric.
@@ -974,7 +974,7 @@ The normal vector is useful for another reason: we can use it to find the angle 
 
     `theta_"acute" = cos^-1((|vec n_1 * vec n_2|)/(|:vec n_1:||:vec n_2:|))`.
 
-> The vertical bars in the numerator of this equation mean absolute value. In the bottom, they mean vector magnitude. Don't get confused and think that the dot product should produce a vector instead of a scalar. (For this reason, it is more common to use the notation `||vec v||` for the norm and reserve `|a|` for the absolute value.)
+> The vertical bars in the numerator of this equation mean absolute value. In the bottom, they mean vector magnitude. Don't get confused and think that the dot product should produce a vector instead of a scalar. (For this reason, it is more common to use the notation `norm(vec v)` for the norm and reserve `|a|` for the absolute value.)
 
 ## Line--plane intersection
 

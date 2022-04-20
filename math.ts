@@ -23,14 +23,16 @@ const AsciiMath = new AsciiMathParser();
 for await (const line of readLines(Deno.stdin)) {
   const tex = "\\displaystyle " +
     AsciiMath.parse(line)
+      // This is what AsciiMath parses "newline" as.
+      .replaceAll("\\ne w l \\in e", "\\\\ ")
       // AsciiMath doens't understand double prime.
       .replaceAll("{'} '", "{''}")
       // AsciiMath puts too much space between primes and the opening paren.
       .replaceAll(/'} \\left\s*\((.*?)\\right\s*\)/g, "'} ($1)")
       // AsciiMath collides the vector arrow with the prime mark.
       .replaceAll(/\\vec{(.)} '_{/g, "\\vec{$1}^{\\,\\prime}_{")
-      // Use \overrightarrow for two letter vectors.
-      .replaceAll(/\\vec{(. .)}/g, "\\overrightarrow{$1}")
+      // Use \overrightharpoon for two letter vectors.
+      .replaceAll(/\\vec{(. .)}/g, "\\overrightharpoon{$1}")
       // I prefer to type "∆" because it's easy on macOS (Option+J), but KaTeX
       // doesn't handle these Unicode characters correctly.
       .replaceAll("∆", "\\Delta{}");
@@ -48,7 +50,7 @@ for await (const line of readLines(Deno.stdin)) {
       },
     });
   } catch (error) {
-    throw new Error(`AsciiMath: ${line}\n\nTeX: ${tex}\n\nError: ${error}`);
+    throw new Error(`Input: ${line}\n\nTeX: ${tex}\n\nError: ${error}`);
   }
   // There is no need to include xmlns:
   // https://www.w3.org/TR/MathML3/chapter6.html#interf.html
