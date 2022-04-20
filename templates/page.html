@@ -8,9 +8,11 @@
   <link rel="stylesheet" href="$root$style.css">
 </head>
 <body>
+$if(nav)$
 <nav class="pagenav pagenav--top" aria-label="page">
   $partial_pagenav.html()$
 </nav>
+$endif$
 <main>
 $if(home)$
 $body$
@@ -22,8 +24,10 @@ $elseif(section)$
 $body$
 $endif$
 </main>
+$if(nav)$
 <nav class="pagenav pagenav--bottom" aria-label="page">
   $partial_pagenav.html()$
 </nav>
+$endif$
 </body>
 </html>

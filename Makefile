@@ -26,9 +26,9 @@ Targets:
 	clean      Remove HTML files
 endef
 
-.PHONY: all help precommit index $(courses) fmt lint validate clean
+.PHONY: all help precommit home $(courses) fmt lint validate clean
 
-all: index $(courses)
+all: home $(courses)
 
 help:
 	$(info $(usage))
@@ -36,7 +36,7 @@ help:
 
 precommit: fmt lint all validate
 
-index: notes/index.md $(pandoc_aux)
+home: notes/home.md $(pandoc_aux)
 	mkdir -p $(DESTDIR)
 	pandoc -d config.yml $< -M home=true -M dest_dir=$(DESTDIR)
 

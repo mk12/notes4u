@@ -13,6 +13,8 @@ end
 
 -- Writes the top-level index.html.
 function write_home(doc, options)
+    table.insert(doc.blocks[1].classes, "home-heading")
+    doc.meta.title = "Notes4U"
     local path = doc.meta.dest_dir .. "/" .. "index.html"
     local file = assert(io.open(path, "w"))
     local html = pandoc.write(doc, "html", options)
@@ -63,14 +65,13 @@ function write_notes(doc, options)
 
     local push = navigator()
     local scan = scanner(doc.blocks, push)
-    local home = { file = "../index.html" }
-    local root = { file = "index.html" }
 
     local write, write_course, write_unit, write_section
 
     function write(kind, blocks, nav, up, toc)
         local meta = {
-            title = "TODO",
+            title = pandoc.utils.stringify(doc.meta.course_code) .. " Notes",
+            nav = true,
             prev = nav.prev,
             up = up,
             next = nav.next,
@@ -80,6 +81,9 @@ function write_notes(doc, options)
             root = "../",
         }
         meta[kind] = true
+        if kind ~= "course" then
+            meta.title = nav.this.name .. " | " .. meta.title
+        end
         local subdoc = pandoc.Pandoc(blocks, meta)
         local path = doc.meta.dest_dir .. "/" .. nav.this.file
         local file = assert(io.open(path, "w"))
@@ -121,8 +125,8 @@ function write_notes(doc, options)
         return nav.this, level
     end
 
-    push(root)
-    write_course(home)
+    push({ file = "index.html" })
+    write_course({ file = "../index.html" })
 end
 
 -- Transforms doc according to the custom Markdown dialect used by this project.
@@ -253,7 +257,7 @@ function transform(doc)
     return doc
 end
 
--- Helper to split about pandoc.Str around delimiters.
+-- Helper to split pandoc.Str around delimiters.
 function split(inlines, delimiter)
     return inlines:walk({
         Str = function(el)

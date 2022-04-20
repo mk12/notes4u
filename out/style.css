@@ -243,6 +243,13 @@ th {
     text-align: center;
 }
 
+.copyright {
+	color: var(--subdued);
+	margin-top: 2em;
+	font-family: 'Equity Caps B';
+	text-transform: lowercase;
+}
+
 /* Math */
 
 .katex {
@@ -347,6 +354,12 @@ h1 {
 	margin-bottom: 50px;
 }
 
+.home-heading {
+	font: 42px 'Concourse T3', Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	margin-top: 120px;
+}
+
 .course-heading {
 	font: 36px 'Equity Text B', Georgia, serif;
 }
@@ -358,12 +371,6 @@ h1 {
 .course-heading__slash {
 	letter-spacing: -5px;
 	padding-right: 4px;
-}
-
-.course-heading__code {
-	font-family: 'Concourse T3', Helvetica, Arial, sans-serif;
-	text-transform: uppercase;
-	letter-spacing: 0.08em;
 }
 
 .section-heading {
@@ -414,4 +421,10 @@ h2 {
 
 .parens {
 	font-style: normal;
+}
+
+.course-code {
+	font-family: 'Concourse T3', Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
 }
