@@ -24,7 +24,8 @@ article, aside, figure, figcaption, footer, header, hgroup, section {
     --fg: #000;
     --subdued: #999;
     --active: #b00;
-    --svg-gray: #ccc;
+    --svg-ccc: #ccc;
+    --svg-eee: #eee;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -35,7 +36,8 @@ article, aside, figure, figcaption, footer, header, hgroup, section {
         --fg: #ccc;
         --subdued: #888;
         --active: #61afef;
-        --svg-gray: #666;
+        --svg-ccc: #666;
+        --svg-eee: #3a3a3a;
     }
 }
 
@@ -259,7 +261,7 @@ td .katex {
 
 /* SVG */
 
-figure > svg text {
+figure > svg {
     fill: currentColor;
 }
 
@@ -267,12 +269,16 @@ figure > svg text {
     fill: var(--bg);
 }
 
-.svg-fill-gray {
-    fill: var(--svg-gray);
+.svg-fill-eee {
+    fill: var(--svg-eee);
 }
 
-.svg-stroke-gray {
-    stroke: var(--svg-gray);
+.svg-fill-ccc {
+    fill: var(--svg-ccc);
+}
+
+.svg-stroke-ccc {
+    stroke: var(--svg-ccc);
 }
 
 /* Page navigation */
