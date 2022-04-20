@@ -45,49 +45,49 @@ article, aside, figure, figcaption, footer, header, hgroup, section {
 
 @font-face {
 	font-family: 'Concourse T3';
-	src: url('../fonts/concourse_t3_regular-webfont.woff2') format('woff2');
+	src: url('../../fonts/concourse_t3_regular-webfont.woff2') format('woff2');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Concourse T3';
-	src: url('../fonts/concourse_t3_bold-webfont.woff2') format('woff2');
+	src: url('../../fonts/concourse_t3_bold-webfont.woff2') format('woff2');
 	font-weight: bold;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Equity Text B';
-	src: url('../fonts/equity_text_b_regular-webfont.woff2') format('woff2');
+	src: url('../../fonts/equity_text_b_regular-webfont.woff2') format('woff2');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Equity Text B';
-	src: url('../fonts/equity_text_b_italic-webfont.woff2') format('woff2');
+	src: url('../../fonts/equity_text_b_italic-webfont.woff2') format('woff2');
 	font-weight: normal;
 	font-style: italic;
 }
 
 @font-face {
 	font-family: 'Equity Text B';
-	src: url('../fonts/equity_text_b_bold-webfont.woff2') format('woff2');
+	src: url('../../fonts/equity_text_b_bold-webfont.woff2') format('woff2');
 	font-weight: bold;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Equity Caps B';
-	src: url('../fonts/equity_caps_b_regular-webfont.woff2') format('woff2');
+	src: url('../../fonts/equity_caps_b_regular-webfont.woff2') format('woff2');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Equity Caps B';
-	src: url('../fonts/equity_caps_b_bold-webfont.woff2') format('woff2');
+	src: url('../../fonts/equity_caps_b_bold-webfont.woff2') format('woff2');
 	font-weight: bold;
 	font-style: normal;
 }
@@ -154,6 +154,10 @@ figure > img, figure > svg {
 	max-height: 600px;
 	display: block;
 	margin: 0 auto;
+}
+
+figure > img {
+	object-fit: contain;
 }
 
 figcaption {

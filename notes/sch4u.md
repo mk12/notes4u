@@ -216,7 +216,7 @@ standard enthalpy of formation (`∆H_"f"`)
 
 :   the molar enthalpy for a formation reaction (expressed per mole of product produced) where the elements are in their standard states and the reaction occurs at SATP (25 ºC and 101.3 kPa)
 
-    `∆H_"f" = -393.5\ "kJ/mol"` CO~2(g)~
+        `∆H_"f" = -393.5\ "kJ/mol"` CO~2(g)~
 
 > The standard enthalpy of formation for elements already in their standard states is zero.
 
@@ -1161,11 +1161,11 @@ A galvanic cell is an electrochemical cell that derives electrical energy from a
 - _ion flow_: anions flow through the salt bridge to the anode beaker; cations flow through the salt bridge to the cathode beaker
 - _voltmeter_: a device that measures voltage
 
+![Galvanic cell diagram](images/galvanic-cell.jpg)
+
 A galvanic cell can be represented succinctly with _standard cell notation_:
 
     cathode\ **|**\ electrolyte\ **||**\ electrolyte\ **|**\ anode.
-
-![Galvanic cell diagram](galvanic-cell.jpg)
 
 Sometimes, an _inert electrode_ will be required because one of the half-reactions has no solids in it (the electrode has to be a solid). For example, a hydrogen--cobalt cell would be Pt~(s)~\ **|**\ H^+^~(aq)~, H~2(g)~\ **||**\ Co^2+^~(aq)~\ **|**\ Co~(s)~. At the anode, solid cobalt is flaking off and giving up electrons to become cobalt ions. In the other beaker, hydrogen ions are gaining electrons and becoming hydrogen gas. The electrons go through the wire and into the platinum electrode, which, unlike the cobalt electrode, does not participate in the reaction -- it is inert. It's sort of like sticking the wire into the solution, except that it doesn't exactly work that way; it has to be an electrode made of platinum or carbon.
 

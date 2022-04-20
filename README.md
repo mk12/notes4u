@@ -14,9 +14,12 @@ I host the website at https://mitchellkember.com/notes4u.
 
 To build the website yourself:
 
-1. Clone the repository.
-2. Run `make`.
-3. TODO!!!
+1. `git clone git@github.com:mk12/notes4u`
+2. `cd notes4u && mkdir fonts`
+3. Buy Equity and Concourse from https://mbtype.com.
+4. Copy the WOFF2 files into `fonts/`.
+5. `make -j5`
+6. Open out/notes4u/index.html.
 
 ## Dependencies
 
@@ -35,4 +38,4 @@ Notes4U is available under the MIT License; see [LICENSE](LICENSE.md) for detail
 [science]: https://ocdsb.ca/secondary/programs/secondary_school_courses/science
 [Pandoc]: https://pandoc.org
 [Deno]: http://deno.land
-[vnu]: https://validator.github.io/validator
+[v.Nu]: https://validator.github.io/validator

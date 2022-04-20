@@ -21,8 +21,7 @@ console.warn = function (message: string) {
 const AsciiMath = new AsciiMathParser();
 
 for await (const line of readLines(Deno.stdin)) {
-  const tex =
-    "\\displaystyle " +
+  const tex = "\\displaystyle " +
     AsciiMath.parse(line)
       // This is what AsciiMath parses "newline" as.
       .replaceAll("\\ne w l \\in e", "\\\\ ")
@@ -67,9 +66,9 @@ for await (const line of readLines(Deno.stdin)) {
       // of body text without splitting up into two equations.
       .replaceAll(
         '<span class="mord">and</span>',
-        '<span class="mord math-and">and</span>'
+        '<span class="mord math-and">and</span>',
       )
       // All output must be on a single line.
-      .replaceAll("\n", " ")
+      .replaceAll("\n", " "),
   );
 }

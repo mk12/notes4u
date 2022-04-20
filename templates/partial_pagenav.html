@@ -1,5 +1,5 @@
 $if(prev)$
-<a class="pagenav__item pagenav__item--left pagenav__item--link" href="$prev.file$" aria-label="previous page">
+<a class="pagenav__item pagenav__item--left pagenav__item--link" href="$prev.href$" aria-label="previous page">
   «&nbsp;Prev
 </a>
 $else$
@@ -8,7 +8,7 @@ $else$
 </span>
 $endif$
 $if(up)$
-<a class="pagenav__item pagenav__item--center pagenav__item--link"  href="$up.file$" aria-label="parent page">
+<a class="pagenav__item pagenav__item--center pagenav__item--link"  href="$up.href$" aria-label="parent page">
   Up
 </a>
 $else$
@@ -17,7 +17,7 @@ $else$
 </span>
 $endif$
 $if(next)$
-<a class="pagenav__item pagenav__item--right pagenav__item--link" href="$next.file$" aria-label="next page">
+<a class="pagenav__item pagenav__item--right pagenav__item--link" href="$next.href$" aria-label="next page">
   Next&nbsp;»
 </a>
 $else$

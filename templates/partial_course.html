@@ -8,10 +8,10 @@ $body$
   <ol>
   $for(toc)$
     <li>
-      <a href="$it.file$">$it.name$</a>
+      <a href="$it.href$">$it.name$</a>
       <ol>
       $for(it.toc)$
-        <li><a href="$it.file$">$it.name$</a></li>
+        <li><a href="$it.href$">$it.name$</a></li>
       $endfor$
       </ol>
     </li>

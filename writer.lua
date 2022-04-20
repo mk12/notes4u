@@ -11,11 +11,14 @@ function Writer(doc, options)
     os.exit(0)
 end
 
--- Writes the top-level index.html.
+-- Writes the notes4u/index.html homepage. Note: the notes4u directory is a
+-- sibling of the course directories rather than their parent. This is to
+-- preserve the old structure, where each course was linked directly from the
+-- overall website homepage (cool URIs don't change).
 function write_home(doc, options)
     table.insert(doc.blocks[1].classes, "home-heading")
     doc.meta.title = "Notes4U"
-    local path = doc.meta.dest_dir .. "/" .. "index.html"
+    local path = doc.meta.destdir .. "/notes4u/" .. "index.html"
     local file = assert(io.open(path, "w"))
     local html = pandoc.write(doc, "html", options)
     assert(file:write(html))
@@ -50,7 +53,7 @@ function write_notes(doc, options)
                     else
                         -- We've reached the end of this page.
                         local nav = push({
-                            file = el.identifier .. ".html",
+                            href = el.identifier .. ".html",
                             name = pandoc.utils.stringify(el),
                         })
                         return pandoc.Blocks(result), nav, el.level
@@ -65,12 +68,14 @@ function write_notes(doc, options)
 
     local push = navigator()
     local scan = scanner(doc.blocks, push)
+    local course_code = pandoc.utils.stringify(doc.meta.course_code)
+    local course_dir = doc.meta.destdir .. "/" .. course_code:lower()
 
     local write, write_course, write_unit, write_section
 
     function write(kind, blocks, nav, up, toc)
         local meta = {
-            title = pandoc.utils.stringify(doc.meta.course_code) .. " Notes",
+            title = course_code .. " Notes",
             nav = true,
             prev = nav.prev,
             up = up,
@@ -78,14 +83,15 @@ function write_notes(doc, options)
             toc = toc,
             course_name = doc.meta.course_name,
             course_code = doc.meta.course_code,
-            root = "../",
+            notes4u = "../notes4u/",
         }
         meta[kind] = true
         if kind ~= "course" then
             meta.title = nav.this.name .. " | " .. meta.title
         end
         local subdoc = pandoc.Pandoc(blocks, meta)
-        local path = doc.meta.dest_dir .. "/" .. nav.this.file
+        assert(not nav.this.href:find("/"))
+        local path = course_dir .. "/" .. nav.this.href
         local file = assert(io.open(path, "w"))
         local html = pandoc.write(subdoc, "html", options)
         assert(file:write(html))
@@ -125,8 +131,8 @@ function write_notes(doc, options)
         return nav.this, level
     end
 
-    push({ file = "index.html" })
-    write_course({ file = "../index.html" })
+    push({ href = "index.html" })
+    write_course({ href = "../notes4u/index.html" })
 end
 
 -- Transforms doc according to the custom Markdown dialect used by this project.
@@ -217,6 +223,10 @@ function transform(doc)
     -- Embed SVG files. Do this after math so that captions can use math.
     -- Operate on Para rather than Image so that we can return a RawBlock
     -- (rather than RawInline, which would get wrapped in <p>).
+    local svg_dir
+    if doc.meta.course_code then
+        svg_dir = "assets/" .. pandoc.utils.stringify(doc.meta.course_code)
+    end
     doc = doc:walk({
         Para = function(el)
             if not (#el.content == 1 and el.content[1].t == "Image") then
@@ -227,7 +237,8 @@ function transform(doc)
             if el.src:sub(-#ext) ~= ext then
                 return
             end
-            local path = doc.meta.svg_dir .. "/" .. el.src
+            assert(svg_dir)
+            local path = svg_dir .. "/" .. el.src
             local file = assert(io.open(path, "r"))
             local svg = assert(file:read("a"))
             file:close()
