@@ -221,11 +221,11 @@ This is really just a special case of the product rule, but you will use it so o
 
 The derivative of the sum is equal to the sum of the derivatives. The same goes for subtraction. This means that
 
-    `(f + g)' = f' + g' qquad and qquad (f - g)' = f' - g'`,
+    `(f pm g)' = f' pm g'`.
 
 or, using Leibniz's notation,
 
-    `d/(dx)(u+v) = (du)/(dx) + (dv)/(dx) qquad and qquad d/(dx)(u-v) = (du)/(dx) - (dv)/(dx)`.
+    `d/(dx)(u pm v) = (du)/(dx) pm (dv)/(dx)`.
 
 ### Power rule
 
@@ -259,7 +259,7 @@ or, using Leibniz’s notation,
 
 To differentiate composite functions, we need to use the chain rule:
 
-    `(f \circ g)' = (f' \circ g)*g'`,
+    `(f circ g)' = (f' circ g)*g'`,
 
 or, using Leibniz’s notation,
 
@@ -651,7 +651,7 @@ First, we write the linear combination equation:
 
 That gives us the three equations
 
-    `-14=-a+4b, quad -1=2a+b, quad and quad 16=3a-2b`.
+    `-14=-a+4b, quad -1=2a+b, quad 16=3a-2b`.
 
 Solving the system defined by the first two equations tells us that
 
@@ -914,7 +914,7 @@ Consider a point, defined by a tuple of coordinates. The point has zero dimensio
 
 Now consider a plane. A plane another set of `oo` points, and these ones all lie on a flat surface. You could also think of it as `oo` parallel lines. The plane is two-dimensional and has two degrees of freedom; it is controlled by the free parameters _s_ and _t_ in
 
-    `vec r = vec r_0 + svec u + tvec v, qquad s in RR and t in RR`.
+    `vec r = vec r_0 + svec u + tvec v, qquad s,t in RR`.
 
 That's the vector equation of a plane. As long as `vec u` and `vec v` are non-collinear, this allows `vec r` to move around anywhere on the plane by choosing different values for the free parameters.
 
@@ -936,7 +936,7 @@ As I mentioned before, there is a single plane in `RR^2` but many planes in `RR^
 
 Let's look at the equation of the plane again:
 
-    `vec r = vec r_0 + svec u + tvec v, qquad s in RR and t in RR`.
+    `vec r = vec r_0 + svec u + tvec v, qquad s,t in RR`.
 
 We can substitute components like we did for the equation of the line:
 
@@ -944,7 +944,7 @@ We can substitute components like we did for the equation of the line:
 
 From this, we can get the parametric equations of the plane:
 
-    `x = x_0 + su_1 + tv_1, quad y = y_0 + su_2 + tv_2, and z = z_0 + su_3 + tv_3`.
+    `x = x_0 + su_1 + tv_1, quad y = y_0 + su_2 + tv_2, quad z = z_0 + su_3 + tv_3`.
 
 Another way to describe a plan is with a point and a _normal vector_. The normal vector is perpendicular to the plane, and we get it by crossing the plane's two direction vectors:
 

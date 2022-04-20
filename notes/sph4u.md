@@ -413,16 +413,11 @@ Rearranging to solve for acceleration gives us
 
 and after substituting we have
 
-    `vec a_"sys" = (-(21\ "kg")(9.80\ "m/s"^2)sin18º + (12\ "kg")(9.80\ "m/s"^2))/(21\ "kg" + 12\ "kg") = 1.64\ "m/s"^2`,
+    `vec a_"sys" = (-(21\ "kg")(9.80\ "m/s"^2)sin18º + (12\ "kg")(9.80\ "m/s"^2))/(21\ "kg" + 12\ "kg")`,
 
-therefore the acceleration of the system is 1.6 m/s^2^ [fwd].
+which evaluates to 1.6 m/s^2^ [fwd].
 
-Now we can use the acceleration to find the tension in the string. We can do this using either A or B. It's slightly easier with B. There are two forces acting on B:
-
-- gravitational force
-- tension force
-
-We can write our net force equation again:
+Now we can use the acceleration to find the tension in the string. We can do this using either A or B. It's slightly easier with B. There are two forces acting on B: gravity and tension. We can write our net force equation again:
 
     `vec F_"net" = vec F_"g,B" + vec F_"T" = m_"B"g + vec F_"T" = m_"B"vec a`.
 

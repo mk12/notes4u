@@ -189,11 +189,13 @@ The net changes in the properties of a system are independent of the way the sys
 What is the enthalpy change for the formation of two moles of nitrogen monoxide given the following reference equations?
 
     ½ N~2(g)~ + O~2(g)~ → NO~2(g)~, `∆H_1 = 34\ "kJ"`
+
     ½ O~2(g)~ + NO~(g)~ → NO~2(g)~, `∆H_2 = -56\ "kJ"`
 
 First, we should identify our target equation: N~2(g)~ + O~2(g)~ → 2 NO~(g)~. We need one mole of N~2~ on the left side, so we need to multiply the first reference equation by 2. We need two moles of NO on the right side, so we must multiply the second equation by −2 (multiplying by a negative flips the equation). Remember to multiply the `∆H` values as well.
 
     N~2(g)~ + ~~2~~ O~2(g)~ → ~~2 NO~2(g)~~~, `∆H_1 = 68\ "kJ"`
+
     ~~2 NO~2(g)~~~ → ~~O~2(g)~~~ + 2 NO~(g)~, `∆H_2 = 112\ "kJ"`
 
 When we add these, nitrogen dioxide and one mole of oxygen cancel out, leaving us with our target equation with the correct enthalpy change:
@@ -351,8 +353,7 @@ Let `x` represent the absolute value of the change in concentration of H~2(g)~. 
 
 The **E** value for I~2(g)~ is known to be 1.30 mol/L, but our table tells us that it is also `x` subtracted from 3.00 mol/L, therefore we can set them equal:
 
-    `1.30\ "mol/L" = 3.00\ "mol/L" - x`,
-    `x = 1.70\ "mol/L"`.
+    `1.30\ "mol/L" = 3.00\ "mol/L" - x qquad => qquad x = 1.70\ "mol/L"`.
 
 By substituting 1.70 mol/L for `x` into the **E** expressions for H~2(g)~ and HI~(g)~, we can easily find their concentrations at equilibrium as well (0.30 mol/L and 3.40 mol/L respectively).
 
@@ -562,7 +563,7 @@ Now we can write the solubility equilibrium equation:
 
 And calculate the trial ion product:
 
-    `Q = ["Ag"^+]\["Cl"^-] = (0.0050\ "mol/L")(0.0025\ "mol/L") = 1.3xx10^-5`.
+    `Q = ["Ag"^+] negthinsp ["Cl"^-] = (0.0050\ "mol/L")(0.0025\ "mol/L") = 1.3xx10^-5`.
 
 Since `Q > K_"sp"`, the answer is yes -- a precipitate _will_ form.
 
@@ -629,9 +630,9 @@ These chemical changes also increase entropy:
 
 Enthalpy change and entropy change together determine whether a reaction is spontaneous:
 
-- `∆H < 0 and ∆S > 0 =>` spontaneous
-- `∆H > 0 and ∆S < 0 =>` non-spontaneous
-- _same sign_: depends on temperature
+- `∆H < 0, ∆S > 0 =>` spontaneous
+- `∆H > 0, ∆S < 0 =>` non-spontaneous
+- _same sign_ `=>` depends on temperature
 
 ## Gibbs free energy
 

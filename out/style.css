@@ -257,13 +257,13 @@ th {
     font-size: 1.08em;
 }
 
-.katex .text {
-    font-family: "Equity Text B";
-    font-size: calc(1em/1.08);
-}
-
 td .katex {
     white-space: nowrap;
+}
+
+.math-and {
+    font-family: "Equity Text B";
+    font-size: calc(1em/1.08);
 }
 
 /* SVG */
@@ -382,7 +382,7 @@ h1 {
 }
 
 h2 {
-	font: italic 36px 'Equity Text B', Georgia, serif;
+	font: italic 32px 'Equity Text B', Georgia, serif;
 	margin: 1.5em 0 1em;
 }
 

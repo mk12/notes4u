@@ -21,10 +21,16 @@ console.warn = function (message: string) {
 const AsciiMath = new AsciiMathParser();
 
 for await (const line of readLines(Deno.stdin)) {
-  const tex = "\\displaystyle " +
+  const tex =
+    "\\displaystyle " +
     AsciiMath.parse(line)
       // This is what AsciiMath parses "newline" as.
       .replaceAll("\\ne w l \\in e", "\\\\ ")
+      // This is what AsciiMath parses "negthinsp" as.
+      .replaceAll("\\neg t h \\in s p", "\\! ")
+      // AsciiMath treats operators after "f" and "g" weirdly.
+      .replaceAll(/([fg]){(\+|\\circ|\\pm)}/g, "$1 $2")
+      .replaceAll(/([fg]){- ([^}]+)}/g, "$1 - $2")
       // AsciiMath doens't understand double prime.
       .replaceAll("{'} '", "{''}")
       // AsciiMath puts too much space between primes and the opening paren.
@@ -52,14 +58,18 @@ for await (const line of readLines(Deno.stdin)) {
   } catch (error) {
     throw new Error(`Input: ${line}\n\nTeX: ${tex}\n\nError: ${error}`);
   }
-  // There is no need to include xmlns:
-  // https://www.w3.org/TR/MathML3/chapter6.html#interf.html
-  html = html.replace(
-    '<math xmlns="http://www.w3.org/1998/Math/MathML">',
-    "<math>",
+  console.log(
+    html
+      // There is no need to include xmlns:
+      // https://www.w3.org/TR/MathML3/chapter6.html#interf.html
+      .replace('<math xmlns="http://www.w3.org/1998/Math/MathML">', "<math>")
+      // Add a class to "and" connectives so we can style them to match the font
+      // of body text without splitting up into two equations.
+      .replaceAll(
+        '<span class="mord">and</span>',
+        '<span class="mord math-and">and</span>'
+      )
+      // All output must be on a single line.
+      .replaceAll("\n", " ")
   );
-  if (line == "displaystyle |vec u xx vec v| = |vec u||vec v|sin theta") {
-    console.warn(`Line: ${line}\n\nTeX: ${tex}\n\n Html: ${html}\n`);
-  }
-  console.log(html.replaceAll("\n", " "));
 }
