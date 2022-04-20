@@ -1014,10 +1014,10 @@ As long as you can do each step individually, putting it all together isn't that
 ### Main chain
 
 alkane
-:   [_prefix_]ane, where _prefix_ represents the number of carbon atoms in the main chain (see the table below)
+:   [&thinsp;_prefix_]ane, where _prefix_ represents the number of carbon atoms in the main chain (see the table below)
 
 alkene
-:   \#-[_prefix_]ene, #,#-[_prefix_]**di**ene, #,#,#-[_prefix_]**tri**ene, etc., where each # represents the location of a double bond and the part in bold indicates the number of double bonds
+:   \#-[&thinsp;_prefix_]ene; #,#-[&thinsp;_prefix_]**di**ene; #,#,#-[&thinsp;_prefix_]**tri**ene; etc.; where each # represents the location of a double bond and the part in bold indicates the number of double bonds
 
 alkyne
 :   like alkenes, but ending in _yne_ instead of _ene_
@@ -1043,7 +1043,7 @@ aromatic
 
 ### Side branches
 
-Side branches (_alkyl_ groups) are named like #-[_prefix_]yl, #,#-**di**[_prefix_]yl, etc., where _prefix_ is the number of carbon atoms in the branch, each # represents the location of the branch on the main chain, and the part in bold indicates the number of this type of branch.
+Side branches (_alkyl_ groups) are named like #-[&thinsp;_prefix_]yl, #,#-**di**[&thinsp;_prefix_]yl, etc., where _prefix_ is the number of carbon atoms in the branch, each # represents the location of the branch on the main chain, and the part in bold indicates the number of this type of branch.
 
 Propyl and butyl groups have non-systematic names for their isomers:
 
@@ -1079,7 +1079,7 @@ This unit is about the intersection of electrical and chemical phenomena. You'll
 
 ## Redox reactions
 
-An _oxidation_ reaction results in the loss of electrons and an increase in oxidation number. A _reduction_ reaction results in the gain of electrons and a decrease in oxidation number. They always occur together, and the net reaction is called a _redox_ reaction. You can remember which is which with "oil rig" -- Oxidation Is Loss; Reduction Is Gain. In a redox reaction, the reactant atom that gets oxidized is the reducing agent, and the one that gets reduced is the oxidizing agent.
+An _oxidation_ reaction results in the loss of electrons and an increase in oxidation number. A _reduction_ reaction results in the gain of electrons and a decrease in oxidation number. They always occur together, and the net reaction is called a _redox_ reaction. You can remember which is which with "oil rig" -- **o**xidation **i**s **l**oss; **r**eduction **i**s **g**ain. In a redox reaction, the reactant atom that gets oxidized is the reducing agent, and the one that gets reduced is the oxidizing agent.
 
 ### Example
 
