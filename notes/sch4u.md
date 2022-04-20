@@ -952,7 +952,7 @@ hydrocarbon derivatives
 
 There are three types of aliphatic hydrocarbons:
 
-alkane (C~_n_~H~2*n*+2~)
+alkane [(C~_n_~H~2*n*+2~)]{.parens}
 :   only has single bonds (e.g., methane, CH~4~)
 
 alkene (C~_n_~H~2*n*~)

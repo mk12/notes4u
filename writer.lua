@@ -177,26 +177,37 @@ function transform(doc)
             )
             return inlines
         end,
+        -- Unitalicize parenthesized parts of <dt> elements.
         DefinitionList = function(el)
             for i = 1, #el.content do
-                el.content[i][1] = el.content[i][1]:walk({
-                    -- Add a span around parentheses in definition terms to
-                    -- un-italicize them (otherwise math inside often collides).
-                    Inlines = function(inlines)
-                        inlines = split(inlines, "[%(%)]")
-                        inlines = substitute(
-                        inlines,
-                            {"("},
-                            {pandoc.Span(pandoc.Str("("), { class = "parens" })}
-                        )
-                        inlines = substitute(
-                            inlines,
-                            {")"},
-                            {pandoc.Span(pandoc.Str(")"), { class = "parens" })}
-                        )
-                        return inlines
-                    end,
-                })
+                local inlines = el.content[i][1]
+                local open, close
+                for j = 1, #inlines do
+                    local val = inlines[j]
+                    if val.t == "Str" then
+                        if val.text:sub(1, 1) == "(" then
+                            open = j
+                        end
+                        if val.text:sub(-1) == ")" then
+                            close = j
+                        end
+                    end
+                end
+                if open and close then
+                    assert(open <= close)
+                    assert(close == #inlines)
+                    local result = {}
+                    for j = 1, open - 1 do
+                        table.insert(result, inlines[j])
+                    end
+                    local parens = {}
+                    for j = open, close do
+                        table.insert(parens, inlines[j])
+                    end
+                    local span = pandoc.Span(parens, { class = "parens" })
+                    table.insert(result, span)
+                    el.content[i][1] = result
+                end
             end
             return el
         end,
