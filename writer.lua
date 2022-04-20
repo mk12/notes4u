@@ -75,7 +75,7 @@ function write_notes(doc, options)
             up = up,
             next = nav.next,
             toc = toc,
-            course_title = doc.meta.course_title,
+            course_name = doc.meta.course_name,
             course_code = doc.meta.course_code,
             root = "../",
         }
@@ -214,15 +214,16 @@ function transform(doc)
             end
             local path = doc.meta.svg_dir .. "/" .. el.src
             local file = assert(io.open(path, "r"))
+            local svg = assert(file:read("a"))
+            file:close()
             local content = (
                 "<figure>"
-                .. assert(file:read("a"))
+                .. recolor_svg(svg)
                 .. "<figcaption>"
                 .. pandoc.write(pandoc.Pandoc({el.caption}), "html")
                 .. "</figcaption>"
                 .. "</figure>"
             )
-            file:close()
             return pandoc.RawBlock("html", content)
         end,
     })
@@ -352,4 +353,15 @@ function render_code_as_math(doc)
     tmp:close()
     os.remove(tmp_name)
     return doc
+end
+
+-- Changes SVG markup to be dark-mode friendly.
+function recolor_svg(svg)
+    return (
+        svg
+        :gsub('"#000"', '"currentColor"')
+        :gsub('fill="#FFF"', 'class="svg-fill-bg"')
+        :gsub('fill="#CCC"', 'class="svg-fill-gray"')
+        :gsub('stroke="#CCC"', 'class="svg-stroke-gray"')
+    )
 end
