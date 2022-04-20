@@ -163,16 +163,16 @@ function transform(doc)
                 {" ", "×", " "},
                 {pandoc.Str("\u{00a0}×\u{00a0}")}
             )
-            -- Add no-break spaces before degree signs, and wrap them in a span
-            -- that raises them a bit because they look strange in Equity
-            -- otherwise (they're aligned with numbers, not capital letters).
-            inlines = split(inlines, "º")
+            -- Wrap the "º" in "ºC" in a span that raises it a bit because they
+            -- look strange in Equity otherwise (they're aligned with numbers,
+            -- not capital letters).
+            inlines = split(inlines, "ºC")
             inlines = substitute(
                 inlines,
-                {" ", "º"},
+                {"ºC"},
                 {
-                    pandoc.Str("\u{00a0}"),
                     pandoc.Span({pandoc.Str("º")}, { class = "degree" }),
+                    pandoc.Str("C"),
                 }
             )
             return inlines
