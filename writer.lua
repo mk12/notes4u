@@ -361,7 +361,8 @@ function recolor_svg(svg)
         svg
         :gsub('"#000"', '"currentColor"')
         :gsub('fill="#FFF"', 'class="svg-fill-bg"')
-        :gsub('fill="#CCC"', 'class="svg-fill-gray"')
-        :gsub('stroke="#CCC"', 'class="svg-stroke-gray"')
+        :gsub('fill="#EEE"', 'class="svg-fill-eee"')
+        :gsub('fill="#CCC"', 'class="svg-fill-ccc"')
+        :gsub('stroke="#CCC"', 'class="svg-stroke-ccc"')
     )
 end
