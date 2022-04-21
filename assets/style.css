@@ -258,7 +258,7 @@ td .katex {
   white-space: nowrap;
 }
 
-.math-and {
+.math-body-text {
   font-family: "Equity Text B";
   font-size: calc(1em/1.08);
 }
