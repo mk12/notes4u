@@ -29,7 +29,7 @@ for await (const line of readLines(Deno.stdin)) {
       .replaceAll("\\neg t h \\in s p", "\\! ")
       // AsciiMath treats operators after "f" and "g" weirdly.
       .replaceAll(/([fg]){(\+|\\circ|\\pm)}/g, "$1 $2")
-      .replaceAll(/([fg]){- ([^}]+)}/g, "$1 - $2")
+      .replaceAll(/([fg]){- (.+?)}/g, "$1 - $2")
       // AsciiMath doens't understand double prime.
       .replaceAll("{'} '", "{''}")
       // AsciiMath puts too much space between primes and the opening paren.
@@ -40,7 +40,12 @@ for await (const line of readLines(Deno.stdin)) {
       .replaceAll(/\\vec{(. .)}/g, "\\overrightharpoon{$1}")
       // I prefer to type "∆" because it's easy on macOS (Option+J), but KaTeX
       // doesn't handle these Unicode characters correctly.
-      .replaceAll("∆", "\\Delta{}");
+      .replaceAll("∆", "\\Delta{}")
+      // Allow line breaks around spaced text like "and".
+      .replaceAll(
+        /(\\quad)(\\text{.+?})(\\quad)/g,
+        "\\allowbreak$1\\allowbreak$2\\allowbreak$3\\allowbreak",
+      );
   let html;
   try {
     html = katex.renderToString(tex, {
