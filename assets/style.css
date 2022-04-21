@@ -338,13 +338,6 @@ figure > svg {
   border-right: 1px solid var(--border);
 }
 
-@media only screen and (max-width: 465px) {
-  .pagenav__item--left, .pagenav__item--right  {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
 /* Headings */
 
 h1 {
