@@ -1,5 +1,6 @@
 ---
 home: true
+title: Notes4U
 ---
 
 # High School Notes

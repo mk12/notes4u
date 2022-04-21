@@ -22,7 +22,6 @@ end
 -- overall website homepage (cool URIs don't change).
 function write_home(doc, options)
     table.insert(doc.blocks[1].classes, "home-heading")
-    doc.meta.title = "Notes4U"
     local path = doc.meta.destdir .. "/notes4u/" .. "index.html"
     local file = assert(io.open(path, "w"))
     local html = pandoc.write(doc, "html", options)
@@ -87,13 +86,14 @@ function write_notes(doc, options)
             next = nav.next,
             toc = toc,
             notes4u = "../notes4u/",
-            course_name = doc.meta.course_name,
-            course_code = doc.meta.course_code,
-            analytics = doc.meta.analytics,
         }
         meta[kind] = true
         if kind ~= "course" then
             meta.title = nav.this.name .. " | " .. meta.title
+        end
+        for key, val in pairs(doc.meta) do
+            assert(meta[key] == nil)
+            meta[key] = val
         end
         local subdoc = pandoc.Pandoc(blocks, meta)
         assert(not nav.this.href:find("/"))
