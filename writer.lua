@@ -250,7 +250,7 @@ function transform(doc)
             file:close()
             local content = (
                 "<figure>"
-                .. recolor_svg(svg)
+                .. process_svg(svg)
                 .. "<figcaption>"
                 .. pandoc.write(pandoc.Pandoc({el.caption}), "html")
                 .. "</figcaption>"
@@ -387,10 +387,13 @@ function render_code_as_math(doc)
     return doc
 end
 
--- Changes SVG markup to be dark-mode friendly.
-function recolor_svg(svg)
+-- Performs processing on SVG markup prior to embedding in HTML. 
+function process_svg(svg)
     return (
         svg
+        -- The xmlns is unnecessary when embedding.
+        :gsub('<svg xmlns="http://www.w3.org/2000/svg"', "<svg")
+        -- Make it work with light mode and dark mode.
         :gsub('"#000"', '"currentColor"')
         :gsub('fill="#FFF"', 'class="svg-fill-bg"')
         :gsub('fill="#EEE"', 'class="svg-fill-eee"')
