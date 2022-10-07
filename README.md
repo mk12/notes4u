@@ -18,7 +18,7 @@ To build the website yourself:
 2. `cd notes4u && mkdir fonts`
 3. Buy Equity and Concourse from https://mbtype.com.
 4. Copy the WOFF2 files into `fonts/`.
-5. `make -j5`
+5. `make -j`
 6. Open out/notes4u/index.html.
 
 ## Dependencies

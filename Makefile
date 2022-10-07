@@ -1,5 +1,7 @@
 # Copyright 2022 Mitchell Kember. Subject to the MIT License.
 
+parts := notes4u mcv4u sch4u sph4u
+
 define usage
 Targets:
 	all        Build website
@@ -9,6 +11,8 @@ Targets:
 	lint       Lint code
 	validate   Validate HTML files
 	clean      Remove build output
+	fonts      Verify fonts
+	PART       Build PART (one of: $(parts))
 
 Variables:
 	DESTDIR    Destination directory for website
@@ -16,31 +20,28 @@ Variables:
 	ANALYTICS  HTML file to include for analytics
 endef
 
-parts := notes4u mcv4u sch4u sph4u
-
 .PHONY: all help watch check fmt lint validate clean fonts $(parts)
 
-DESTDIR ?= public
+default_destdir := public
+DESTDIR ?= $(default_destdir)
 FONT_PATH ?= ../fonts
 
 ifneq ($(ANALYTICS),)
 analytics_flag := -M analytics_file=$(ANALYTICS)
 endif
 
-stamps := $(parts:%=$(DESTDIR)/%/.stamp)
-src_ts := math.ts
-css := $(DESTDIR)/notes4u/style.css
 # Note that SVGs aren't included here because we embed them in the HTML.
 src_assets := $(shell find assets -type f -name "*.jpg" -o -name "*.pdf")
-assets := $(src_assets:assets/%=$(DESTDIR)/%)
+src_ts := math.ts
 
-# Proprietary fonts that must be provided externally.
+stamps := $(parts:%=$(DESTDIR)/%/.stamp)
+assets := $(src_assets:assets/%=$(DESTDIR)/%)
+css := $(DESTDIR)/notes4u/style.css
+
 fonts := $(patsubst %,$(DESTDIR)/$(FONT_PATH)/%.woff2,\
 	concourse_3_regular concourse_3_bold \
 	equity_b_regular equity_b_italic equity_b_bold \
 	equity_b_caps_regular equity_b_caps_bold)
-
-# This must be lazy so we can mkdir $(DESTDIR)/$(FONT_PATH) before the wildcard.
 missing_fonts = $(filter-out $(wildcard $(fonts)),$(fonts))
 
 # HTML validation errors to ignore.
@@ -72,7 +73,7 @@ validate: all
 	| xargs vnu --filterpattern $(validate_exceptions)
 
 clean:
-	rm -rf public
+	rm -rf $(default_destdir)
 
 fonts: $(DESTDIR)/$(FONT_PATH)
 	$(if $(missing_fonts),$(error Missing fonts: $(missing_fonts)),)
@@ -83,17 +84,16 @@ $(stamps): $(DESTDIR)/%/.stamp: notes/%.md | $(DESTDIR)/% $(css) $(assets) fonts
 	pandoc -d config.yml -M destdir=$(DESTDIR) $(analytics_flag) $<
 	touch $@
 
-$(DESTDIR)/mcv4u/.stamp: $(wildcard assets/mcv4u/*.svg)
-$(DESTDIR)/sch4u/.stamp: $(wildcard assets/sch4u/*.svg)
-$(DESTDIR)/sph4u/.stamp: $(wildcard assets/sph4u/*.svg)
-
-$(assets): $(DESTDIR)/%: assets/%
-	mkdir -p $(dir $@)
-	cp $< $@
-
 $(css): $(DESTDIR)/notes4u/%: assets/% | $(DESTDIR)/notes4u
 	sed 's#$$FONT_PATH#$(FONT_PATH)#' $< > $@
 
-$(shell echo $(DESTDIR)/{notes4u,sch4u{,/images,/resources},sph4u,mcv4u,$\
+$(shell echo $(DESTDIR)/{notes4u,sch4u{,/images/,/resources/},sph4u,mcv4u,$\
 		$(FONT_PATH)}):
 	mkdir -p $@
+
+.SECONDEXPANSION:
+
+$(stamps): $(DESTDIR)/%/.stamp: $$(wildcard assets/%/*.svg)
+
+$(assets): $(DESTDIR)/%: assets/% | $$(dir $$@)
+	cp $< $@
