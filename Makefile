@@ -1,54 +1,50 @@
 # Copyright 2022 Mitchell Kember. Subject to the MIT License.
 
-parts := notes4u mcv4u sch4u sph4u
-
 define usage
 Targets:
-	all        Build website
+	all        Build the website
 	help       Show this help message
 	check      Run before committing
 	fmt        Format code
 	lint       Lint code
 	validate   Validate HTML files
 	clean      Remove build output
-	fonts      Verify fonts
 	PART       Build PART (one of: $(parts))
 
 Variables:
-	DESTDIR    Destination directory for website
+	DESTDIR    Destination directory
 	FONT_PATH  Path to WOFF2 fonts relative to DESTDIR
 	ANALYTICS  HTML file to include for analytics
 endef
 
-.PHONY: all help watch check fmt lint validate clean fonts $(parts)
+parts := notes4u mcv4u sch4u sph4u
 
-default_destdir := public
-DESTDIR ?= $(default_destdir)
+.PHONY: all help watch check fmt lint validate clean $(parts) foo-sch4u
+
+DESTDIR ?= public
 FONT_PATH ?= ../fonts
 
-ifneq ($(ANALYTICS),)
+ifdef ANALYTICS
 analytics_flag := -M analytics_file=$(ANALYTICS)
 endif
 
-# Note that SVGs aren't included here because we embed them in the HTML.
-src_assets := $(shell find assets -type f -name "*.jpg" -o -name "*.pdf")
+src_svg := $(wildcard assets/*/*.svg)
+src_assets := $(wildcard assets/*/images/*.jpg assets/*/resources/*.pdf)
+src_css := assets/style.css
 src_ts := math.ts
 
 stamps := $(parts:%=$(DESTDIR)/%/.stamp)
 assets := $(src_assets:assets/%=$(DESTDIR)/%)
 css := $(DESTDIR)/notes4u/style.css
 
-fonts := $(patsubst %,$(DESTDIR)/$(FONT_PATH)/%.woff2,\
-	concourse_3_regular concourse_3_bold \
-	equity_b_regular equity_b_italic equity_b_bold \
-	equity_b_caps_regular equity_b_caps_bold)
-missing_fonts = $(filter-out $(wildcard $(fonts)),$(fonts))
+fonts_basename := $(shell rg '/([^/]+\.woff2)' -r '$$1' -o $(src_css))
+fonts := $(abspath $(fonts_basename:%=$(DESTDIR)/$(FONT_PATH)/%))
 
-# HTML validation errors to ignore.
+subdirs := $(DESTDIR)/ $(parts:%=$(DESTDIR)/%/) $(sort $(dir $(assets)))
+
 validate_exceptions := \
 	'.*($\
-	not allowed as child of element “mo”$\
-	|Text run starts with a composing character$\
+	Text run starts with a composing character$\
 	|Document uses the Unicode Private Use Area\(s\)$\
 	).*'
 
@@ -69,31 +65,34 @@ lint:
 	deno lint --unstable $(src_ts)
 
 validate: all
-	find $(DESTDIR) -type f -name "*.html" \
-	| xargs vnu --filterpattern $(validate_exceptions)
+	fd -g '*.html' $(DESTDIR) | xargs vnu --filterpattern $(validate_exceptions)
 
 clean:
-	rm -rf $(default_destdir)
-
-fonts: $(DESTDIR)/$(FONT_PATH)
-	$(if $(missing_fonts),$(error Missing fonts: $(missing_fonts)),)
+	rm -rf public
 
 $(parts): %: $(DESTDIR)/%/.stamp
 
-$(stamps): $(DESTDIR)/%/.stamp: notes/%.md | $(DESTDIR)/% $(css) $(assets) fonts
+$(stamps): $(DESTDIR)/%/.stamp: notes/%.md | $(css)
 	pandoc -d config.yml -M destdir=$(DESTDIR) $(analytics_flag) $<
 	touch $@
 
-$(css): $(DESTDIR)/notes4u/%: assets/% | $(DESTDIR)/notes4u
+$(assets): $(DESTDIR)/%: assets/%
+	cp $< $@
+
+$(css): $(src_css) | $(fonts)
 	sed 's#$$FONT_PATH#$(FONT_PATH)#' $< > $@
 
-$(shell echo $(DESTDIR)/{notes4u,sch4u{,/images/,/resources/},sph4u,mcv4u,$\
-		$(FONT_PATH)}):
-	mkdir -p $@
+$(fonts):
+	$(error Missing font file $@)
+
+$(subdirs):
+	mkdir $@
 
 .SECONDEXPANSION:
 
-$(stamps): $(DESTDIR)/%/.stamp: $$(wildcard assets/%/*.svg)
+$(stamps) $(assets) $(css) $(subdirs): | $$(dir $$(patsubst %/,%,$$@))
 
-$(assets): $(DESTDIR)/%: assets/% | $$(dir $$@)
-	cp $< $@
+percent := %
+$(stamps): $(DESTDIR)/%/.stamp: \
+	$$(filter assets/%/$$(percent),$$(src_svg)) \
+	| $$(filter $$(DESTDIR)/%/$$(percent),$$(assets))
