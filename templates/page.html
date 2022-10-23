@@ -16,7 +16,7 @@ $if(nav)$
 $endif$
 <main>
 $if(is_home)$
-$body$
+$partial_home()$
 $elseif(is_course)$
 $partial_course.html()$
 $elseif(is_unit)$

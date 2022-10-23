@@ -21,7 +21,6 @@ end
 -- preserve the old structure, where each course was linked directly from the
 -- overall website homepage (cool URIs don't change).
 function write_home(doc, options)
-    table.insert(doc.blocks[1].classes, "home-heading")
     local path = doc.meta.destdir .. "/notes4u/" .. "index.html"
     local file = assert(io.open(path, "w"))
     local html = pandoc.write(doc, "html", options)

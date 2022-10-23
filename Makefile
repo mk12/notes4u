@@ -27,8 +27,9 @@ default_font_path := fonts
 DESTDIR ?= $(default_destdir)
 FONT_PATH ?= $(default_font_path)
 
+pandoc_flags := -M year=$$(date +%Y)
 ifdef ANALYTICS
-analytics_flag := -M analytics_file=$(ANALYTICS)
+pandoc_flags += -M analytics_file=$(ANALYTICS)
 endif
 
 src_svg := $(wildcard assets/*/*.svg)
