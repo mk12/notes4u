@@ -1,6 +1,6 @@
 ---
-home: true
 title: Notes4U
+is_home: true
 ---
 
 # High School Notes

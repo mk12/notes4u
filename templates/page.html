@@ -15,13 +15,13 @@ $if(nav)$
 </nav>
 $endif$
 <main>
-$if(home)$
+$if(is_home)$
 $body$
-$elseif(course)$
+$elseif(is_course)$
 $partial_course.html()$
-$elseif(unit)$
+$elseif(is_unit)$
 $partial_unit.html()$
-$elseif(section)$
+$elseif(is_section)$
 $body$
 $endif$
 </main>

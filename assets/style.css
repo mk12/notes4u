@@ -305,6 +305,10 @@ figure > svg {
   margin-top: 50px;
 }
 
+.pagenav__group {
+  display: flex;
+}
+
 .pagenav__item {
   padding: 10px 20px 0;
   height: 50px;
@@ -333,8 +337,11 @@ figure > svg {
   padding-right: 10px;
 }
 
-.pagenav__item--center {
+.pagenav__item--center:first-child {
   border-left: 1px solid var(--border);
+}
+
+.pagenav__item--center {
   border-right: 1px solid var(--border);
 }
 

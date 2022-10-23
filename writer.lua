@@ -7,7 +7,7 @@ function Writer(doc, options)
         file:close()
     end
     doc = transform(doc)
-    if doc.meta.home then
+    if doc.meta.is_home then
         write_home(doc, options)
     else
         write_notes(doc, options)
@@ -74,6 +74,7 @@ function write_notes(doc, options)
     local scan = scanner(doc.blocks, push)
     local course_code = pandoc.utils.stringify(doc.meta.course_code)
     local course_dir = doc.meta.destdir .. "/" .. course_code:lower()
+    local home = { href = "../notes4u/index.html" }
 
     local write, write_course, write_unit, write_section
 
@@ -82,12 +83,13 @@ function write_notes(doc, options)
             title = course_code .. " Notes",
             nav = true,
             prev = nav.prev,
-            up = up,
+            home = home,
+            up = up.href ~= home.href and up,
             next = nav.next,
             toc = toc,
             notes4u = "../notes4u/",
         }
-        meta[kind] = true
+        meta["is_" .. kind] = true
         if kind ~= "course" then
             meta.title = nav.this.name .. " | " .. meta.title
         end
