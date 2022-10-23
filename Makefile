@@ -33,6 +33,7 @@ endif
 
 src_svg := $(wildcard assets/*/*.svg)
 src_assets := $(wildcard assets/*/images/*.jpg assets/*/resources/*.pdf)
+src_input := config.yml writer.lua $(wildcard templates/*.html)
 src_css := assets/style.css
 src_ts := math.ts
 
@@ -76,8 +77,8 @@ clean:
 
 $(parts): %: $(DESTDIR)/%/.stamp
 
-$(stamps): $(DESTDIR)/%/.stamp: notes/%.md | $(css)
-	pandoc -d config.yml -M destdir=$(DESTDIR) $(analytics_flag) $<
+$(stamps): $(DESTDIR)/%/.stamp: notes/%.md config.yml $(src_input) | $(css)
+	pandoc -d $(word 2,$^) -M destdir=$(DESTDIR) $(pandoc_flags) $<
 	touch $@
 
 $(assets): $(DESTDIR)/%: | assets/%
