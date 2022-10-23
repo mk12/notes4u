@@ -12,8 +12,8 @@ Targets:
 	PART       Build PART (one of: $(parts))
 
 Variables:
-	DESTDIR    Destination directory
-	FONT_PATH  Path to WOFF2 fonts relative to DESTDIR
+	DESTDIR    Destination directory (default: $(default_destdir))
+	FONT_PATH  Path to WOFF2 fonts (default: $(default_font_path))
 	ANALYTICS  HTML file to include for analytics
 endef
 
@@ -21,8 +21,11 @@ parts := notes4u mcv4u sch4u sph4u
 
 .PHONY: all help watch check fmt lint validate clean $(parts)
 
-DESTDIR ?= public
-FONT_PATH ?= ../fonts
+default_destdir := public
+default_font_path := fonts
+
+DESTDIR ?= $(default_destdir)
+FONT_PATH ?= $(default_font_path)
 
 ifdef ANALYTICS
 analytics_flag := -M analytics_file=$(ANALYTICS)
@@ -38,10 +41,10 @@ assets := $(src_assets:assets/%=$(DESTDIR)/%)
 css := $(DESTDIR)/notes4u/style.css
 
 fonts_basename := $(shell rg '/([^/]+\.woff2)' -r '$$1' -o $(src_css))
-fonts := $(abspath $(fonts_basename:%=$(DESTDIR)/$(FONT_PATH)/%))
+fonts := $(fonts_basename:%=$(FONT_PATH)/%)
 
-subdirs := $(DESTDIR) $(parts:%=$(DESTDIR)/%) $(sort $(dir $(assets)))
-subdirs := $(subdirs:%/=%)
+directories := $(DESTDIR) $(parts:%=$(DESTDIR)/%) $(sort $(dir $(assets)))
+directories := $(directories:%/=%)
 
 validate_exceptions := \
 	'.*($\
@@ -69,7 +72,7 @@ validate: all
 	fd -g '*.html' $(DESTDIR) | xargs vnu --filterpattern $(validate_exceptions)
 
 clean:
-	rm -rf public
+	rm -rf $(default_destdir)
 
 $(parts): %: $(DESTDIR)/%/.stamp
 
@@ -81,17 +84,20 @@ $(assets): $(DESTDIR)/%: | assets/%
 	ln -sf $(CURDIR)/$(firstword $|) $@
 
 $(css): $(src_css) | $(fonts)
-	sed 's#$$FONT_PATH#$(FONT_PATH)#' $< > $@
+	sed 's#$$FONT_PATH#$(shell python3 -c '$\
+		import os.path; $\
+		print(os.path.relpath("$(FONT_PATH)", "$(@D)")) $\
+	')#' $< > $@
 
 $(fonts):
 	$(if $(wildcard $@),,$(error Missing font file $@))
 
-$(subdirs):
+$(directories):
 	mkdir -p $@
 
 .SECONDEXPANSION:
 
-$(stamps) $(assets) $(css) $(subdirs): | $$(@D)
+$(stamps) $(assets) $(css) $(directories): | $$(@D)
 
 percent := %
 $(stamps): $(DESTDIR)/%/.stamp: \
