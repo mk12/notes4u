@@ -14,6 +14,7 @@ Targets:
 Variables:
 	DESTDIR    Destination directory (default: $(default_destdir))
 	FONT_PATH  Path to WOFF2 fonts (default: $(default_font_path))
+	SITE_HOME  Website homepage URL relative to DESTDIR
 	ANALYTICS  HTML file to include for analytics
 endef
 
@@ -28,6 +29,9 @@ DESTDIR ?= $(default_destdir)
 FONT_PATH ?= $(default_font_path)
 
 pandoc_flags := -M year=$$(date +%Y)
+ifdef SITE_HOME
+pandoc_flags += -M site_home_href=../$(SITE_HOME)
+endif
 ifdef ANALYTICS
 pandoc_flags += -M analytics_file=$(ANALYTICS)
 endif
