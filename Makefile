@@ -19,7 +19,7 @@ endef
 
 parts := notes4u mcv4u sch4u sph4u
 
-.PHONY: all help watch check fmt lint validate clean $(parts) foo-sch4u
+.PHONY: all help watch check fmt lint validate clean $(parts)
 
 DESTDIR ?= public
 FONT_PATH ?= ../fonts
@@ -40,7 +40,8 @@ css := $(DESTDIR)/notes4u/style.css
 fonts_basename := $(shell rg '/([^/]+\.woff2)' -r '$$1' -o $(src_css))
 fonts := $(abspath $(fonts_basename:%=$(DESTDIR)/$(FONT_PATH)/%))
 
-subdirs := $(DESTDIR)/ $(parts:%=$(DESTDIR)/%/) $(sort $(dir $(assets)))
+subdirs := $(DESTDIR) $(parts:%=$(DESTDIR)/%) $(sort $(dir $(assets)))
+subdirs := $(subdirs:%/=%)
 
 validate_exceptions := \
 	'.*($\
@@ -76,21 +77,21 @@ $(stamps): $(DESTDIR)/%/.stamp: notes/%.md | $(css)
 	pandoc -d config.yml -M destdir=$(DESTDIR) $(analytics_flag) $<
 	touch $@
 
-$(assets): $(DESTDIR)/%: assets/%
-	cp $< $@
+$(assets): $(DESTDIR)/%: | assets/%
+	ln -sf $(CURDIR)/$(firstword $|) $@
 
 $(css): $(src_css) | $(fonts)
 	sed 's#$$FONT_PATH#$(FONT_PATH)#' $< > $@
 
 $(fonts):
-	$(error Missing font file $@)
+	$(if $(wildcard $@),,$(error Missing font file $@))
 
 $(subdirs):
-	mkdir $@
+	mkdir -p $@
 
 .SECONDEXPANSION:
 
-$(stamps) $(assets) $(css) $(subdirs): | $$(dir $$(patsubst %/,%,$$@))
+$(stamps) $(assets) $(css) $(subdirs): | $$(@D)
 
 percent := %
 $(stamps): $(DESTDIR)/%/.stamp: \
