@@ -87,7 +87,7 @@ $(stamps): $(DESTDIR)/%/.stamp: notes/%.md config.yml $(src_input) | $(css)
 	touch $@
 
 $(assets): $(DESTDIR)/%: | assets/%
-	ln -sf $(CURDIR)/$(firstword $|) $@
+	ln -sfn $(CURDIR)/$(firstword $|) $@
 
 $(css): $(src_css) | $(fonts)
 	sed 's#$$FONT_PATH#$(shell python3 -c '$\
