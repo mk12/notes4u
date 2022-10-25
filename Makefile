@@ -13,8 +13,8 @@ Targets:
 
 Variables:
 	DESTDIR    Destination directory (default: $(default_destdir))
-	FONT_PATH  Path to WOFF2 fonts (default: $(default_font_path))
-	SITE_HOME  Website homepage URL relative to DESTDIR
+	FONT_URL   WOFF2 font directory URL (default: $(default_font_url))
+	HOME_URL   Homepage URL to link to when embedding in a larger site
 	ANALYTICS  HTML file to include for analytics
 endef
 
@@ -23,14 +23,14 @@ parts := notes4u mcv4u sch4u sph4u
 .PHONY: all help watch check fmt lint validate clean $(parts)
 
 default_destdir := public
-default_font_path := fonts
+default_font_url := ../../fonts
 
 DESTDIR ?= $(default_destdir)
-FONT_PATH ?= $(default_font_path)
+FONT_URL ?= $(default_font_url)
 
 pandoc_flags := -M year=$$(date +%Y)
-ifdef SITE_HOME
-pandoc_flags += -M site_home_href=../$(SITE_HOME)
+ifdef HOME_URL
+pandoc_flags += -M site_home_url=../$(HOME_URL)
 endif
 ifdef ANALYTICS
 pandoc_flags += -M analytics_file=$(ANALYTICS)
@@ -45,9 +45,6 @@ src_ts := math.ts
 stamps := $(parts:%=$(DESTDIR)/%/.stamp)
 assets := $(src_assets:assets/%=$(DESTDIR)/%)
 css := $(DESTDIR)/notes4u/style.css
-
-fonts_basename := $(shell rg '/([^/]+\.woff2)' -r '$$1' -o $(src_css))
-fonts := $(fonts_basename:%=$(FONT_PATH)/%)
 
 directories := $(DESTDIR) $(parts:%=$(DESTDIR)/%) $(sort $(dir $(assets)))
 directories := $(directories:%/=%)
@@ -89,14 +86,8 @@ $(stamps): $(DESTDIR)/%/.stamp: notes/%.md config.yml $(src_input) | $(css)
 $(assets): $(DESTDIR)/%: | assets/%
 	ln -sfn $(CURDIR)/$(firstword $|) $@
 
-$(css): $(src_css) | $(fonts)
-	sed 's#$$FONT_PATH#$(shell python3 -c '$\
-		import os.path; $\
-		print(os.path.relpath("$(FONT_PATH)", "$(@D)")) $\
-	')#' $< > $@
-
-$(fonts):
-	$(if $(wildcard $@),,$(error Missing font file $@))
+$(css): $(src_css)
+	sed 's#$$FONT_URL#$(FONT_URL)#' $< > $@
 
 $(directories):
 	mkdir -p $@
