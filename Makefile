@@ -30,7 +30,7 @@ FONT_URL ?= $(default_font_url)
 
 pandoc_flags := -M year=$$(date +%Y)
 ifdef HOME_URL
-pandoc_flags += -M site_home_url=../$(HOME_URL)
+pandoc_flags += -M site_home_url=$(HOME_URL)
 endif
 ifdef ANALYTICS
 pandoc_flags += -M analytics_file=$(ANALYTICS)
