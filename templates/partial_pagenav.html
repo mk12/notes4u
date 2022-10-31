@@ -1,5 +1,5 @@
 $-- This template renders invisible disabled spans rather than omitting items
-$-- entirely so that flexbox space-between is consistent on all pages.
+$-- entirely so that flexbox spacing is consistent on all pages.
 $if(prev)$
 <a class="pagenav__item pagenav__item--left pagenav__item--link" href="$prev.href$" aria-label="previous page">
   «&nbsp;Prev
@@ -12,7 +12,7 @@ $endif$
 $if(home)$
 <div class="pagenav__group">
   <a class="pagenav__item pagenav__item--center pagenav__item--link"  href="$home.href$" aria-label="home page">
-    Home
+    H<span class="pagenav__extra">ome</span>
   </a>
   $if(up)$
   <a class="pagenav__item pagenav__item--center pagenav__item--link"  href="$up.href$" aria-label="parent page">

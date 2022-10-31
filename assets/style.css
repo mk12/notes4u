@@ -289,7 +289,6 @@ figure > svg {
 
 .pagenav {
   display: flex;
-  justify-content: space-between;
   font-family: 'Equity B Caps', Georgia, serif;
   text-transform: lowercase;
 }
@@ -310,6 +309,7 @@ figure > svg {
 }
 
 .pagenav__item {
+  flex: 1;
   padding: 10px 20px 0;
   height: 50px;
   color: var(--subdued);
@@ -335,6 +335,7 @@ figure > svg {
 
 .pagenav__item--right {
   padding-right: 10px;
+  text-align: right;
 }
 
 .pagenav__item--center:first-child {
@@ -343,6 +344,19 @@ figure > svg {
 
 .pagenav__item--center {
   border-right: 1px solid var(--border);
+}
+
+@media only screen and (max-width: 420px) {
+  .pagenav {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .pagenav__extra {
+    display: none;
+  }
 }
 
 /* Headings */
