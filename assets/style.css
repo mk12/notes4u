@@ -306,6 +306,8 @@ figure > svg {
 
 .pagenav__group {
   display: flex;
+  border-left: 1px solid var(--border);
+  border-right: 1px solid var(--border);
 }
 
 .pagenav__item {
@@ -338,11 +340,7 @@ figure > svg {
   text-align: right;
 }
 
-.pagenav__item--center:first-child {
-  border-left: 1px solid var(--border);
-}
-
-.pagenav__item--center {
+.pagenav__item--extra {
   border-right: 1px solid var(--border);
 }
 
@@ -354,7 +352,7 @@ figure > svg {
 }
 
 @media only screen and (max-width: 380px) {
-  .pagenav__extra {
+  .pagenav__item--extra {
     display: none;
   }
 }

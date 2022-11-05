@@ -11,11 +11,11 @@ $else$
 $endif$
 $if(home)$
 <div class="pagenav__group">
-  <a class="pagenav__item pagenav__item--center pagenav__item--link"  href="$home.href$" aria-label="home page">
-    H<span class="pagenav__extra">ome</span>
+  <a class="pagenav__item pagenav__item--link$if(up)$ pagenav__item--extra$endif$"  href="$home.href$" aria-label="home page">
+    Home
   </a>
   $if(up)$
-  <a class="pagenav__item pagenav__item--center pagenav__item--link"  href="$up.href$" aria-label="parent page">
+  <a class="pagenav__item pagenav__item--link"  href="$up.href$" aria-label="parent page">
     Up
   </a>
   $endif$
