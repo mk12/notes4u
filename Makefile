@@ -79,8 +79,8 @@ clean:
 
 $(parts): %: $(DESTDIR)/%/.stamp
 
-$(stamps): $(DESTDIR)/%/.stamp: notes/%.md config.yml $(src_input) | $(css)
-	pandoc -d $(word 2,$^) -M destdir=$(DESTDIR) $(pandoc_flags) $<
+$(stamps): $(DESTDIR)/%/.stamp: notes/%.md $(src_input) | $(css)
+	pandoc -d config.yml -M destdir=$(DESTDIR) $(pandoc_flags) $<
 	touch $@
 
 $(assets): $(DESTDIR)/%: | assets/%

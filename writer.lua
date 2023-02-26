@@ -12,8 +12,8 @@ function Writer(doc, options)
     else
         write_notes(doc, options)
     end
-    -- Prevent pandoc from trying to print the returned doc.
-    os.exit(0)
+    -- Return nothing since we already wrote files.
+    return ""
 end
 
 -- Writes the notes4u/index.html homepage. Note: the notes4u directory is a
@@ -376,7 +376,7 @@ function render_code_as_math(doc)
         end,
     })
     math:close()
-    -- Read KaTex HTML output from math.ts.
+    -- Read KaTeX HTML output from math.ts.
     local tmp = assert(io.open(tmp_name, "r"))
     doc = doc:walk({
         Code = function(el)
