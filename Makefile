@@ -45,9 +45,7 @@ src_ts := math.ts
 stamps := $(parts:%=$(DESTDIR)/%/.stamp)
 assets := $(src_assets:assets/%=$(DESTDIR)/%)
 css := $(DESTDIR)/notes4u/style.css
-
-directories := $(DESTDIR) $(parts:%=$(DESTDIR)/%) $(sort $(dir $(assets)))
-directories := $(directories:%/=%)
+all := $(stamps) $(assets) $(css)
 
 validate_exceptions := \
 	'.*($\
@@ -89,12 +87,12 @@ $(assets): $(DESTDIR)/%: | assets/%
 $(css): $(src_css)
 	sed 's#$$FONT_URL#$(FONT_URL)#' $< > $@
 
-$(directories):
+$(sort $(dir $(all))):
 	mkdir -p $@
 
 .SECONDEXPANSION:
 
-$(stamps) $(assets) $(css) $(directories): | $$(@D)
+$(all): | $$(@D)/
 
 percent := %
 $(stamps): $(DESTDIR)/%/.stamp: \
