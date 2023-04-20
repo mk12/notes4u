@@ -228,18 +228,17 @@ function transform(doc)
     -- Render all math.
     doc = render_code_as_math(doc)
     -- Embed SVG files. Do this after math so that captions can use math.
-    -- Operate on Para rather than Image so that we can return a RawBlock
-    -- (rather than RawInline, which would get wrapped in <p>).
     local svg_dir
     if doc.meta.course_code then
         svg_dir = "assets/" .. pandoc.utils.stringify(doc.meta.course_code)
     end
     doc = doc:walk({
-        Para = function(el)
-            if not (#el.content == 1 and el.content[1].t == "Image") then
-                return
-            end
-            el = el.content[1]
+        Figure = function(el)
+            assert(#el.content == 1)
+            assert(el.content[1].t == "Plain")
+            assert(#el.content[1].content == 1)
+            assert(el.content[1].content[1].t == "Image")
+            el = el.content[1].content[1]
             ext = ".svg"
             if el.src:sub(-#ext) ~= ext then
                 return
