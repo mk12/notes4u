@@ -7,5 +7,9 @@
   "peerDependencies": {
     "typescript": "^5.0.0"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "asciimath-parser": "^0.6.3",
+    "temml": "^0.10.19"
+  }
 }

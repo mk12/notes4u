@@ -401,7 +401,7 @@ Let `x` represent the absolute value of the change in concentration of O~2(g)~.
 
 Now we set up the equilibrium law expression:
 
-    `K = (["CO"]^2["O"_2])/(["CO"_2]^2) = ((2x)^2(x))/((0.50 - 2x)^2)`.
+    `K = (["CO"]^2["O"_2])/(["CO"_2]^2) = ((2x)^2x)/((0.50 - 2x)^2)`.
 
 Before going any further, we can check to see if `K` is small enough for us to use a time-saving approximation. This is called the **hundred rule**: if the smallest initial concentration divided by `K` is greater than 100, you can drop out `x` where it is added or subtracted. Using CO~2(g)~ this gives us
 
@@ -409,7 +409,7 @@ Before going any further, we can check to see if `K` is small enough for us to u
 
 and `781250 > 100`, therefore `K` is very small and `0.50 - 2x ~~ 0.50`. Now we can continue solving for `x` (notice that we got rid of the `x` in the denominator, but we have to keep the exponent):
 
-    `K = ((2x)^2(x))/((0.50 - 2x)^2) ~~ ((2x)^2(x))/(0.50^2) = (4x^3)/0.25 = 16x^3`.
+    `K = ((2x)^2x)/((0.50 - 2x)^2) ~~ ((2x)^2x)/(0.50^2) = (4x^3)/0.25 = 16x^3`.
 
 Since `K = 16x^3`,
 
@@ -533,7 +533,7 @@ Now we can write the equilibrium law expression:
 
 Let `x` represent the equilibrium concentration of Ag~2~CO~3(aq)~. Note that Ag~2~CO~3(aq)~ is not in the equilibrium equation above, but it represents the entire right side, which is just the dissociated version of the aqueous compound. You can use the coefficients in the equation to write the concentration of each ion in terms of `x`.
 
-    `8.8xx10^-12 = (2x)^2(x) = 4x^3`.
+    `8.8xx10^-12 = (2x)^2x = 4x^3`.
 
 Now we can solve for `x`, which represents the molar solubility of silver carbonate:
 
@@ -563,7 +563,7 @@ Now we can write the solubility equilibrium equation:
 
 And calculate the trial ion product:
 
-    `Q = ["Ag"^+] negthinsp ["Cl"^-] = (0.0050\ "mol/L")(0.0025\ "mol/L") = 1.3xx10^-5`.
+    `Q = ["Ag"^+]["Cl"^-] = (0.0050\ "mol/L")(0.0025\ "mol/L") = 1.3xx10^-5`.
 
 Since `Q > K_"sp"`, the answer is yes -- a precipitate _will_ form.
 
@@ -594,11 +594,11 @@ Notice that we ignore lead chromate because it's a solid, not an aqueous solutio
 
 Now we can write the solubility product constant expression:
 
-    `K_"sp" = ["Pb"^(2+)]\["CrO"_4^(2-)] = (x)(x + 0.10)`.
+    `K_"sp" = ["Pb"^(2+)]\["CrO"_4^(2-)] = x(x + 0.10)`.
 
 Since `0.10/K_"sp" > 100`, we can drop `x` where it is added or subtracted:
 
-    `K_"sp" = (x)(x + 0.10) ~~ x(0.10)`.
+    `K_"sp" = x(x + 0.10) ~~ x(0.10)`.
 
 Now we can solve for `x`, which represents the molar solubility of lead(II) chromate in a 0.10 mol/L solution of sodium chromate:
 
