@@ -366,7 +366,7 @@ function render_code_as_math(doc)
     -- bidirectional communication with a subprocess:
     -- http://lua-users.org/lists/lua-l/2007-10/msg00189.html
     local tmp_name = os.tmpname()
-    local math = assert(io.popen("deno run math.ts > " .. tmp_name, "w"))
+    local math = assert(io.popen("bun run math.ts > " .. tmp_name, "w"))
     -- Pass AsciiMath input to math.ts.
     doc:walk({
         Code = function(el)

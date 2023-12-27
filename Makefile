@@ -5,8 +5,6 @@ Targets:
 	all        Build the website
 	help       Show this help message
 	check      Run before committing
-	fmt        Format code
-	lint       Lint code
 	validate   Validate HTML files
 	clean      Remove build output
 	PART       Build PART (one of: $(parts))
@@ -20,7 +18,7 @@ endef
 
 parts := notes4u mcv4u sch4u sph4u
 
-.PHONY: all help watch check fmt lint validate clean $(parts)
+.PHONY: all help watch check validate clean $(parts)
 
 default_destdir := public
 default_font_url := ../../fonts
@@ -36,11 +34,11 @@ ifdef ANALYTICS
 pandoc_flags += -M analytics_file=$(ANALYTICS)
 endif
 
-src_svg := $(wildcard assets/*/*.svg)
 src_assets := $(wildcard assets/*/images/*.jpg assets/*/resources/*.pdf)
-src_input := config.yml writer.lua $(wildcard templates/*.html)
-src_css := assets/style.css
+src_svg := $(wildcard assets/*/*.svg)
 src_ts := math.ts
+src_input := $(src_ts) config.yml writer.lua $(wildcard templates/*.html)
+src_css := assets/style.css
 
 stamps := $(parts:%=$(DESTDIR)/%/.stamp)
 assets := $(src_assets:assets/%=$(DESTDIR)/%)
@@ -61,13 +59,7 @@ help:
 	$(info $(usage))
 	@:
 
-check: fmt lint all validate
-
-fmt:
-	deno fmt $(src_ts)
-
-lint:
-	deno lint --unstable $(src_ts)
+check: all validate
 
 validate: all
 	fd -g '*.html' $(DESTDIR) | xargs vnu --filterpattern $(validate_exceptions)

@@ -23,8 +23,8 @@ To build the website yourself:
 
 ## Dependencies
 
-- [Pandoc] 2.18+
-- [Deno] for rendering math
+- [Pandoc] 3+
+- [Bun] and [MathJax] for rendering math
 - [v.Nu] for validating HTML
 
 ## License
@@ -37,5 +37,6 @@ Notes4U is available under the MIT License; see [LICENSE](LICENSE.md) for detail
 [math]: https://ocdsb.ca/secondary/programs/secondary_school_courses/mathematics
 [science]: https://ocdsb.ca/secondary/programs/secondary_school_courses/science
 [Pandoc]: https://pandoc.org
-[Deno]: http://deno.land
+[Bun]: https://bun.sh
+[MathJax]: https://www.mathjax.org
 [v.Nu]: https://validator.github.io/validator
