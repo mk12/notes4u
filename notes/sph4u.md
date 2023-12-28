@@ -145,7 +145,7 @@ conclusion
 
 ## Position, velocity, & acceleration
 
-Position (`vec d`&thinsp;) is a vector quantity representing a location relative to an origin, usually measured in metres (m). A change in position is called _displacement_ (`∆vec d`&thinsp;). The rate of change in position per unit of time is called velocity (`vec v`), usually measured in metres per second (m/s).
+Position (`vec d`) is a vector quantity representing a location relative to an origin, usually measured in metres (m). A change in position is called _displacement_ (`∆vec d`). The rate of change in position per unit of time is called velocity (`vec v`), usually measured in metres per second (m/s).
 
 If we graph position versus time (or d--t for short), the slope of the tangent line gives us the instantaneous velocity at that moment. The slope of the secant line gives us the average velocity on the interval [`t_1`, `t_2`]. We can also go the other way: on a v--t graph, the area under the curve between `t_1` and `t_2` gives us the displacement on that interval.
 
@@ -263,7 +263,7 @@ The velocity of the wind is a vector pointing in the direction in which it is go
 
 Since `vec v_"PE" = vec v_"PA" + vec v_"AE"`, the course is
 
-    `vec v_"PE" = 245\ "km/h [N 17º E]" + 89.0\ "km/h [N 35º E]" newline = 331\ "km/h [N 22º E]"`.
+    `245\ "km/h [N 17º E]" + 89.0\ "km/h [N 35º E]" = 331\ "km/h [N 22º E]"`.
 
 > I didn't show my steps here. You need to draw a sketch and make a table. Refer to the [vectors section](vectors.html) if you don't know how to add vectors.
 
@@ -289,15 +289,15 @@ The duration of the projectile's flight (`∆t`) is associated with the vertical
 
 Since we physics students don't like doing any more work than absolutely necessary, we often use more specific, time-saving equations. The first equation tells us how long it takes (`∆t`) for the projectile to return to its original altitude (`∆vec d_"v" = 0`). If we let `g = |vec a_"g"|`, then
 
-    `∆t = (2|:vec v_0:|sin theta)/g`,
+    `∆t = (2|vec v_0|sin theta)/g`,
 
 and the range of this projectile is given by
 
-    `∆vec d_"h" = (|:vec v_0:|^2sin 2theta)/g`.
+    `∆vec d_"h" = (|vec v_0|^2sin 2theta)/g`.
 
 The next equation doesn't require the projectile to land at its original altitude. It treats the projectile's altitude as a function of its horizontal position. This allows us to find the projectile's vertical position at any particular horizontal position and, using the quadratic formula, go the other way as well. Assuming the projectile starts at the origin and passes through a point (`x`, `y`), then
 
-    `y = (tantheta)x - g/(2|:vec v_0:|^2cos^2theta)x^2`.
+    `y = (tantheta)x - g/(2|vec v_0|^2cos^2theta)x^2`.
 
 The derivation of these three equations is left as an exercise to the reader.
 
@@ -361,7 +361,7 @@ We can now use Newton's second law of motion to find acceleration:
 
 Rearranging to solve for acceleration gives us
 
-    `vec a = (|:vec F_"a":|cos theta + vec F_"f")/m`,
+    `vec a = (|vec F_"a"|cos theta + vec F_"f")/m`,
 
 and if we let [fwd] be positive, then we can substitute and get
 
@@ -471,11 +471,11 @@ normal force
 
 We calculate friction using
 
-    `|:vec F_"f":| = mu|:vec F_"N":|`.
+    `|vec F_"f"| = mu|vec F_"N"|`.
 
 If the only forces are gravity and the normal force, this can be rewritten as
 
-    `|:vec F_"f":| = mu m|:vec g:|`.
+    `|vec F_"f"| = mu m|vec g|`.
 
 There are two types of friction. _Static_ friction must be overcome to move an object that is initially at rest with respect to the other surface. _Kinetic_ friction acts when an object is in motion. There are separate coefficients for these two cases: `mu_"s"` for static and `mu_"k"` for kinetic, where `mu_"s" > mu_"k"`. The values of both are determined experimentally for every pair of materials.
 
@@ -507,11 +507,11 @@ Now we can solve for the tension force, giving us
 
 and, keeping in mind that [fwd] as indicated in the sketch will be positive, we can substitute to get
 
-    `vec F_"T" = -(-mu_"s"|:vec F_"N":|) - m|:vec g:|sin theta = mu_"s"m|:vec g:|cos theta - m|:vec g:|sin theta`.
+    `vec F_"T" = -(-mu_"s"|vec F_"N"|) - m|vec g|sin theta = mu_"s"m|vec g|cos theta - m|vec g|sin theta`.
 
 This simplifies to
 
-    `vec F_"T" = m|:vec g:|(mu_"s"cos theta - sin theta)`,
+    `vec F_"T" = m|vec g|(mu_"s"cos theta - sin theta)`,
 
 and now we can finally substitute our known values:
 
@@ -560,27 +560,27 @@ There is only one force acting on the car, the force of friction, and it needs t
 
 We can substitute for friction and centripetal acceleration:
 
-    `mumg = mv^2/r`.
+    `mu mg = mv^2/r`.
 
 Now we can solve for speed:
 
-    `v = sqrt(rmug) = sqrt((20.0\ "m")(0.450)(9.80\ "m/s"^2)) = 9.391\ "m/s"`.
+    `v = sqrt(r mu g) = sqrt((20.0\ "m")(0.450)(9.80\ "m/s"^2)) = 9.391\ "m/s"`.
 
 Therefore, the maximum safe speed is 9.39 m/s.
 
 ## Banked turns
 
-When a car is driving along a level turn, the only thing keeping it in its lane is friction. This must be large enough to provide the centripetal force -- the turn is only safe if `vec F_"f" >= vec F_"c"`, which limits speed by `v <= sqrt(rmug)`.
+When a car is driving along a level turn, the only thing keeping it in its lane is friction. This must be large enough to provide the centripetal force -- the turn is only safe if `vec F_"f" >= vec F_"c"`, which limits speed by `v <= sqrt(r mu g)`.
 
 Instead of relying on friction, we can incline the road towards the centre of the curve; this is called a banked turn. A banked turn with friction is pretty complicated, so we will consider _frictionless_ banked turns. In this case, the normal force has to provide the centripetal force by itself.
 
 The normal force can be split into vertical and horizontal components:
 
-    `F_"N,v" = |:vec F_"N":|cos theta qquad and qquad F_"N,h" = |:vec F_"N":|sin theta`.
+    `F_"N,v" = |vec F_"N"|cos theta qquad and qquad F_"N,h" = |vec F_"N"|sin theta`.
 
 The horizontal component must supply the centripetal force, so we can set them equal:
 
-    `|:vec F_"N":|sin theta = (mv^2)/r`.
+    `|vec F_"N"|sin theta = (mv^2)/r`.
 
 Since the vehicle doesn't move vertically, the vertical component has to balance gravity with `|vec F_"N"|cos theta = mg`. We can solve this for the normal force and substitute it into our first equation to get
 
@@ -619,12 +619,11 @@ Galileo
 Brahe
 :   Brahe measured astronomical positions with great precision. He observed a comet that followed an elliptical path, not a circular one.
 
-Kepler
-:   Kepler analyzed Brahe's data. He made three conclusions, known as Kepler's laws of planetary motion:
+Kepler analyzed Brahe's data. He made three conclusions, known as Kepler's laws of planetary motion:
 
-    1. The orbit of a planet is an ellipse with the Sun at one focus.
-    2. The line segment joining a planet and the Sun sweeps out equal areas during equal intervals of time.
-    3. The period of the orbit is related to the mean radius by `K = r^3//T^2`, where `K` is a constant equal to 3.35 × 10^18^ m^3^/s^2^.
+1. The orbit of a planet is an ellipse with the Sun at one focus.
+2. The line segment joining a planet and the Sun sweeps out equal areas during equal intervals of time.
+3. The period of the orbit is related to the mean radius by `K = r^3//T^2`, where `K` is a constant equal to 3.35 × 10^18^ m^3^/s^2^.
 
 Finally, we come to Newton. Sir Isaac Newton discovered the universal law of gravitation,
 
@@ -652,7 +651,7 @@ Momentum is a quantity of motion defined by
 
 measured in kilogram-metres per second (kg⋅m/s). A change in momentum is called impulse, and it is defined by
 
-    `∆vec p = m∆vec v = vec F∆t`.
+    `∆vec p = m ∆vec v = vec F ∆t`.
 
 A lightweight, fast-moving object can have the same momentum as a heavy, slow-moving object because mass and velocity are multiplied. Similarly, a large force applied over a short time interval can deliver the same impulse as a small force applied over a long time interval.
 
@@ -662,7 +661,7 @@ Just as the area under an acceleration-time graph represents `∆vec v`, so too 
 
 What average force is needed to stop a 34 kg ball in 2.5 s if the initial speed of the ball is 19 m/s [fwd]?
 
-Since `vec F∆t = m∆vec v`,
+Since `vec F ∆t = m ∆vec v`,
 
     `vec F = (m∆vec v)/(∆t) = (vec v_2 - vec v_1)/(∆t) = ((34\ "kg")(0 - 19\ "m/s"))/(2.5\ "s") = -258.4\ "N"`,
 
@@ -1036,7 +1035,7 @@ A magnetic field can cause charges (e^−^, p^+^, or ions) to _move_ due to a ma
 
 For point charges, the magnitude of the magnetic force is
 
-    `|:vec F_"M":| = qv|:vec B:|sintheta`,
+    `|vec F_"M"| = qv|vec B|sintheta`,
 
 where `q` is the charge in coulombs (C), `v` is the speed of the particle in metres per second (m/s), `vec B` is the magnetic field in teslas (T), and `theta` is the angle between the conventional current and the magnetic field.
 
@@ -1044,7 +1043,7 @@ To get the direction, we once again use the right-hand rule. Your fingers (flat,
 
 It works a bit differently for conductors. We get the magnitude of the magnetic force for straight conductors with
 
-    `|:vec F_"M":| = |:vec B:|ILsintheta`,
+    `|vec F_"M"| = |vec B|ILsintheta`,
 
 where `vec B` and `theta` are the same as before, and where `I` is the current in amperes (A) and `L` is the length of the conductor inside the magnetic field in metres (m). The right-hand rule works the same way that it does for point charges.
 

@@ -138,7 +138,7 @@ First, we can find the amount of urea in terms of moles by divided by the molar 
 
     `n = m/M = (10.0\ "g")/(60.07\ "g/mol") = 0.16647\ "mol"`.
 
-Now we can rearrange `n|∆H_"sol"|=mc∆T` to
+Now we can rearrange `n|∆H_"sol"| = mc∆T` to
 
     `|∆H_"sol"| = (mc∆T)/n`,
 

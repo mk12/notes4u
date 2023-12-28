@@ -131,7 +131,7 @@ Drawing a curve without lifting your pencil is a good way of thinking about cont
 
 Let's try using this definition. Consider the following piecewise function:
 
-    `f(x) = {(x^2 - 3,if x <= -1),(x - 1,if x > -1):}`.
+    `f(x) = { x^2 - 3, if x <= -1; x - 1, if x > -1 :}`.
 
 Is it continuous at −1? If it is, it must satisfy the two conditions in our definition. Since `f(-1) = -2`, the first condition is met. Since both pieces of `f` are continuous individually (they are polynomials) and they intersect at `x = -1`, the left and right limits are equal and thus
 
@@ -221,11 +221,11 @@ This is really just a special case of the product rule, but you will use it so o
 
 The derivative of the sum is equal to the sum of the derivatives. The same goes for subtraction. This means that
 
-    `(f pm g)' = f' pm g'`.
+    `(f +- g)' = f' +- g'`.
 
 or, using Leibniz's notation,
 
-    `d/(dx)(u pm v) = (du)/(dx) pm (dv)/(dx)`.
+    `d/(dx)(u +- v) = (du)/(dx) +- (dv)/(dx)`.
 
 ### Power rule
 
@@ -259,7 +259,7 @@ or, using Leibniz’s notation,
 
 To differentiate composite functions, we need to use the chain rule:
 
-    `(f circ g)' = (f' circ g)*g'`,
+    `(f @ g)' = (f' @ g)*g'`,
 
 or, using Leibniz’s notation,
 
@@ -389,7 +389,7 @@ Here is the basic strategy for solving optimization problems:
 
 ### Example
 
-Given two nonnegative integers `a` and `b` that sum to 9, find the maximum value of `asqrt(b)` assuming `a > b`.
+Given two nonnegative integers `a` and `b` that sum to 9, find the maximum value of `a sqrt(b)` assuming `a > b`.
 
 Since `a + b = 9`, we have
 
@@ -397,7 +397,7 @@ Since `a + b = 9`, we have
 
 Now we can rewrite the function that we want to maximize:
 
-    `f(a) = asqrt(b) = asqrt(9-a)`.
+    `f(a) = a sqrt(b) = a sqrt(9-a)`.
 
 Taking the derivative gives us
 
@@ -667,7 +667,7 @@ Since `"LS"!="RS"`, the system is inconsistent and therefore the vectors `[-1,2,
 
 The dot product, also known as the _scalar product_ or _inner product_, is an operation that takes two vectors and produces a scalar. Geometrically, we define the dot product of `vec u` and `vec v` with
 
-    `vec u * vec v = |vec u||vec v|cos theta`,
+    `vec u * vec v = |vec u| |vec v| cos theta`,
 
 where `theta` is the angle between the vectors in standard position. The dot product has a few useful properties that arise from the cosine term:
 
@@ -707,7 +707,7 @@ Finally, any dot product with the zero vector produces the _scalar_ zero:
 
 The cross product is an operation that takes two nonzero vectors and produces a _vector_ (not a scalar) perpendicular to both of them. Geometrically, we define the magnitude of the cross product with
 
-    `|vec u xx vec v| = |:vec u:||:vec v:|sin theta`,
+    `|vec u xx vec v| = |vec u| |vec v| sin theta`,
 
 where `theta` is the angle between the vectors in standard position. To find the direction of the vector, we use the _right-hand rule_: point in the direction of `vec u` with your fingers, and then curl them (naturally, not backwards) towards the direction of `vec v`. Your thumb will then point in the direction of `vec u xx vec v`.
 
@@ -757,7 +757,7 @@ Resolving a vector into its _x_ and _y_ components is easy, especially if the ve
 
 Notice the subscript notation: the value of `vec a_b` is the vector projection of `vec a` on `vec b`, and its magnitude is the scalar projection. To calculate the scalar projection, we can use one of our new friends, the dot product:
 
-    `|vec a_b| = vec a * hat b = |:vec a:|cos theta`.
+    `|vec a_b| = vec a * hat b = |vec a| cos theta`.
 
 If we know `theta`, then this is easy. However, sometimes we either don't know it or we would rather avoid rounding off trig ratios. In those cases, we should use the middle part of the equation above. And if we don't know `hat b`, we  can get it by normalizing `vec b`:
 
@@ -765,7 +765,7 @@ If we know `theta`, then this is easy. However, sometimes we either don't know i
 
 What about the vector projection? That's easy -- we just get the scalar projection and point it in the direction of `hat b`:
 
-    `vec a_b = |vec a_b| hat b = (vec a * hat b) hat b = (|:vec a:|cos theta)hat b`.
+    `vec a_b = |vec a_b| hat b = (vec a * hat b) hat b = (|vec a| cos theta)hat b`.
 
 Once again, we can normalize `vec b` at the same time if we want:
 
@@ -793,13 +793,13 @@ therefore she will be about 9.15 km into the race.
 
 We can find the angle between two nonzero vectors using the dot product:
 
-    `vec u * vec v = |vec u||vec v|cos theta qquad => qquad cos theta = (vec u * vec v)/(|vec u||vec v|)`.
+    `vec u * vec v = |vec u| |vec v| cos theta qquad => qquad cos theta = (vec u * vec v)/(|vec u| |vec v|)`.
 
 Often, we want to determine the angle that a certain vector makes with the coordinate axes. To do this, we just put `hat i`, `hat j`, and `hat k` in the place of `vec v` one at a time and solve for the angle. Since this operation is so common, it is worthwhile to work out specific equations.
 
 Let's start with the _x_-axis. If we have a vector `vec u` in component form, then
 
-    `cos theta = (vec u * hat i)/(|:vec u:||:hat i:|) = ([u_1,u_2,u_3] * [1,0,0])/(|:vec u:|(1)) = u_1/|vec u|`.
+    `cos theta = (vec u * hat i)/(|vec u| |hat i|) = ([u_1,u_2,u_3] * [1,0,0])/(|vec u|(1)) = u_1/|vec u|`.
 
 When we dot `vec u` with one of the standard basis vectors, we are effectively _choosing_ one of its components. Simplifying the equation for the other two axes is just as easy. To avoid confusion, we use three different Greek letters to represent the three angles:
 
@@ -881,8 +881,8 @@ Consider the two lines defined by
 
 These lines may or may not intersect. In `RR^2`, their are three cases:
 
-collinear (`infty`)
-:   The two lines are equal. Formally, `AA t\ EE p` such that `vec r = vec s`. This implies that `vec m = kvec n`, meaning the direction vectors are scalar multiples of each other. The initial points need not be equal, but each must lie on the other line: there must exist values of _t_ and _s_ such that `vec s_0 = vec r` and `vec r_0 = vec s`. There are `infty` points of intersection.
+collinear (`oo`)
+:   The two lines are equal. Formally, `AA t\ EE p` such that `vec r = vec s`. This implies that `vec m = kvec n`, meaning the direction vectors are scalar multiples of each other. The initial points need not be equal, but each must lie on the other line: there must exist values of _t_ and _s_ such that `vec s_0 = vec r` and `vec r_0 = vec s`. There are `oo` points of intersection.
 
 parallel (0)
 :   The two lines are parallel, so `vec m = kvec n`, but they are not collinear. For all combinations of values of _t_ and _p_, `vec r != vec s`. The lines never intersect.
@@ -972,7 +972,7 @@ You'll notice that the value of _d_ and the normal vector are independent. Since
 
 The normal vector is useful for another reason: we can use it to find the angle between two planes. If we have planes with normal vectors `vec n_1` and `vec n_2`, the acute angle separating them is given by
 
-    `theta_"acute" = cos^-1((|vec n_1 * vec n_2|)/(|:vec n_1:||:vec n_2:|))`.
+    `theta_"acute" = cos^-1((|vec n_1 * vec n_2|)/(|vec n_1| |vec n_2|))`.
 
 > The vertical bars in the numerator of this equation mean absolute value. In the bottom, they mean vector magnitude. Don't get confused and think that the dot product should produce a vector instead of a scalar. (For this reason, it is more common to use the notation `norm(vec v)` for the norm and reserve `|a|` for the absolute value.)
 
@@ -1011,7 +1011,7 @@ The second method uses the vector equation of a line and the point-normal equati
 
 we can substitute the first into the second because we are looking for the point of intersection, which occurs when `vec r_"L" = vec r_Pi`:
 
-    `vec n * (vec a + tvec m - vec b) = 0.`
+    `vec n * (vec a + tvec m - vec b) = 0`.
 
 Rearranging this to solve for _t_ gives us
 
@@ -1021,7 +1021,7 @@ If this equation gives you a value for _t_, there is one point of intersection. 
 
 Sometimes, in addition to the point of intersection, we want to find the _angle_ of intersection. As with the angle between two planes, we only care about the acute angle. Let `phi` represent the angle between `vec m` and `vec n`, and let `theta` represent the angle of intersection. They are complementary: `phi + theta = 90º`. Since `cos phi = cos(90º-theta) = sin theta`, we can find the angle with
 
-    `theta_"acute" = sin^-1((|vec m * vec n|)/(|:vec m:||:vec n:|))`.
+    `theta_"acute" = sin^-1((|vec m * vec n|)/(|vec m| |vec n|))`.
 
 ## Plane--plane intersection
 
@@ -1056,7 +1056,7 @@ Given a point A and a line `vec r = vec r_0 + tvec m`, we can find the shortest 
 
 Given two parallel planes with a normal vector `vec n` (it doesn't matter which plane you take it from) and containing points A and B, we can find the shortest distance between them using the [scalar projection](scalar-vector-projection.html):
 
-    `d = |:vec(AB)_n:| = |vec(AB) * hat n| = (|vec(AB) * vec n|)/(|vec n|)`.
+    `d = |vec(AB)_n| = |vec(AB) * hat n| = (|vec(AB) * vec n|)/(|vec n|)`.
 
 (Note that nonparallel planes intersect, so the shortest distance is zero.) We can also use this equation for skew lines, where one line contains A and the other has B. We calculate `vec n` by crossing their direction vectors:
 
