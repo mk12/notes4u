@@ -24,7 +24,7 @@ To build the website yourself:
 ## Dependencies
 
 - [Pandoc] 3+
-- [Bun] and [MathJax] for rendering math
+- [Bun], [AsciiMath], and [Temml] for rendering math
 - [v.Nu] for validating HTML
 
 ## License
@@ -38,5 +38,6 @@ Notes4U is available under the MIT License; see [LICENSE](LICENSE.md) for detail
 [science]: https://ocdsb.ca/secondary/programs/secondary_school_courses/science
 [Pandoc]: https://pandoc.org
 [Bun]: https://bun.sh
-[MathJax]: https://www.mathjax.org
+[AsciiMath]: https://asciimath.widcard.win/
+[Temml]: https://temml.org
 [v.Nu]: https://validator.github.io/validator
