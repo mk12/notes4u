@@ -188,7 +188,47 @@ function transform(doc)
                     pandoc.Str("C"),
                 }
             )
+            -- Tuck punctuation after math into the math so it doesn't wrap.
+            for i = #inlines-1, 1, -1 do
+                if inlines[i].t == "Code" and inlines[i+1].t == "Str" and
+                    (inlines[i+1].text == "." or inlines[i+1].text == ",")
+                then
+                    inlines[i].text = inlines[i].text .. inlines[i+1].text
+                    inlines:remove(i+1)
+                end
+            end
             return inlines
+        end,
+        -- Add space around equations and connectives words in block math.
+        Div = function(el)
+            if el.attributes.render ~= "center" then
+                return
+            end
+            return el:walk({
+                Inlines = function(inlines)
+                    for i = 1, #inlines-2 do
+                        if inlines[i].t == "Code"
+                            and inlines[i].text:sub(-1) == ","
+                            and inlines[i+1].t == "Space"
+                            and inlines[i+2].t == "Code"
+                        then
+                            table.insert(inlines[i].classes, "math-gap")
+                        end
+                        if i + 4 <= #inlines
+                            and inlines[i].t == "Code"
+                            and inlines[i+1].t == "Space"
+                            and inlines[i+2].t == "Str"
+                            and inlines[i+3].t == "Space"
+                            and inlines[i+4].t == "Code"
+                        then
+                            inlines[i+2] = pandoc.Span(
+                                {inlines[i+2]}, { class = "math-conn" }
+                            )
+                        end
+                    end
+                    return inlines
+                end,
+            })
         end,
         -- Unitalicize parenthesized parts of <dt> elements.
         DefinitionList = function(el)
@@ -379,7 +419,15 @@ function render_code_as_math(doc)
     local tmp = assert(io.open(tmp_name, "r"))
     doc = doc:walk({
         Code = function(el)
-            return pandoc.RawInline("html", tmp:read())
+            mathml = tmp:read()
+            assert(mathml:sub(1,5) == "<math")
+            if #el.classes > 0 then
+                mathml = (
+                    mathml:sub(1,5) .. " class='"
+                    .. table.concat(el.classes, " ") .. "'" .. mathml:sub(6)
+                )
+            end
+            return pandoc.RawInline("html", mathml)
         end,
     })
     tmp:close()

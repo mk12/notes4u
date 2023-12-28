@@ -8,20 +8,24 @@ import temml from "temml";
 const asciimath = new AsciiMath();
 
 for await (const line of console) {
+    const ascii = line
+        // Avoid putting punctuation in superscripts.
+        .replaceAll(/\.$/g, " .");
     const tex =
-        asciimath.toTex(line, { display: true })
+        asciimath.toTex(ascii, { display: true })
+            // Manual newline.
+            .replaceAll("\\ n", "\\\\")
             // AsciiMath tries to make d in dx straight for some reason.
             .replaceAll("\\text{d}", "d")
             // I prefer to type "∆" (Option+J on macOS) but it renders wrong.
             .replaceAll("∆", "\\Delta{}")
-            // Stretchy parentheses around a single letter are weird in Safari.
-            .replaceAll(/\\left\( (.) \\right\)/g, "($1)")
-        // // Allow line breaks around spaced text like "and".
-        // .replaceAll(
-        //     /(\\quad)(\\text{.+?})(\\quad)/g,
-        //     "\\allowbreak$1\\allowbreak$2\\allowbreak$3\\allowbreak",
-        // )
-        ;
+            // Make brackets non-stretchy by default.
+            .replaceAll(/\\(?:left|right)([()\[\]])/g, "$1")
+            // Reinterpret "(:" and ":)" as stretchy instead of angled brackets.
+            .replaceAll("\\left\\langle", "\\left(")
+            .replaceAll("\\right\\rangle", "\\right)")
+            // Don't slant inequalities.
+            .replaceAll(/(\\[lg]e)qslant/g, "$1")
     let html;
     try {
         html = temml.renderToString(tex, {
@@ -59,7 +63,7 @@ for await (const line of console) {
         .replaceAll("∣", "|")
         // Dots should be mi, not mo.
         .replaceAll(/<mo>(⋯|…)<\/mo>/g, "<mi>$1</mi>")
-        // Remove spacing under limits.
+        // Remove spacing around arrows under limits.
         .replaceAll(
             /(<mi>lim<\/mi>.*?)<mo>→<\/mo>/g,
             "$1<mo lspace=\"0\" rspace=\"0\">→<\/mo>",
@@ -74,8 +78,15 @@ for await (const line of console) {
             "</mrow><mo stretchy=\"false\" lspace=\"0\" rspace=\"0\">→</mo></mover>",
             "</mrow><mo lspace=\"0\" rspace=\"0\">→</mo></mover>",
         )
-        // Make [ and ] non-stretchy (used for chemical concentrations).
-        .replaceAll(/<mo([^>]*>[\[\]]<\/mo>)/g, "<mo stretchy=\"false\"$1")
+        // Add class to trailing puncutation.
+        .replaceAll(
+            "<mi>.</mi></math>",
+            "<mtext class=\"math-punct\">.</mtext></math>",
+        )
+        .replaceAll(
+            "<mo separator=\"true\" rspace=\"0em\">,</mo></math>",
+            "<mtext class=\"math-punct\">,</mtext></math>",
+        )
         // Fix spacing for signs. Temml does not emit form="prefix".
         // TODO(https://github.com/ronkok/Temml/issues/31): Remove when fixed.
         .replaceAll(/([^\)\]]<\/mo>(?:<\/mrow>)?(?:<mrow>)?)<mo>(−|-|\+)<\/mo>/g, "$1<mo form=\"prefix\">$2<\/mo>")

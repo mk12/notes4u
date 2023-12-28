@@ -21,7 +21,7 @@ Suppose I want `f(x)` to be no more than 0.00123 away from `L`. If the limit exi
 
 When we say claim that a limit exists, we are implying that the function approaches the limit from _both sides_ -- left and right. If it doesn't do this, the limit does not exist. However, we can still talk about one side by itself using different notation. The left and right limits are represented by
 
-    `lim_(x->a^-)f(x) qquad and qquad lim_(x->a^+)f(x)`.
+    `lim_(x->a^-)f(x)` and `lim_(x->a^+)f(x)`.
 
 In some cases it is easy to determine a limit just by looking at a graph. Consider the limit as `x` approaches 5 for the following function:
 
@@ -29,7 +29,7 @@ In some cases it is easy to determine a limit just by looking at a graph. Consid
 
 Notice that `f(5) = 2`. Remember, though, the actual value of the function when `x` is _equal to_ 5 is irrelevant to the limit as `x` _approaches_ 5. From the graph, you should be able to see that
 
-    `lim_(x->5^-)f(x) = 4 qquad and qquad lim_(x->5^+)f(x) = 1`,
+    `lim_(x->5^-)f(x) = 4` and `lim_(x->5^+)f(x) = 1`,
 
 and since these are not equal, `lim_(x->5)f(x)` does not exist.
 
@@ -87,7 +87,7 @@ Suppose we want to evaluate the limit
 
 Let's change the variable. In general, when we have a fractional exponent as we do here, we want to get rid of it. To do this, we will let `u^3 = 2x + 1`. This means that
 
-    `(2x + 1)^(1/3) = u qquad and qquad x = 1/2(u^3 - 1)`.
+    `(2x + 1)^(1/3) = u` and `x = 1/2(u^3 - 1)`.
 
 Now we can change the variable in the limit expression:
 
@@ -109,7 +109,7 @@ We get an indeterminate answer if we try direct substitution. As you might have 
 
 This graph makes it obvious that
 
-    `lim_(x->4^-)|x-4|/(x-4) = -1 qquad and qquad lim_(x->4^+)|x-4|/(x-4) = 1`,
+    `lim_(x->4^-)|x-4|/(x-4) = -1` and `lim_(x->4^+)|x-4|/(x-4) = 1`,
 
 and since these are not equal, the limit does not exist.
 
@@ -127,7 +127,7 @@ We can also talk about whether a function is continuous at a particular point. F
 
 Drawing a curve without lifting your pencil is a good way of thinking about continuity, but this isn't a very good definition. Here is a formal definition with some mathematical rigour in it: a function `f` is continuous at `a` if
 
-    `f(a)` is defined`qquad and qquad lim_(x->a)f(x) = f(a)`.
+    `f(a)` is defined and `lim_(x->a)f(x) = f(a)`.
 
 Let's try using this definition. Consider the following piecewise function:
 
@@ -439,13 +439,13 @@ Here is an example of the information that these three quantities, given by the 
 
 The critical points of a function are at the values of `x` where
 
-    `f'(x) = 0 qquad or qquad f'(x)` does not exist.
+    `f'(x) = 0` or `f'(x)` does not exist.
 
 If the value of `f'(x)` changes from positive to negative or vice versa across the critical point, then it represents a turning point (local extremum).
 
 The key points of a function are at the values of `x` where
 
-    `f''(x) = 0 qquad or qquad f''(x)` does not exist.
+    `f''(x) = 0` or `f''(x)` does not exist.
 
 If the value of `f''(x)` changes from positive to negative or vice versa across the key point, then it represents an inflection point.
 
@@ -530,7 +530,7 @@ Here are a few examples of scalar multiplication:
 
 Scalar multiplication is distributive, meaning
 
-    `k(vec u + vec v) = kvec u + kvec v qquad and qquad (a + b)vec u = avec u + bvec u`,
+    `k(vec u + vec v) = kvec u + kvec v` and `(a + b)vec u = avec u + bvec u`,
 
 and it is also associative:
 
@@ -584,7 +584,7 @@ That's it. You can distribute the coefficient if you want, but there is really n
 
 There is another way of thinking about Euclidean vectors. It might just seem like an alternative notation, but it's a bit more than that. It works like this: there are only three vectors (or two in two-space) that you need to describe any other vector. These are called the standard basis vectors:
 
-    `hat i = [1,0,0], quad hat j = [0,1,0], quad hat k = [0,0,1]`.
+    `hat i = [1,0,0]`, `hat j = [0,1,0]`, `hat k = [0,0,1]`.
 
 Say we have the vector `vec v = [4,-2,7]`, which is in component form. How would we express it in standard basis? Like this:
 
@@ -616,7 +616,7 @@ Referring to the definition of a linear combination, we can write an equation wi
 
 We can unpack this into two equations -- one for each component:
 
-    `6 = 10a - 2b qquad and qquad 7 = 5a + b`.
+    `6 = 10a - 2b` and `7 = 5a + b`.
 
 Solving by elimination tells us that `a = 1` and `b = 2`, therefore
 
@@ -651,15 +651,15 @@ First, we write the linear combination equation:
 
 That gives us the three equations
 
-    `-14=-a+4b, quad -1=2a+b, quad 16=3a-2b`.
+    `-14=-a+4b`, `-1=2a+b`, `16=3a-2b`.
 
 Solving the system defined by the first two equations tells us that
 
-    `a = 10/9 qquad and qquad b = -29/9`.
+    `a = 10/9` and `b = -29/9`.
 
 If we substitute those values into the third equation, we get
 
-    `"LS" = 16 qquad and qquad "RS" = 88/9`.
+    `"LS" = 16` and `"RS" = 88/9`.
 
 Since `"LS"!="RS"`, the system is inconsistent and therefore the vectors `[-1,2,3]`, `[4,1,-2]`, and `[-14,-1,16]` are non-coplanar.
 
@@ -727,7 +727,7 @@ The pattern shouldn't be too hard to see. Each part has a product of two terms, 
 
 Like the dot product, the cross product has some important properties. First, it can produce the zero vector:
 
-    `vec v xx vec 0 = vec 0 qquad and qquad vec v xx vec v = vec 0`.
+    `vec v xx vec 0 = vec 0` and `vec v xx vec v = vec 0`.
 
 Unlike the dot product, is is anticommutative -- order matters:
 
@@ -855,15 +855,15 @@ To get from point A to some point P elsewhere on the line, all we have to do is 
 
 The value of _t_ controls how far along the line we go from A. If it is negative, we go in the opposite direction. Instead of using origin-to-point notation, we usually use `vec r`, which is implied to be a position vector (the _r_ stands for radius, and a position vector is a radius from the origin). Here is the conventional way of writing the vector equation of the line:
 
-    `vec r = vec r_0 + tvec m, qquad t in RR`.
+    `vec r = vec r_0 + tvec m`, `t in RR`.
 
 Suppose we substitute for vectors in `RR^2` with variables as components:
 
-    `[x,y] = [x_0,y_0] + t[a,b], qquad t in RR`.
+    `[x,y] = [x_0,y_0] + t[a,b]`, `t in RR`.
 
 Breaking this up into two equations gives us the _parametric_ equations of a line (two equations because there are two components):
 
-    `x = x_0 + ta qquad and qquad y = y_0 + tb, qquad t in RR`.
+    `x = x_0 + ta` and `y = y_0 + tb`, `t in RR`.
 
 There is an important difference between this form and the earlier ones. The other equations relate _x_ and _y_ such that we can choose one an obtain the other. With the parametric equations, we choose a value for the free parameter _t_. We plug this into the equations and they tell us _x_ and _y_. Instead of _x_ being related to _y_, they are both independently controlled by _t_.
 
@@ -877,7 +877,7 @@ This form makes it easy to test if a particular point falls on the line: just ev
 
 Consider the two lines defined by
 
-    `vec r = vec r_0 + tvec m qquad and qquad vec s = vec s_0 + pvec n`.
+    `vec r = vec r_0 + tvec m` and `vec s = vec s_0 + pvec n`.
 
 These lines may or may not intersect. In `RR^2`, their are three cases:
 
@@ -910,11 +910,11 @@ A plane is a flat, two-dimensional surface that extends to infinity. You can hav
 
 Consider a point, defined by a tuple of coordinates. The point has zero dimensions because there is only _one_ point. Now consider a line -- a line is just a set of `oo` points that happen to lie in a straight line (yes, this is a circular definition). The line is one-dimensional and has one degree of freedom; it is controlled by the free parameter _t_ in
 
-    `vec r = vec r_0 + tvec m, qquad t in RR`.
+    `vec r = vec r_0 + tvec m`, `t in RR`.
 
 Now consider a plane. A plane another set of `oo` points, and these ones all lie on a flat surface. You could also think of it as `oo` parallel lines. The plane is two-dimensional and has two degrees of freedom; it is controlled by the free parameters _s_ and _t_ in
 
-    `vec r = vec r_0 + svec u + tvec v, qquad s,t in RR`.
+    `vec r = vec r_0 + svec u + tvec v`, `s,t in RR`.
 
 That's the vector equation of a plane. As long as `vec u` and `vec v` are non-collinear, this allows `vec r` to move around anywhere on the plane by choosing different values for the free parameters.
 
@@ -936,7 +936,7 @@ As I mentioned before, there is a single plane in `RR^2` but many planes in `RR^
 
 Let's look at the equation of the plane again:
 
-    `vec r = vec r_0 + svec u + tvec v, qquad s,t in RR`.
+    `vec r = vec r_0 + svec u + tvec v`, `s,t in RR`.
 
 We can substitute components like we did for the equation of the line:
 
@@ -944,7 +944,7 @@ We can substitute components like we did for the equation of the line:
 
 From this, we can get the parametric equations of the plane:
 
-    `x = x_0 + su_1 + tv_1, quad y = y_0 + su_2 + tv_2, quad z = z_0 + su_3 + tv_3`.
+    `x = x_0 + su_1 + tv_1`, `y = y_0 + su_2 + tv_2`, `z = z_0 + su_3 + tv_3`.
 
 Another way to describe a plan is with a point and a _normal vector_. The normal vector is perpendicular to the plane, and we get it by crossing the plane's two direction vectors:
 
@@ -980,7 +980,7 @@ The normal vector is useful for another reason: we can use it to find the angle 
 
 Consider the line and plane defined by
 
-    `vec r_"L" = vec a + tvec m qquad and qquad vec r_Pi = vec b + rvec u + svec v`.
+    `vec r_"L" = vec a + tvec m` and `vec r_Pi = vec b + rvec u + svec v`.
 
 They may or may not intersect. In `RR^3`, there are three cases:
 
@@ -1007,7 +1007,7 @@ You can then solve for _t_. If you get a value for _t_, the system is nonparalle
 
 The second method uses the vector equation of a line and the point-normal equation of a plane. Given the line and the plane defined by
 
-    `vec r_"L" = vec a + tvec m qquad and qquad vec n * (vec r_Pi - vec b) = 0`,
+    `vec r_"L" = vec a + tvec m` and `vec n * (vec r_Pi - vec b) = 0`,
 
 we can substitute the first into the second because we are looking for the point of intersection, which occurs when `vec r_"L" = vec r_Pi`:
 
@@ -1027,7 +1027,7 @@ Sometimes, in addition to the point of intersection, we want to find the _angle_
 
 Consider the two planes defined by
 
-    `vec n_A * (vec r_A - vec r_(0,A)) = 0 qquad and qquad vec n_B * (vec r_B - vec r_(0,B)) = 0`.
+    `vec n_A * (vec r_A - vec r_(0,A)) = 0` and `vec n_B * (vec r_B - vec r_(0,B)) = 0`.
 
 They may or may not intersect. In `RR^3`, there are three cases:
 
@@ -1066,7 +1066,7 @@ Given two parallel planes with a normal vector `vec n` (it doesn't matter which 
 
 A _matrix_ (plural matrices) is a rectangular array of numbers arranged in rows and columns. They have a variety of uses, but for us they are just a convenient way of staying organized while solving linear systems. Solving a system of two linear equations by elimination is easy, but it becomes much harder once you have four or five equations. Consider this linear system:
 
-    `x + 3y = 4 qquad and qquad -2x + 3y = 10`.
+    `x + 3y = 4` and `-2x + 3y = 10`.
 
 The first step is to move the constant term to the right-hand side. In this case, it's already done. Now, we take the coefficients and we put them into an _augmented matrix_:
 

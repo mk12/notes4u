@@ -103,7 +103,7 @@ We can draw another sketch to help with finding the angle. If you draw the large
 
 Now we can use inverse tangent to find theta (opposite over adjacent):
 
-    `theta = tan^-1(12.32/128.65) = 5.5º`.
+    `theta = tan^-1(:12.32/128.65:) = 5.5º`.
 
 Therefore, the resultant vector `vec a + vec b` is 1.3 × 10^2^ m [N 5.5º E].
 
@@ -159,15 +159,15 @@ Acceleration (`vec a`) is the rate of change of velocity per unit of time, usual
 
 There are two important equations that are represented in these two sets of graphs. When we are calculating slopes, we use
 
-    `vec v_"av" = (∆vec d)/(∆t) qquad and qquad vec a_"av" = (∆vec v)/(∆t)`,
+    `vec v_"av" = (∆vec d)/(∆t)` and `vec a_"av" = (∆vec v)/(∆t)`,
 
 and when we are going the other way by calculating areas, we use the equivalent equations
 
-    `∆vec d = vec v_"av"∆t qquad and qquad ∆vec v = vec a_"av"∆t`.
+    `∆vec d = vec v_"av"∆t` and `∆vec v = vec a_"av"∆t`.
 
 We need to identify a couple identities to help us use these two equations. For any variable `x`, we assume that
 
-    `∆x = x_2 - x_1 qquad and qquad x_"av" = (x_1 + x_2)/2`.
+    `∆x = x_2 - x_1` and `x_"av" = (x_1 + x_2)/2`.
 
 We now have all we need to solve any motion problem. However, some calculations are so common that it is worth committing them to memory. In the next section, we'll derive a few other, time-saving equations.
 
@@ -279,11 +279,11 @@ In our projectile problems, we assume that
 
 All projectile problems can be solved by splitting up original velocity (`vec v_0`) into its horizontal and vertical components with
 
-    `vec v_"h" = |vec v_0|cos theta qquad and qquad vec v_"1,v" = |vec v_0|sin theta`,
+    `vec v_"h" = |vec v_0|cos theta` and `vec v_"1,v" = |vec v_0|sin theta`,
 
 where `theta` is the direction of the original velocity expressed as an angle above horizontal. These can be used with the equations
 
-    `∆vec d_"h" = vec v_"h"∆t qquad and qquad ∆vec d_"v" = vec v_"1,v"∆t + 1/2vec a(∆t)^2`.
+    `∆vec d_"h" = vec v_"h"∆t` and `∆vec d_"v" = vec v_"1,v"∆t + 1/2vec a(∆t)^2`.
 
 The duration of the projectile's flight (`∆t`) is associated with the vertical part. The _range_ (distance to the landing point) is associated with the horizontal part.
 
@@ -576,7 +576,7 @@ Instead of relying on friction, we can incline the road towards the centre of th
 
 The normal force can be split into vertical and horizontal components:
 
-    `F_"N,v" = |vec F_"N"|cos theta qquad and qquad F_"N,h" = |vec F_"N"|sin theta`.
+    `F_"N,v" = |vec F_"N"|cos theta` and `F_"N,h" = |vec F_"N"|sin theta`.
 
 The horizontal component must supply the centripetal force, so we can set them equal:
 
@@ -719,7 +719,7 @@ A change in kinetic energy represents work being done:
 
 We can also relate kinetic energy to momentum with
 
-    `E_"k" = p^2/(2m) qquad and qquad p = sqrt(2mE_"k")`.
+    `E_"k" = p^2/(2m)` and `p = sqrt(2mE_"k")`.
 
 ## Gravitational potential energy
 
@@ -805,7 +805,7 @@ In a _perfectly elastic one-dimensional_ collision where mass A is moving toward
 
 as we can find both final speeds from just the initial speed of A and the masses of both objects using
 
-    `v'_"A" = v_"A"((m_"A"-m_"B")/(m_"A"+m_"B")) qquad and qquad v'_"B" = v_"A"((2m_"A")/(m_"A"+m_"B"))`.
+    `v'_"A" = v_"A"((m_"A"-m_"B")/(m_"A"+m_"B"))` and `v'_"B" = v_"A"((2m_"A")/(m_"A"+m_"B"))`.
 
 We will have to consider some special conditions:
 
@@ -837,7 +837,7 @@ How much work is needed to lift a 101 kg object to an altitude of 456 km?
 
 Since `W = ∆E_"g"`, we want to find the change in gravitational potential. The changing quantity is radius:
 
-    `r_1 = r_"E" qquad and qquad r_2 = r_"E" + "altitude"`.
+    `r_1 = r_"E"` and `r_2 = r_"E" + "altitude"`.
 
 Now, we substitute our new equation into `∆E_"g" = E_"g,2" - E_"g,1"`, giving us
 
@@ -1090,7 +1090,7 @@ wavelength (`lambda`)
 
 We also have a few other equations for dealing with period:
 
-    `f = N/(∆t), qquad T = (∆t)/N, qquad f = 1/T`.
+    `f = N/(∆t)`, `T = (∆t)/N`, `f = 1/T`.
 
 number of cycles (`N`)
 :   the number of cycles completed during a time interval (unitless)
@@ -1346,7 +1346,7 @@ Consider a train moving at half the speed of light. In _frame A_, we have an obs
 
 According to equivalence, observer A neither knows nor cares whether the train is moving. He switches on the flashlight and observes a ray of light travelling `2∆d_"A"` in some amount of time that we'll call `t_0`. Since the speed of light is constant in all inertial frames, we are confident that
 
-    `v = (∆d)/(∆t) qquad implies qquad c = (2∆d_"A")/t_0`.
+    `v = (∆d)/(∆t)` implies `c = (2∆d_"A")/t_0`.
 
 So far so good. But what about observer B? She notices that the ray of light is actually moving horizontally as well as vertically. She records the distance `2∆d_"B"` and she uses a stopwatch to measure the time it takes for the ray to travel that distance, which we'll call `t'`. Now she tries calculating the speed of light using the same method as observer A:
 
@@ -1399,7 +1399,7 @@ If we know the speed of an electron to within 1.0 m/s, how precisely can we know
 
 Solving the inequality for the uncertainty of position, we have
 
-    `∆x >= h/(2pim∆v) = (6.63xx10^-34\ "J/s")/(2(3.14)(9.11xx10^-31\ "kg")(1.0\ "m/s")`,
+    `∆x >= h/(2pim∆v) = (6.63xx10^-34\ "J/s")/(2(3.14)(9.11xx10^-31\ "kg")(1.0\ "m/s"))`,
 
 which evaluates to
 

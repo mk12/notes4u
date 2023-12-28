@@ -267,6 +267,22 @@ td math {
   white-space: nowrap;
 }
 
+.math-punct {
+  font-family: 'Equity B';
+}
+
+.math-gap {
+  margin-right: 1em;
+}
+
+.math-conn {
+  margin: 0 1em;
+}
+
+.sep {
+  margin-right: 1em;
+}
+
 /* SVG */
 
 figure > svg {

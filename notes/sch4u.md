@@ -230,7 +230,8 @@ What is the enthalpy change for CH~4(g)~ + 2 O~2(g)~ → CO~2(g)~ + 2 H~2~O~(l)~
 
 Begin with the formula given above. Substitute moles and standard enthalpies of formation for each product and reactant:
 
-    `∆H = [(1\ "mol")(-393.5\ "kJ/mol") + (2\ "mol")(-285.8\ "kJ/mol")]`<br>`- [(1\ "mol")(-74.4\ "kJ/mol") + 0]`.
+    `∆H = [(1\ "mol")(-393.5\ "kJ/mol") + (2\ "mol")(-285.8\ "kJ/mol")]`
+    `- [(1\ "mol")(-74.4\ "kJ/mol") + 0]`.
 
 This evaluates to −890.7 kJ. Notice that the answer is in kJ, not kJ/mol.
 
@@ -773,7 +774,7 @@ Similarly, weak bases have B~(aq)~ + H~2~O~(l)~ ⇌ HB^+^~(aq)~ + OH^−^~(aq)~ 
 
 Another way of representing the position of the equilibrium for weak acids is _percent ionization_:
 
-    `p = (["H"^+])/(["HA"]) xx 100% qquad <=> qquad ["H"^+] = ["HA"]\(p/(100%))`.
+    `p = (["H"^+])/(["HA"]) xx 100% qquad <=> qquad ["H"^+] = ["HA"](:p/(100%):)`.
 
 The following equation is true for all conjugate acid--base pairs:
 
@@ -906,7 +907,7 @@ of NaOH~(aq)~, and since each hydroxide ion reacts with each hydrogen ion, the a
 
 and the pH of the solution at this point is
 
-    `"pH" = -log["H"^+] = -log((1.50\ "mmol")/(10.00\ "mL" + 2.00\ "mL")) = 0.9031`.
+    `"pH" = -log["H"^+] = -log(:(1.50\ "mmol")/(10.00\ "mL" + 2.00\ "mL"):) = 0.9031`.
 
 ## Buffer solutions
 
@@ -952,7 +953,7 @@ hydrocarbon derivatives
 
 There are three types of aliphatic hydrocarbons:
 
-alkane [(C~_n_~H~2*n*+2~)]{.parens}
+alkane (C~_n_~H~2*n*+2~)
 :   only has single bonds (e.g., methane, CH~4~)
 
 alkene (C~_n_~H~2*n*~)
