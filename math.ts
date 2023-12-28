@@ -11,7 +11,7 @@ for await (const line of console) {
     const ascii = line
         // Avoid putting punctuation in superscripts.
         .replaceAll(/\.$/g, " .");
-    const tex =
+    let tex =
         asciimath.toTex(ascii, { display: true })
             // Manual newline.
             .replaceAll("\\ n", "\\\\")
@@ -19,13 +19,19 @@ for await (const line of console) {
             .replaceAll("\\text{d}", "d")
             // I prefer to type "∆" (Option+J on macOS) but it renders wrong.
             .replaceAll("∆", "\\Delta{}")
-            // Make brackets non-stretchy by default.
-            .replaceAll(/\\(?:left|right)([()\[\]])/g, "$1")
+            // Make parentheses non-stretchy by default.
+            .replaceAll(/\\(?:left|right)([()])/g, "$1")
             // Reinterpret "(:" and ":)" as stretchy instead of angled brackets.
             .replaceAll("\\left\\langle", "\\left(")
             .replaceAll("\\right\\rangle", "\\right)")
             // Don't slant inequalities.
-            .replaceAll(/(\\[lg]e)qslant/g, "$1")
+            .replaceAll(/(\\[lg]e)qslant/g, "$1");
+    // Make brackets non-stretchy too, unless for matrices.
+    if (!tex.includes("\\begin{array}"))
+        tex = tex.replaceAll(/\\(?:left|right)([\[\]])/g, "$1")
+    // Make braces non-stretchy too, unless for piecewise functions.
+    if (!tex.includes("\\right."))
+        tex = tex.replaceAll(/\\(?:left|right)(\\lbrace|\\rbrace)/g, "$1")
     let html;
     try {
         html = temml.renderToString(tex, {

@@ -39,7 +39,7 @@ and since these are not equal, `lim_(x->5)f(x)` does not exist.
 
 Limits obey a set of laws, and the basic ones are worth remembering. First, the limit of a sum is equal to the sum of the limits:
 
-    `lim_(x->a)(f(x)+g(x)) = lim_(x->a)f(x) + lim_(x->a)g(x)`.
+    `lim_(x->a)(:f(x)+g(x):) = lim_(x->a)f(x) + lim_(x->a)g(x)`.
 
 The same thing goes for subtraction, multiplication, and division.
 
@@ -71,11 +71,11 @@ An expression of the form `a^2 - b^2` can be factored to give `(a + b)(a - b)`. 
 
 For example, multiplying the following by the conjugate over itself gives us
 
-    `lim_(x->0)(sqrt(x+1) - 1)/x = lim_(x->0)((sqrt(x+1) - 1)/x)((sqrt(x+1) + 1)/(sqrt(x+1) + 1))`,
+    `lim_(x->0)(sqrt(x+1) - 1)/x = lim_(x->0)(:(sqrt(x+1) - 1)/x:)(:(sqrt(x+1) + 1)/(sqrt(x+1) + 1):)`,
 
 which simplifies to give the value of the limit,
 
-    `lim_(x->0)((x+1) - 1)/(x(sqrt(x+1) + 1)) = lim_(x->0)1/(sqrt(x+1) + 1) = 1/(sqrt(0+1)+1) = 1/2`.
+    `lim_(x->0)((x+1) - 1)/(:x(sqrt(x+1) + 1):) = lim_(x->0)1/(sqrt(x+1) + 1) = 1/(sqrt(0+1)+1) = 1/2`.
 
 ### Change of variable
 
@@ -153,19 +153,19 @@ Finding the slope of the secant line is easy:
 
     `m_"sec" = (∆y)/(∆x) = (y_2 - y_1)/(x_2 - x_1) = (3 - 4)/(4 - 2) = -1/2`.
 
-We can generalize this to give us the average rate on the interval [`x_1`, `x_2`] for any function `f` with
+We can generalize this to give us the average rate on the interval `[x_1,x_2]` for any function `f` with
 
     `m_"sec" = (f(x_2) - f(x_1))/(x_2 - x_1)`,
 
 but what about the tangent line? We could draw it with a ruler and pick two points that is passes through, but this method is tedious and inaccurate. No, instead we can use our newly-acquired limit skills.
 
-The key thing to realize here is that the secant line and the tangent line are related. A tangent line is just a secant line whose interval happens to be very, very small -- _infinitesimal_, to be exact (this means indefinitely small). In other words, the slope of the tangent line at `x=a` is equal to the slope of the secant line on the interval [`a`, `a+h`] as `h` approaches zero:
+The key thing to realize here is that the secant line and the tangent line are related. A tangent line is just a secant line whose interval happens to be very, very small -- _infinitesimal_, to be exact (this means indefinitely small). In other words, the slope of the tangent line at `x=a` is equal to the slope of the secant line on the interval `[a,a+h]` as `h` approaches zero:
 
     `m_"tan" = lim_(h->0)(f(a+h) - f(a))/h`.
 
 This is the first principle of calculus. As with most other things, graphing will help us understand it:
 
-![A graph with a secant line on [`a`, `a+h`] and a tangent line at `a`](first-principle.svg)
+![A graph with a secant line on `[a,a+h]` and a tangent line at `a`](first-principle.svg)
 
 As we move the second point closer to the first point, thereby making `h` approach zero, the slope of the secant line will converge on the slope of the tangent line at `a`.
 
@@ -215,7 +215,7 @@ The first principle of calculus is tedious and it gives you plenty of opportunit
 
 This is really just a special case of the product rule, but you will use it so often that it's easier to think of it separately. If `k` is a constant, then
 
-    `d/(dx)(k*f(x)) = k*d/(dx)f(x)`.
+    `d/(dx)(:k*f(x):) = k*d/(dx)f(x)`.
 
 ### Sum & difference rules
 
@@ -249,11 +249,11 @@ or, using Leibniz’s notation,
 
 We can use the product and power rules together to tackle rationals, but using the quotient rule is much easier:
 
-    `(f/g)' = (f'g - fg')/g^2`,
+    `(:f/g:)' = (f'g - fg')/g^2`,
 
 or, using Leibniz’s notation,
 
-    `d/(dx)(u/v) = v^-2((du)/(dx)*v - (dv)/(dx)*u)`.
+    `d/(dx)(:u/v:) = v^-2(:(du)/(dx)*v - (dv)/(dx)*u:)`.
 
 ### Chain rule
 
@@ -284,33 +284,33 @@ When we differentiate trigonometric functions, the result is another trig functi
 
 ### Example
 
-Let's differentiate `7cos^2(sqrt(x^2-3))`. Using the constant rule, we have
+Let's differentiate `7cos^2(:sqrt(x^2-3):)`. Using the constant rule, we have
 
-    `d/(dx)7cos^2(sqrt(x^2-3)) = 7*d/(dx)(cos(sqrt(x^2-3)))^2`,
+    `d/(dx)7cos^2(:sqrt(x^2-3):) = 7*d/(dx)(:cos(:sqrt(x^2-3):):)^2`,
 
 and using the power rule and chain rule, we have
 
-    `7*2cos(sqrt(x^2-3)) * d/(dx)cos(sqrt(x^2-3))`.
+    `7*2cos(:sqrt(x^2-3):) * d/(dx)cos(:sqrt(x^2-3):)`.
 
 Now we must keep using the chain rule:
 
-    `7*2cos(sqrt(x^2-3)) * -sin(sqrt(x^2-3)) * d/(dx)sqrt(x^2-3)`.
+    `7*2cos(:sqrt(x^2-3):) * -sin(:sqrt(x^2-3):) * d/(dx)sqrt(x^2-3)`.
 
 This simplifies to
 
-    `-7sin(2sqrt(x^2-3)) * d/(dx)sqrt(x^2-3)`,
+    `-7sin(:2sqrt(x^2-3):) * d/(dx)sqrt(x^2-3)`,
 
 but we aren't done with the chain rule:
 
-    `-7sin(2sqrt(x^2-3)) * 1/(2sqrt(x^2-3)) * d/(dx)(x^2-3)`.
+    `-7sin(:2sqrt(x^2-3):) * 1/(2sqrt(x^2-3)) * d/(dx)(x^2-3)`.
 
 There is finally nothing left to differentiate. We have
 
-    `-7sin(2sqrt(x^2-3)) * 1/(2sqrt(x^2-3)) * 2x`,
+    `-7sin(:2sqrt(x^2-3):) * 1/(2sqrt(x^2-3)) * 2x`,
 
 and this simplifies to our final answer:
 
-    `(-14xsin(2sqrt(x^2-3)))/(2sqrt(x^2-3))`.
+    `(-14xsin(:2sqrt(x^2-3):))/(2sqrt(x^2-3))`.
 
 ## Exponential functions
 
@@ -336,7 +336,7 @@ which reduces to
 
 which then becomes
 
-    `(9x^2 + ln7d/(dx)picos2x)7^(picos2x)`,
+    `(:9x^2 + ln7d/(dx)picos2x:)7^(picos2x)`,
 
 giving us the final answer,
 
@@ -484,7 +484,7 @@ Here are some examples of scalar and vector quantities:
 |    mass     | scalar |
 | temperature | scalar |
 
-We represent scalars using ordinary variable notation like `a`, `x`, `v`, or `t`. Vectors use a different notation: either boldface, like `bbv`, or arrows, like `vec v`. The arrow notation is always used in handwriting. If you want to designate a vector from point A to point B, use `vec(AB)`.
+We represent scalars using ordinary variable notation like `a`, `x`, `v`, or `t`. Vectors use a different notation: either boldface, like `bb v`, or arrows, like `vec v`. The arrow notation is always used in handwriting. If you want to designate a vector from point A to point B, use `vec(AB)`.
 
 We use absolute value notation when we want to get the magnitude of a vector. For example, if `vec v` is 5 km/h [N25ºE], then `|vec v|` is 5 km/h.
 
@@ -765,11 +765,11 @@ If we know `theta`, then this is easy. However, sometimes we either don't know i
 
 What about the vector projection? That's easy -- we just get the scalar projection and point it in the direction of `hat b`:
 
-    `vec a_b = |vec a_b| hat b = (vec a * hat b) hat b = (|vec a| cos theta)hat b`.
+    `vec a_b = |vec a_b| hat b = (vec a * hat b) hat b = (:|vec a| cos theta:)hat b`.
 
 Once again, we can normalize `vec b` at the same time if we want:
 
-    `vec a_b = ((vec a * vec b)/|vec b|)(vec b/|vec b|) = (vec a * vec b)/|vec b|^2 vec b`.
+    `vec a_b = (vec a * vec b)/|vec b| \; vec b/|vec b| = (vec a * vec b)/|vec b|^2 vec b`.
 
 The special cases of the _x_ and _y_ axes still work with all of this. Say I want to project `vec u` onto the _x_ axis:
 
@@ -956,7 +956,7 @@ Given this normal vector and a position vector `vec r_0`, every point `vec r` on
 
 This works because the dot product of perpendicular vectors is always zero, and the vector `vec r - vec r_0` is parallel to the plane. You can use points instead of position vectors if you wish: `vec n * vec(AP) = 0`, where A is the initial point and P represents all other points on the plane. Suppose we replace the vectors in that equation with components:
 
-    `[a,b,c] * ([x,y,z] - [x_0,y_0,z_0]) = 0`.
+    `[a,b,c] * (:[x,y,z] - [x_0,y_0,z_0]:) = 0`.
 
 We can simplify this to give us
 
@@ -972,7 +972,7 @@ You'll notice that the value of _d_ and the normal vector are independent. Since
 
 The normal vector is useful for another reason: we can use it to find the angle between two planes. If we have planes with normal vectors `vec n_1` and `vec n_2`, the acute angle separating them is given by
 
-    `theta_"acute" = cos^-1((|vec n_1 * vec n_2|)/(|vec n_1| |vec n_2|))`.
+    `theta_"acute" = cos^-1(:(|vec n_1 * vec n_2|)/(|vec n_1| |vec n_2|):)`.
 
 > The vertical bars in the numerator of this equation mean absolute value. In the bottom, they mean vector magnitude. Don't get confused and think that the dot product should produce a vector instead of a scalar. (For this reason, it is more common to use the notation `norm(vec v)` for the norm and reserve `|a|` for the absolute value.)
 
@@ -1021,7 +1021,7 @@ If this equation gives you a value for _t_, there is one point of intersection. 
 
 Sometimes, in addition to the point of intersection, we want to find the _angle_ of intersection. As with the angle between two planes, we only care about the acute angle. Let `phi` represent the angle between `vec m` and `vec n`, and let `theta` represent the angle of intersection. They are complementary: `phi + theta = 90º`. Since `cos phi = cos(90º-theta) = sin theta`, we can find the angle with
 
-    `theta_"acute" = sin^-1((|vec m * vec n|)/(|vec m| |vec n|))`.
+    `theta_"acute" = sin^-1(:(|vec m * vec n|)/(|vec m| |vec n|):)`.
 
 ## Plane--plane intersection
 
@@ -1070,11 +1070,11 @@ A _matrix_ (plural matrices) is a rectangular array of numbers arranged in rows 
 
 The first step is to move the constant term to the right-hand side. In this case, it's already done. Now, we take the coefficients and we put them into an _augmented matrix_:
 
-    `[(1,3,|,4),(-2,3,|,10)]`.
+    `[1,3 | 4; -2,3 | 10]`.
 
 The first two columns represent the _x_ and _y_ coefficients respectively; the last column, separated by a bar, represents the right-hand sides of the equations. To solve the system, we will use _Gauss-Jordan elimination_, which is a method of transforming the matrix to _reduced row-echelon form_. We want the columns left of the bar to have a diagonal of ones and zeros everywhere else. For example, if we were solving a linear system of four equations, the end result would look like this:
 
-    `[(1,0,0,0,|,x),(0,1,0,0,|,y),(0,0,1,0,|,z),(0,0,0,1,|,w)]`.
+    `[1,0,0,0 | x; 0,1,0,0 | y; 0,0,1,0 | z; 0,0,0,1 | w]`.
 
 The values of _x_, _y_, _z_, and _w_ would be the solution. To perform Gauss-Jordan elimination, we use elementary operations until we get to the reduced row-echelon form. There are just three operations -- we can
 
@@ -1086,19 +1086,19 @@ The values of _x_, _y_, _z_, and _w_ would be the solution. To perform Gauss-Jor
 
 Let's return to our original example. We had
 
-    `[(1,3,|,4),(-2,3,|,10)]`.
+    `[1,3 | 4; -2,3 | 10]`.
 
 We can subtract the second row from the first to get
 
-    `[(3,0,|,-6),(-2,3,|,10)]`.
+    `[3,0 | -6; -2,3 | 10]`.
 
 We can add two-thirds of the first row to the second to get
 
-    `[(3,0,|,-6),(0,3,|,6)]`.
+    `[3,0 | -6; 0,3 | 6]`.
 
 Finally, we can divide both rows by three:
 
-    `[(1,0,|,-2),(0,1,|,2)]`.
+    `[1,0 | -2; 0,1 | 2]`.
 
 The values `x=-2` and `y=2` are indeed the solution to this system.
 
