@@ -147,11 +147,11 @@ conclusion
 
 Position (`vec d`) is a vector quantity representing a location relative to an origin, usually measured in metres (m). A change in position is called _displacement_ (`∆vec d`). The rate of change in position per unit of time is called velocity (`vec v`), usually measured in metres per second (m/s).
 
-If we graph position versus time (or d--t for short), the slope of the tangent line gives us the instantaneous velocity at that moment. The slope of the secant line gives us the average velocity on the interval [`t_1`, `t_2`]. We can also go the other way: on a v--t graph, the area under the curve between `t_1` and `t_2` gives us the displacement on that interval.
+If we graph position versus time (or d--t for short), the slope of the tangent line gives us the instantaneous velocity at that moment. The slope of the secant line gives us the average velocity on the interval `[t_1,t_2]`. We can also go the other way: on a v--t graph, the area under the curve between `t_1` and `t_2` gives us the displacement on that interval.
 
 ![Graphs of position vs. time and velocity vs. time](dt-vt-graph.svg)
 
-> Vectors can be represented in two ways. In handwriting, we always use an arrow, like `vec v`. In other situations, boldface can be used as an alternative to the arrow, like **v**.
+> Vectors can be represented in two ways. In handwriting, we always use an arrow, like `vec v`. In other situations, boldface can be used as an alternative to the arrow, like `bb v`.
 
 Acceleration (`vec a`) is the rate of change of velocity per unit of time, usually measured in metre per seconds squared (m/s^2^). It relates to velocity in exactly the same way that velocity relates to position. In this course, we always assume that acceleration is constant.
 
@@ -175,15 +175,15 @@ We now have all we need to solve any motion problem. However, some calculations 
 
 The first two equations of motion are
 
-    `vec v_"av" = (∆vec d)/(∆t)quad`**(1)**`qquad and qquad vec a_"av" = (∆vec v)/(∆t)quad`**(2)**.
+    `vec v_"av" = (∆vec d)/(∆t) quad bb((1))` and `vec a_"av" = (∆vec v)/(∆t) quad bb((2))`.
 
 If we substitute `∆x = x_2 - x_1` for `∆vec d` and `∆vec v`, we get
 
-    `vec d_2 = vec d_1 + vec v_"av"∆tquad`**(3)**`qquad and qquad vec v_2 = vec v_1 + vec a_"av"∆tquad`**(4)**.
+    `vec d_2 = vec d_1 + vec v_"av"∆t quad bb((3))` and `vec v_2 = vec v_1 + vec a_"av"∆t quad bb((4))`.
 
 If we take `∆vec d = vec v_"av"∆t` and substitute the average of two velocities (initial and final) for `vec v_"av"`, we get
 
-    `∆vec d = (vec v_1 + vec v_2)/2∆tquad`**(5)**.
+    `∆vec d = (vec v_1 + vec v_2)/2∆t quad bb((5))`.
 
 We can substitute equation (4) into this, yielding
 
@@ -191,15 +191,15 @@ We can substitute equation (4) into this, yielding
 
 which simplifies to
 
-    `∆vec d = vec v_1∆t + 1/2vec a_"av"(∆t)^2quad`**(6)**.
+    `∆vec d = vec v_1∆t + 1/2vec a_"av"(∆t)^2 quad bb((6))`.
 
 If we rearrange equation (4) to isolate `vec v_1` and then substitute _that_ into equation (5), we get
 
-    `∆vec d = vec v_2∆t - 1/2vec a_"av"(∆t)^2quad`**(7)**.
+    `∆vec d = vec v_2∆t - 1/2vec a_"av"(∆t)^2 quad bb((7))`.
 
 We can derive one final equation, this time eliminating the one variable that has been present in all the others: time. We begin by rearranging equation (4) to isolate `∆t`, and then we substitute that into equation (5), giving us
 
-    `∆vec d = ((vec v_1 + vec v_2)/2)((vec v_2 - vec v_1)/vec a_"av")`.
+    `∆vec d = (:(vec v_1 + vec v_2)/2:)(:(vec v_2 - vec v_1)/vec a_"av":)`.
 
 By multiplying the denominators to the other side and recognizing the difference of squares, we get
 
@@ -207,7 +207,7 @@ By multiplying the denominators to the other side and recognizing the difference
 
 which we can rearrange to get our final equation,
 
-    `vec v_2^2 = vec v_1^2 + 2vec a_"av"∆vec dquad`**(8)**.
+    `vec v_2^2 = vec v_1^2 + 2vec a_"av"∆vec d quad bb((8))`.
 
 There might be a few more equations that we could have derived, but these eight (and rearranged versions of them) should take you a long way.
 
@@ -217,7 +217,7 @@ Relative motion refers to the motion of one object with respect to another. The 
 
 It is impossible to say what the _absolute_ motion of an object is; we can only talk about _relative_ motion. If I am walking down a street, for example, I could make either of the following statements with certainty:
 
-- I am moving with a velocity of 10 m/s [E] _with respect to_ the stationary car.
+- I am moving at 10 m/s [E] _with respect to_ the stationary car.
 - I am stationary and the car is moving at 10 m/s [W] _with respect to_ me.
 
 Both statements are correct; in fact, they are equivalent. In the first, the frame of reference is the other car's position. In the second, the frame of reference is my own position.
@@ -449,7 +449,7 @@ and rearranging this gives us
 
 Now we can substitute the values, giving us
 
-    `vec F_"elev" = (72\ "kg")(1.3\ "m/s"^2 - (-9.80\ "m/s"^2)) = 799.2\ "N"`,
+    `vec F_"elev" = (72\ "kg")(:1.3\ "m/s"^2 - (-9.80\ "m/s"^2):) = 799.2\ "N"`,
 
 therefore the apparent weight is 8.0 × 10^2^ N.
 
@@ -507,7 +507,7 @@ Now we can solve for the tension force, giving us
 
 and, keeping in mind that [fwd] as indicated in the sketch will be positive, we can substitute to get
 
-    `vec F_"T" = -(-mu_"s"|vec F_"N"|) - m|vec g|sin theta = mu_"s"m|vec g|cos theta - m|vec g|sin theta`.
+    `vec F_"T" = -(:-mu_"s"|vec F_"N"|:) - m|vec g|sin theta = mu_"s"m|vec g|cos theta - m|vec g|sin theta`.
 
 This simplifies to
 
@@ -633,7 +633,7 @@ where `G` is a constant equal to 6.67 × 10^−11^ N⋅m^2^/kg^2^.
 
 Sometimes, we will want to look at how gravitation force changes in terms of ratios. To do that, we can use the following equation:
 
-    `F_"g,2"/F_"g,1" = (m_2/m_1)(r_1/r_2)^2`.
+    `F_"g,2"/F_"g,1" = (:m_2/m_1:)(:r_1/r_2:)^2`.
 
 Another type of problem involves whether or not an orbit is _stable_. For our purposes, an orbit is stable if and only if
 
@@ -805,15 +805,15 @@ In a _perfectly elastic one-dimensional_ collision where mass A is moving toward
 
 as we can find both final speeds from just the initial speed of A and the masses of both objects using
 
-    `v'_"A" = v_"A"((m_"A"-m_"B")/(m_"A"+m_"B"))` and `v'_"B" = v_"A"((2m_"A")/(m_"A"+m_"B"))`.
+    `v'_"A" = v_"A"(:(m_"A"-m_"B")/(m_"A"+m_"B"):)` and `v'_"B" = v_"A"(:(2m_"A")/(m_"A"+m_"B"):)`.
 
 We will have to consider some special conditions:
 
 - `m_"A" > m_"B"\  => 0 < vec v'_"A" < vec v_"A"`
 - `m_"A" ≫ m_"B" => vec v'_"A" ~~ vec v_"A"`
 - `m_"A" < m_"B"\  => vec v'_"A" < 0`
-- `m_"A" ≪ m_"B" => vec v'_"A" ~~ -vec v_"A" and vec v'_"B" ~~ 0`
-- `m_"A" = m_"B"\  => vec v'_"A" = 0 and vec v'_"B" = vec v_"A"`
+- `m_"A" ≪ m_"B" => vec v'_"A" ~~ -vec v_"A"` and `vec v'_"B" ~~ 0`
+- `m_"A" = m_"B"\  => vec v'_"A" = 0` and `vec v'_"B" = vec v_"A"`
 
 If both objects are in motion, we can still use these equations as long as we put ourselves in B's [frame of reference](relative-motion.html). To do this, subtract `v_"B"` from both initial velocities, making `v_"B"` zero. Proceed as usual, but don't forget to return to Earth's frame of reference at the end by undoing the subtraction: add the original `v_"B"` to `v'_"A"` and `v'_"B"`.
 
@@ -841,7 +841,7 @@ Since `W = ∆E_"g"`, we want to find the change in gravitational potential. The
 
 Now, we substitute our new equation into `∆E_"g" = E_"g,2" - E_"g,1"`, giving us
 
-    `∆E_"g" = Gm_"E"m_"obj"(1/r_1 - 1/r_2)`.
+    `∆E_"g" = Gm_"E"m_"obj"(:1/r_1 - 1/r_2:)`.
 
 After plugging in the values and evaluating, we find that the amount of work required is 4.21 × 10^8^ J.
 
@@ -865,7 +865,7 @@ The satellite begins on Earth, so `r_1 = r_"E"`. When it reaches the altitude of
 
 Now since `W = ∆E_"tot"`, we should find the change in energy. For the initial value we simply use `E_"g"` because the satellite begins at rest, but for the final value we use the special formula for stable orbit energy:
 
-    `∆E_"tot" = ∆E_"tot,2" - ∆E_"tot,1" = (-1/2G(m_1m_2)/r_2) - (-G(m_1m_2)/r_1)`.
+    `∆E_"tot" = ∆E_"tot,2" - ∆E_"tot,1" = (:-1/2G(m_1m_2)/r_2:) - (:-G(m_1m_2)/r_1:)`.
 
 Substituting all the known quantities and evaluating gives us the answer: it would take 2.68 × 10^10^ J of work to put the satellite in orbit.
 
@@ -893,7 +893,7 @@ The `q` values are the charges on the objects, measured in coulombs (C). Their p
 
 Like with gravity, we will sometimes want to look at how the force changes in terms of ratios. To do that, we can use the following equation:
 
-    `F_"el,2"/F_"el,1" = (q_"A,2"/q_"A,1")(q_"B,2"/q_"B,1")(r_1/r_2)^2`.
+    `F_"el,2"/F_"el,1" = (:q_"A,2"/q_"A,1":)(:q_"B,2"/q_"B,1":)(:r_1/r_2:)^2`.
 
 In some electric force questions, you will be given a diagram of several charged objects and you must find the net force on one particular object. To do this, you must find the values of `F_"el"` between that object and each other one, determine the direction for each force, and add them up. This also works in two dimensions.
 
@@ -903,7 +903,7 @@ A positively charged object of 1.95 × 10^−6^ C is beside a negatively charged
 
 All we have to do is plug in the values into Coloumb's law:
 
-    `|vec F_"el"| = (9.00xx10^9\ "Nm"^2/"C"^2)((1.95xx10^-6\ "C")(2.75xx10^-6\ "C"))/(0.124\ "m")^2`.
+    `|vec F_"el"| = (:9.00xx10^9\ "Nm"^2/"C"^2:)((1.95xx10^-6\ "C")(2.75xx10^-6\ "C"))/(0.124\ "m")^2`.
 
 Evaluating this gives us 3.14 N, and this force attracts the two objects together because they have opposite charges.
 
@@ -933,7 +933,7 @@ Electric potential energy is similar to gravitational potential energy, except i
 
 From this we can derive a formula for a change in electric potential energy:
 
-    `∆E_"el" = kq_1q_2(1/r_2 - 1/r_1)`.
+    `∆E_"el" = kq_1q_2(:1/r_2 - 1/r_1:)`.
 
 _Electric pontential_ is, confusingly, not the same as electric potential energy. While the latter is measured in joules, electric potential is measured in joules per coulomb. It represents the `E_"el"` that a unitary point charge would have at a particular point. It is denoted with `V` and calculated with
 
@@ -945,7 +945,7 @@ _Electric pontential_ is, confusingly, not the same as electric potential energy
 
 Most of the time, we talk not about electric potential but about electric potential _difference_, also known as _voltage_:
 
-    `∆V = kq(1/r_2 - 1/r_1)`.
+    `∆V = kq(:1/r_2 - 1/r_1:)`.
 
 In general, we can relate work to voltage with
 
@@ -975,7 +975,7 @@ An alpha particle with a charge of 3.2 × 10^−19^ C moving at 1.0 × 10^6^ m/s
 
 We by substituting the energy formulae into the equation given above:
 
-    `1/2m(v_2^2-v_1^2) = -kq_1q_2(1/r_2-1/r_1)`.
+    `1/2m(v_2^2-v_1^2) = -kq_1q_2(:1/r_2-1/r_1:)`.
 
 The particle will stop moving when it gets to the closest point, so we make `v_2` zero. It starts at infinity, and one over infinity, for our purposes, is zero, so that gets rid of another term. We are left with
 
@@ -1121,7 +1121,7 @@ When straight waves pass through an opening, they can be bent. This phenomenon i
 
 The sine of the angle of diffraction is proportional to the wavelength and inversely proportional to the width of the opening:
 
-    `sin theta propto lambda/w`.
+    `sin theta prop lambda/w`.
 
 For example, sound is easily diffracted because its wavelength is fairly long. Light, on the other hand, requires a much narrower slit because its wavelength is shorter. In general, the wave experiences significant diffraction when `w < lambda`.
 
@@ -1141,39 +1141,57 @@ When waves are produced in phase from two point sources, they create and interfe
 
 On any point on a nodal line, there is an extra distance that the wave from one source must travel compared to the wave from the other source. This extra distance, called the _path length difference_, is given by
 
-    `"p.d." = (n - 1/2)lambda`,
+    `"p.d." = (:n - 1/2:)lambda`,
 
 where `n` represents the ordinal nodal line (first, second, third, etc., from the central antinode).
 
 The angle `theta_n` represents the angle between the central antinode and the nth nodal line. If we make some assumptions (incorrect assumptions, but the error they contribute is insignificant), we have
 
-    `sin theta_n = "p.d."/d = (n - 1/2)lambda/d`.
+    `sin theta_n = "p.d."/d = (:n - 1/2:)lambda/d`.
 
 By considering similar triangles in this setup, we get a third equation:
 
-    `lambda = (x_nd)/(L(n-1/2))`.
+    `lambda = (x_nd)/(L(:n-1/2:))`.
 
 ## Wave & particle models of light
 
 There are six main properties of light that should be explained by a theory of light. The wave model and the particle model explain them with varying degrees of success.
 
 linear propagation
-:   Light propagates in straight lines. It does not fall and hit the floor.<br>_Particle_: light is composed of very small, fast-moving particles.<br>_Wave_: no good explanation.
+:   Light propagates in straight lines. It does not fall and hit the floor.
+
+    - **Particle**: light is composed of very small, fast-moving particles.
+    - **Wave**: no good explanation.
 
 diffraction
-:   Light diffracts when it passes through a slit.<br>_Particle_: particles collide with the sides of the slit and scatter.<br>_Wave_: water analogy.
+:   Light diffracts when it passes through a slit.
+
+    - **Particle**: particles collide with the sides of the slit and scatter.
+    - **Wave**: water analogy.
 
 reflection
-:   Light reflects off many surfaces.<br>_Particle_: pool table analogy.<br>_Wave_: water analogy.
+:   Light reflects off many surfaces.
+
+    - **Particle**: pool table analogy.
+    - **Wave**: water analogy.
 
 refraction
-:   Light refracts when it enters a different medium.<br>_Particle_: the particles move at different speeds in different media.<br>_Wave_: water analogy.
+:   Light refracts when it enters a different medium.
+
+    - **Particle**: the particles move at different speeds in different media.
+    - **Wave**: water analogy.
 
 partial reflection & refraction
-:   Window panes reflect part of the incoming light and transmit the rest, depending on the viewing angle.<br>_Particle_: no good explanation.<br>_Wave_: water analogy.
+:   Window panes reflect part of the incoming light and transmit the rest, depending on the viewing angle.
+
+    - **Particle**: no good explanation.
+    - **Wave**: water analogy.
 
 dispersion of white light
-:   White light disperses into the colours of the rainbow when it passes through a prism.<br>_Particle_: different colours of light are made of particles of slightly different mass (red is heavy, violet is less heavy).<br>_Wave_: each colour is a wave with a different wavelength (red is long, violet is short).
+:   White light disperses into the colours of the rainbow when it passes through a prism.
+
+    - **Particle**: different colours of light are made of particles of slightly different mass (red is heavy, violet is less heavy).
+    - **Wave**: each colour is a wave with a different wavelength (red is long, violet is short).
 
 The wave model seems to do a better job of explaining most of these properties, but in reality the answer is more complicated than that.
 
@@ -1211,11 +1229,11 @@ When a wave reflects is in a fast medium and reflects on the interface to a slow
 
 There are three interesting cases for the thickness of the film. When `t ≪ lambda`, the extra distance is so small that the interference is destructive for all colours. When `t=1//4lambda`, the two waves are in phase. Why? If we don't consider the extra distance, the waves are out of phase, meaning a phase delay of `1//2lambda`; when we do consider it, we have `1//2lambda + 2t = lambda`. Since they are in phase, they interfere constructively -- all other colours (with different values of `lambda`) are blocked because the interference is destructive. When `t=1//2lambda`, the waves are out of phase and therefore destructive. This means that only that colour is blocked -- the others are not.
 
-|                 | phase delay | type of interference | the `lambda` colour | other colours |
-| :-------------- | :---------: | :------------------: | :-----------------: | :-----------: |
-| `t ≪ lambda`    |    small    |     destructive      |       blocked       |    blocked    |
-| `t = 1/4lambda` |  `lambda`   |     constructive     |      reflected      |    blocked    |
-| `t = 1/2lambda` | `3/2lambda` |     destructive      |       blocked       |   reflected   |
+|                 | phase delay | type of interference | the λ colour | other colours |
+| :-------------- | :---------: | :------------------: | :----------: | :-----------: |
+| `t ≪ lambda`    |    small    |     destructive      |    blocked   |    blocked    |
+| `t = 1/4lambda` |  `lambda`   |     constructive     |   reflected  |    blocked    |
+| `t = 1/2lambda` | `3/2lambda` |     destructive      |    blocked   |   reflected   |
 
 ## Interference effects
 
@@ -1360,17 +1378,17 @@ One consequence of special relativity is _time dilation_. A clock running on a s
 
 If an observer B travels at a speed _v_ for the proper time `t_0` and returns to observer A, who has been at rest all along, then observer A will have experienced a longer amount of time, the relativistic time `t'`, given by
 
-    `t' = t_0/sqrt(1-(v/c)^2)`.
+    `t' = t_0/sqrt(1-(:v/c:)^2)`.
 
 Notice that the denominator rounds to 1.0 unless the speed is very large. This is why we don't notice special relativity in our everyday lives.
 
 Another consequence of special relativity is _length contraction_. As an object approaches the speed of light, it will seem to get shorter. We can get the relativistic length `L'` from the proper length `L_0` with
 
-    `L' = L_0sqrt(1-(v/c)^2)`.
+    `L' = L_0sqrt(1-(:v/c:)^2)`.
 
 Yet another bizarre consequence of special relativity: faster objects act as if they have more mass. The space shuttle might have a _rest mass_ of two million kilograms, but its actual mast approaches infinity as the space shuttle approaches the speed of light. We can calculate this mass with
 
-    `m' = m_0/sqrt(1-(v/c)^2)`.
+    `m' = m_0/sqrt(1-(:v/c:)^2)`.
 
 Einstein also applied his theory of relativity to _matter_. In chemical reactions, mass is conserved because the atoms are just being shuffled around. In nuclear reactions, mass changes because elements change into different elements. This is accounted for by a change in energy according to the mass--energy equivalence equation,
 
