@@ -90,18 +90,18 @@ for await (const line of console) {
             "<mtext class=\"math-punct\">.</mtext></math>",
         )
         .replaceAll(
-            "<mo separator=\"true\" rspace=\"0em\">,</mo></math>",
+            "<mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo></math>",
             "<mtext class=\"math-punct\">,</mtext></math>",
         )
-        // Fix spacing for signs. Temml does not emit form="prefix".
-        // TODO(https://github.com/ronkok/Temml/issues/31): Remove when fixed.
-        .replaceAll(/([^\)\]]<\/mo>(?:<\/mrow>)?(?:<mrow>)?)<mo>(−|-|\+)<\/mo>/g, "$1<mo form=\"prefix\">$2<\/mo>")
-        .replaceAll(/<mo rspace="0em">(−|-|\+)<\/mo><\/mrow>/g, "<mo lspace=\"0\" rspace=\"0\" form=\"suffix\">$1</mo></mrow>")
+        // Remove some extra attributes that are unnecessary.
+        .replaceAll(/ lspace="0em" rspace="0em"(>[()\[\]]<\/mo>)/g, "$1")
         // Reduce space after trig functions.
         .replaceAll(
             /(<mi>[a-z]{3}<\/mi>)<mo>⁡<\/mo><mspace width="0.1667em"><\/mspace>/g,
             "$1<mspace width=\"0.08335em\"><\/mspace>",
         )
+        // Units are unnecessary for zero.
+        .replaceAll("=\"0em\"", "=\"0\"")
         // All output must be on a single line.
         .replaceAll("\n", " ");
     console.log(html);
