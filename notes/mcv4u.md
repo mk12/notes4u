@@ -608,7 +608,7 @@ There are also spanning sets in `RR^3`. A triplet of three-component vectors for
 
 ### Example
 
-Express the vector `[6,7]` in terms of the spanning set `{[10,5],""[-2,1]}`.
+Express the vector `[6,7]` in terms of the spanning set `{[10,5],[-2,1]}`.
 
 Referring to the definition of a linear combination, we can write an equation with unknown coefficients `a` and `b`:
 
